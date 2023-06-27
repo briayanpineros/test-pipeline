@@ -1,0 +1,29 @@
+uuid: c5dbf185-999a-4c99-a701-dc6b72c77b95
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_taxonomy_cover
+    - media.type.image
+    - taxonomy.vocabulary.categoria_interes
+id: taxonomy_term.categoria_interes.field_taxonomy_cover
+field_name: field_taxonomy_cover
+entity_type: taxonomy_term
+bundle: categoria_interes
+label: 'Imágen para la portada del planificador'
+description: 'Solo para las categorías padre'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

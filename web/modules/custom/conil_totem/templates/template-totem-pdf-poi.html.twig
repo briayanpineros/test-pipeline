@@ -1,0 +1,78 @@
+{#
+/**
+ * @file
+ * Default theme implementation for 'template-totem-poi-5'
+ *
+ * Available variables:
+ * - code: ID.
+ * - css_cover: CSS para la cover, dependiendo del nº de imágenes.
+ * - css: CSS.
+ * - conil_logo: Ruta del logo de conil, base64 imagen.
+ * - data: Datos, con imagen en base64.
+ * - qr: Imagen qr, base64.
+ *
+ * https://storybook.paas.junta-andalucia.es/?path=/docs/mol%C3%A9culas-matter-header--header
+ */
+#}
+
+{%- macro stringMaxLength(str, maxLength) -%}
+	{%- if str | length < maxLength -%}
+		{{ str }}
+	{%- else -%}
+		{{ str|slice(0, maxLength) }}...
+	{%- endif -%}
+{%- endmacro -%}
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
+		<style type="text/css">
+    {{css_cover}}{{css}}
+    </style>
+		<title>POI</title>
+	</head>
+	<body class="pdf">
+		<div class="logo"><img src="{{ conil_logo }}"/></div>
+		<div class="contents">
+      <div class="left">
+        <div class="image image1">
+          <img src="{{ data.images[1] }}">
+        </div>
+        <div class="description">
+          <div class="title">
+            {{ data.title }}
+          </div>
+          <div class="body">
+            {{ _self.stringMaxLength(data.body, 1000) }}
+          </div>
+          <div class="qr"><img src="{{ qr }}"></div>
+          <div class="text">
+            <div class="more-information">{{ 'Más Información'|t }}</div>
+            <div class="web">turismoconil<strong>.es</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="cover image">
+          <img src="{{ data.cover }}">
+        </div>
+        <div class="image image2">
+          <img src="{{ data.images[2] }}">
+        </div>
+        <div class="image image3">
+          <img src="{{ data.images[3] }}">
+        </div>
+        <div class="image image4">
+          <img src="{{ data.images[4] }}">
+        </div>
+        <div class="sentence">
+        Te esperamos, <br />¡No te lo pierdas!
+        </div>
+      </div>
+    </div>
+    <div class="barra"></div>
+	</body>
+</html>

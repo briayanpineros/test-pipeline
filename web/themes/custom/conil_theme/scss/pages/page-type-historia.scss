@@ -1,0 +1,205 @@
+.page-node-type-historia{
+  color: $conil-color-blue;
+  .region-content {
+
+    article{
+      .node__content {
+        margin: 30px;
+        @include xl{
+          margin: 0
+        }
+      .field--name-field-historia-cover{
+          float: left;
+          border-top: 6px solid $conil-color-aqua;
+          border-bottom: 6px solid $conil-color-lightgray;
+          @include md {
+              margin-right: 1.5rem;
+              width: 45%;
+          }
+
+      }
+
+      .field--name-field-history-subtitle {
+        font-family: "SourceSans-Bold";
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+
+      }
+
+      .field--type-image {
+        border-top: solid 6px $conil-color-aqua;
+        border-bottom: 6px solid $conil-color-gray;
+
+        img {
+          width: 100%;
+        }
+      }
+      .content-container{
+        margin: auto;
+        border: solid 1px $conil-color-lightblue;
+        padding: 2%;
+      }
+      }
+      footer.node__meta{
+          display: none;
+      }
+    }
+
+  }
+  .field--name-body {
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $conil-color-blue;
+      margin-bottom: 1rem;
+      font-family: 'SourceSans-Bold';
+    }
+
+    p, li {
+      line-height: 1.2rem;
+    }
+
+    blockquote {
+      width: 100%;
+      font-size: 12px;
+      text-align: left;
+
+      p {
+        text-align: center;
+        padding: 2rem;
+        background-color: $conil-color-gray;
+        color: $conil-color-blue;
+        font-family: SourceSans-Regular;
+        font-size: 1.2rem;
+
+        &:before {
+          content: '“';
+          font-size: 2.5rem;
+          line-height: 1rem;
+          font-family: SourceSans-Bold;
+          bottom: -0.8rem;
+          margin-right: 5px;
+          position: relative;
+        }
+
+        &:after {
+
+          content: '”';
+          font-size: 2.5rem;
+          line-height: 1rem;
+          font-family: SourceSans-Bold;
+          bottom: -0.8rem;
+          margin-left: 5px;
+          position: relative;
+        }
+      }
+
+      &:after {
+        content: url("/themes/custom/conil_theme/imagenes/subline-headline-y.png");
+        position: relative;
+        top: 0;
+        left: 0;
+
+
+      }
+
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        a {
+          color: $conil-color-pink;
+        }
+
+        &::before {
+          content: "\25AA";
+          color: $conil-color-aqua;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+
+    ol {
+      background-color: $conil-color-gray;
+      color: $conil-color-pink;
+      padding: 1rem;
+
+      li {
+        margin-left: 1rem;
+        text-decoration: underline;
+
+        a {
+          color: $conil-color-pink;
+
+          &:hover {
+            color: $conil-color-pink;
+          }
+        }
+      }
+
+    }
+
+
+  }
+  #block-views-block-carrousel-block-2 {
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+
+    .owl-stage-outer {
+      margin-left: 3rem;
+      margin-right: 3rem;
+
+      .owl-stage {
+        margin: auto;
+        .popupVideo {
+            cursor: pointer;
+          }
+      }
+
+      .field-content {
+        img {
+          border-top: 6px solid $conil-color-aqua ;
+        }
+      }
+    }
+
+    .owl-nav {
+      position: relative;
+
+
+      button {
+        font-size: 5rem;
+
+        &:hover {
+          background-color: white;
+          color: $conil-color-blue;
+        }
+
+        &.owl-prev {
+          position: absolute;
+          top: -140px;
+          left: 5px;
+
+        }
+
+        &.owl-next span {
+          position: absolute;
+          top: -140px;
+          right: 5px;
+
+        }
+      }
+    }
+  }
+}

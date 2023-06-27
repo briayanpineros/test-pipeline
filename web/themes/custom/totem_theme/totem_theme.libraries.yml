@@ -1,0 +1,25 @@
+# Theme specific.
+global-styling:
+  version: 1.0
+  js:
+    js/bootstrap.min.js: {}
+    js/global.js: {}
+  css:
+    component:
+      css/bootstrap.css: {}
+      css/style.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - ayesa_base_theme/load_sumoselect
+
+slick_dots_text:
+  version: 1.0
+  js:
+    /libraries/slick/slick/slick.js: {}
+    js/slick_dots_text.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal

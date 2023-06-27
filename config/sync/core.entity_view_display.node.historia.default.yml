@@ -1,0 +1,79 @@
+uuid: 427d7f1a-02c4-4aca-9539-66df00c7797a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.historia.body
+    - field.field.node.historia.field_categoria_historia
+    - field.field.node.historia.field_historia_cover
+    - field.field.node.historia.field_historia_tipo_de_contenido
+    - field.field.node.historia.field_history_gallery
+    - field.field.node.historia.field_history_subtitle
+    - image.style.large
+    - node.type.historia
+  module:
+    - conil_tweaks
+    - field_group
+    - media
+    - user
+third_party_settings:
+  field_group:
+    group_div:
+      children:
+        - field_historia_cover
+        - field_history_subtitle
+        - body
+      label: div
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: content-container
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.historia.default
+targetEntityType: node
+bundle: historia
+mode: default
+content:
+  body:
+    type: conil_text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_historia_cover:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_history_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_categoria_historia: true
+  field_historia_tipo_de_contenido: true
+  field_history_gallery: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

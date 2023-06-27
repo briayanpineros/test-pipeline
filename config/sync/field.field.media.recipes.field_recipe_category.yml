@@ -1,0 +1,29 @@
+uuid: a4425928-67c4-4c28-952a-650775bcf039
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_recipe_category
+    - media.type.recipes
+    - taxonomy.vocabulary.recipe_category
+id: media.recipes.field_recipe_category
+field_name: field_recipe_category
+entity_type: media
+bundle: recipes
+label: Categoría
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      recipe_category: recipe_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

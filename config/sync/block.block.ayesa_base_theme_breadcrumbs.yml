@@ -1,0 +1,27 @@
+uuid: a1a4955b-5b1a-48d7-894f-623cb9839275
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ayesa_base_theme
+_core:
+  default_config_hash: tWRpeUlfpby0jHke2RiLU85374IKOmJfCOtxzbHAbcg
+id: ayesa_base_theme_breadcrumbs
+theme: ayesa_base_theme
+region: breadcrumbs
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/user/login\r\n/user/register\r\n/user/password\r\n"

@@ -1,0 +1,13 @@
+totems.settings:
+  type: config_object
+  label: 'Totems Settings'
+  mapping:
+    nextMedia:
+      type: integer
+      label: 'Tiempo entre contenido'
+    url_api:
+      type: integer
+      label: 'Tiempo de espera en contenido interior'
+    media_content:
+      type: array
+      label: 'Contenido'

@@ -1,0 +1,19 @@
+label: 'Opinioni sui contenuti'
+display:
+  default:
+    display_options:
+      title: Opinioni
+      empty:
+        area_text_custom:
+          content: '<div class="opinions-no-result"><span>Non ci sono ancora recensioni per questo sito. Sii il primo a commentare</span></div>'
+      arguments:
+        nid:
+          exception:
+            title: Tutti
+      use_more_text: 'di più'
+  block_2:
+    display_options:
+      fields:
+        title:
+          alter:
+            text: 'Ci sono un totale di {{ cid }} recensioni con una valutazione media di {{ (field_fivestar /20)|round(1, ''floor'')}}. / 5'

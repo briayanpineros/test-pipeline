@@ -1,0 +1,12 @@
+label: 'Videos promocionales'
+display:
+  default:
+    display_options:
+      title: 'Videos promocionales'
+      filters:
+        mid:
+          expose:
+            description: ''
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''

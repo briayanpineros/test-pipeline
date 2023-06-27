@@ -1,0 +1,40 @@
+.path-sitemap {
+	#block-conil-theme-page-title {
+
+		h1 {
+			padding: 2rem;
+
+			@include xl {
+				padding: 2rem 0;
+			}
+
+			font-family: SourceSans-Bold;
+			color: $conil-color-blue;
+
+			&::after {
+				content: url("/themes/custom/conil_theme/imagenes/subline-headline.png");
+				position: relative;
+				display: block;
+				height: 10px;
+				color: $conil-color-yellow;
+				top: -0.8rem;
+			}
+		}
+
+
+	}
+
+	#block-mainpagecontent {
+		padding: 0 2rem;
+
+		@include xl {
+			padding: 0;
+		}
+
+		h2 {
+			font-size: 2rem;
+			color: $conil-color-blue;
+		}
+	}
+
+}

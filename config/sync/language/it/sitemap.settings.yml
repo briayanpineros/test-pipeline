@@ -1,0 +1,11 @@
+plugins:
+  frontpage:
+    settings:
+      title: 'Prima pagina'
+  'menu:footer':
+    settings:
+      title: 'Piè di pagina'
+  'menu:sidr-navigation':
+    settings:
+      title: 'Menu di navigazione'
+page_title: 'Mappa del sito'

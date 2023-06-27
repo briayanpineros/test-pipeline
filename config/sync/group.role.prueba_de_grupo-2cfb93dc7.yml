@@ -1,0 +1,17 @@
+uuid: 6a6ce667-c8a9-44ce-98d5-feb341c8aefa
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.prueba_de_grupo
+  enforced:
+    config:
+      - user.role.moderator_conil
+id: prueba_de_grupo-2cfb93dc7
+label: Moderador
+weight: 4
+internal: true
+audience: outsider
+group_type: prueba_de_grupo
+permissions_ui: false
+permissions: {  }

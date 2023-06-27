@@ -1,0 +1,20 @@
+uuid: 90102292-a876-4073-9585-b0a8d49ba55f
+langcode: es
+status: true
+dependencies:
+  theme:
+    - conil_theme
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: conil_theme_local_actions
+theme: conil_theme
+region: content
+weight: -25
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

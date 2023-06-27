@@ -1,0 +1,23 @@
+uuid: c0d8efba-7719-4d77-bf51-09bc1ad8344e
+langcode: es
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - ayesa_base_theme
+_core:
+  default_config_hash: TgkJKbO3GMA4Q_L4y_uz8iKyX5TvABB9nRTw_FaEZIE
+id: ayesa_base_theme_search
+theme: ayesa_base_theme
+region: header_top
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Buscar
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

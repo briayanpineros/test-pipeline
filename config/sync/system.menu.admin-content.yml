@@ -1,0 +1,8 @@
+uuid: e794313f-25c4-49d4-9db6-d3261d94f29e
+langcode: en
+status: true
+dependencies: {  }
+id: admin-content
+label: 'Admin Content'
+description: ''
+locked: false

@@ -1,0 +1,20 @@
+uuid: 3a023422-86be-45ae-a1b6-24ed5fafcdcc
+langcode: es
+status: true
+dependencies:
+  theme:
+    - ayesa_base_theme
+_core:
+  default_config_hash: qtqpNwSHcPmUlJo7pe6CGuY5QvI0bXpbKZFqlUrWdMc
+id: ayesa_base_theme_local_actions
+theme: ayesa_base_theme
+region: content_top
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

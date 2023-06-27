@@ -1,0 +1,25 @@
+uuid: 6d0ddc05-8a93-4387-91b0-882d2460524d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:multiple_images_block:00e223c5-8092-488a-b429-3dc43f69510c'
+  module:
+    - block_content
+  theme:
+    - conil_theme
+id: conilmainlogoandsidrclose
+theme: conil_theme
+region: sidr_menu
+weight: -25
+provider: null
+plugin: 'block_content:00e223c5-8092-488a-b429-3dc43f69510c'
+settings:
+  id: 'block_content:00e223c5-8092-488a-b429-3dc43f69510c'
+  label: 'Conil main logo and Sidr Close'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

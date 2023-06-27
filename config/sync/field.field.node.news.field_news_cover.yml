@@ -1,0 +1,33 @@
+uuid: cdd25945-7a20-41eb-b3f7-76aff8bb0c66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_cover
+    - media.type.cover
+    - media.type.image
+    - media.type.poi_media
+    - node.type.news
+id: node.news.field_news_cover
+field_name: field_news_cover
+entity_type: node
+bundle: news
+label: Portada
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      cover: cover
+      image: image
+      poi_media: poi_media
+    sort:
+      field: created
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: cover
+field_type: entity_reference

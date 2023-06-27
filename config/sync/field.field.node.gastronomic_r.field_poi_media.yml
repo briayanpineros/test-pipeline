@@ -1,0 +1,33 @@
+uuid: fd339556-b951-4990-86d9-2a5eba806753
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_media
+    - media.type.cover
+    - media.type.image
+    - media.type.poi_media
+    - node.type.gastronomic_r
+id: node.gastronomic_r.field_poi_media
+field_name: field_poi_media
+entity_type: node
+bundle: gastronomic_r
+label: 'Imagen de portada'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      cover: cover
+      image: image
+      poi_media: poi_media
+    sort:
+      field: created
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

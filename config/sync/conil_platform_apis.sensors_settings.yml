@@ -1,0 +1,7 @@
+base_url: 'https://orion.conil.ayesa.link/v2/entities'
+key_1: fiware-service
+value_1: fs_conil
+key_2: fiware-servicepath
+value_2_conteo: /sensors/conteo
+value_2_meteo: /sensors/meteo
+value_2_airquality: /sensors/airquality

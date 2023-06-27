@@ -1,0 +1,27 @@
+uuid: ab4b439c-974d-4afa-a680-619590f134e3
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - ayesa_base_theme
+_core:
+  default_config_hash: dvf1Pukd_l0jskjYAwCH5oxPn94vDxBX8ApBid61Rtw
+id: ayesa_base_theme_account_menu
+theme: ayesa_base_theme
+region: header_top
+weight: -6
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: User
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: b4503d99-bfa9-46ca-8547-4db45070687b
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.carrousel_images
+id: media.carrousel_images.status
+field_name: status
+entity_type: media
+bundle: carrousel_images
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

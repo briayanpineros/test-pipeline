@@ -1,0 +1,13 @@
+uuid: 4f3a1527-2cc4-43cd-a583-302d81ef297f
+langcode: es
+status: true
+dependencies: {  }
+id: background_selfie
+label: 'Background selfie'
+description: 'Background images for selfies'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

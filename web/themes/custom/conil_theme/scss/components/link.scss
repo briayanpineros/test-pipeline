@@ -1,0 +1,26 @@
+a {
+  color: $conil-color-blue;
+  text-decoration: none;
+
+  &.active,
+  &:visited,
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:hover {
+    color: $conil-color-blue;
+  }
+}
+
+article {
+  p a, li a {
+    color: $conil-color-pink;
+    text-decoration: underline;
+
+    &:hover {
+      color: $conil-color-pink;
+      text-decoration: underline;
+    }
+  }
+}

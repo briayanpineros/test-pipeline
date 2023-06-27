@@ -1,0 +1,5 @@
+conil_polls.draft_mail_settings:
+  title: 'Draft Mail Settings'
+  base_route_name: conil_polls.draft_mail_settings
+  names:
+    - 'conil_polls.draft_mail_settings'

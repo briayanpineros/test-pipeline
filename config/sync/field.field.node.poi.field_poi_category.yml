@@ -1,0 +1,25 @@
+uuid: ceaf135a-4276-4807-b390-8036decedea8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_category
+    - node.type.poi
+id: node.poi.field_poi_category
+field_name: field_poi_category
+entity_type: node
+bundle: poi
+label: Category
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: view_reference_categoria_interes
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

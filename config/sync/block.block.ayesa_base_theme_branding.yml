@@ -1,0 +1,25 @@
+uuid: b69d394f-b2f4-4238-b31e-7699912dcd57
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ayesa_base_theme
+_core:
+  default_config_hash: mFQVxinoPkQav9YnFzK8GsX_Jg3nRF3gG9bdnq6xkqQ
+id: ayesa_base_theme_branding
+theme: ayesa_base_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: Branding
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

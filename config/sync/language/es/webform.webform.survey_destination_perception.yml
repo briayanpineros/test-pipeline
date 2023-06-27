@@ -1,0 +1,191 @@
+title: 'Análisis de la percepción de los destinos turísticos'
+description: 'An&aacute;lisis de la percepci&oacute;n de los destinos tur&iacute;sticos'
+elements: |
+  nationality_set:
+    '#title': 'Seleccionar nacionalidad'
+  nacionality:
+    '#title': Nacionalidad
+    '#description': 'Indica tu nacionalidad'
+    '#help_title': 'Indica tu nacionalidad'
+    '#options':
+      Resident: Residente
+      Spain: Español
+      'Other country': 'Otro país'
+    '#required_error': 'Nacionalidad necesaria'
+  province:
+    '#title': Provincia
+    '#required_error': 'Provincia necesaria'
+  country:
+    '#title': País
+    '#required_error': 'País necesario'
+  gender:
+    '#title': Género
+    '#description': 'Por favor, indique su sexo'
+    '#help_title': 'Por favor, indique su sexo'
+    '#options':
+      Male: Hombre
+      Female: Mujer
+    '#required_error': 'Sexo requerido'
+  age:
+    '#title': 'Grupo de edad'
+    '#description': 'Por favor, indique su grupo de edad'
+    '#help_title': 'Por favor, indique su grupo de edad'
+    '#options':
+      'Less than 18': 'Menos de 18 años '
+      'Beetween 18 and 29': 'Entre 18 y 29 años'
+      'Beetween 30 and 44': 'Entre 30 y 44 años '
+      'Beetween 45 and 65': 'Entre 45 y 65 años '
+      'More than 65': 'Más de 65 años '
+    '#required_error': 'Edad necesaria'
+  satisfaction_index_by_category:
+    '#title': 'Grado de satisfacción'
+    '#description': 'Indique su grado de satisfacci&oacute;n por categor&iacute;a'
+    '#help_title': 'Indique su grado de satisfacción por categoría'
+    '#header':
+      -
+        title: 'Indique su grado de satisfacción por categoría'
+  satisfaction_index_by_category_01:
+    '#title': Seguridad
+  safety_rate:
+    '#title': Seguridad
+  satisfaction_index_by_category_02:
+    '#title': Limpieza
+  cleanliness_rate:
+    '#title': Limpieza
+    '#required_error': 'Necesidad de especificar'
+  satisfaction_index_by_category_03:
+    '#title': Tranquilidad
+  peace_of_mind_rate:
+    '#title': Tranquilidad
+    '#required_error': 'Necesidad de especificar'
+  satisfaction_index_by_category_04:
+    '#title': Idioma
+  language_rate:
+    '#title': Idioma
+    '#required_error': 'Necesidad de especificar'
+  satisfaction_index_by_category_05:
+    '#title': 'Ausencia de contaminación ambiental y acústica'
+  absense_of_environmental_and_noise_pollution_rate:
+    '#title': 'Ausencia de contaminación ambiental y acústica'
+    '#required_error': 'Necesidad de especificar'
+  satisfaction_index_by_category_06:
+    '#title': 'Belleza paisajística'
+  scenic_beauty_rate:
+    '#title': 'Belleza paisajística'
+    '#required_error': 'Necesidad de especificar'
+  satisfaction_index_by_category_07:
+    '#title': 'Acceso para discapacitados'
+  access_for_the_disabled_rate:
+    '#title': 'Acceso para discapacitados'
+    '#required_error': 'Necesidad de especificar'
+  satisfaction_index_by_category_08:
+    '#title': 'Zonas verdes'
+  green_areas_rate:
+    '#title': 'Zonas verdes'
+    '#required_error': 'Necesidad de especificar'
+  interest_by_tourism_product:
+    '#title': 'Índice de satisfacción por producto'
+    '#description': 'Indicar el &iacute;ndice de satisfacci&oacute;n por producto'
+    '#help_title': 'Indicar el índice de satisfacción por producto'
+    '#header':
+      -
+        title: 'Indicar el índice de satisfacción por producto'
+  interest_by_tourism_product_01:
+    '#title': Alojamiento
+  accommodation_rate:
+    '#title': Alojamiento
+    '#required_error': 'Necesidad de especificar'
+  interest_by_tourism_product_02:
+    '#title': Gastronomía
+  gastronomy_rate:
+    '#title': Gastronomía
+    '#required_error': 'Necesidad de especificar'
+  interest_by_tourism_product_03:
+    '#title': Ocio
+  leisure_rate:
+    '#title': Ocio
+    '#required_error': 'Necesidad de especificar'
+  interest_by_tourism_product_04:
+    '#title': Playas
+  beaches_rate:
+    '#title': Playas
+    '#required_error': 'Necesidad de especificar'
+  interest_by_tourism_product_05:
+    '#title': 'Entorno turístico'
+  tourist_environment_rate:
+    '#title': 'Entorno turístico'
+    '#required_error': 'Necesidad de especificar'
+  interest_by_tourism_product_06:
+    '#title': 'Uso del transporte público en el destino'
+  use_of_public_transport_at_the_destination_rate:
+    '#title': 'Uso del transporte público en el destino'
+    '#required_error': 'Necesidad de especificar'
+  interest_by_tourism_product_07:
+    '#title': Infraestructura
+  infrastructure_rate:
+    '#title': Infraestructura
+    '#required_error': 'Necesidad de especificar'
+  interest_by_tourism_product_08:
+    '#title': Compras
+  shopping_rate:
+    '#title': Compras
+    '#required_error': 'Necesidad de especificar'
+  interest_by_tourism_product_09:
+    '#title': 'Salud y bienestar'
+  health_and_wellbeing_rate:
+    '#title': 'Salud y bienestar'
+    '#required_error': 'Necesidad de especificar'
+  level_of_interest_in_conil_s_tourism_social_networks:
+    '#title': 'Nivel de interés en las redes sociales de turismo de Conil'
+    '#header':
+      -
+        title: 'Nivel de interés en las redes sociales de turismo de Conil'
+  youtube_rate:
+    '#required_error': 'Necesidad de especificar'
+  facebook_rate:
+    '#required_error': 'Necesidad de especificar'
+  instagram_rate:
+    '#required_error': 'Necesidad de especificar'
+  twitter_rate:
+    '#required_error': 'Necesidad de especificar'
+  level_of_interest_in_conil_s_tourism_social_networks_05:
+    '#title': 'Web del portal de turismo'
+  tourism_portal_web_rate:
+    '#title': 'Web del portal de turismo'
+    '#required_error': 'Necesidad de especificar'
+  feelings_of_interaction_with_the_tourist_destination_index:
+    '#title': '¿Cómo te sientes?'
+    '#description': 'Indica c&oacute;mo te sientes en Conil de la Frontera'
+    '#help_title': 'Indica cómo te sientes en Conil de la Frontera'
+    '#header':
+      -
+        title: 'Indica cómo te sientes en Conil de la Frontera'
+  feelings_of_interaction_with_the_tourist_destination_index_01:
+    '#title': 'Sensación de estar en casa'
+  feeling_of_being_at_home_rate:
+    '#title': 'Sensación de estar en casa'
+    '#required_error': Requerido
+  feelings_of_interaction_with_the_tourist_destination_index_02:
+    '#title': 'Implicación con el destino'
+  involvement_with_the_destination_rate:
+    '#title': 'Implicación con el destino'
+    '#required_error': Requerido
+  feelings_of_interaction_with_the_tourist_destination_index_03:
+    '#title': 'Afecto por la gente local '
+  affection_for_the_local_people_rate:
+    '#title': 'Afecto por la gente local '
+    '#required_error': Requerido
+  feelings_of_interaction_with_the_tourist_destination_index_04:
+    '#title': 'Percepción de autenticidad'
+  perceived_authenticity_rate:
+    '#title': 'Percepción de autenticidad'
+    '#required_error': Requerido
+  introduce_3_words:
+    '#title': 'Introduce 3 palabras'
+    '#description': 'Indique en s&oacute;lo 3 palabras su experiencia en Conil de la Frontera'
+    '#help_title': 'Indique en sólo 3 palabras su experiencia en Conil de la Frontera'
+  actions:
+    '#title': 'Botón de envío'
+    '#submit__label': Enviar
+settings:
+  submission_label: Enviar

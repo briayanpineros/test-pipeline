@@ -1,0 +1,17 @@
+uuid: 5bdcdece-3286-414c-b78f-51f7cd4544ce
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: J2n0RpFzS0-bgSyxjs6rSdgxB1rb-bTAgqywNx_964M
+name: large
+label: 'Grande (770×770)'
+effects:
+  29571911-565e-4bf4-95d9-ccbd29f23105:
+    uuid: 29571911-565e-4bf4-95d9-ccbd29f23105
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 770
+      height: 420
+      anchor: center-center

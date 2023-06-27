@@ -1,0 +1,22 @@
+uuid: d023b5e0-d509-4be3-8abd-737dc7822312
+langcode: en
+status: true
+dependencies:
+  module:
+    - conil_totem
+id: totem.totem.status
+field_name: status
+entity_type: totem
+bundle: totem
+label: Published
+description: 'A boolean indicating whether the Totem is published.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

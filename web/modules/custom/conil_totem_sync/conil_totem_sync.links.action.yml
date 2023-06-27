@@ -1,0 +1,5 @@
+entity.conil_ws_entity.add_form:
+  route_name: entity.conil_ws_entity.add_form
+  title: 'Add conection'
+  appears_on:
+    - entity.conil_ws_entity.collection

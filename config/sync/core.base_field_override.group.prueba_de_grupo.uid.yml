@@ -1,0 +1,20 @@
+uuid: 7f59c6a5-8247-423c-be7e-044092a13ffa
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.prueba_de_grupo
+id: group.prueba_de_grupo.uid
+field_name: uid
+entity_type: group
+bundle: prueba_de_grupo
+label: 'Creador del grupo'
+description: 'The username of the group creator.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\group\Entity\Group::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

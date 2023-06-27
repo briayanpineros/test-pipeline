@@ -1,0 +1,18 @@
+uuid: daec4310-fa7e-432e-a99b-89b0975f08a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.multiple_images_block
+id: block_content.multiple_images_block.metatag
+field_name: metatag
+entity_type: block_content
+bundle: multiple_images_block
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

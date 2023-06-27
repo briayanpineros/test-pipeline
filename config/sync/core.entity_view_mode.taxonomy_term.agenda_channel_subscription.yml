@@ -1,0 +1,10 @@
+uuid: 15cb301a-f0d0-42d9-ad5f-b1b589a5277a
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.agenda_channel_subscription
+label: 'Agenda channel subscription'
+targetEntityType: taxonomy_term
+cache: true

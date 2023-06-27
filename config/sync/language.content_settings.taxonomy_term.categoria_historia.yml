@@ -1,0 +1,18 @@
+uuid: 65e92642-2b76-4263-857b-c8a24f7ff0b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_historia
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.categoria_historia
+target_entity_type_id: taxonomy_term
+target_bundle: categoria_historia
+default_langcode: current_interface
+language_alterable: false

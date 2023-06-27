@@ -1,0 +1,33 @@
+uuid: c0c5d783-bece-4bbd-99f8-5c52f53dfa34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_portada
+    - media.type.cover
+    - media.type.image
+    - media.type.poi_media
+    - node.type.general_information
+id: node.general_information.field_imagen_portada
+field_name: field_imagen_portada
+entity_type: node
+bundle: general_information
+label: 'Imagen de portada'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      cover: cover
+      image: image
+      poi_media: poi_media
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: cover
+field_type: entity_reference

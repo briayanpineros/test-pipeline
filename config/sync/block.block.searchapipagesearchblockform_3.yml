@@ -1,0 +1,31 @@
+uuid: 832e396a-d785-4efe-9647-71a4fcf1c577
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api_page.search_api_page.search_block
+  module:
+    - domain
+    - search_api_page
+  theme:
+    - totem_theme
+id: searchapipagesearchblockform_3
+theme: totem_theme
+region: header
+weight: -22
+provider: null
+plugin: search_api_page_form_block
+settings:
+  id: search_api_page_form_block
+  label: 'Search Api Page search block form'
+  label_display: '0'
+  provider: search_api_page
+  search_api_page: search_block
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      https_totem001_conil_ddev_site_: https_totem001_conil_ddev_site_

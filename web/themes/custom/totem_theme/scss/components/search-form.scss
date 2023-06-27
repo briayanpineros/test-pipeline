@@ -1,0 +1,40 @@
+.search-api-page-block-form-search-block {
+  form{
+    display: grid;
+    .form-type-search{
+      margin: 0;
+      grid-column: 1;
+      grid-row: 1;
+      width: 545px;
+      max-width: 545px;
+      .form-search{
+        width: 518px;
+        background-color: $conil-color-blue;
+        border-radius: 5px;
+        padding: 5px 20px 5px 5px;
+        color: white;
+        height: 28px;
+        &:focus{
+          outline: none;
+        }
+
+      }
+
+    }
+
+    .form-actions{
+      grid-column: 1;
+      grid-row: 1;
+      justify-self: end;
+      input {
+        border: none;
+        color: transparent;
+        background: url(/themes/custom/totem_theme/imagenes/icono_lupa_busqueda_blanco.png) no-repeat center center;
+        background-size: 20px;
+        min-width: 0;
+        margin: 5px 0;
+      }
+    }
+  }
+
+}

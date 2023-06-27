@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the totem_theme theme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_preprocess_hook().
+ */
+function totem_theme_preprocess_page(&$variables) {
+  $path_matcher = \Drupal::service('path.matcher');
+  if ($path_matcher->isFrontPage()) {
+    $variables['#attached']['library'][] = 'totem_theme/slick_dots_text';
+  }
+
+  if (\Drupal::service('path.current')->getPath() == '/agenda' || str_contains(\Drupal::service('path.current')->getPath(), 'poi')){
+    $variables['#attached']['library'][] = 'totem_theme/slick_dots_text';
+  }
+
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function totem_theme_form_views_exposed_form_alter(&$form, FormStateInterface $form_state) {
+  $view = $form_state->get('view');
+  if ($view->id() == 'viaje_a_medida' && $view->current_display == 'block_1') {
+    $form['options']['expose']['description']['#description'] = t('Filtros');
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function totem_theme_form_comment_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form_state;
+  $form;
+}
+
+
+/**
+ * Implements hook_preprocess_hook().
+ */
+function totem_theme_preprocess_comment(&$variables) {
+  $comment = $variables['comment'];
+}
+
+
+function totem_theme_page_attachments_alter(array &$page) {
+  $viewport = [
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => [
+      'name' => 'viewport',
+      'content' => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
+    ],
+  ];
+
+  $page['#attached']['html_head'][] = [$viewport, 'viewport'];
+}

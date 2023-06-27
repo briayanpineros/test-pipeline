@@ -1,0 +1,17 @@
+uuid: 73b99ddc-5dcd-40bc-9041-b68cd61ff7c7
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+title: 'Eliminar archivos temporales'
+id: file_cron
+weight: 0
+module: file
+callback: file_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

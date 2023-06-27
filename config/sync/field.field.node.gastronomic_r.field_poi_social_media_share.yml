@@ -1,0 +1,25 @@
+uuid: 4709c8ee-0aea-4267-86d6-4dc7a9f2bccc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_social_media_share
+    - node.type.gastronomic_r
+  module:
+    - social_media
+id: node.gastronomic_r.field_poi_social_media_share
+field_name: field_poi_social_media_share
+entity_type: node
+bundle: gastronomic_r
+label: 'Compartir en'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: social_media

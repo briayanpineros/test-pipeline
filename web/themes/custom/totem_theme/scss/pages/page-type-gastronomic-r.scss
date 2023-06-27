@@ -1,0 +1,363 @@
+.page-node-type-gastronomic-r {
+  color: $conil-color-blue;
+
+  .region-content {
+
+    article {
+
+      .node__content {
+        margin: 30px;
+        @include xl{
+          margin: 0
+        }
+
+        .field--type-comment {
+          .form-type-fivestar p.search {
+            display: none;
+          }
+        }
+
+        .field__label {
+          text-transform: uppercase;
+          font-size: 1.6rem;
+        }
+
+        .field--name-field-poi-media {
+          border-top: 6px solid $conil-color-aqua;
+          border-bottom: 6px solid $conil-color-lightgray;
+          margin-top: 2.3rem;
+          margin-bottom: 1rem;
+        }
+
+        .content-container {
+
+
+          @include md {
+            padding: 2%;
+            border: solid 2px $conil-color-gray;
+            display: grid;
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+          }
+          h3 {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            font-weight: bold;
+          }
+          .le {
+            @include md {
+                position: relative;
+                grid-column-start: 1;
+                grid-column-end: 9;
+                margin-right: 2%;
+                grid-row-start: 1;
+                margin-right: 5%;
+              }
+            &> h3 {
+              border-bottom: 6px solid $conil-color-aqua;
+              padding-bottom: .5rem;
+            }
+            .left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+
+
+                .field--name-body {
+                  margin-top: 1.5rem;
+
+                  h2,
+                  h3,
+                  h4,
+                  h5,
+                  h6 {
+                    font-size: 1.3rem;
+                  }
+
+                  p, li {
+                    line-height: 1.2rem;
+                  }
+                }
+
+                .field--name-field-poi-subtitle {
+                  text-transform: uppercase;
+                  font-size: 1.4rem;
+                  font-weight: bold;
+                  line-height: 1.6rem;
+                  margin-top: 1.5rem;
+                }
+
+                .field--name-field-poi-social-media-share {
+                  .field__label {
+                    text-transform: none;
+                    display: inline-block;
+                    font-size: 1rem;
+                    margin-top: 1.5rem;
+                  }
+
+                  .field__item {
+                    display: inline-block;
+                  }
+
+                  img {
+                    width: 15px;
+                    height: auto;
+                  }
+
+                  ul {
+                    margin-left: .5rem;
+
+                    li {
+                      margin-right: 5px;
+                    }
+                  }
+
+                }
+
+                .field--name-field-poi-telephone {
+                  position: relative;
+                  margin-top: 1.5rem;
+                  font-weight: none;
+
+                  .field__label {
+                    @include headline('SourceSans-Regular', 1.4rem)
+                  }
+
+                  .field__item {
+                    @include headline('SourceSans-Bold', 1.4rem);
+
+                    a {
+                      color: $conil-color-blue;
+                    }
+
+                  }
+
+                }
+              }
+          }
+          .right {
+            margin-top: 2rem;
+            @include md {
+              margin-top: 0;
+              position: relative;
+              grid-column-start: 9;
+              grid-column-end: 21;
+              grid-row-start: 1;
+            }
+          }
+          section {
+            grid-column-start: 1;
+            grid-column-end: 21;
+            grid-row-start: 2;
+          }
+        }
+        .field--name-field-gastronomic-r-video article {
+          display: flex;
+          margin-bottom: 1rem;
+          background-color: $conil-color-gray;
+          max-height: auto;
+          border-top: 6px solid $conil-color-aqua;
+
+          .media-library-item__preview {
+            width: 50%;
+            height: auto;
+          }
+          .media-library-item__attributes {
+
+            width: 50%;
+            display: flex;
+            align-items: center;
+
+            @include md {
+              padding: .5rem;
+            }
+          }
+        }
+        .our-data {
+          background-color: $conil-color-lightgray;
+          font-size: .8rem;
+          display: grid;
+          grid-template-columns: 1fr;
+          padding: .8%;
+
+          @include md {
+            grid-template-columns: 1fr 1fr;
+          }
+
+          &>div {
+            background-color: white;
+            margin: 1.5%;
+            padding: 5% 5% 5% 15%;
+            height: 80px;
+            a {
+              color: $conil-color-pink;
+            }
+
+            @include md {
+              padding: 1% 5% 5% 20%;
+            }
+
+          }
+
+          h3 {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            font-weight: bold;
+          }
+
+
+          .field__label {
+            @include headline('SourceSans-Bold', 1rem);
+            display: block;
+            text-transform: none;
+          }
+
+          .field__item {
+            line-height: .8rem;
+            display: block;
+          }
+
+
+
+
+          .field--name-field-poi-telephone2 {
+            position: relative;
+
+            &::before {
+              margin: 0;
+              position: absolute;
+              left: .7rem;
+              top: 1.4rem;
+              content: '\e0b0';
+              font-family: "Google-Icon";
+              font-size: 1.5rem;
+              color: $white;
+              background: $conil-color-yellow;
+              padding-left: .35rem;
+              border-radius: 50%;
+              width: 2.2rem;
+              height: 2.2rem;
+            }
+          }
+
+          .field--name-field-poi-address {
+            position: relative;
+
+            &::before {
+              margin: 0;
+              position: absolute;
+              left: .7rem;
+              top: 1.4rem;
+              content: '\e177';
+              font-family: "Google-Icon";
+              font-size: 1.5rem;
+              color: $white;
+              background: $conil-color-pink;
+              padding-left: .35rem;
+              border-radius: 50%;
+              width: 2.2rem;
+              height: 2.2rem;
+            }
+          }
+
+        }
+
+        section {
+          h2 {
+            text-transform: none;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+          }
+
+          label {
+            font-weight: bold;
+          }
+                    .field__label {
+                      @include headline('SourceSans-Light', 2rem);
+                    }
+
+          .cke_chrome {
+            border: 1px solid $conil-color-blue;
+
+          }
+
+          .SelectBox {
+            border: 1px solid $conil-color-blue;
+
+          }
+
+          .filter-wrapper,
+          .cke_bottom,
+          .cke_top {
+            border: none;
+          }
+
+          #edit-actions {
+            display: flex;
+            justify-content: flex-end;
+          }
+
+          #edit-submit, #edit-submit--2, .buttom-primary, #edit-preview {
+            background-color: $conil-color-blue;
+            color: white;
+            border-radius: 20px;
+            padding: 5px 15px ;
+            border: none;
+            margin-right: 1rem;
+          }
+        }
+      }
+
+    }
+  }
+  #block-views-block-carrousel-block-1 {
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+
+    .owl-stage-outer {
+      margin-left: 3rem;
+      margin-right: 3rem;
+
+      .owl-stage {
+        margin: auto;
+      }
+
+      .field-content {
+        img {
+          border-top: 6px solid $conil-color-aqua ;
+        }
+      }
+    }
+
+    .owl-nav {
+      position: relative;
+
+
+      button {
+        font-size: 5rem;
+
+        &:hover {
+          background-color: white;
+          color: $conil-color-blue;
+        }
+
+        &.owl-prev {
+          position: absolute;
+          top: -140px;
+          left: 5px;
+
+        }
+
+        &.owl-next span {
+          position: absolute;
+          top: -140px;
+          right: 5px;
+
+        }
+      }
+    }
+  }
+}

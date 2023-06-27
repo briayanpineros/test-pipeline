@@ -1,0 +1,18 @@
+uuid: 969b7e61-2d44-4b55-9d0d-89ef27abaa95
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.tourist_office_group
+id: group.tourist_office_group.label
+field_name: label
+entity_type: group
+bundle: tourist_office_group
+label: 'Tourist Office'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

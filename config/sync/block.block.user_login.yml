@@ -1,0 +1,30 @@
+uuid: 83f91c2b-17a6-414a-b8dc-2640abcc17e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.user_login
+  module:
+    - simple_block
+    - user
+  theme:
+    - conil_theme
+id: user_login
+theme: conil_theme
+region: header
+weight: -24
+provider: null
+plugin: 'simple_block:user_login'
+settings:
+  id: 'simple_block:user_login'
+  label: user_login
+  label_display: '0'
+  provider: simple_block
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

@@ -1,0 +1,21 @@
+uuid: b8fdde84-e3e5-4103-8b89-088dd7fc4412
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_turism_icon
+    - taxonomy.vocabulary.tipo_viaje
+  module:
+    - material_icons
+id: taxonomy_term.tipo_viaje.field_turism_icon
+field_name: field_turism_icon
+entity_type: taxonomy_term
+bundle: tipo_viaje
+label: 'ID Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: material_icons

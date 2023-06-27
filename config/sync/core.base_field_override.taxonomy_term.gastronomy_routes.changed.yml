@@ -1,0 +1,18 @@
+uuid: 082ef497-bb46-401b-b1c0-31d024176618
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gastronomy_routes
+id: taxonomy_term.gastronomy_routes.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: gastronomy_routes
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

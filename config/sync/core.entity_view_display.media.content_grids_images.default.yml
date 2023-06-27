@@ -1,0 +1,32 @@
+uuid: e8c0a904-23c5-43cf-b62c-5802d76b867b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.content_grids_images.field_media_image
+    - media.type.content_grids_images
+  module:
+    - image
+id: media.content_grids_images.default
+targetEntityType: media
+bundle: content_grids_images
+mode: default
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: file
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

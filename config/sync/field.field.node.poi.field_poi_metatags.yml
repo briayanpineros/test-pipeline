@@ -1,0 +1,21 @@
+uuid: 110be912-9d61-4e32-bfb7-537ca11ef0ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_metatags
+    - node.type.poi
+  module:
+    - metatag
+id: node.poi.field_poi_metatags
+field_name: field_poi_metatags
+entity_type: node
+bundle: poi
+label: 'Meta Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

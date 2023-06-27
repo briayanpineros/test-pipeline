@@ -1,0 +1,11 @@
+uuid: ccb28161-dbfe-49ad-9f32-f7132a2a3556
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: conil_logo_grande
+title: conil-logo-grande
+content:
+  value: '<div class="conil-logo-grande"><img src="/themes/custom/conil_theme/imagenes/CONIL_LOGO_IMAGENES.png" alt="La palabra CONIL construida con distintas fotos"></div><div class="acceso_mapa_sitio"><a href="/sitemap">Mapa del sitio</a> <img src="/sites/default/files/inline-images/flecha_azul.png" data-entity-uuid="69f8d81d-9fdb-4997-af67-c45770d2d264" data-entity-type="file"></div>'
+  format: full_html

@@ -1,0 +1,15 @@
+conil_inventrip.import_pois:
+  path: '/admin/config/services/pois/import'
+  defaults:
+    _form: '\Drupal\conil_inventrip\Form\ImportPOIForm'
+    _title: "Sync POI from Inventrip"
+  requirements:
+    _permission: 'administer site configuration'
+
+conil_inventrip.settings:
+  path: '/admin/config/services/pois/settings'
+  defaults:
+    _form: '\Drupal\conil_inventrip\Form\ImportPOISettings'
+    _title: "Inventrip POI sync Settings"
+  requirements:
+    _permission: 'administer site configuration'

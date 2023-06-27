@@ -1,0 +1,28 @@
+conil_webpush.settings:
+  type: config_object
+  label: 'Webpush Firebase configuration settings'
+  mapping:
+    apiKey:
+      type: string
+      label: 'apiKey'
+    authDomain:
+      type: string
+      label: 'authDomain'
+    projectId:
+      type: string
+      label: 'projectId'
+    storageBucket:
+      type: string
+      label: 'storageBucket'
+    messagingSenderId:
+      type: string
+      label: 'messagingSenderId'
+    appId:
+      type: string
+      label: 'appId'
+    measurementId:
+      type: string
+      label: 'measurementId'
+
+
+

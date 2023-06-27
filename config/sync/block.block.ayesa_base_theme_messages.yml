@@ -1,0 +1,22 @@
+uuid: 7269a89a-8346-45e3-bc65-f408524759a9
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ayesa_base_theme
+_core:
+  default_config_hash: f6GKFBHN_EgdJh2_EKPEajuFsf3LuiAIRYB-cohXVvo
+id: ayesa_base_theme_messages
+theme: ayesa_base_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'System messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

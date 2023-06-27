@@ -1,0 +1,18 @@
+uuid: bae58dbd-f302-4977-992a-754efa89af7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_contenido
+id: taxonomy_term.tipo_de_contenido.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tipo_de_contenido
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

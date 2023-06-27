@@ -1,0 +1,15 @@
+diff --git a/composer.json b/composer.json
+index 1062d7d..5705c62 100644
+--- a/composer.json
++++ b/composer.json
+@@ -10,8 +10,8 @@
+     "issues": "https://www.drupal.org/project/issues/advanced_pwa",
+     "source": "http://cgit.drupalcode.org/advanced_pwa"
+   },
+-  "require": { 
++  "require": {
+     "php": ">=5.6.0",
+-    "minishlink/web-push": "^4.0"
++    "minishlink/web-push": "^7.0"
+   }
+ }

@@ -1,0 +1,24 @@
+uuid: e2a1a816-1693-4b53-93b5-5aa5663dd7e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.totem.field_interactive
+  module:
+    - conil_totem
+id: totem.totem.field_interactive
+field_name: field_interactive
+entity_type: totem
+bundle: totem
+label: Interactive
+description: 'Totem interactive'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

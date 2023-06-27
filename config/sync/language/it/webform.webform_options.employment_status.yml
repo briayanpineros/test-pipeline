@@ -1,0 +1,3 @@
+label: 'Stato di occupazione'
+category: Demografico
+options: "'Full Time': 'Full Time'\r\n'Part Time': 'Part Time'\r\nMilitary: Military\r\nUnemployed: Unemployed\r\nRetired: Retired"

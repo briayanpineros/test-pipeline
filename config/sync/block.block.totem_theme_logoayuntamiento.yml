@@ -1,0 +1,22 @@
+uuid: 8ac7a4d7-3d05-46ca-b107-ea73e76e4ad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.logo_ayuntamiento
+  module:
+    - simple_block
+  theme:
+    - totem_theme
+id: totem_theme_logoayuntamiento
+theme: totem_theme
+region: header
+weight: -20
+provider: null
+plugin: 'simple_block:logo_ayuntamiento'
+settings:
+  id: 'simple_block:logo_ayuntamiento'
+  label: 'Logo ayuntamiento'
+  label_display: '0'
+  provider: simple_block
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 1af4b3c4-bacd-46be-abe3-394af1f128a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.poi_frontpage
+  module:
+    - views
+  theme:
+    - conil_theme
+id: views_block__poi_frontpage_poi_como_llegar_block
+theme: conil_theme
+region: blockgroup_poi_frontpage
+weight: -24
+provider: null
+plugin: 'views_block:poi_frontpage-poi_como_llegar_block'
+settings:
+  id: 'views_block:poi_frontpage-poi_como_llegar_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

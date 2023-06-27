@@ -1,0 +1,122 @@
+title: 'Formulario de análisis de datos demográficos'
+elements: |
+  cabecera:
+    '#description': "<h4>Le agradecemos su participaci&oacute;n</h4>\r\n\r\n<p>Desde Conil de la Frontera le agredecemos su participaci&oacute;n en nuestra &quot;Encuesta de satisfacci&oacute;n&quot;, que nos permitir&aacute; una mejora continua para que su vuelta a nuestra ciudad sea a&uacute;n m&aacute;s satisfactoria. Le esperamos muy pronto.</p>\r\n\r\n<h4>&iexcl;Muchas gracias!</h4>"
+  nationality_set:
+    '#title': 'Seleccionar nacionalidad'
+  nacionality:
+    '#title': Nacionalidad
+    '#description': 'Indique su nacionalidad'
+    '#help_title': 'Indique su nacionalidad'
+    '#options':
+      Resident: Residente
+      Spain: Español
+      'Other country': 'Otro país'
+    '#required_error': 'Nacionalidad necesaria'
+  country:
+    '#title': País
+    '#required_error': 'País necesario'
+  province:
+    '#title': Provincia
+    '#required_error': 'Provincia necesaria'
+  gender:
+    '#title': Género
+    '#description': 'Por favor, indique su g&eacute;nero'
+    '#help_title': 'Por favor, indique su género'
+    '#options':
+      Male: Hombre
+      Female: Mujer
+    '#required_error': 'Género necesario'
+  age:
+    '#title': 'Rango de edad'
+    '#description': 'Por favor, indique su rango de edad'
+    '#help_title': 'Por favor, indique su rango de edad'
+    '#options':
+      'Less than 18': 'Menos de 18'
+      'Beetween 18 and 29': 'Entre 18 y 29'
+      'Beetween 30 and 44': 'Entre 30 y 44'
+      'Beetween 45 and 65': 'Entre 45 y 65'
+      'More than 65': 'Más de 65'
+    '#required_error': 'Rango de edad necesario'
+  area_set:
+    '#title': 'Zona de residencia'
+  destination_area:
+    '#title': 'Zona de estancia'
+    '#description': 'Indique la zona de su estancia'
+    '#help_title': 'Indique la zona de su estancia'
+    '#options':
+      'Beach area': 'Zona de playa'
+      'Old town area': 'Zona de casco histórico'
+      'Outdoor area': 'Zona exterior'
+      'Other area': 'Otra zona'
+    '#required_error': 'Zona necesaria'
+  other_area:
+    '#title': 'Otra zona'
+    '#required_error': 'Necesario especificar la zona'
+  repeat_visitor:
+    '#title': 'Visitante habitual '
+    '#description': '&nbsp;Por favor, indique si es un visitante habitual&nbsp;'
+    '#help_title': ' Por favor, indique si es un visitante habitual '
+    '#options':
+      'Yes': Si
+    '#required_error': 'Respuesta necesaria'
+  days_at_destination:
+    '#title': 'Días en destino'
+    '#description': 'Indique el n&uacute;mero de d&iacute;as en destino'
+    '#help_title': 'Indique el número de días en destino'
+  days_of_tourism:
+    '#title': 'Días concretos'
+    '#description': 'Indique los d&iacute;as concretos de su estancia'
+    '#help_title': 'Indique los días concretos de su estancia'
+    '#options':
+      Weekdays: 'Entre semana'
+      Weekends: 'Fines de semana'
+      Holidays: Vacaciones
+      'Whole weeks': 'Semanas completas'
+      Others: Otros
+    '#required_error': 'Necesario especificar días de estancia '
+  other_days:
+    '#title': 'Otros días'
+    '#required_error': 'Necesario especificar días de estancia'
+  overnights:
+    '#title': Pernoctaciones
+    '#description': 'Indique el n&uacute;mero de pernoctaciones'
+    '#help_title': 'Indique el número de pernoctaciones'
+    '#required_error': 'Número de pernoctaciones necesarias'
+  transport_set:
+    '#title': 'Elegir medio de transporte'
+  transport_used_to_arrive:
+    '#title': 'Medio de transporte'
+    '#description': 'Indique el medio de transporte utilizado para llegar a su destino'
+    '#help_title': 'Indique el medio de transporte utilizado para llegar a su destino'
+    '#options':
+      'Own car': 'Coche propio'
+      'Rental car': 'Coche de alquiler'
+      Plane: Avión
+      Train: Tren
+      Bus: Autobús
+      Other: Otro
+    '#required_error': 'Método de transporte necesario'
+  other_transport:
+    '#title': 'Otro método de transporte'
+    '#required_error': 'Necesario especificar método de tansporte'
+  season_set:
+    '#title': 'Establecer temporada'
+  season:
+    '#title': Temporada
+    '#description': 'Indique la temporada de su estancia&nbsp;'
+    '#help_title': 'Indique la temporada de su estancia '
+    '#options':
+      Summer: Verano
+      Christmas: Navidad
+      Easter: 'Semana santa'
+      Other: Otro
+    '#required_error': 'Necesario indicar la temporada de su estancia'
+  other_season:
+    '#title': 'Otra temporada'
+    '#required_error': 'Necesario especificar la temporada de sus estancia'
+  thanks_image:
+    '#text': '<img src="/sites/default/files/inline-images/gracias_0.png" data-entity-uuid="32ef4074-9b2d-4ab1-8489-3059dbd05249" data-entity-type="file">'
+  actions:
+    '#title': 'Botón de envío'
+    '#submit__label': Enviar

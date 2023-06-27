@@ -1,0 +1,14 @@
+uuid: 47a56eb9-5966-4487-821e-046db751de74
+langcode: es
+status: true
+dependencies: {  }
+id: node__news
+label: 'Contenido: Noticias'
+tags:
+  abstract: '[node:summary]'
+  content_language: '[node:language]'
+  description: '[node:body]'
+  geo_position: '[node:field_poi_geofield]'
+  image_src: '[node:field_imagen_portada]'
+  robots: nofollow
+  title: '[node:title]'

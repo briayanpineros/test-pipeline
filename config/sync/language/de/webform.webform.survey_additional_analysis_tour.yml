@@ -1,0 +1,70 @@
+title: 'Zusätzliche Analyse der Herkunft und Wahrnehmung von Touristen'
+elements: |
+  nationality_set:
+    '#title': 'Nationalität auswählen'
+  nacionality:
+    '#title': Staatsangehörigkeit
+    '#description': 'Geben Sie Ihre Nationalit&auml;t an'
+    '#help_title': 'Geben Sie Ihre Nationalität an'
+    '#options':
+      Resident: Wohnsitz
+      Spain: Spanien
+      'Other country': 'Anderes Land'
+    '#required_error': 'Erforderliche Staatsangehörigkeit'
+  province:
+    '#title': Provinz
+    '#required_error': 'Benötigte Provinz'
+  country:
+    '#title': Land
+    '#required_error': 'Erforderliches Land'
+  gender:
+    '#title': Geschlecht
+    '#description': 'Bitte geben Sie Ihr Geschlecht an'
+    '#help_title': 'Bitte geben Sie Ihr Geschlecht an'
+    '#options':
+      Male: Männlich
+      Female: Weiblich
+    '#required_error': 'Gewünschtes Geschlecht'
+  age:
+    '#title': Altersgruppe
+    '#description': 'Bitte geben Sie Ihre Altersgruppe an'
+    '#help_title': 'Bitte geben Sie Ihre Altersgruppe an'
+    '#options':
+      'Less than 18': 'Weniger als 18 '
+      'Beetween 18 and 29': "Zwischen 18 und 29 \t"
+      'Beetween 30 and 44': 'Zwischen 30 und 44 '
+      'Beetween 45 and 65': 'Zwischen 45 und 65 '
+      'More than 65': 'Mehr als 65 Jahre '
+    '#required_error': 'Gewünschtes Alter'
+  what_do_you_want_to_experience_on_your_next_travel_experience:
+    '#title': 'Sie möchten etwas erleben...'
+    '#description': 'Was m&ouml;chten Sie auf Ihrer n&auml;chsten Reise erleben?'
+    '#help_title': 'Was möchten Sie auf Ihrer nächsten Reise erleben?'
+    '#options':
+      'I want to relax': 'Ich möchte entspannen'
+      'I want to discover': 'Ich möchte entdecken'
+      'I want to have fun': 'Ich möchte Spaß haben'
+      'I want to learn': 'Ich möchte lernen'
+      'I want to socialise': 'Ich möchte Kontakte knüpfen'
+      'I want to taste': 'Ich möchte probieren'
+    '#required_error': Erforderlich
+  how_many_cars_do_you_have_at_home:
+    '#title': Autos
+    '#description': 'Wie viele Autos haben Sie zu Hause?'
+    '#help_title': 'Wie viele Autos haben Sie zu Hause?'
+    '#options':
+      None: Keines
+      '3 or more': '3 oder mehr'
+    '#required_error': Erforderlich
+  how_many_people_are_in_your_household_parents_and_children_still:
+    '#title': 'Personen in Ihrem Haushalt'
+    '#description': 'Wie viele Personen leben in Ihrem Haushalt (Eltern und Kinder, die noch zu Hause leben)?'
+    '#help_title': 'Wie viele Personen leben in Ihrem Haushalt (Eltern und Kinder, die noch zu Hause leben)?'
+    '#options':
+      '6 or more': '6 oder mehr'
+    '#required_error': Erforderlich
+  actions:
+    '#title': 'Schaltfläche Senden'
+    '#submit__label': 'Senden Sie'
+settings:
+  submission_label: 'Senden Sie'

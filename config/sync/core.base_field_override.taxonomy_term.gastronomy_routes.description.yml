@@ -1,0 +1,20 @@
+uuid: dbfd8795-4785-4a7d-acf7-20b6ba9a5b08
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gastronomy_routes
+  module:
+    - text
+id: taxonomy_term.gastronomy_routes.description
+field_name: description
+entity_type: taxonomy_term
+bundle: gastronomy_routes
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

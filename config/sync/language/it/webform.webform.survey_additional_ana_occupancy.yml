@@ -1,0 +1,81 @@
+title: 'Analisi supplementare dei tassi di occupazione e degli alloggi turistici'
+elements: |
+  nationality_set:
+    '#title': 'Set di nazionalità'
+  nacionality:
+    '#title': Nazionalità
+    '#description': 'Indicare la propria nazionalit&agrave;'
+    '#help_title': 'Indicare la propria nazionalità'
+    '#options':
+      Spain: Spagna
+      'Other country': 'Altro paese'
+    '#required_error': 'Nazionalità necessaria'
+  province:
+    '#title': Provincia
+    '#required_error': 'Provincia necessaria'
+  country:
+    '#title': Paese
+    '#required_error': 'Paese necessario'
+  gender:
+    '#title': Genere
+    '#description': 'Indicare il proprio sesso'
+    '#help_title': 'Indicare il proprio sesso'
+    '#options':
+      Male: Maschio
+      Female: Femmina
+    '#required_error': 'Genere richiesto'
+  age:
+    '#title': 'Fascia d''età'
+    '#description': 'Indicare la fascia d&#39;et&agrave;'
+    '#help_title': 'Indicare la fascia d''età'
+    '#options':
+      'Less than 18': 'Meno di 18 anni'
+      'Beetween 18 and 29': 'Tra i 18 e i 29 anni'
+      'Beetween 30 and 44': 'Tra i 30 e i 44 anni'
+      'Beetween 45 and 65': 'Tra i 45 e i 65 anni'
+      'More than 65': 'Più di 65'
+    '#required_error': 'Età necessaria'
+  would_you_stay_in_the_same_accommodation_again:
+    '#title': 'Soggiornerebbe di nuovo nello stesso alloggio?'
+    '#description': 'Soggiornerebbe di nuovo nello stesso alloggio?'
+    '#help_title': 'Soggiornerebbe di nuovo nello stesso alloggio?'
+    '#options':
+      'Yes': Sì
+    '#required_error': Richiesto
+  would_you_recommend_the_accommodation:
+    '#title': 'Consiglierebbe la struttura?'
+    '#description': 'Consiglierebbe la struttura?'
+    '#help_title': 'Consiglierebbe la struttura?'
+    '#options':
+      'Yes': Sì
+    '#required_error': Richiesto
+  please_indicate_the_satisfaction_rate_of_the_accommodation_staff:
+    '#title': 'Grado di soddisfazione del personale della struttura ricettiva'
+    '#header':
+      -
+        title: 'Grado di soddisfazione del personale della struttura ricettiva'
+  indicate_the_satisfaction_rate_of_the_accommodation_staff_01:
+    '#title': 'Personale addetto alle pulizie'
+  cleaning_staff_rate:
+    '#title': 'Personale addetto alle pulizie'
+    '#required_error': Richiesto
+  indicate_the_satisfaction_rate_of_the_accommodation_staff_02:
+    '#title': 'Personale di servizio'
+  service_staff_rate:
+    '#title': 'Personale di servizio'
+    '#required_error': Richiesto
+  indicate_the_satisfaction_rate_of_the_accommodation_staff_03:
+    '#title': 'Personale di sicurezza'
+  security_staff_rate:
+    '#title': 'Personale di sicurezza'
+    '#required_error': Richiesto
+  indicate_the_satisfaction_rate_of_the_accommodation_staff_04:
+    '#title': 'Personale di responsabilità'
+  responsibility_staff_rate:
+    '#title': 'Personale di responsabilità'
+    '#required_error': Richiesto
+  actions:
+    '#title': 'Pulsante di invio'
+    '#submit__label': Inviare
+settings:
+  submission_label: Invia

@@ -1,0 +1,854 @@
+uuid: 537f6231-35ec-4277-adae-1280de6c71e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_poi_media
+    - flag.flag.bookmark
+    - image.style.poi_thumbnail
+    - node.type.poi
+    - taxonomy.vocabulary.categoria_interes
+    - taxonomy.vocabulary.tipo_viaje
+  content:
+    - 'taxonomy_term:tipo_viaje:09d6be71-14d3-446b-ab20-7a6133a05f7a'
+    - 'taxonomy_term:tipo_viaje:0ad1d5c2-ae05-4709-a359-f0e59ebaeb06'
+    - 'taxonomy_term:tipo_viaje:0e1c8119-d1cd-4886-a863-cd9dbad63577'
+    - 'taxonomy_term:tipo_viaje:195b6a5f-fdf6-4359-b085-05456b03c504'
+    - 'taxonomy_term:tipo_viaje:1da01cb6-eb4d-4ebe-bf67-5e084deab97e'
+    - 'taxonomy_term:tipo_viaje:25142e94-a91f-416b-811d-580165bd98b5'
+    - 'taxonomy_term:tipo_viaje:4143884a-31c0-43bf-aa37-a4873bf1a50d'
+    - 'taxonomy_term:tipo_viaje:502573fe-e29f-445c-94e6-86af6cae9376'
+    - 'taxonomy_term:tipo_viaje:52a87710-c6cb-493b-87ec-26d7579f4f50'
+    - 'taxonomy_term:tipo_viaje:538c65e6-3b2d-4a27-a41a-6c695094d4d9'
+    - 'taxonomy_term:tipo_viaje:637deaf6-740b-46ba-b53c-ceb9c96cbef6'
+    - 'taxonomy_term:tipo_viaje:65b7851f-2ad9-40aa-b800-957b44b91c5b'
+    - 'taxonomy_term:tipo_viaje:6a77831c-9782-4e04-a14b-a228689716d0'
+    - 'taxonomy_term:tipo_viaje:6c0af371-eec8-4fe1-becd-5beb4192ad97'
+    - 'taxonomy_term:tipo_viaje:76c8a7e0-df73-417f-a1d8-b39109fab62d'
+    - 'taxonomy_term:tipo_viaje:7954ee4b-2894-44c9-a4fa-feabbfa3de5c'
+    - 'taxonomy_term:tipo_viaje:85e5a909-c727-4f50-8209-a599c7d34019'
+    - 'taxonomy_term:tipo_viaje:91dcd032-17dd-4927-a36c-0d3c5af3bede'
+    - 'taxonomy_term:tipo_viaje:9b5060f3-d33a-4cc4-8e51-f5a5866dd5a8'
+    - 'taxonomy_term:tipo_viaje:a106a0aa-0777-4c66-9f8b-22044ef2a0e7'
+    - 'taxonomy_term:tipo_viaje:ab2674a9-6ae2-450c-861d-cc57e6a2889d'
+    - 'taxonomy_term:tipo_viaje:d600e84c-245d-479b-a32e-ded9aaa4e83f'
+    - 'taxonomy_term:tipo_viaje:e4518c6f-172f-4683-9dbd-5fac65351ea7'
+    - 'taxonomy_term:tipo_viaje:e9f0a3eb-01cd-4725-8b6c-d709ff5cae02'
+    - 'taxonomy_term:tipo_viaje:ed2fc777-5b24-43b0-b7d0-2566cfbd1e43'
+    - 'taxonomy_term:tipo_viaje:fecaafbe-1d23-4e16-bd82-f14c309cb98f'
+  module:
+    - better_exposed_filters
+    - conil_tweaks
+    - flag
+    - media
+    - node
+    - taxonomy
+    - text
+    - user
+id: viaje_a_medida
+label: 'Viaje a tu medida'
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      title: 'Un viaje a tu medida'
+      fields:
+        view_node_1:
+          id: view_node_1
+          table: node
+          field: view_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_link
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: view
+          output_url_as_text: true
+          absolute: true
+        field_poi_media:
+          id: field_poi_media
+          table: node__field_poi_media
+          field: field_poi_media
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<a href="{{ view_node_1 }}">{{ field_poi_media }}</a>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: media_thumbnail
+          settings:
+            image_link: ''
+            image_style: poi_thumbnail
+            image_loading:
+              attribute: lazy
+          group_column: entity_id
+          group_columns: {  }
+          group_rows: false
+          delta_limit: 1
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: ul
+          separator: ''
+          field_api_classes: false
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        link_flag:
+          id: link_flag
+          table: flagging
+          field: link_flag
+          relationship: flag_relationship
+          group_type: group
+          admin_label: ''
+          entity_type: flagging
+          plugin_id: flag_link
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<div class="title-flag" ><div class="title">{{ title }}</div> {{ link_flag }}</div>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: true
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 150
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: true
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: format
+          type: text_default
+          settings: {  }
+          group_column: entity_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        average_stars_counter:
+          id: average_stars_counter
+          table: views
+          field: average_stars_counter
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: average_stars_counter
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 8
+          total_pages: null
+          id: 0
+          tags:
+            next: ''
+            previous: ''
+            first: «
+            last: »
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: true
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: true
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            filter:
+              field_tipo_viaje_target_id:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              field_poi_subcategoy_target_id:
+                plugin_id: bef
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: true
+                  is_secondary: false
+                select_all_none: false
+                select_all_none_nested: false
+                display_inline: true
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: none
+        options: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: 'No results'
+          tokenize: false
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
+        field_tipo_viaje_target_id:
+          id: field_tipo_viaje_target_id
+          table: node__field_tipo_viaje
+          field: field_tipo_viaje_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            poi: poi
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_tipo_viaje_target_id:
+          id: field_tipo_viaje_target_id
+          table: node__field_tipo_viaje
+          field: field_tipo_viaje_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            347: 347
+            276: 276
+            274: 274
+            286: 286
+            293: 293
+            277: 277
+            289: 289
+            285: 285
+            292: 292
+            296: 296
+            287: 287
+            284: 284
+            280: 280
+            278: 278
+            291: 291
+            290: 290
+            294: 294
+            295: 295
+            282: 282
+            345: 345
+            346: 346
+            344: 344
+            279: 279
+            281: 281
+            343: 343
+            288: 288
+            283: 283
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_tipo_viaje_target_id_op
+            label: ''
+            description: ''
+            use_operator: false
+            operator: field_tipo_viaje_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_tipo_viaje_target_id
+            required: true
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              moderator_conil: '0'
+              manager_conil: '0'
+              group_manager_conil: '0'
+              tourist_office: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: tipo_viaje
+          type: select
+          hierarchy: true
+          limit: true
+          error_message: true
+        field_poi_subcategoy_target_id:
+          id: field_poi_subcategoy_target_id
+          table: node__field_poi_subcategoy
+          field: field_poi_subcategoy_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_poi_subcategoy_target_id_op
+            label: Filter
+            description: ''
+            use_operator: false
+            operator: field_poi_subcategoy_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_poi_subcategoy_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              administrator_conil: '0'
+              moderator_conil: '0'
+              manager_conil: '0'
+              group_manager_conil: '0'
+              sightseen_office_conil: '0'
+              tourist_agent_conil: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: categoria_interes
+          type: select
+          hierarchy: true
+          limit: true
+          error_message: true
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      style:
+        type: default
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships:
+        field_poi_media:
+          id: field_poi_media
+          table: node__field_poi_media
+          field: field_poi_media
+          relationship: none
+          group_type: group
+          admin_label: 'field_poi_media: Media'
+          plugin_id: standard
+          required: false
+        flag_relationship:
+          id: flag_relationship
+          table: node_field_data
+          field: flag_relationship
+          relationship: none
+          group_type: group
+          admin_label: Flags
+          entity_type: node
+          plugin_id: flag_relationship
+          required: false
+          flag: bookmark
+          user_scope: current
+      use_ajax: true
+      group_by: true
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: 'Contador de resultados'
+          plugin_id: text_custom
+          empty: false
+          content: "<div class=\"header\"><h3 class=\"subcategory\"><noscript>Turismo sin Límites</noscript></h3><p class=\"counter\"><b>[view:total-rows]</b> resultados encontrados</p> </div>\r\n\r\n"
+          tokenize: true
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_poi_media'
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
+    position: 1
+    display_options:
+      rendering_language: '***LANGUAGE_language_interface***'
+      exposed_block: true
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_poi_media'

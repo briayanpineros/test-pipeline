@@ -1,0 +1,10 @@
+uuid: b230f154-a311-435f-abb5-fe93b79f25fb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.default_totems
+label: 'Default Totems'
+targetEntityType: node
+cache: true

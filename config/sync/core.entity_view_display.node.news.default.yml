@@ -1,0 +1,143 @@
+uuid: b6a406dd-ec3d-4e3e-bb5f-2db81e8947af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news.body
+    - field.field.node.news.field_categoria_noticias
+    - field.field.node.news.field_news_cover
+    - field.field.node.news.field_news_metatags
+    - field.field.node.news.field_news_shadow
+    - field.field.node.news.field_news_social_media_share
+    - field.field.node.news.field_news_subtitle
+    - image.style.large
+    - node.type.news
+  module:
+    - conil_tweaks
+    - field_group
+    - media
+    - metatag
+    - social_media
+    - user
+third_party_settings:
+  field_group:
+    group_subtitle:
+      children:
+        - field_news_subtitle
+        - field_news_social_media_share
+      label: Subtítulo
+      parent_name: group_container
+      region: content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: subtitle
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_cover:
+      children:
+        - field_news_cover
+      label: Portada
+      parent_name: group_container
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: cover
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_container:
+      children:
+        - group_subtitle
+        - group_cover
+      label: Contenedor
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: container-subtitle-img
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  body:
+    type: conil_text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_news_cover:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_news_metatags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_news_social_media_share:
+    type: social_media_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_news_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_categoria_noticias: true
+  field_news_shadow: true
+  flag_news_channel_flag: true
+  langcode: true
+  search_api_excerpt: true

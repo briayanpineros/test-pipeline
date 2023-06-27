@@ -1,0 +1,152 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the conil_theme theme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_preprocess_hook().
+ */
+function conil_theme_preprocess_page(&$variables) {
+  $path_matcher = \Drupal::service('path.matcher');
+  if ($path_matcher->isFrontPage()) {
+    $variables['#attached']['library'][] = 'conil_theme/slick_dots_text';
+  }
+
+  $path_current = \Drupal::service('path.current');
+  if ($path_current->getPath() == '/agenda' || str_contains(\Drupal::service('path.current')->getPath(), 'poi')){
+    $variables['#attached']['library'][] = 'conil_theme/slick_dots_text';
+  }
+
+
+  $currentUser = \Drupal::currentUser();
+
+  if ($path_current->getPath() == '/user/' . $currentUser->id()){
+      // Obtener el enlace al formulario de edición de usuario.
+      $edit_link = \Drupal\Core\Url::fromRoute('entity.user.edit_form', ['user' => $currentUser->id()])->toString();
+      // Redireccionar al formulario de edición de usuario.
+      $response = new \Symfony\Component\HttpFoundation\RedirectResponse($edit_link);
+      $response->send();
+  }
+}
+
+function conil_theme_preprocess_breadcrumb(&$variables) {
+  $entityManager = \Drupal::entityTypeManager();
+  $currenLang =  \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $parameters =  \Drupal::routeMatch()->getParameters();
+  if ($variables['breadcrumb'] && $parameters->count() > 0) {
+    if (\Drupal::routeMatch()->getRouteName() == "view.points_of_interest.page_1"){
+      $category = $entityManager->getStorage('taxonomy_term')->load($parameters->get('arg_0'));
+      $categoryName = \Drupal::service('entity.repository')->getTranslationFromContext($category, $currenLang)->label();
+      $variables['breadcrumb'][2]['text'] = $categoryName;
+
+      $subCategory = $entityManager->getStorage('taxonomy_term')->load($parameters->get('arg_1'));
+      $subCategoryName = \Drupal::service('entity.repository')->getTranslationFromContext($subCategory, $currenLang)->label();
+      $variables['breadcrumb'][3]['text'] = $subCategoryName;
+
+      unset($variables['breadcrumb'][1]);
+    }
+    elseif ($parameters->get('node') instanceof \Drupal\node\NodeInterface){
+      if ($parameters->get('node')->getType() == "poi") {
+        $node = $parameters->get('node');
+        $category = $entityManager->getStorage('taxonomy_term')
+          ->load($node->get('field_poi_category')->getValue()[0]['target_id']);
+        $categoryName = \Drupal::service('entity.repository')
+          ->getTranslationFromContext($category, $currenLang)
+          ->label();
+        $variables['breadcrumb'][1]['text'] = $categoryName;
+        $variables['breadcrumb'][1]['url'] = '';
+
+        $subCategory = $entityManager->getStorage('taxonomy_term')
+          ->load($node->get('field_poi_subcategoy')
+            ->getValue()[0]['target_id']);
+        $subCategoryName = \Drupal::service('entity.repository')
+          ->getTranslationFromContext($subCategory, $currenLang)
+          ->label();
+        $variables['breadcrumb'][2]['text'] = $subCategoryName;
+        $variables['breadcrumb'][2]['url'] = "/$currenLang/poi/" . $category->id() . "/" . $subCategory->id();
+
+        $variables['breadcrumb'][3]['text'] = $parameters->get('node')->label();
+        $variables['breadcrumb'][3]['url'] = '';
+
+        unset($variables['breadcrumb'][4]);
+      }
+      elseif ($variables['breadcrumb'][1]['text'] == 'Node'){
+        if ($parameters->get('node')->getType() == 'gastronomic_r'){
+          $variables['breadcrumb'][1]['text'] = t('Rutas Gastronómicas');
+          $variables['breadcrumb'][1]['url'] = '';
+        }
+        else{
+          unset($variables['breadcrumb'][1]);
+        }
+      }
+
+    }
+    elseif ($variables['breadcrumb'][1]['text'] == 'User') {
+      $variables['breadcrumb'][1]['text'] = t('User');
+      $variables['breadcrumb'][1]['url'] = '';
+    }
+    elseif ($variables['breadcrumb'][1]['text'] == 'Form') {
+      $variables['breadcrumb'][1]['text'] = t('Form');
+      $variables['breadcrumb'][1]['url'] = '';
+    }
+
+    /*$node = \Drupal::routeMatch()->getParameter('node');
+    if ($node instanceof \Drupal\node\NodeInterface) {
+      // You can get nid and anything else you need from the node object.
+      $nid = $node->id();
+    }
+
+
+    $current_path = \Drupal::service('path.current')->getPath();
+    // Get the real path even if it has an alias.
+    $real_path = \Drupal::service('path.alias_manager')->getAliasByPath($current_path);
+    $key = 'article';
+    if (strpos($real_path, $key)) {
+      // Remove the last element.
+      array_pop($variables['breadcrumb']);
+    }*/
+  }
+}
+
+/**
+ * Implements hook_entity_type_build().
+ */
+function conil_theme_entity_type_build(array &$entity_types) {
+  // Verificar si existe un tipo de entidad "user".
+  if (isset($entity_types['user'])) {
+    // Obtener la definición del tipo de entidad "user".
+    $user_entity_type = &$entity_types['user'];
+    // Redireccionar al formulario de edición de usuario.
+    $user_entity_type->setLinkTemplate('canonical', '/user/' . \Drupal::currentUser()->id() . '/edit');
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function conil_theme_form_views_exposed_form_alter(&$form, FormStateInterface $form_state) {
+  $view = $form_state->get('view');
+  if ($view->id() == 'viaje_a_medida' && $view->current_display == 'block_1') {
+    $form['options']['expose']['description']['#description'] = t('Filtros');
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function conil_theme_form_comment_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form_state;
+  $form;
+}
+
+
+/**
+ * Implements hook_preprocess_hook().
+ */
+function conil_theme_preprocess_comment(&$variables) {
+  $comment = $variables['comment'];
+}

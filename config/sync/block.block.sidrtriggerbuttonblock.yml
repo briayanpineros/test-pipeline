@@ -1,0 +1,33 @@
+uuid: f5cf6ce4-9c92-44f0-9fcd-28367a3d3d4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - sidr
+  theme:
+    - conil_theme
+id: sidrtriggerbuttonblock
+theme: conil_theme
+region: header_top
+weight: -12
+provider: null
+plugin: sidr_trigger
+settings:
+  id: sidr_trigger
+  label: 'Sidr trigger button block'
+  label_display: '0'
+  provider: sidr
+  trigger_text: ''
+  trigger_icon: '<span class="icon-hamburger"></span>'
+  sidr_name: ''
+  sidr_source: .region-sidr-menu
+  sidr_side: left
+  sidr_renaming: false
+  sidr_speed: ''
+  sidr_timing: ''
+  sidr_method: toggle
+  sidr_displace: false
+  sidr_body: ''
+  sidr_nocopy: true
+  sidr_close_on_blur: null
+visibility: {  }

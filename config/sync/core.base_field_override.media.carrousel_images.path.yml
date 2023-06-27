@@ -1,0 +1,20 @@
+uuid: 586ab5c9-4c35-467d-ba89-6158c2eaad78
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.carrousel_images
+  module:
+    - path
+id: media.carrousel_images.path
+field_name: path
+entity_type: media
+bundle: carrousel_images
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

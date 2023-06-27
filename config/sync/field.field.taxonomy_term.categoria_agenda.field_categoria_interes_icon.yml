@@ -1,0 +1,21 @@
+uuid: cf7374c0-9e93-47b8-a431-7f0bc5fa56e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_categoria_interes_icon
+    - taxonomy.vocabulary.categoria_agenda
+  module:
+    - material_icons
+id: taxonomy_term.categoria_agenda.field_categoria_interes_icon
+field_name: field_categoria_interes_icon
+entity_type: taxonomy_term
+bundle: categoria_agenda
+label: 'Icon ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: material_icons

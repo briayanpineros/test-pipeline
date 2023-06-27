@@ -1,0 +1,102 @@
+.path-news {
+
+  #block-mainpagecontent {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+    @include xl{
+      padding: 0;
+    }
+    .view-content {
+      position: relative;
+
+      .views-row {
+        @include md {
+          display: flex;
+          min-height: 180px;
+        }
+
+        .views-field-field-news-cover {
+
+          &::after {
+            content: '\e930';
+            font-family: "Google-Icon";
+            font-size: 5rem;
+            line-height: 5rem;
+            color: $conil-color-blue;
+            text-align: right;
+            position: relative;
+            display: block;
+            width: 100%;
+            right: -.5rem;
+
+          }
+          img {
+            @include md {
+              width: 220px;
+              height: auto;
+            }
+          }
+        }
+
+        .views-field-nothing {
+          margin-top: 1.5rem;
+
+          @include md {
+            width: 70%;
+            flex-wrap: wrap;
+            margin-left: 2rem;
+            margin-top: 0;
+          }
+
+          border-bottom: 1px solid $conil-color-lightgray;
+          position: relative;
+
+          .title {
+            font-family: SourceSans-Bold;
+            font-size: 1.8rem;
+            line-height: 1;
+            margin-bottom: 1rem;
+
+            a:hover {
+              color: #01587D;
+              text-decoration: underline;
+            }
+          }
+
+          .body {
+            font-size: 1.2rem;
+          }
+
+          .date {
+            font-size: .8rem;
+            margin-top: .5rem;
+            padding-bottom: 1rem;
+            @include md {
+              position: absolute;
+              bottom: .5rem;
+            }
+          }
+        }
+      }
+    }
+
+
+    nav.pager {
+      background-color: $conil-color-lightgray;
+
+      ul {
+        transform: translateY(50%);
+
+        li {
+          text-transform: uppercase;
+
+          &.is-active a {
+/*             color: $conil-color-yellow;
+            border-bottom: 3px solid $conil-color-yellow; */
+          }
+        }
+      }
+    }
+  }
+}

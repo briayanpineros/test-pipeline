@@ -1,0 +1,35 @@
+uuid: 4f1a8707-46cc-41f9-b663-3c4eb132849b
+langcode: en
+status: false
+dependencies:
+  config:
+    - simple_block.simple_block.agenda_de_eventos
+  module:
+    - domain
+    - simple_block
+    - system
+  theme:
+    - totem_theme
+id: agendadeeventos
+theme: totem_theme
+region: content
+weight: -7
+provider: null
+plugin: 'simple_block:agenda_de_eventos'
+settings:
+  id: 'simple_block:agenda_de_eventos'
+  label: 'Agenda de eventos'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      https_totem001_conil_ddev_site_: https_totem001_conil_ddev_site_
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/eventos\r\n/agenda/*"

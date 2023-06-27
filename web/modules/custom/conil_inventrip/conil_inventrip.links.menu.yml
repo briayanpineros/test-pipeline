@@ -1,0 +1,6 @@
+conil_inventrip.import_pois:
+  title: "Sync POI from Inventrip"
+  description: "Import POI's from inventrip"
+  route_name: conil_inventrip.import_pois
+  parent: system.admin_config_services
+  weight: 99

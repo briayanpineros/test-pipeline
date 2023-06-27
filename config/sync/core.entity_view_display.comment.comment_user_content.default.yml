@@ -1,0 +1,44 @@
+uuid: 90898019-82a3-4570-9c54-e08fc44ab0de
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_user_content
+    - field.field.comment.comment_user_content.field_comment_body
+    - field.field.comment.comment_user_content.field_fivestar
+    - field.field.comment.comment_user_content.field_promote_hl_opinion
+  module:
+    - fivestar
+id: comment.comment_user_content.default
+targetEntityType: comment
+bundle: comment_user_content
+mode: default
+content:
+  field_comment_body:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_fivestar:
+    type: fivestar_stars
+    label: above
+    settings:
+      text_format: average
+      display_format: average
+      fivestar_widget: outline
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  conil_tweaks_author_name: true
+  conil_tweaks_h1_title: true
+  conil_tweaks_h2_title: true
+  conil_tweaks_h3_title: true
+  conil_tweaks_simple_title: true
+  field_promote_hl_opinion: true
+  langcode: true
+  links: true
+  rate_comment_start_rating: true
+  search_api_excerpt: true

@@ -1,0 +1,404 @@
+.path-agenda {
+  .view-filters{
+    background-color: $conil-color-aqua;
+  }
+  #views-exposed-form-agenda-de-eventos-principal-page-1 {
+    .exposed-form-wrapper{
+      text-align: right;
+      details {
+        padding: 1rem;
+        width: 100%;
+      }
+    }
+        max-width: 1200px;
+        margin: auto;
+        .details-wrapper{
+          text-align: left;
+          .form-checkboxes{
+            ul{
+              margin-bottom: 0;
+              margin-top: 0.5rem;
+              display: grid;
+              grid-template-columns: auto;
+              @include sm{
+                grid-template-columns: auto auto auto;
+              }
+              @include md{
+                grid-template-columns: auto auto auto auto auto;
+              }
+              li{
+                margin-bottom: 1rem;
+              }
+            }
+          }
+        }
+
+
+    select {
+      display: none;
+    }
+
+    .SumoSelect {
+      background-color: $conil-color-aqua;
+      padding-top: 10px;
+      margin-bottom: 0;
+      padding-left: 1rem;
+
+      select.SumoUnder {
+        position: relative;
+
+        p.SelectBox {
+          display: none;
+        }
+
+        option {
+          display: inline-block;
+
+        }
+      }
+
+      p.SelectBox {
+        display: none;
+      }
+    }
+
+    .form-item {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+
+    .form-actions {
+      margin: 0;
+    }
+
+    details[open] summary span::after{
+      content: '\e5cd';
+    }
+
+    details {
+      background-color: $conil-color-aqua;
+      margin: auto auto 0;
+      border: none;
+      padding-bottom: 1rem;
+      position: relative;
+
+      summary {
+        background-color: white;
+        width: 115px;
+        font-size: 1.5rem;
+        color: $conil-color-blue;
+        max-width: 1200px;
+        list-style: none;
+        height: 3rem;
+        text-align: right;
+        line-height: 3rem;
+        margin: auto;
+        margin-right: 0;
+
+        &:hover{
+          font-weight: bold;
+        }
+
+        span {
+          float: right;
+          width: auto;
+          height: auto;
+        }
+
+        ::after {
+          margin-left: 5px;
+          content: '\e429';
+          font-family: "Google-Icon";
+          font-size: 1.5rem;
+          color: $conil-color-blue;
+        }
+      }
+
+      .details-wrapper {
+        max-width: 1200px;
+        margin: auto;
+        background-color: $white;
+        padding: .5rem 3rem;
+      }
+
+      .form-checkboxes {
+        color: $conil-color-blue;
+
+        .js-form-type-checkbox {
+          input {
+            display: none;
+          }
+
+        }
+
+        & > ul {
+          display: block;
+          width: 100%;
+          list-style: none;
+          padding-left: 0;
+          @include sm{
+            display: flex;
+            padding-left: 0;
+            padding-right: 1rem;
+            width: auto;
+          }
+
+
+          & > li > .js-form-type-checkbox:first-child > label {
+            text-transform: uppercase;
+            font-family: 'SourceSans-Bold';
+          }
+
+          li {
+            list-style: none;
+            padding-left: .3rem;
+            margin-right: 1rem;
+
+
+            input {
+              display: none;
+
+              + *::before {
+                content: "";
+                display: inline-block;
+                vertical-align: bottom;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 10%;
+                border-style: solid;
+                border-width: 0.1rem;
+                border-color: $conil-color-aqua;
+                margin-right: .5rem;
+                margin-bottom: .2rem;
+              }
+
+              &:checked + *::before {
+                content: "✓";
+                color: white;
+                background: $conil-color-blue;
+                border-color: $conil-color-blue;
+
+                line-height: .9rem;
+
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+
+  #block-contenidoprincipaldelapagina{
+    max-width: 100%;
+  }
+
+  .fc-view-container {
+    border: 3px solid $conil-color-lightgray;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .fc-scroller {
+    overflow: visible !important;
+    height: auto !important;
+
+  }
+
+  .fc-toolbar::after{
+    max-width: 100%;
+    background-color: red;
+  }
+
+  .fc-toolbar {
+
+    >div{
+      max-width: 1200px;
+    }
+
+    background-color: $conil-color-aqua;
+    color: white;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+    .fc-right{
+      margin: auto;
+      margin-left: 0;
+    }
+    .fc-left{
+      margin: auto;
+      margin-right: 0;
+      button {
+        display: none;
+        margin-right: 0;
+      }
+
+      .fc-button-group {
+        padding-right: 1rem;
+        button {
+          display: block;
+          background-color: transparent;
+          border: none;
+          padding: .15rem .12rem;
+          span {
+            border: 1px solid white;
+            border-radius: .3rem;
+            font-size: 1.2rem;
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+    }
+    .fc-right button {
+      display: none;
+    }
+  }
+  thead {
+    background-color: transparent;
+    border: none;
+    color: $conil-color-aqua;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+
+    td {
+      border: none;
+      .fc-row {
+        border: none;
+      }
+      .fc-widget-content {
+        border: none;
+
+        .fc-scroller {
+          overflow: auto;
+        }
+      }
+    }
+    th {
+      text-align: right;
+      padding-right: .5rem;
+      border: none;
+    }
+
+  }
+  .fc-unthemed  {
+
+    tbody.fc-body {
+      tr, .fc-widget-content {
+        border: none;
+      }
+
+
+
+    }
+    .fc-row {
+      .fc-bg {
+
+        table {
+
+          td {
+            border-color: white !important;
+
+            &.fc-today {
+              background-color: transparent;
+            }
+            }
+        }
+
+
+
+
+      }
+
+      .fc-content-skeleton {
+        table {
+          border-spacing: 10px 0 !important;
+          border-collapse: separate !important;
+          .fc-event-container {
+            padding: 0 5px;
+          }
+          thead {
+            background-color: white;
+            color: $conil-color-blue;
+            font-size: 2rem;
+            border: none;
+            tr {
+              border-bottom: none;
+            }
+            td {
+
+              height: 100px;
+              border-top: 2px solid $conil-color-blue;
+
+
+
+              a {
+                pointer-events: none;
+                display: block;
+                width: 95%;
+                background-color: $conil-color-lightgray;
+                margin-top: .5rem;
+                text-align: right;
+
+                margin-bottom: 0;
+                line-height: 1.5rem;
+                text {
+                  margin-top: 5px;
+
+                }
+
+              }
+            }
+          }
+          tbody {
+
+            tr:nth-child(even) {
+              background-color: transparent;
+            }
+            .fc-event-container {
+              .fc-event {
+                line-height: .8rem;
+                border: none;
+
+                .material-icons {
+                  color: white;
+                  font-size: 1.1rem;
+                  line-height: .9rem;
+                  padding-top: .2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #block-titulodelapagina {
+    background-color: $conil-color-aqua;
+    display: block;
+    width: 100%;
+
+   h1 {
+     background-color: $conil-color-aqua;
+    margin-bottom: 0;
+    @include headline ('SourceSans-Light', 3rem);
+    padding: 1rem 0 0 0;
+    max-width: 1200px;
+    margin: auto;
+    &::after {
+      content: '\e935';
+      font-family: "Google-Icon";
+      font-size: 2.3rem;
+      color: $white;
+      padding-left: 1rem;
+}
+   }
+
+
+
+  }
+
+}

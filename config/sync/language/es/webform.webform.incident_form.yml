@@ -1,0 +1,33 @@
+title: 'Notificación de incidencias'
+elements: |
+  name:
+    '#title': nombre
+  telephone:
+    '#title': teléfono
+  add_claim:
+    '#title': 'añadir incidencia'
+  address:
+    '#title': dirección
+    '#description': 'direcci&oacute;n del incidiente'
+    '#required_error': 'Campo obligatorio'
+  incident_reason:
+    '#title': comentario
+  incident_image:
+    '#title': 'adjuntar imagen'
+  state:
+    '#title': estado
+    '#options':
+      new: nuevo
+      'in progress': 'en progreso'
+      finished: finalizado
+handlers:
+  confirmation_email:
+    settings:
+      subject: 'Confirmación de queja registrada'
+      body: "<p>Hola,<br />\r\nsu queja ha sido registrada correctamente con la siguiente informaici&oacute;n:</p>\r\n[webform_submission:values:incident_reason]<br />\r\n<br />\r\nMuchas gracias por ponerte en contacto con nosotros."
+  incident_confirmation_closed:
+    settings:
+      body: "<p>Hola,<br />\r\n<br />\r\nLe informamos de que su queja con la siguiente informaci&oacute;n:</p>\r\n[webform_submission:values:incident_reason]<br />\r\n<br />\r\nha sido cerrada correctamente.<br />\r\n<br />\r\nMuchas gracias por contactar con nosotros."
+description: 'Formulario para que los usuarios env&iacute;en las incidencias encontradas en conil'
+settings:
+  submission_label: Enviar

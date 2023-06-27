@@ -1,0 +1,15 @@
+uuid: aff1e7ac-c932-4291-9a2c-5a3802c19137
+langcode: es
+status: true
+dependencies: {  }
+name: carrusel_portada_pequeno
+label: 'Carrusel portada pequeño'
+effects:
+  053b926b-13f6-4c2f-803f-3506176cc718:
+    uuid: 053b926b-13f6-4c2f-803f-3506176cc718
+    id: image_scale
+    weight: 1
+    data:
+      width: 559
+      height: null
+      upscale: false

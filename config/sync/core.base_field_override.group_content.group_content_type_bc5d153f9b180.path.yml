@@ -1,0 +1,20 @@
+uuid: b0ccc790-4e2b-4e71-a724-703f3e7a60eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.group_content_type_bc5d153f9b180
+  module:
+    - path
+id: group_content.group_content_type_bc5d153f9b180.path
+field_name: path
+entity_type: group_content
+bundle: group_content_type_bc5d153f9b180
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

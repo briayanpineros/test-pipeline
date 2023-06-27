@@ -1,0 +1,17 @@
+uuid: 67a224ee-60ac-41f9-a481-9a436eea43f7
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+title: 'Limpieza (cachés, lotes, inundaciones, archivos temporales, etc.)'
+id: system_cron
+weight: 0
+module: system
+callback: system_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

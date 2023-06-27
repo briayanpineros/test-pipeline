@@ -1,0 +1,11 @@
+uuid: bb3e1545-0ed5-416a-86a6-a837fbbf4077
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: agenda_de_eventos
+title: 'Agenda de eventos'
+content:
+  value: '<div class="events-agenda-link"><div class="events-agenda-link-text"><a href="/agenda"><span class="events-agenda-link-strong">Agenda </span>de eventos</a></div></div>'
+  format: full_html

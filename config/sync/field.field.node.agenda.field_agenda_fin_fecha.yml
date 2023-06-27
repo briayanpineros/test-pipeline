@@ -1,0 +1,21 @@
+uuid: 9ef3b776-55c0-4f5d-838d-224d50df8cd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agenda_fin_fecha
+    - node.type.agenda
+  module:
+    - datetime
+id: node.agenda.field_agenda_fin_fecha
+field_name: field_agenda_fin_fecha
+entity_type: node
+bundle: agenda
+label: 'Item end date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

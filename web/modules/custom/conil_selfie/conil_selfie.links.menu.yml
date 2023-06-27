@@ -1,0 +1,8 @@
+
+# Totem menu items definition
+conil_selfie.background:
+  title: 'Totem Selfie'
+  route_name: conil_selfie.background
+  description: 'Selfie config backgrounds'
+  parent: conil_totem.main
+  weight: 3

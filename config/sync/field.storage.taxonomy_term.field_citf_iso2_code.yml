@@ -1,0 +1,21 @@
+uuid: 89d67571-1560-440c-94d4-9a496f7ed6b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_citf_iso2_code
+field_name: field_citf_iso2_code
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 3
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

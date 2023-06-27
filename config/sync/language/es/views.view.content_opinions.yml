@@ -1,0 +1,15 @@
+label: 'Opiniones de contenido'
+display:
+  default:
+    display_options:
+      title: Opiniones
+      use_more_text: más
+      empty:
+        area_text_custom:
+          content: '<div class="opinions-no-result"><span>Todavía no hay opiniones para este sitio. ¡Sé el primero en comentar!</span></div>'
+  block_2:
+    display_options:
+      fields:
+        title:
+          alter:
+            text: 'Hay un total de {{ cid }} opiniones con una valoración media de {{ (field_fivestar /20)|round(1, ''floor'')}} / 5'

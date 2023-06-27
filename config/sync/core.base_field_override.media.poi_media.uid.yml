@@ -1,0 +1,20 @@
+uuid: b335cd47-4c5f-4b06-bdea-9ef1983dd59f
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.poi_media
+id: media.poi_media.uid
+field_name: uid
+entity_type: media
+bundle: poi_media
+label: 'Authored by'
+description: 'The user ID of the author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

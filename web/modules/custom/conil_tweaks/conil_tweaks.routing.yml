@@ -1,0 +1,23 @@
+conil_tweaks.fav:
+ path: '/bookmarked/delete'
+ defaults:
+  _form: 'Drupal\conil_tweaks\Form\DeleteBookmarkedUserForm'
+  _title: 'Are you sure you want to delete all bookmarked content? This action cannot be undone.'
+ requirements:
+  _permission: 'access content'
+
+conil_tweaks.agenda_subscription:
+ path: '/cancel-agenda-subscription'
+ defaults:
+  _form: 'Drupal\conil_tweaks\Form\CancelAgendaSubscriptionForm'
+  _title: 'Unsubscribe from agenda notifications'
+ requirements:
+  _permission: 'access content'
+
+conil_tweaks.news_subscription:
+ path: '/cancel-news-subscription'
+ defaults:
+  _form: 'Drupal\conil_tweaks\Form\CancelNewsChannelSubscriptionForm'
+  _title: 'Unsubscribe from news notifications'
+ requirements:
+  _permission: 'access content'

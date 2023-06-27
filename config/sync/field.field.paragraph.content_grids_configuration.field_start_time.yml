@@ -1,0 +1,21 @@
+uuid: 68f84da0-d385-482f-bad2-0396e4918d84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_start_time
+    - paragraphs.paragraphs_type.content_grids_configuration
+  module:
+    - datetime
+id: paragraph.content_grids_configuration.field_start_time
+field_name: field_start_time
+entity_type: paragraph
+bundle: content_grids_configuration
+label: 'Start Time'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

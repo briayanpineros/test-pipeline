@@ -1,0 +1,4 @@
+services:
+  conil_totem_sync.conil_ws:
+    class: '\Drupal\conil_totem_sync\ConilWs'
+    arguments: ['@entity_type.manager', '@http_client_factory','@logger.factory', '@config.factory', '@current_user', '@file_system']

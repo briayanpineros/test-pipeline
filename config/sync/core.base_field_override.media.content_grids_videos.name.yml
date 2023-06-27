@@ -1,0 +1,20 @@
+uuid: 101ab204-be46-4504-88c6-bb905d8d5a1b
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.content_grids_videos
+id: media.content_grids_videos.name
+field_name: name
+entity_type: media
+bundle: content_grids_videos
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

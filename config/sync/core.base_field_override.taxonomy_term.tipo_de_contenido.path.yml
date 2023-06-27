@@ -1,0 +1,20 @@
+uuid: 7eca101d-650e-4acb-b7e8-30fdbdfd660d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_contenido
+  module:
+    - path
+id: taxonomy_term.tipo_de_contenido.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_de_contenido
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

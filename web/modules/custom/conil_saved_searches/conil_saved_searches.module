@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @file
+ * Contains conil_saved_searches.module.
+ */
+
+use Drupal\conil_saved_searches\Entity\SavedSearches;
+use Drupal\conil_saved_searches\SavedSearchesHtmlRouteProvider;
+use Drupal\Core\Cache\MemoryCache\MemoryCache;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityStorageBase;
+use Drupal\conil_saved_searches\Entity\SavedSearchesInterface;
+
+/**
+ * Implements hook_help().
+ */
+function conil_saved_searches_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the conil_saved_searches module.
+    case 'help.page.conil_saved_searches':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module to allocate a custom entity to save search api searches') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function conil_saved_searches_theme() {
+  return [
+    'conil_saved_searches' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function conil_saved_searches_form_views_exposed_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  $view = $form_state->get('view');
+  if ($view->id() == 'search' && $view->current_display == 'page_1') {
+    $form['#submit'][] = '_conil_search_submit';
+  }
+}
+
+function _conil_search_submit(&$form, FormStateInterface $form_state){
+  $values = [];
+  $values['user_id'] = \Drupal::currentUser()->id();
+  $values['search'] = $form_state->getValue('keys');
+  $values['timestamp'] = date('Y-m-d');
+  if (!empty($values['search'])) {
+    \Drupal::entityTypeManager()->getStorage('saved_searches')->create($values)->save();
+  }
+}

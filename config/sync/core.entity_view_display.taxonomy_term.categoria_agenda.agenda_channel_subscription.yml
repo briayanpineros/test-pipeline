@@ -1,0 +1,29 @@
+uuid: 55b85abc-e9e9-4755-b6a7-e07625afa3db
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.agenda_channel_subscription
+    - field.field.taxonomy_term.categoria_agenda.field_categoria_interes_icon
+    - taxonomy.vocabulary.categoria_agenda
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: taxonomy_term.categoria_agenda.agenda_channel_subscription
+targetEntityType: taxonomy_term
+bundle: categoria_agenda
+mode: agenda_channel_subscription
+content:
+  flag_agenda_channel_subscriptions:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  description: true
+  field_categoria_interes_icon: true
+  langcode: true
+  search_api_excerpt: true

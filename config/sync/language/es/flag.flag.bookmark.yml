@@ -1,0 +1,4 @@
+label: 'Marcar como favorito'
+flag_short: 'Marcar esto como favorito'
+flag_long: 'Añade esta entrada a tus favoritos'
+unflag_short: 'Eliminar el marcador'

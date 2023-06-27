@@ -1,0 +1,29 @@
+uuid: b9d7c6be-0663-4429-85b7-75931dfe0d73
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.multiple_link
+    - field.field.block_content.multiple_link.field_blockmultiplelink_link
+  module:
+    - link
+id: block_content.multiple_link.default
+targetEntityType: block_content
+bundle: multiple_link
+mode: default
+content:
+  field_blockmultiplelink_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,38 @@
+add totem entities:
+  title: 'Create new Totem entities'
+
+administer totem entities:
+  title: 'Administer Totem entities'
+  description: 'Allow to access the administration form to configure Totem entities.'
+  restrict access: true
+
+delete totem entities:
+  title: 'Delete Totem entities'
+
+edit totem entities:
+  title: 'Edit Totem entities'
+
+view published totem entities:
+  title: 'View published Totem entities'
+
+view unpublished totem entities:
+  title: 'View unpublished Totem entities'
+
+view all totem revisions:
+  title: 'View all Totem revisions'
+
+revert all totem revisions:
+  title: 'Revert all Totem revisions'
+  description: 'Role requires permission <em>view Totem revisions</em> and <em>edit rights</em> for totem entities in question or <em>administer totem entities</em>.'
+
+delete all totem revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Totem revisions</em> and <em>delete rights</em> for totem entities in question or <em>administer totem entities</em>.'
+
+generate template event:
+  title: 'Generate template events'
+  description: 'Role to generate event templates'
+
+generate template poi:
+  title: 'Generate template pois'
+  description: 'Role to generate pois templates'

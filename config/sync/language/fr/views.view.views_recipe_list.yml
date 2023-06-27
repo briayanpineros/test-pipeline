@@ -1,0 +1,13 @@
+label: 'Recettes gastronomiques'
+display:
+  default:
+    display_options:
+      fields:
+        field_media_document:
+          alter:
+            text: '<a target="_blank" class="recipe-file-link" href="{{ field_media_document }}" alt="Ouvrir PDF dans une nouvelle fenêtre">Voir la recette en PDF</a>'
+            alt: 'Voir PDF'
+        nothing:
+          alter:
+            text: "<div class=\"recipe-image-subtitle-desc-wrapper\">\r\n  <div class=\"recipe-image\">\r\n    {{ field_category_image }}\r\n  </div>\r\n  <div class=\"recipe-subtitle-desc\">\r\n    <div class=\"recipe-subtitle\">{{ field_category_subtitle }}</div>\r\n    <div class=\"recipe-desc\">{{ description__value }}</div>\r\n  </div>\r\n</div>\r\n<div class=\"recipe-list-title\">\r\n  <p>Liste de recettes de <span class=\"recipe-category\">\"{{ name_1 }}\"</span>:</p>\r\n</div>"
+      title: 'Recettes gastronomiques'

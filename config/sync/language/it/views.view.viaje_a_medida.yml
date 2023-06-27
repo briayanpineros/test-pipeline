@@ -1,0 +1,20 @@
+label: 'Viaggio su misura'
+description: 'Viaggio su misura'
+display:
+  default:
+    display_title: 'Viaggio su misura'
+    display_options:
+      title: 'Viaggio su misura'
+      filters:
+        field_poi_subcategoy_target_id:
+          expose:
+            label: Filtro
+      empty:
+        area_text_custom:
+          content: 'Nessun risultato'
+      header:
+        area_text_custom:
+          admin_label: 'Contatore di risultati'
+          content: '<div class="header"><h3 class="subcategory"><noscript>Turismo sensa limiti</noscript></h3><p class="counter"> <b>[view:total-rows]</b> risultati trovati</p> </div>'
+  block_1:
+    display_title: 'Viaggio su misura'

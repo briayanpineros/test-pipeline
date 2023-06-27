@@ -1,0 +1,22 @@
+uuid: debee1cd-ea92-4445-9dbb-76f4500f08e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.general_page
+id: node.general_page.promote
+field_name: promote
+entity_type: node
+bundle: general_page
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

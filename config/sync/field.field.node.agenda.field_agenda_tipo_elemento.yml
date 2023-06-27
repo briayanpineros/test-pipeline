@@ -1,0 +1,29 @@
+uuid: 490cf5f2-cae0-4f52-ad7a-2925bfc7e78f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agenda_tipo_elemento
+    - node.type.agenda
+    - taxonomy.vocabulary.agenda_tipos
+id: node.agenda.field_agenda_tipo_elemento
+field_name: field_agenda_tipo_elemento
+entity_type: node
+bundle: agenda
+label: Tipo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      agenda_tipos: agenda_tipos
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

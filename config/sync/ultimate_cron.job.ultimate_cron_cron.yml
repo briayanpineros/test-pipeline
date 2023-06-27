@@ -1,0 +1,15 @@
+uuid: 109dbe20-09c3-4f7e-8444-7cb3b79452d1
+langcode: es
+status: true
+dependencies: {  }
+title: 'Ejecuta operaciones de limpieza internas'
+id: ultimate_cron_cron
+weight: 0
+module: ultimate_cron
+callback: ultimate_cron_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

@@ -1,0 +1,21 @@
+uuid: 26746683-637c-448d-aced-1a5ab2036260
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_categoria_poi_inventrip
+field_name: field_categoria_poi_inventrip
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

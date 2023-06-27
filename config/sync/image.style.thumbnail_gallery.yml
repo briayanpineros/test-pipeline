@@ -1,0 +1,7 @@
+uuid: 7617136e-3d50-4ee9-814b-422f339e3277
+langcode: es
+status: true
+dependencies: {  }
+name: thumbnail_gallery
+label: thumbnail_gallery
+effects: {  }

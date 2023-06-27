@@ -1,0 +1,18 @@
+uuid: 62c17ec0-b498-47d2-add0-90f5ca880739
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.carrousel_images
+id: media.carrousel_images.created
+field_name: created
+entity_type: media
+bundle: carrousel_images
+label: 'Fecha de autoría'
+description: 'El momento en el cual el elemento multimedia fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

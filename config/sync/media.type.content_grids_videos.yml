@@ -1,0 +1,13 @@
+uuid: 74ea1e3d-8a90-40e0-b96e-f4d4a903feec
+langcode: es
+status: true
+dependencies: {  }
+id: content_grids_videos
+label: 'Content grids videos'
+description: ''
+source: video_file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_video_file
+field_map: {  }

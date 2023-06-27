@@ -1,0 +1,15 @@
+uuid: 7cb4ef19-b572-48d5-aa94-421e46919efd
+langcode: es
+status: true
+dependencies:
+  config:
+    - flag.flag.news_channel_flag
+  module:
+    - flag
+id: flag_action.news_channel_flag_unflag
+label: 'Unflag this item'
+type: node
+plugin: 'flag_action:news_channel_flag_unflag'
+configuration:
+  flag_id: news_channel_flag
+  flag_action: unflag

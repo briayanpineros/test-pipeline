@@ -1,0 +1,14 @@
+label: 'Viaje a medida'
+display:
+  default:
+    display_title: 'Viaje a tu medida'
+    display_options:
+      filters:
+        field_poi_subcategoy_target_id:
+          expose:
+            label: Filtro
+      empty:
+        area_text_custom:
+          content: 'No hay resultados'
+  block_1:
+    display_title: 'Viaje a tu medida'

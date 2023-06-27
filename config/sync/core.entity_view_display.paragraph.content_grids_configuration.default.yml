@@ -1,0 +1,46 @@
+uuid: 99b77aaa-e317-487c-83e8-be23ea54913f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_grids_configuration.field_end_time
+    - field.field.paragraph.content_grids_configuration.field_hours
+    - field.field.paragraph.content_grids_configuration.field_start_time
+    - paragraphs.paragraphs_type.content_grids_configuration
+  module:
+    - datetime
+    - entity_reference_revisions
+id: paragraph.content_grids_configuration.default
+targetEntityType: paragraph
+bundle: content_grids_configuration
+mode: default
+content:
+  field_end_time:
+    type: datetime_custom
+    label: above
+    settings:
+      timezone_override: Europe/Madrid
+      date_format: d/m/Y
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hours:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_start_time:
+    type: datetime_custom
+    label: above
+    settings:
+      timezone_override: Europe/Madrid
+      date_format: d/m/Y
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

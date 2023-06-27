@@ -1,0 +1,8 @@
+uuid: cf1f07f2-b315-44f4-8ee4-73a2450feeed
+langcode: zxx
+status: true
+dependencies: {  }
+id: html_day
+label: 'HTML Day'
+locked: false
+pattern: d

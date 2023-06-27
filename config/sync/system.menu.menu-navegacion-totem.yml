@@ -1,0 +1,8 @@
+uuid: 72bc79ca-6ec0-457d-a4d0-0857e14b5cb7
+langcode: es
+status: true
+dependencies: {  }
+id: menu-navegacion-totem
+label: 'Menú de navegación de Totem'
+description: 'Menú de navegación para Totems'
+locked: false

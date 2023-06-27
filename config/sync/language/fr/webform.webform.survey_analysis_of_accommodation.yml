@@ -1,0 +1,109 @@
+title: 'Analyse des logements, taux d''occupation et hébergement touristique'
+elements: |
+  nationality_set:
+    '#title': 'Sélectionner la nationalité'
+  nacionality:
+    '#title': Nationalité
+    '#description': 'Indiquez votre nationalit&eacute;'
+    '#help_title': 'Indiquez votre nationalité'
+    '#options':
+      Resident: Résident
+      Spain: Espagne
+      'Other country': 'Autre pays'
+    '#required_error': 'Nationalité souhaitée'
+  province:
+    '#required_error': 'Province souhaitée'
+  country:
+    '#title': Pays
+    '#required_error': 'Pays souhaité'
+  gender:
+    '#title': Sexe
+    '#description': 'Veuillez indiquer votre sexe'
+    '#help_title': 'Veuillez indiquer votre sexe'
+    '#options':
+      Male: Homme
+      Female: Femme
+    '#required_error': 'Sexe souhaité'
+  age:
+    '#title': 'Groupe d''âge'
+    '#description': 'Veuillez indiquer votre tranche d&#39;&acirc;ge'
+    '#help_title': 'Veuillez indiquer votre tranche d''âge'
+    '#options':
+      'Less than 18': 'Moins de 18 ans '
+      'Beetween 18 and 29': "Entre 18 et 29 ans \t"
+      'Beetween 30 and 44': 'Entre 30 et 44 ans '
+      'Beetween 45 and 65': 'Entre 45 et 65 ans '
+      'More than 65': 'Plus de 65 ans '
+    '#required_error': 'Âge requis'
+  transport_set:
+    '#title': 'Définir le mode de transport'
+  transport_used_to_arrive:
+    '#title': 'Mode de transport'
+    '#description': "<br />\r\nVeuillez indiquer le moyen de transport pour atteindre votre destination"
+    '#help_title': 'Veuillez indiquer le moyen de transport pour atteindre votre destination'
+    '#options':
+      'Own car': 'Voiture personnelle'
+      'Rental car': 'Voiture de location'
+      Plane: Avion
+      Other: Autre
+    '#required_error': 'Moyen de transport nécessaire'
+  other_transport:
+    '#title': 'Autre transport'
+    '#required_error': 'Nécessité de préciser'
+  companion_set:
+    '#title': 'Définir le compagnon'
+  type_of_accompaniment:
+    '#title': Accompagnateur
+    '#description': 'Veuillez indiquer avec qui vous avez voyag&eacute;'
+    '#help_title': 'Veuillez indiquer avec qui vous avez voyagé'
+    '#options':
+      Alone: 'Seul(e) '
+      'With a partner': 'Avec un partenaire'
+      'With family': 'En famille'
+      'With a group of friends': 'Avec un groupe d''amis'
+      'With other couples': 'Avec d''autres couples'
+      'With organised groups': 'Avec des groupes organisés'
+      'With others': 'Avec d''autres personnes'
+    '#required_error': 'Mode de transport souhaité'
+  other_accompaniment:
+    '#title': 'Autre accompagnement'
+    '#required_error': Nécessaire
+  employ_set:
+    '#title': 'Emploi occupé'
+  purchasing_level:
+    '#title': 'Statut d''emploi'
+    '#description': 'Veuillez indiquer votre statut professionnel'
+    '#help_title': 'Veuillez indiquer votre statut professionnel'
+    '#options':
+      Unemployed: Chômeur
+      'Household work': 'Travail ménager'
+      Employed: 'Employé(e) '
+      'Medium civil servant': 'Moyen fonctionnaire'
+      'Senior civil servant': 'Haut fonctionnaire'
+      'Liberal profession': 'Profession libérale'
+      Retired: Retraité
+      Other: Autre
+    '#required_error': Requis
+  other_purchasing_level:
+    '#title': 'Autre niveau d''achat'
+    '#required_error': Requis
+  reason_trip_set:
+    '#title': 'Définir le motif du déplacement '
+  use_of_accommodation:
+    '#title': 'Motif du déplacement'
+    '#description': 'Veuillez indiquer la raison de votre voyage'
+    '#help_title': 'Veuillez indiquer la raison de votre voyage'
+    '#options':
+      'Work or business': 'Travail ou affaires'
+      'Holiday or leisure': 'Vacances ou loisirs'
+      'Visiting family or friends': 'Visite de la famille ou d''amis'
+      Other: Autre
+    '#required_error': Requis
+  other_use_of_accommodation:
+    '#title': 'Autre raison du voyage'
+    '#required_error': Requis
+  actions:
+    '#title': 'Bouton d''envoi'
+    '#submit__label': Envoyer
+settings:
+  submission_label: Envoyer

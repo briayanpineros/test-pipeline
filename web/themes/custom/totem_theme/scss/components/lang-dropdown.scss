@@ -1,0 +1,66 @@
+.block-lang-dropdown {
+  .lang-dropdown-form {
+    bottom: -10px;
+    position: relative;
+    .sumo_lang_dropdown_select {
+      .CaptionCont {
+        padding: 2px 5px 4px;
+        border: none;
+        box-shadow: none;
+        color: $conil-color-gray;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.3) none;
+
+        input{
+          background: rgba(255, 255, 255, 0.3) none;
+          border-radius: 5px;
+          &::placeholder {
+            color: $conil-color-lightgray;
+            opacity: 1;
+          }
+        }
+
+        span{
+          font-size: 1.1rem;
+        }
+
+        label {
+          width: 40px;
+
+          i {
+            background-image: url("/themes/custom/totem_theme/imagenes/arrow-language-dropdown.png");
+            left: -10px;
+          }
+        }
+
+        span {
+          padding: 0;
+        }
+      }
+
+      .optWrapper {
+        background: $conil-color-blue;
+        border: none;
+        border-radius: 0;
+
+        .options {
+          background: rgba(255, 255, 255, 0.1);
+          width: 98px;
+          .opt {
+            color: white;
+            &:hover{
+              background-color: transparent;
+              font-weight: bold;
+            }
+
+            label{
+              margin-left: 5px;
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+}

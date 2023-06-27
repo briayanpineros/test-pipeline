@@ -1,0 +1,3 @@
+label: 'Tipo di telefono'
+category: Demografico
+options: "Home: Home\r\nOffice: Office\r\nCell: Cell"

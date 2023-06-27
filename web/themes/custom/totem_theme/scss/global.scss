@@ -1,0 +1,9 @@
+body {
+  max-width: 1080px;
+  margin: auto !important;
+  font-family: "SourceSans-Regular", sans-serif;
+
+  video#player[autoplay=""] {
+    display: none;
+  }
+}

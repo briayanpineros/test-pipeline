@@ -1,0 +1,16 @@
+label: 'Video promozionali'
+display:
+  default:
+    display_options:
+      title: 'Video promozionali'
+      filters:
+        mid:
+          expose:
+            description: ''
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+  page_1:
+    display_options:
+      menu:
+        title: 'Video promozionali'

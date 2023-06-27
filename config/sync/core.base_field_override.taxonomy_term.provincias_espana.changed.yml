@@ -1,0 +1,18 @@
+uuid: f1e63531-3733-4c56-b778-a60e8e37ac6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.provincias_espana
+id: taxonomy_term.provincias_espana.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: provincias_espana
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

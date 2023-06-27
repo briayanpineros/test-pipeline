@@ -1,0 +1,9 @@
+display:
+  default:
+    display_options:
+      title: 'Album fotográfico'
+      exposed_form:
+        options:
+          bef:
+            general:
+              secondary_label: 'Advanced options'

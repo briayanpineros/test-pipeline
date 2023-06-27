@@ -1,0 +1,15 @@
+uuid: 6cc5b5f8-aef6-4235-93e7-28be549ee04f
+langcode: es
+status: true
+dependencies:
+  config:
+    - flag.flag.news_channel_flag
+  module:
+    - flag
+id: flag_action.news_channel_flag_flag
+label: 'Flag this item'
+type: node
+plugin: 'flag_action:news_channel_flag_flag'
+configuration:
+  flag_id: news_channel_flag
+  flag_action: flag

@@ -1,0 +1,28 @@
+uuid: 4621dcea-3cf5-4305-b737-3e3d6b3a2125
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.multiple_images_block
+    - field.field.block_content.multiple_images_block.field_customblock_images
+  module:
+    - image
+id: block_content.multiple_images_block.default
+targetEntityType: block_content
+bundle: multiple_images_block
+mode: default
+content:
+  field_customblock_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

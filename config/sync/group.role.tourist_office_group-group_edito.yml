@@ -1,0 +1,68 @@
+uuid: d9d6e36b-2515-4cfa-a292-11ed78fbdb23
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.tourist_office_group
+id: tourist_office_group-group_edito
+label: 'Group Editor'
+weight: 10
+internal: false
+audience: member
+group_type: tourist_office_group
+permissions_ui: true
+permissions:
+  - 'access group_node overview'
+  - 'create group_node:agenda content'
+  - 'create group_node:agenda entity'
+  - 'create group_node:general_information content'
+  - 'create group_node:general_information entity'
+  - 'create group_node:news content'
+  - 'create group_node:news entity'
+  - 'create group_node:poi content'
+  - 'create group_node:poi entity'
+  - 'delete any group_node:agenda content'
+  - 'delete any group_node:agenda entity'
+  - 'delete any group_node:general_information content'
+  - 'delete any group_node:general_information entity'
+  - 'delete any group_node:news content'
+  - 'delete any group_node:news entity'
+  - 'delete any group_node:poi content'
+  - 'delete any group_node:poi entity'
+  - 'delete own group_node:agenda content'
+  - 'delete own group_node:agenda entity'
+  - 'delete own group_node:general_information content'
+  - 'delete own group_node:general_information entity'
+  - 'delete own group_node:news content'
+  - 'delete own group_node:news entity'
+  - 'delete own group_node:poi content'
+  - 'delete own group_node:poi entity'
+  - 'update any group_node:agenda content'
+  - 'update any group_node:agenda entity'
+  - 'update any group_node:general_information content'
+  - 'update any group_node:general_information entity'
+  - 'update any group_node:news content'
+  - 'update any group_node:news entity'
+  - 'update any group_node:poi content'
+  - 'update any group_node:poi entity'
+  - 'update own group_node:agenda content'
+  - 'update own group_node:agenda entity'
+  - 'update own group_node:general_information content'
+  - 'update own group_node:general_information entity'
+  - 'update own group_node:news content'
+  - 'update own group_node:news entity'
+  - 'update own group_node:poi content'
+  - 'update own group_node:poi entity'
+  - 'view group'
+  - 'view group_node:agenda content'
+  - 'view group_node:agenda entity'
+  - 'view group_node:general_information content'
+  - 'view group_node:general_information entity'
+  - 'view group_node:news content'
+  - 'view group_node:news entity'
+  - 'view group_node:poi content'
+  - 'view group_node:poi entity'
+  - 'view unpublished group_node:agenda entity'
+  - 'view unpublished group_node:general_information entity'
+  - 'view unpublished group_node:news entity'
+  - 'view unpublished group_node:poi entity'

@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Default theme implementation for 'template-selfie'
+ *
+ * Available variables:
+ * - css: CSS.
+ * - text: Texto.
+ * - marco: Marco en base64.
+ * - selfie: Imagen del selfie en base64.
+ *
+ */
+#}
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<style type="text/css">
+					{{css}}</style>
+		<title>Selfie</title>
+	</head>
+	<body class="pdf">
+		<div class="marco">
+			<img src="{{ marco}}">
+			<div class="selfie"><img src="{{ selfie }}"></div>
+			<div class="text">
+				{{ text | raw }}
+			</div>
+		</div>
+	</body>
+</html>
+

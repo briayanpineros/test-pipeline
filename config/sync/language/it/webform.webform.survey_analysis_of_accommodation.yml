@@ -1,0 +1,114 @@
+title: 'Analisi delle strutture ricettive, dei tassi di occupazione e degli alloggi turistici'
+elements: |
+  nationality_set:
+    '#title': 'Seleziona la nazionalità'
+  nacionality:
+    '#title': Nazionalità
+    '#description': 'Indicare la nazionalit&agrave;'
+    '#help_title': 'Indicare la nazionalità'
+    '#options':
+      Resident: Residente
+      Spain: Spagna
+      'Other country': 'Altro paese'
+    '#required_error': 'Nazionalità necessaria'
+  province:
+    '#title': Provincia
+    '#required_error': 'Provincia necessaria'
+  country:
+    '#title': Paese
+    '#required_error': 'Paese richiesto'
+  gender:
+    '#title': Genere
+    '#description': 'Indicare il proprio sesso'
+    '#help_title': 'Indicare il proprio sesso'
+    '#options':
+      Male: maschile
+      Female: femminile
+    '#required_error': 'Genere richiesto'
+  age:
+    '#title': 'Fascia d''età'
+    '#description': 'Indicare la fascia d&#39;et&agrave;'
+    '#help_title': 'Indicare la fascia d''età'
+    '#options':
+      'Less than 18': 'Meno di 18 anni '
+      'Beetween 18 and 29': "Tra i 18 e i 29 anni \t"
+      'Beetween 30 and 44': 'Tra i 30 e i 44 anni '
+      'Beetween 45 and 65': 'Tra i 45 e i 65 anni '
+      'More than 65': 'Più di 65 anni '
+    '#required_error': 'Età necessaria'
+  transport_set:
+    '#title': 'Impostare il metodo di trasporto'
+  transport_used_to_arrive:
+    '#title': 'Metodo di trasporto'
+    '#description': 'Indicare il metodo di trasporto per raggiungere la propria destinazione'
+    '#help_title': 'Indicare il metodo di trasporto per raggiungere la propria destinazione'
+    '#options':
+      'Own car': 'Auto propria'
+      'Rental car': 'Auto a noleggio'
+      Plane: Aereo
+      Train: Treno
+      Bus: Autobus
+      Other: Altro
+    '#required_error': 'Metodo di trasporto necessario'
+  other_transport:
+    '#title': 'Altro trasporto'
+    '#required_error': 'Necessità di specificare'
+  companion_set:
+    '#title': 'Impostare l''accompagnatore'
+  type_of_accompaniment:
+    '#title': Accompagnatore
+    '#description': 'Indicare con chi ha viaggiato'
+    '#help_title': 'Indicare con chi ha viaggiato'
+    '#options':
+      Alone: 'Da solo '
+      'With a partner': 'Con un partner'
+      'With family': 'Con la famiglia'
+      'With a group of friends': 'Con un gruppo di amici'
+      'With other couples': 'Con altre coppie'
+      'With organised groups': 'Con gruppi organizzati'
+      'With others': 'Con altre persone'
+    '#required_error': 'Metodo di trasporto necessario'
+  other_accompaniment:
+    '#title': 'Altro accompagnamento'
+    '#required_error': Richiesto
+  employ_set:
+    '#title': 'Imposta occupazione'
+  purchasing_level:
+    '#title': 'Stato di occupazione'
+    '#description': 'Indicare lo stato di occupazione'
+    '#help_title': 'Indicare lo stato di occupazione'
+    '#options':
+      Unemployed: Disoccupato
+      'Household work': 'Lavoro domestico'
+      Employed: 'Impiegato '
+      Manager: 'Dirigente '
+      Entrepreneur: 'Imprenditore '
+      'Medium civil servant': 'Medio dipendente pubblico'
+      'Senior civil servant': 'Impiegato pubblico di alto livello'
+      'Liberal profession': 'Libera professione'
+      Retired: Pensionato
+      Other: Altro
+    '#required_error': Richiesto
+  other_purchasing_level:
+    '#title': 'Altro livello di acquisto'
+    '#required_error': Richiesto
+  reason_trip_set:
+    '#title': 'Imposta motivo viaggio '
+  use_of_accommodation:
+    '#title': 'Motivo del viaggio'
+    '#description': 'Indicare il motivo del viaggio'
+    '#help_title': 'Indicare il motivo del viaggio'
+    '#options':
+      'Work or business': 'Lavoro o affari'
+      'Holiday or leisure': 'Vacanza o tempo libero'
+      'Visiting family or friends': 'Visita a parenti o amici'
+      Other: Altro
+    '#required_error': Richiesto
+  other_use_of_accommodation:
+    '#title': 'Altro motivo del viaggio'
+    '#required_error': Richiesto
+  actions:
+    '#title': 'Pulsante di invio'
+    '#submit__label': Inviare
+settings:
+  submission_label: Inviare

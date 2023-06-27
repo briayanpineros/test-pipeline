@@ -1,0 +1,19 @@
+uuid: 10701b7d-def2-4893-a29a-30abd17d675e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - social_link_field
+id: node.field_poi_socialmedia
+field_name: field_poi_socialmedia
+entity_type: node
+type: social_links
+settings: {  }
+module: social_link_field
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

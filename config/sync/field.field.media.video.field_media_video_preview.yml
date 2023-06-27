@@ -1,0 +1,38 @@
+uuid: bbe14346-1c69-4a66-92d5-e650509bbea7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_video_preview
+    - media.type.video
+  module:
+    - image
+id: media.video.field_media_video_preview
+field_name: field_media_video_preview
+entity_type: media
+bundle: video
+label: 'Imagen de previsualización'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

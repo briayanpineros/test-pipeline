@@ -1,0 +1,10 @@
+uuid: f888baef-b8e2-46c9-bb17-b2ce00e901df
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+id: comment.user_comment_form
+label: 'User comments form'
+targetEntityType: comment
+cache: true

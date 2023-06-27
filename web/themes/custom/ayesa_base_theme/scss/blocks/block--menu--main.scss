@@ -1,0 +1,41 @@
+.block.menu--main {
+  @include wrapper();
+  ul.menu {
+    margin: 0 5px;
+    padding: 0;
+    text-align: left; /* LTR */
+    font-size: 0.929em;
+    text-align: right;
+    li.menu-item {
+      float: none;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+      width: auto;
+      a {
+        display: block;
+        float: none;
+        margin: 10px 10px 10px -5px;
+        padding: 5px;
+        text-decoration: none;
+        color: $branding-black;
+        border-radius: 8px;
+        &:hover,
+        &:focus {
+          background: #f6f6f2;
+          background: rgba(255, 255, 255, 0.95);
+        }
+        &:active {
+          background: #b3b3b3;
+          background: rgba(255, 255, 255, 1);
+        }
+        &.is-active {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

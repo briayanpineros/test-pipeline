@@ -1,0 +1,10 @@
+services:
+  twig_filter_transliterate.twig_extension:
+    class: Drupal\conil_tweaks\TwigExtension\TransliterateFilter
+    tags:
+      - { name: twig.extension }
+  conil_tweaks.flag:
+    class: Drupal\conil_tweaks\ConilTweaksFlagEvents
+    arguments: ['@current_user', '@mailrelay.main', '@language_manager']
+    tags:
+      - { name: event_subscriber }

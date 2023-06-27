@@ -1,0 +1,11 @@
+uuid: 5682384a-b2b6-4950-aea0-4e39ea1c20ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: bookmarked
+title: Bookmarked
+content:
+  value: '<div class="buttom-bookmarked"><a class="buttom-bookmarked-link" href="/en/bookmarked">My favourites</a></div>'
+  format: full_html

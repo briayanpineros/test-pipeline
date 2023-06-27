@@ -1,0 +1,25 @@
+uuid: 6887b71c-7eb4-4e34-ba8b-45379557a912
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_subcategoy
+    - node.type.poi
+id: node.poi.field_poi_subcategoy
+field_name: field_poi_subcategoy
+entity_type: node
+bundle: poi
+label: Subcategory
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: vista_referencia_subcategoria_interes
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

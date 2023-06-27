@@ -1,0 +1,8 @@
+third_party_settings:
+  field_group:
+    group_general_informacion:
+      label: 'Informations générales'
+    group_data_of_interest:
+      label: 'Données d''intérêt'
+    group_our_data:
+      label: 'Nos données'

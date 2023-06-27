@@ -1,0 +1,8 @@
+uuid: 98c4adbf-e993-479e-ae71-2d684b4b9b30
+langcode: zxx
+status: true
+dependencies: {  }
+id: html_month_and_year
+label: 'HTML month and year'
+locked: false
+pattern: 'M Y'

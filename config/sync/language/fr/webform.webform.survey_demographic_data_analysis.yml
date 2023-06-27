@@ -1,0 +1,118 @@
+title: 'Formulaire d''analyse des données démographiques'
+elements: |
+  nationality_set:
+    '#title': 'Sélectionnez la nationalité'
+  nacionality:
+    '#title': Nationalité
+    '#description': 'Indiquez votre nationalit&eacute;'
+    '#help_title': 'Indiquez votre nationalité'
+    '#options':
+      Resident: Résident
+      Spain: Espagne
+      'Other country': 'Autre pays'
+    '#required_error': 'Nationalité souhaitée'
+  country:
+    '#title': Pays
+    '#required_error': 'Pays souhaité'
+  province:
+    '#required_error': 'Province souhaitée'
+  gender:
+    '#title': Sexe
+    '#description': 'Veuillez indiquer votre sexe'
+    '#help_title': 'Veuillez indiquer votre sexe'
+    '#options':
+      Male: Homme
+      Female: Femme
+    '#required_error': 'Sexe souhaité'
+  age:
+    '#title': 'Groupe d''âge'
+    '#description': 'Veuillez indiquer votre tranche d&#39;&acirc;ge'
+    '#help_title': 'Veuillez indiquer votre tranche d''âge'
+    '#options':
+      'Less than 18': 'Moins de 18 ans '
+      'Beetween 18 and 29': "Entre 18 et 29 ans \t"
+      'Beetween 30 and 44': 'Entre 30 et 44 ans '
+      'Beetween 45 and 65': 'Entre 45 et 65 ans '
+      'More than 65': 'Plus de 65 ans '
+    '#required_error': 'Âge requis'
+  area_set:
+    '#title': 'Zone fixe'
+  destination_area:
+    '#title': 'Zone de séjour'
+    '#description': 'Indiquez la zone de votre s&eacute;jour'
+    '#help_title': 'Indiquez la zone de votre séjour'
+    '#options':
+      'Beach area': 'Zone de la plage'
+      'Old town area': 'Quartier de la vieille ville'
+      'Outdoor area': 'Espace extérieur'
+      'Other area': 'Autre zone'
+    '#required_error': 'Sélection de la zone souhaitée'
+  other_area:
+    '#title': 'Autre zone'
+    '#required_error': 'Nécessité de préciser'
+  repeat_visitor:
+    '#title': 'Visiteurs fréquents'
+    '#description': 'Veuillez indiquer si vous &ecirc;tes un visiteur r&eacute;gulier'
+    '#help_title': 'Veuillez indiquer si vous êtes un visiteur régulier'
+    '#options':
+      'Yes': Oui
+      'No': Non
+    '#required_error': 'Sexe souhaité'
+  days_at_destination:
+    '#title': 'Jours à destination'
+    '#description': 'Indiquez le nombre de jours pass&eacute;s &agrave; destination'
+    '#help_title': 'Indiquez le nombre de jours passés à destination'
+  days_of_tourism:
+    '#title': 'Jours spécifiques'
+    '#description': 'Veuillez indiquer les jours sp&eacute;cifiques de votre s&eacute;jour'
+    '#help_title': 'Veuillez indiquer les jours spécifiques de votre séjour'
+    '#options':
+      Weekdays: 'Jours de la semaine'
+      Weekends: Week-ends
+      Holidays: 'Jours fériés'
+      'Whole weeks': 'Semaines entières'
+      Others: Autres
+    '#required_error': 'Jours spécifiques de votre séjour requis'
+  other_days:
+    '#title': 'Autres jours'
+    '#required_error': 'A préciser'
+  overnights:
+    '#title': Nuitées
+    '#description': 'Indiquez le nombre de nuit&eacute;es'
+    '#help_title': 'Indiquez le nombre de nuitées'
+    '#required_error': 'Nombre de nuitées nécessaires'
+  transport_set:
+    '#title': 'Mode de transport'
+  transport_used_to_arrive:
+    '#title': 'Mode de transport'
+    '#description': 'Indiquez le mode de transport utilis&eacute; pour atteindre votre destination'
+    '#help_title': 'Indiquez le mode de transport utilisé pour atteindre votre destination'
+    '#options':
+      'Own car': 'Voiture personnelle'
+      'Rental car': 'Voiture de location'
+      Plane: Avion
+      Other: Autre
+    '#required_error': 'Moyen de transport nécessaire'
+  other_transport:
+    '#title': 'Autre transport'
+    '#required_error': 'Nécessité de préciser'
+  season_set:
+    '#title': 'Saison fixe'
+  season:
+    '#title': 'Saison de séjour'
+    '#description': 'Indiquez la saison de votre s&eacute;jour'
+    '#help_title': 'Indiquez la saison de votre séjour'
+    '#options':
+      Summer: Été
+      Christmas: Noël
+      Easter: Pâques
+      Other: Autre
+    '#required_error': 'Saison souhaitée'
+  other_season:
+    '#title': 'Autre saison'
+    '#required_error': 'A préciser'
+  actions:
+    '#title': 'Bouton d''envoi'
+    '#submit__label': Envoyer
+settings:
+  submission_label: Envoyer

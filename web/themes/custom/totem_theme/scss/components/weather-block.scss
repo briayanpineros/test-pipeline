@@ -1,0 +1,22 @@
+.block-conil-weather {
+  .conil-weather-block {
+    display: block;
+    width: 90px;
+    height: 40px;
+    border-radius: 8px;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 15px;
+
+    #conil-weather-icon {
+      width: 40px;
+      margin: auto;
+    }
+
+    #conil-weather-temperature {
+      font-size: 1.1rem;
+      vertical-align: middle;
+      color: white;
+    }
+  }
+}

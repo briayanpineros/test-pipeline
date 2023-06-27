@@ -1,0 +1,30 @@
+<?php
+
+
+/**
+ * Implements hook_schema().
+ */
+function conil_webpush_schema() {
+  $schema['web_push_token'] = [
+    'description' => 'Store tokens',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique token ID.',
+      ],
+      'token' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Token string.',
+      ],
+    ],
+    'primary key' => ['id'],
+    'indexes' => [
+      'token' => ['token'],
+    ],
+  ];
+  return $schema;
+}

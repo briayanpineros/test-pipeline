@@ -1,0 +1,33 @@
+_core:
+  default_config_hash: xu0yG13sSQJcXrOJJqsn44W_hUWAIFHVlphrzxT2ycU
+langcode: es
+page_title: Sitemap
+message:
+  value: ''
+  format: plain_text
+plugins:
+  frontpage:
+    enabled: true
+    weight: -50
+    settings:
+      title: 'Front page'
+      rss: /rss.xml
+    id: frontpage
+    provider: sitemap
+  'menu:footer':
+    enabled: true
+    weight: -45
+    settings:
+      title: Footer
+      show_disabled: false
+    id: 'menu:footer'
+    provider: sitemap
+  'menu:sidr-navigation':
+    enabled: true
+    weight: -46
+    settings:
+      title: 'Menu Navigation'
+      show_disabled: false
+    id: 'menu:sidr-navigation'
+    provider: sitemap
+include_css: true

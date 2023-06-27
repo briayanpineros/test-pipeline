@@ -1,0 +1,18 @@
+uuid: 3e645bb7-25c4-4cd0-881c-ad0286af491c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_agenda
+id: taxonomy_term.categoria_agenda.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: categoria_agenda
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

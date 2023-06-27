@@ -1,0 +1,10 @@
+uuid: 0cc939f5-ac38-428e-af15-a659ca5215c6
+langcode: en
+status: true
+dependencies: {  }
+id: content_grids_configuration
+label: 'Content grids configuration'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,17 @@
+uuid: a213ee22-9456-4821-8dfb-07058d5da30e
+langcode: es
+status: true
+dependencies:
+  module:
+    - dblog
+title: 'Eliminar los mensajes de registro caducados y los eventos de control de inundaciones'
+id: dblog_cron
+weight: 0
+module: dblog
+callback: dblog_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

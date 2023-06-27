@@ -1,0 +1,33 @@
+uuid: 5a85d0c2-ab24-465b-a6c1-34ce66085a8d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-navegacion-totem
+  module:
+    - domain
+    - system
+  theme:
+    - totem_theme
+id: menudenavegaciondetotem
+theme: totem_theme
+region: header_bottom
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-navegacion-totem'
+settings:
+  id: 'system_menu_block:menu-navegacion-totem'
+  label: 'Menú de navegación de Totem'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      https_totem001_conil_ddev_site_: https_totem001_conil_ddev_site_

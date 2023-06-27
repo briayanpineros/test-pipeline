@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the newsletter mail.
+ *
+ * Available variables:
+ * - header: The mail header.
+ * - title: The mail title.
+ * - url: The node url.
+ * - body: The mail body.
+ * - footer: The mail footer.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="mailrelay-newsletter-mail" style="width: 600px; margin-left: auto; margin-right: auto;">
+    {% if header %}
+        <div class="mrn-header" >
+            {{ header|raw }}
+        </div>
+    {% endif %}
+    <div class="mrn-content" style="margin-top: 50px; margin-bottom: 50px;">
+        {% if title %}
+            <h1 class="mrn-title">
+                {{ title }}
+            </h1>
+        {% endif %}
+        {% if body %}
+            <div class="mrn-body">
+                {{ body|raw }}
+                <br /><hr />
+                {{ links|raw }}
+                <hr /><br />
+            </div>
+        {% endif %}
+    </div>
+    {% if footer %}
+        <div class="mrn-footer">
+            {{ footer|raw }}
+        </div>
+    {% endif %}
+</div>

@@ -1,0 +1,8 @@
+uuid: 81da9eea-dc7f-447e-8801-b3aa47b94878
+langcode: en
+status: true
+dependencies: {  }
+id: stars
+label: 'Stars Percentage'
+value_type: percentage
+description: ''

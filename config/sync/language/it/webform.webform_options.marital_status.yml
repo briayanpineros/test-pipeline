@@ -1,0 +1,3 @@
+label: 'Stato civile'
+category: Demografico
+options: "Single: Single\r\nMarried: Married\r\nDivorced: Divorced\r\nWidowed: Widowed"

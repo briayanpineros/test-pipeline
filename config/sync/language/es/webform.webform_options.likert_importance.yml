@@ -1,0 +1,2 @@
+label: 'Likert: Importancia'
+options: "1: 'Not at all Important'\r\n2: 'Somewhat Important'\r\n3: Neutral\r\n4: Important\r\n5: 'Very Important'"

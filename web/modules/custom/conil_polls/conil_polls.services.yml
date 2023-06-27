@@ -1,0 +1,10 @@
+services:
+  conil_polls.cryptoaes:
+    class: '\Drupal\conil_polls\CryptoAes'
+    arguments: ['@logger.factory', '@config.factory']
+  conil_polls.mail_helper:
+    class: Drupal\conil_polls\ConilPollsMailHelper
+    arguments: ['@config.factory', '@module_handler', '@plugin.manager.mail', '@language_manager', '@logger.channel.conil_polls', '@token']
+  logger.channel.conil_polls:
+    parent: logger.channel_base
+    arguments: ['conil_polls']

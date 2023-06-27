@@ -1,0 +1,33 @@
+.block-web-speech-synthesis-block{
+  /*position: fixed !important;
+  top: 98vh;
+  left: 25px;*/
+}
+
+.btn-play-speech {
+  color: transparent !important;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background-color: #e3b645 !important;
+}
+
+.container-play-speech {
+  position: relative;
+  color: transparent;
+  border: 10px solid #005171;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.container-play-speech::after {
+  position: absolute;
+  display: block;
+  color: black;
+  top: 6px;
+  left: 14px;
+  content: "\e023";
+  font-size: 60px;
+  font-family: 'Material Icons';
+  pointer-events: none;
+}

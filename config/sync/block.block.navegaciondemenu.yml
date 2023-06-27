@@ -1,0 +1,71 @@
+uuid: e8ea01ea-c908-44bb-8736-5f13cb22a8eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.sidr-navigation
+  module:
+    - superfish
+  theme:
+    - conil_theme
+id: navegaciondemenu
+theme: conil_theme
+region: sidr_menu
+weight: -24
+provider: null
+plugin: 'superfish:sidr-navigation'
+settings:
+  id: 'superfish:sidr-navigation'
+  label: 'Navegación de Menú'
+  label_display: '0'
+  provider: superfish
+  level: '1'
+  depth: '0'
+  expand_all_items: false
+  menu_type: vertical
+  style: default
+  arrow: 1
+  shadow: 0
+  speed: fast
+  delay: '800'
+  slide: none
+  supposition: 1
+  hoverintent: 1
+  touch: '0'
+  touchbh: '1'
+  touchbp: '768'
+  touchua: '0'
+  touchual: ''
+  touchuam: '0'
+  small: '1'
+  smallbp: '5000'
+  smallua: '0'
+  smallual: ''
+  smalluam: '0'
+  smallact: '1'
+  smallset: ''
+  smallasa: 0
+  smallcmc: 0
+  smallecm: ''
+  smallchc: 0
+  smallech: ''
+  smallicm: ''
+  smallich: ''
+  smallamt: ''
+  smallabt: '0'
+  supersubs: 1
+  minwidth: '12'
+  maxwidth: '27'
+  multicolumn: 0
+  multicolumn_depth: '1'
+  multicolumn_levels: '1'
+  pathlevels: '1'
+  expanded: 0
+  clone_parent: 0
+  hide_linkdescription: 0
+  add_linkdescription: 0
+  link_depth_class: 1
+  custom_list_class: 'sf-expanded js-sidr-no-close'
+  custom_item_class: js-sidr-no-close
+  custom_link_class: js-sidr-no-close
+visibility: {  }

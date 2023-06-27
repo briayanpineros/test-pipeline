@@ -1,0 +1,9 @@
+label: 'Novità in Conil'
+display:
+  block_1:
+    display_options:
+      use_more_text: 'Vedi altro'
+  default:
+    display_options:
+      title: 'Notizie a Conil'
+description: 'Notizie ed eventi in programma a Conil.'

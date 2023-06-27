@@ -1,0 +1,21 @@
+uuid: 6ef33d49-7587-4b1c-b94e-df64c1d90a9f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geolocalization
+    - node.type.agenda
+  module:
+    - geofield
+id: node.agenda.field_geolocalization
+field_name: field_geolocalization
+entity_type: node
+bundle: agenda
+label: Ubicación
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

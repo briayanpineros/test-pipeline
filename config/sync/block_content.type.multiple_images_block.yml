@@ -1,0 +1,8 @@
+uuid: 52c7b74f-9009-4aba-84db-f51e541d9749
+langcode: en
+status: true
+dependencies: {  }
+id: multiple_images_block
+label: 'Multiple Images Block'
+revision: 0
+description: ''

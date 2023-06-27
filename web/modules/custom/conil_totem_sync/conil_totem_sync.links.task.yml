@@ -1,0 +1,13 @@
+# Conil Settings
+conil_totem_sync.settings:
+  title: 'Settings'
+  route_name: conil_totem_sync.settings
+  base_route: conil_totem_sync.settings
+  weight: 1
+
+# Conil WS entity menu items definition
+conil_totem_sync.conections:
+  title: 'Conections'
+  route_name: entity.conil_ws_entity.collection
+  base_route: conil_totem_sync.settings
+  weight: 2

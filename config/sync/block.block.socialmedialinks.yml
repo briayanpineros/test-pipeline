@@ -1,0 +1,165 @@
+uuid: e4338991-21c5-4d45-87de-f56f10a50bd4
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - conil_theme
+id: socialmedialinks
+theme: conil_theme
+region: footer_bottom
+weight: -24
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social media Links'
+  label_display: '0'
+  provider: social_media_links
+  platforms:
+    facebook:
+      value: ConilTurismoSensible
+      description: ''
+      weight: '-43'
+    instagram:
+      value: turismo_conil
+      description: ''
+      weight: '-42'
+    twitter:
+      value: conil_turismo
+      description: ''
+      weight: '-41'
+    youtube_channel:
+      value: UCJcU_zAzOkXiDYqEy9-1m7A
+      description: ''
+      weight: '-40'
+    whatsapp:
+      value: '34620967227'
+      description: ''
+      weight: '-39'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-38'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-37'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-36'
+    gitlab:
+      value: ''
+      description: ''
+      weight: '-35'
+    website:
+      value: ''
+      description: ''
+      weight: '-34'
+    email:
+      value: ''
+      description: ''
+      weight: '-33'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-32'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '-31'
+    youtube:
+      value: ''
+      description: ''
+      weight: '-30'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-29'
+    github:
+      value: ''
+      description: ''
+      weight: '-28'
+    behance:
+      value: ''
+      description: ''
+      weight: '-27'
+    contact:
+      value: ''
+      description: ''
+      weight: '-26'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-25'
+    xing:
+      value: ''
+      description: ''
+      weight: '-24'
+    rss:
+      value: ''
+      description: ''
+      weight: '-23'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '-22'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-21'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-20'
+    goodreads:
+      value: ''
+      description: ''
+      weight: '-19'
+    meetup:
+      value: ''
+      description: ''
+      weight: '-18'
+    patreon:
+      value: ''
+      description: ''
+      weight: '-17'
+    googleplay:
+      value: ''
+      description: ''
+      weight: '-16'
+    glassdoor:
+      value: ''
+      description: ''
+      weight: '-15'
+    tiktok:
+      value: ''
+      description: ''
+      weight: '-14'
+    mastodon:
+      value: ''
+      description: ''
+      weight: '-13'
+    amazon:
+      value: ''
+      description: ''
+      weight: '-12'
+    telegram:
+      value: ''
+      description: ''
+      weight: '-11'
+  appearance:
+    orientation: h
+    show_name: 0
+    suggestion: ''
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

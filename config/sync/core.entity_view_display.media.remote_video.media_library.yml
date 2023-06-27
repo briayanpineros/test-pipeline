@@ -1,0 +1,44 @@
+uuid: 82e5346b-2b6d-49c7-9d0c-e2ef77bb6e4c
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.remote_video.field_description
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_promotional_video
+    - media.type.remote_video
+  module:
+    - colorbox_media_video
+_core:
+  default_config_hash: sLyo3lc_eX4-C1Jv0ivqjuORGfdclLsX09tZf7K3EVM
+id: media.remote_video.media_library
+targetEntityType: media
+bundle: remote_video
+mode: media_library
+content:
+  field_media_oembed_video:
+    type: colorbox_media_remote_video
+    label: hidden
+    settings:
+      max_width: '800'
+      max_height: '600'
+      display: thumbnail
+      link_text: 'View Video'
+      image_style: medium
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: none
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_description: true
+  field_promotional_video: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

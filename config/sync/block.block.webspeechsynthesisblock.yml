@@ -1,0 +1,28 @@
+uuid: 73b3b27c-4b1c-438d-a132-3637c1694005
+langcode: en
+status: true
+dependencies:
+  module:
+    - domain
+    - web_speech_synthesis_api
+  theme:
+    - totem_theme
+id: webspeechsynthesisblock
+theme: totem_theme
+region: footer_bottom
+weight: 0
+provider: null
+plugin: web_speech_synthesis_block
+settings:
+  id: web_speech_synthesis_block
+  label: 'Web Speech Synthesis Block'
+  label_display: '0'
+  provider: web_speech_synthesis_api
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      https_totem001_conil_ddev_site_: https_totem001_conil_ddev_site_

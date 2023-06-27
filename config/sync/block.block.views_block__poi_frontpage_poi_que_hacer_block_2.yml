@@ -1,0 +1,32 @@
+uuid: 2f1d92d0-be66-4032-9a1c-dbcb9ce3060f
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.poi_frontpage
+  module:
+    - domain
+    - views
+  theme:
+    - totem_theme
+id: views_block__poi_frontpage_poi_que_hacer_block_2
+theme: totem_theme
+region: blockgroup_poi_frontpage
+weight: 0
+provider: null
+plugin: 'views_block:poi_frontpage-poi_que_hacer_block'
+settings:
+  id: 'views_block:poi_frontpage-poi_que_hacer_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      https_totem001_conil_ddev_site_: https_totem001_conil_ddev_site_

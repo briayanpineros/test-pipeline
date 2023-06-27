@@ -1,0 +1,18 @@
+uuid: 3e14c289-1f2f-4d0a-a6e2-a775bc1a6e75
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.group_content_type_cda3c4073664e
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: group_content.group_content_type_cda3c4073664e
+target_entity_type_id: group_content
+target_bundle: group_content_type_cda3c4073664e
+default_langcode: current_interface
+language_alterable: true

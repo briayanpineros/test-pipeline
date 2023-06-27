@@ -1,0 +1,19 @@
+.content-wrapper {
+  .main {
+    @include clearfix();
+    @include wrapper();
+    display: flex;
+    .layout-content {
+      flex: 1 0 auto;
+    }
+    .layout-sidebar-first {
+      width: 25%;
+      min-width: 25%;
+      order: -1;
+    }
+    .layout-sidebar-second {
+      width: 25%;
+      min-width: 25%;
+    }
+  }
+}

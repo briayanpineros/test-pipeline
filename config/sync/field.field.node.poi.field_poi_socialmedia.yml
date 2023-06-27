@@ -1,0 +1,21 @@
+uuid: f7803027-3e12-44fd-a47c-6f965239ad45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_socialmedia
+    - node.type.poi
+  module:
+    - social_link_field
+id: node.poi.field_poi_socialmedia
+field_name: field_poi_socialmedia
+entity_type: node
+bundle: poi
+label: 'Social media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: social_links

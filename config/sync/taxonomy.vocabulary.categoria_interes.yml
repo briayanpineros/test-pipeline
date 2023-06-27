@@ -1,0 +1,8 @@
+uuid: 590da7c7-c94d-417a-973a-e160ff50cf9e
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categoría Puntos de Interés'
+vid: categoria_interes
+description: ''
+weight: 0

@@ -1,0 +1,6 @@
+uuid: f62d4947-121c-4ac9-bc8b-c7496bd6fa95
+langcode: en
+status: true
+dependencies: {  }
+id: blockgroup_poi_frontpage
+label: 'POI Frontpage BlockGroup'

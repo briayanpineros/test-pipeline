@@ -1,0 +1,18 @@
+uuid: aed8aff3-2f18-46b4-a971-ec1f53025625
+langcode: es
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - conil_inventrip
+    - serialization
+id: search_pois_service
+plugin_id: search_pois_service
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth

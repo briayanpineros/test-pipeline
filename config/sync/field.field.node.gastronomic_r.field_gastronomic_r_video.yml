@@ -1,0 +1,29 @@
+uuid: ea4564f7-3b8f-42fe-8745-38cc222bdd78
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gastronomic_r_video
+    - media.type.video
+    - node.type.gastronomic_r
+id: node.gastronomic_r.field_gastronomic_r_video
+field_name: field_gastronomic_r_video
+entity_type: node
+bundle: gastronomic_r
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

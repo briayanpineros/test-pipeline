@@ -1,0 +1,14 @@
+
+# Saved Searches menu items definition
+entity.saved_searches.collection:
+  title: 'Saved Searches list'
+  route_name: entity.saved_searches.collection
+  description: 'List Saved Searches entities'
+  parent: system.admin_structure
+  weight: 100
+
+saved_searches.admin.structure.settings:
+  title: 'Saved Searches settings'
+  description: 'Configure Saved Searches entities'
+  route_name: saved_searches.settings
+  parent: system.admin_structure

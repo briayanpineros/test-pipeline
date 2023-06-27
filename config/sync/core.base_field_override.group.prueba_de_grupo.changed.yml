@@ -1,0 +1,18 @@
+uuid: eb960f46-877d-4c34-86ce-740a013b3ccd
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.prueba_de_grupo
+id: group.prueba_de_grupo.changed
+field_name: changed
+entity_type: group
+bundle: prueba_de_grupo
+label: 'Cambiado el'
+description: 'The time that the group was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

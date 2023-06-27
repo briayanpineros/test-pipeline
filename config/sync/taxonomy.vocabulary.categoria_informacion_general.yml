@@ -1,0 +1,8 @@
+uuid: 617b746b-acf8-401a-9de2-5a09d72adc00
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categoría información general'
+vid: categoria_informacion_general
+description: 'Categoría de los contenidos de información general'
+weight: 0

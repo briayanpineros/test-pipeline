@@ -1,0 +1,5 @@
+entity.totem.add_form:
+  route_name: entity.totem.add_form
+  title: 'Add Totem'
+  appears_on:
+    - entity.totem.collection

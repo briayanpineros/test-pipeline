@@ -1,0 +1,4 @@
+title: 'Audit logs'
+content:
+  value: '<p>You can check the changes registered on audit log in the next link:</p><p><a href="/en/admin/reports/audit-trail">Audit</a></p>'
+  format: basic_html

@@ -1,0 +1,18 @@
+uuid: 2fbdd07d-5b7c-4da9-98b5-54caeb1ff3f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.participa_categories
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.participa_categories
+target_entity_type_id: taxonomy_term
+target_bundle: participa_categories
+default_langcode: es
+language_alterable: false

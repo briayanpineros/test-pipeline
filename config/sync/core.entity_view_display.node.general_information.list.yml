@@ -1,0 +1,51 @@
+uuid: a189ccb6-7c4a-40f2-8deb-2565385c32a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.list
+    - field.field.node.general_information.body
+    - field.field.node.general_information.field_general_info_category
+    - field.field.node.general_information.field_imagen_portada
+    - field.field.node.general_information.field_info_content_reference
+    - image.style.max_650x650
+    - node.type.general_information
+  module:
+    - layout_builder
+    - media
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.general_information.list
+targetEntityType: node
+bundle: general_information
+mode: list
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imagen_portada:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: max_650x650
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_general_info_category: true
+  field_info_content_reference: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

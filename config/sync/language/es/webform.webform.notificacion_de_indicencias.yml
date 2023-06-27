@@ -1,0 +1,20 @@
+elements: |
+  name:
+    '#title': Nombre
+  telephone:
+    '#title': Teléfono
+  email:
+    '#title': 'Correo Electrónico'
+  add_claim:
+    '#title': 'Añadir incidente'
+  address:
+    '#title': Dirección
+    '#description': 'Direcci&oacute;n del incidente'
+    '#required_error': 'Campo obligatorio'
+  incident_reason:
+    '#title': Comentario
+  incident_image:
+    '#title': 'Adjuntar imagen'
+  state:
+    '#title': Estado
+title: 'Notificación de incidencias'

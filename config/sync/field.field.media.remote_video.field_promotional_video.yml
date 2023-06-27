@@ -1,0 +1,23 @@
+uuid: 9ef5d7f3-94a3-4d7a-aa01-f59a6fb9563e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_promotional_video
+    - media.type.remote_video
+id: media.remote_video.field_promotional_video
+field_name: field_promotional_video
+entity_type: media
+bundle: remote_video
+label: 'Vídeo promocional'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

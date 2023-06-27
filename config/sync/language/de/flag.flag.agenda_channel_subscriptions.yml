@@ -1,0 +1,7 @@
+label: 'Agenda Kanal-Abonnements'
+flag_short: 'Abonnieren Sie diesen Kanal'
+flag_long: 'Wenn Sie sich anmelden, erhalten Sie eine E-Mail-Benachrichtigung, sobald neue Inhalte für diese Kategorie verfügbar sind.'
+flag_message: Abonnieren!
+unflag_short: 'Diesen Kanal abbestellen'
+unflag_long: 'Wenn Sie sich abmelden, werden Sie keine E-Mail-Benachrichtigung erhalten, sobald neue Inhalte für diese Kategorie verfügbar sin'
+unflag_message: Abbestellt

@@ -1,0 +1,29 @@
+uuid: d979f247-d33f-41f5-8882-fd1e1487fdcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agenda_categoria
+    - node.type.agenda
+    - taxonomy.vocabulary.categoria_agenda
+id: node.agenda.field_agenda_categoria
+field_name: field_agenda_categoria
+entity_type: node
+bundle: agenda
+label: 'Element category'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria_agenda: categoria_agenda
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

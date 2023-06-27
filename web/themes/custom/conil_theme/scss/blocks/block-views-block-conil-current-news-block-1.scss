@@ -1,0 +1,285 @@
+.block-views-blockconil-current-news-block-1 {
+  @include conil-gradient();
+  overflow: hidden;
+  flex-direction: column;
+
+  .more-link{
+
+    margin-left: auto;
+    margin-right: auto;
+    @include md {
+      margin-left: auto;
+        margin-right: 50px;
+    }
+    a {
+      border: 2px solid $conil-color-blue !important;
+      border-radius: 1.5em;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: bold;
+      padding: .5em 1.5em;
+      color: $conil-color-blue;
+    }
+  }
+
+  @include md {
+    flex-direction: row;
+  }
+
+  max-width: 100%;
+
+  >h2:nth-child(1) {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    background-color: inherit;
+    color: $conil-color-darkgreen;
+    padding: 1.5rem 0 1.5rem 5%;
+    //padding-left: 14% !important;
+    margin-bottom: 0;
+
+    @include md {
+      padding: 2rem 0 2rem 5%;
+    }
+
+    @include xl{
+      padding: 2rem 0 2rem 0;
+    }
+
+    .views-row {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+
+  }
+
+  > div {
+    background-color: $conil-color-gray;
+    border-top: 0.5rem solid $conil-color-lightgray;
+    .view-display-id-block_1 {
+      padding: 5% 5%;
+      @include md {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      @include xl{
+        padding: 5% 0;
+      }
+
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      @include md {
+        flex-direction: row;
+      }
+
+      background-color: $conil-color-gray;
+
+      .attachment {
+
+        flex: 1 0 100%;
+
+        @include md {
+          flex: 1 1 30%;
+        }
+
+        border-bottom: 0.5rem solid $conil-color-lightgray;
+
+        .views-element-container {
+          .view-display-id-attachment_1 {
+            .view-content {
+
+              .views-row {
+                margin-left: 0;
+                margin-bottom: 0 !important;
+                border-bottom: 0.5rem solid $conil-color-aqua;
+                background-color: white;
+                max-height: max-content;
+
+                >.views-field-field-news-cover {
+                  background-color: transparent !important;
+
+                  img {
+                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                  }
+                }
+
+                >.views-field-title {
+
+                  width: 100%;
+                  height: fit-content;
+                  max-width: 100% !important;
+                  background-color: white !important;
+                  position: relative;
+                  padding: 10px 5%;
+
+                  span>a {
+                    line-height: 1;
+                    font-size: 1.5rem;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+
+                    @include md {
+                      font-size: 2rem;
+                    }
+                  }
+                }
+
+                .views-field-body {
+                  div.field-content {
+                    p {
+                      min-height: 100px;
+                      display: -webkit-box;
+                      -webkit-box-orient: vertical;
+                      -webkit-line-clamp: 4;
+                      overflow: hidden;
+                      color: $conil-color-blue;
+                    }
+                  }
+                  padding: 0% 5% 0% 5%;
+                  display: block !important;
+                }
+
+              }
+            }
+
+
+
+          }
+        }
+      }
+
+      >div.view-content {
+        margin-top: 1rem;
+        display: flex;
+        // width: 100%;
+        flex-wrap: wrap;
+        flex: 1 0 100%;
+
+        @include md {
+          flex: 1 1 60%;
+          margin-top: 0;
+          margin-left: 1rem;
+        }
+
+        >div.views-row {
+          width: 47.5%;
+          margin: 0.25rem;
+
+          @include md {
+            width: 30%;
+            margin-left: 0;
+            margin-top: 0;
+            margin-right: .7rem;
+            margin-bottom: .7rem;
+
+          }
+
+          position: relative;
+
+          .views-field-nothing {
+            width: 100%;
+            height: auto;
+            position: relative;
+
+            .img-and-shadow{
+              &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.50) !important;
+                content: '';
+                display: block;
+                z-index: 1;
+              }
+            }
+
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+          }
+
+
+
+          >.views-field-title {
+            padding: .3em;
+            line-height: 1.2rem;
+            width: 100%;
+            font-weight: bold;
+            font-weight: bold;
+            position: absolute;
+            z-index: 2;
+            height: fit-content;
+            left: 2%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+
+            @include lg {
+              padding: 1em;
+            }
+
+            >span {
+              a {
+                //margin-left: 10%;
+                font-family: SourceSans-Bold;
+                line-height: 1.2;
+                font-size: .9rem;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                color: $conil-color-darkgreen;
+                @include sm{
+                  -webkit-line-clamp: 3;
+                }
+
+
+
+                @include xl {
+                  font-size: 1.1rem;
+                }
+
+                max-width: 100%;
+                width: 100%;
+                color: white;
+              }
+              a:after{
+                content: '\e930';
+                font-family: "Google-Icon";
+                font-size: 2rem;
+                line-height: 4rem;
+                color: white;
+                position: absolute;
+                left: 1.2%;
+                top: 75%;
+                @include lg {
+                  font-size: 3rem;
+                  line-height: 5rem;
+                  left: 5%;
+                }
+              }
+            }
+          }
+
+          .views-field-body {
+            font-size: 1rem;
+            display: none;
+            color: $conil-color-darkgreen;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+uuid: 8aac018c-376a-4575-a45f-e095742635f1
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categoría fotos'
+vid: categoria_fotos
+description: ''
+weight: 0

@@ -1,0 +1,121 @@
+.menu--menu-navegacion-totem {
+  background-color: #e3f2f9;
+  // height: 128px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    li {
+      background-color: #01587d;
+      width: 92px;
+      height: 92px;
+      border-radius: 10px;
+      display: inline-block;
+      margin: 13px;
+      text-align: center;
+      position: relative;
+      &.menu-item--active-trail {
+        width: 105px;
+        height: 105px;
+        margin: 5px;
+      }
+      a {
+        color: white;
+        display: block;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        padding-top: 65px;
+        bottom: 0;
+        background-size: 3em;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 6px;
+        background-size: 60px;
+
+        &.is-active {
+          color: white;
+        }
+      }
+      .inicio {
+        background-image: url(/themes/custom/totem_theme/imagenes/iconos_menú_blanco_inicio.png);
+        &:hover {
+          background-image: url(/themes/custom/totem_theme/imagenes/iconos_menú_azul_inicio.png);
+        }
+      }
+
+      .noticias {
+        background-image: url(/themes/custom/totem_theme/imagenes/iconos_menú_blanco_noticias.png);
+        &:hover {
+          background-image: url(/themes/custom/totem_theme/imagenes/iconos_menú_azul_noticias.png);
+        }
+      }
+
+      .dormir {
+        background-image: url(/themes/custom/totem_theme/imagenes/cama.png);
+        &:hover {
+          background-image: url(/themes/custom/totem_theme/imagenes/cama-hover.png);
+        }
+      }
+      .comer {
+        background-image: url(/themes/custom/totem_theme/imagenes/comer.png);
+        &:hover {
+          background-image: url(/themes/custom/totem_theme/imagenes/comer-hover.png);
+        }
+      }
+      .visitar {
+        background-image: url(/themes/custom/totem_theme/imagenes/visita.png);
+        &:hover {
+          background-image: url(/themes/custom/totem_theme/imagenes/visita-hover.png);
+        }
+      }
+      .eventos {
+        background-image: url(/themes/custom/totem_theme/imagenes/regalo.png);
+        &:hover {
+          background-image: url(/themes/custom/totem_theme/imagenes/regalo-hover.png);
+        }
+        background-size: 55px;
+      }
+      .postales {
+        background-image: url(/themes/custom/totem_theme/imagenes/postales.png);
+
+        &:hover {
+          background-image: url(/themes/custom/totem_theme/imagenes/postales-hover.png);
+        }
+      }
+      .estudios {
+        background-image: url(/themes/custom/totem_theme/imagenes/estudios.png);
+
+        &:hover {
+          background-image: url(/themes/custom/totem_theme/imagenes/estudios-hover.png);
+        }
+      }
+      .encuesta {
+        background-image: url(/themes/custom/totem_theme/imagenes/encuestas.png);
+        &:hover {
+          background-image: url(/themes/custom/totem_theme/imagenes/encuestas-hover.png);
+        }
+      }
+      &:hover {
+        background-color: #e3b645;
+        a {
+          color: #01587d;
+          font-weight: bold;
+        }
+      }
+    }
+    .menu-item--active-trail {
+      background-color: #e3b645 !important;
+      .is-active {
+        color: #01587d !important;
+        font-weight: bold;
+      }
+    }
+  }
+}

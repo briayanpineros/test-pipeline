@@ -1,0 +1,17 @@
+uuid: 43a13d12-cf25-4940-b2b1-3bbdeba8adcb
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.prueba_de_grupo
+  enforced:
+    config:
+      - user.role.administrator
+id: prueba_de_grupo-a416e6833
+label: Administrador
+weight: 2
+internal: true
+audience: outsider
+group_type: prueba_de_grupo
+permissions_ui: false
+permissions: {  }

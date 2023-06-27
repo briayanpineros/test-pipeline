@@ -1,0 +1,33 @@
+uuid: bceb82ec-f615-481c-9b1c-e4929efea0d9
+langcode: es
+status: true
+dependencies:
+  module:
+    - domain
+    - quicktabs
+    - system
+  theme:
+    - totem_theme
+id: quicktabspoislideandmap_2
+theme: totem_theme
+region: content
+weight: -9
+provider: null
+plugin: 'quicktabs_block:poi_slide_map'
+settings:
+  id: 'quicktabs_block:poi_slide_map'
+  label: 'QuickTabs - POI Slide and Map'
+  label_display: '0'
+  provider: quicktabs
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      https_totem001_conil_ddev_site_: https_totem001_conil_ddev_site_
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/poi/*/*\r\n!/poi/*/*/*"

@@ -1,0 +1,20 @@
+uuid: 74245a85-07be-4e49-a95a-280d1d4a61e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_poi_extratags
+field_name: field_poi_extratags
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

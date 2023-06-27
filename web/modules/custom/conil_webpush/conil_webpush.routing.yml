@@ -1,0 +1,15 @@
+conil_webpush.guardar_token:
+  path: '/guardar-token'
+  defaults:
+    _controller: '\Drupal\conil_webpush\Controller\GuardarTokenController::guardarToken'
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'
+
+conil_webpush.settings:
+  path: '/admin/config/services/webpush/settings'
+  defaults:
+    _form: '\Drupal\conil_webpush\Form\WebPushFirebaseConfigForm'
+    _title: "Firebase Web Push configuration"
+  requirements:
+    _permission: 'administer site configuration'

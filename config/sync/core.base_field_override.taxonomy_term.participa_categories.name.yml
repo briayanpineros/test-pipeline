@@ -1,0 +1,18 @@
+uuid: 0396aeca-d053-45c0-b38f-799ebd57fa84
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.participa_categories
+id: taxonomy_term.participa_categories.name
+field_name: name
+entity_type: taxonomy_term
+bundle: participa_categories
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

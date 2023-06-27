@@ -1,0 +1,29 @@
+uuid: 4a92d502-8df0-41d6-b29a-20f689f38b06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_extratags
+    - node.type.poi
+    - taxonomy.vocabulary.otros_servicios
+id: node.poi.field_poi_extratags
+field_name: field_poi_extratags
+entity_type: node
+bundle: poi
+label: 'Additional services'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      otros_servicios: otros_servicios
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

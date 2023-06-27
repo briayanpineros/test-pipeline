@@ -1,0 +1,40 @@
+uuid: b28a8b07-159f-460d-9891-8ef99854d585
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.user_picture
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: Iiq0AttdhgbebJwabSFwQQ1ORn64GoGz0xSZ_eyCJ8A
+id: user.user.user_picture
+field_name: user_picture
+entity_type: user
+bundle: user
+label: Imagen
+description: "Su cara virtual o imagen.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'pictures/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: b51d6f7f-480e-49b1-9fa1-63271ff57079
+    alt: ''
+    title: ''
+    width: 735
+    height: 735
+field_type: image

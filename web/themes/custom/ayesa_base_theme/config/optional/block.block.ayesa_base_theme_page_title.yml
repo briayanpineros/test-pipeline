@@ -1,0 +1,17 @@
+langcode: es
+status: true
+dependencies:
+  theme:
+    - ayesa_base_theme
+id: ayesa_base_theme_page_title
+theme: ayesa_base_theme
+region: layout_prefix
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

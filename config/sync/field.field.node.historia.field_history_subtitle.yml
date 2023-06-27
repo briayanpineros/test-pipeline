@@ -1,0 +1,19 @@
+uuid: c7347664-3e48-40f4-aa41-634f15a90939
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_history_subtitle
+    - node.type.historia
+id: node.historia.field_history_subtitle
+field_name: field_history_subtitle
+entity_type: node
+bundle: historia
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

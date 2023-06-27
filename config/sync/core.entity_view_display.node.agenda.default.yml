@@ -1,0 +1,354 @@
+uuid: fcb6bbb4-4ab3-4598-b2b6-196a04df58ef
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.agenda.body
+    - field.field.node.agenda.field_agenda_address
+    - field.field.node.agenda.field_agenda_categoria
+    - field.field.node.agenda.field_agenda_cover
+    - field.field.node.agenda.field_agenda_fin_fecha
+    - field.field.node.agenda.field_agenda_hour
+    - field.field.node.agenda.field_agenda_inicio_fecha
+    - field.field.node.agenda.field_agenda_social_media_share
+    - field.field.node.agenda.field_agenda_tipo_elemento
+    - field.field.node.agenda.field_fivestart
+    - field.field.node.agenda.field_geolocalization
+    - field.field.node.agenda.field_subtitulo
+    - image.style.event
+    - node.type.agenda
+  module:
+    - conil_totem
+    - field_group
+    - fivestar
+    - leaflet
+    - media
+    - social_media
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_div_event:
+      children:
+        - group_div
+        - group_div_event_two
+      label: div_event
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: event-box
+        show_empty_fields: false
+        id: event-box
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_div_event_two:
+      children:
+        - group_div_two
+      label: div_event-two
+      parent_name: group_div_event
+      region: content
+      weight: 21
+      format_type: html_element
+      format_settings:
+        classes: event-box-left
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_div:
+      children:
+        - field_agenda_cover
+      label: div_event-one
+      parent_name: group_div_event
+      region: content
+      weight: 20
+      format_type: html_element
+      format_settings:
+        classes: event-box-right
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_div_event_zero:
+      children:
+        - field_agenda_categoria
+        - field_agenda_tipo_elemento
+      label: div_event-zero
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: event-box-zero
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_div_event_four:
+      children:
+        - field_agenda_inicio_fecha
+        - field_agenda_fin_fecha
+      label: div-event-fechas
+      parent_name: group_div_two
+      region: content
+      weight: 28
+      format_type: html_element
+      format_settings:
+        classes: event-box-fechas
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_div_two:
+      children:
+        - field_subtitulo
+        - body
+        - group_div_event_four
+        - field_agenda_social_media_share
+        - group_div_direccion_hora
+      label: div_two_left
+      parent_name: group_div_event_two
+      region: content
+      weight: 20
+      format_type: html_element
+      format_settings:
+        classes: box-left-two
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_div_direccion_hora:
+      children:
+        - field_agenda_address
+        - field_agenda_hour
+      label: div
+      parent_name: group_div_two
+      region: hidden
+      weight: 25
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.agenda.default
+targetEntityType: node
+bundle: agenda
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 27
+    region: content
+  field_agenda_address:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 24
+    region: content
+  field_agenda_categoria:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_agenda_cover:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: event
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  field_agenda_fin_fecha:
+    type: events_date_formatter
+    label: hidden
+    settings:
+      day_class: field-agenda-fin-fecha-dia
+      date_class: field-agenda-fin-fecha-resto
+      text_class: ''
+      text: End
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_agenda_hour:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 25
+    region: content
+  field_agenda_inicio_fecha:
+    type: events_date_formatter
+    label: hidden
+    settings:
+      day_class: field-agenda-inicio-fecha-dia
+      date_class: field-agenda-inicio-fecha-resto
+      text_class: ''
+      text: Start
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_agenda_social_media_share:
+    type: social_media_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 29
+    region: content
+  field_agenda_tipo_elemento:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_fivestart:
+    type: fivestar_stars
+    label: above
+    settings:
+      text_format: none
+      display_format: average
+      fivestar_widget: basic
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_geolocalization:
+    type: leaflet_formatter_default
+    label: above
+    settings:
+      multiple_map: false
+      leaflet_map: google-roadmap
+      height: 400
+      height_unit: px
+      hide_empty_map: false
+      disable_wheel: false
+      gesture_handling: false
+      reset_map:
+        control: true
+        position: topright
+      popup: false
+      popup_content: ''
+      map_position:
+        force: false
+        center:
+          lat: !!float 0
+          lon: !!float 0
+        zoom: 18
+        minZoom: 1
+        maxZoom: 18
+        zoomFiner: 0
+      icon:
+        iconType: marker
+        iconUrl: ''
+        shadowUrl: ''
+        className: ''
+        iconSize:
+          x: ''
+          'y': ''
+        iconAnchor:
+          x: ''
+          'y': ''
+        shadowSize:
+          x: ''
+          'y': ''
+        shadowAnchor:
+          x: ''
+          'y': ''
+        popupAnchor:
+          x: ''
+          'y': ''
+        html: '<div></div>'
+        html_class: leaflet-map-divicon
+        circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
+      leaflet_markercluster:
+        control: false
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
+        include_path: false
+      fullscreen:
+        control: true
+        options: '{"position":"topleft","pseudoFullscreen":false}'
+      locate:
+        control: false
+        options: '{"position":"topleft","locateOptions":{"enableHighAccuracy":true}}'
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
+      geocoder:
+        control: false
+        settings:
+          position: topright
+          input_size: 25
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: false
+          options: ''
+      weight: null
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_subtitulo:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 23
+    region: content
+hidden:
+  field_agenda_comments: true
+  field_comments: true
+  flag_bookmark: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

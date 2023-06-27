@@ -1,0 +1,37 @@
+uuid: 4e3d921d-24a6-4522-9cf2-5ff24309fdc4
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.content_grids_videos
+  module:
+    - image
+id: media.content_grids_videos.thumbnail
+field_name: thumbnail
+entity_type: media
+bundle: content_grids_videos
+label: Thumbnail
+description: 'La miniatura del elemento de multimedia.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

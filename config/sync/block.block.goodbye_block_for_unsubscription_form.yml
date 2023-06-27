@@ -1,0 +1,27 @@
+uuid: 9bff1331-3b9b-494f-a00e-ffc2d75b02a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - conil_theme
+id: goodbye_block_for_unsubscription_form
+theme: conil_theme
+region: content
+weight: -16
+provider: null
+plugin: 'block_content:de006e26-92a0-48a4-9f53-8112ca3429f8'
+settings:
+  id: 'block_content:de006e26-92a0-48a4-9f53-8112ca3429f8'
+  label: 'Goodbye block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /goodbye

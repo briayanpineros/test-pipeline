@@ -1,0 +1,35 @@
+uuid: e56d91ae-d67e-4c0c-804d-ef5ea1ac8d8e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.recipes.field_media_document
+    - field.field.media.recipes.field_recipe_category
+    - media.type.recipes
+id: media.recipes.media_library
+targetEntityType: media
+bundle: recipes
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_document: true
+  field_recipe_category: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

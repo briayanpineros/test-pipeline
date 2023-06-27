@@ -1,0 +1,18 @@
+uuid: 7aa268c1-06ef-4bc4-a600-5425b2cca19d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_contenido
+id: taxonomy_term.tipo_de_contenido.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tipo_de_contenido
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

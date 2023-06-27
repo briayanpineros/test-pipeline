@@ -1,0 +1,24 @@
+uuid: f6500f98-88f6-40a2-81c2-6c82066b5bf1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - conil_theme
+id: mainpagecontent
+theme: conil_theme
+region: content
+weight: -18
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/poi/*/*"

@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Contains conil_selfie.module.
+ */
+
+use Drupal\Component\Utility\Html;
+
+/**
+* Implements hook_mail().
+*/
+function conil_selfie_mail($key, &$message, $params) {
+  switch ($key) {
+    case 'selfie_mail':
+      $message['subject'] = $params['subject'];
+      $message['body'][] = Html::escape($params['message']);
+      // Add attachment when available.
+      if (isset($params['attachments'])) {
+        $message['params']['attachments'] = $params['attachments'];
+      }
+      break;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function conil_selfie_theme() {
+  $theme = [];
+  $theme['template_selfie'] = [
+    'variables' => [
+      'css' => NULL,
+      'text' => NULL,
+      'marco' => NULL,
+      'selfie' => NULL,
+    ],
+  ];
+  return $theme;
+}

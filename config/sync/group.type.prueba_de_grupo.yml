@@ -1,0 +1,11 @@
+uuid: 4e00a91a-6a45-4a56-a79b-44ebc124f293
+langcode: es
+status: true
+dependencies: {  }
+id: prueba_de_grupo
+label: 'Prueba de grupo'
+description: ''
+new_revision: true
+creator_membership: true
+creator_wizard: true
+creator_roles: {  }

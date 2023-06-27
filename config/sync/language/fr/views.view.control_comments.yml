@@ -1,0 +1,9 @@
+label: 'contrôle_comments (Commentaire)'
+display:
+  default:
+    display_options:
+      empty:
+        area:
+          content:
+            value: "<p>There aren't any comments on your site.</p>\r\n"
+            format: basic_html

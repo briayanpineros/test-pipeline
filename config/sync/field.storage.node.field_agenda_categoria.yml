@@ -1,0 +1,20 @@
+uuid: 823359ab-a055-4e4d-b070-0759e37b7595
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_agenda_categoria
+field_name: field_agenda_categoria
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

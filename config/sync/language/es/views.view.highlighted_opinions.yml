@@ -1,0 +1,19 @@
+display:
+  highlighted_poi_opinions:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: "<div class=\"highlighted-user-and-poi\">\r\n<div class=\"highlighted-user-name\">\r\n{{ name }} \r\n</div>\r\nen\r\n<div class=\"highlighted-poi-title\">\r\n{{ title }}\r\n</div>\r\n</div>"
+          admin_label: 'Usuario y POI'
+    display_title: 'Opiniones destacadas'
+  default:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: "<div class=\"highlighted-user-and-poi\">\r\n<div class=\"highlighted-user-name\">\r\n{{ name }} \r\n</div>\r\n en \r\n<div class=\"highlighted-poi-title\">\r\n{{ title }}\r\n</div>\r\n</div>"
+          admin_label: 'Usuario y POI'
+      title: OPINIONES
+  block_1:
+    display_title: 'Opiniones destacadas'

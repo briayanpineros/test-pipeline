@@ -1,0 +1,18 @@
+uuid: 1dc7ebf1-dc0d-42df-bbd1-274909460b45
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gastronomy_routes
+id: taxonomy_term.gastronomy_routes.name
+field_name: name
+entity_type: taxonomy_term
+bundle: gastronomy_routes
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

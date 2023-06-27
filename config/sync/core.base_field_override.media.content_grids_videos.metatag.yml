@@ -1,0 +1,18 @@
+uuid: d906d9e2-c097-4b38-acf6-c93fec1f34c3
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.content_grids_videos
+id: media.content_grids_videos.metatag
+field_name: metatag
+entity_type: media
+bundle: content_grids_videos
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

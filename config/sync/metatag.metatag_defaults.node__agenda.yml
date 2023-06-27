@@ -1,0 +1,14 @@
+uuid: d5b4176f-223a-4196-aa97-e71d53544328
+langcode: es
+status: true
+dependencies: {  }
+id: node__agenda
+label: 'Contenido: Agenda Item'
+tags:
+  abstract: '[node:summary]'
+  content_language: '[node:language]'
+  description: '[node:body]'
+  geo_position: '[node:field_poi_geofield]'
+  image_src: '[node:field_imagen_portada]'
+  robots: nofollow
+  title: '[node:title]'

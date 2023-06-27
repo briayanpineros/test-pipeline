@@ -1,0 +1,21 @@
+uuid: 51220b48-41e9-406b-ad94-58c39ddfcda1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_geofield
+    - node.type.poi
+  module:
+    - geofield
+id: node.poi.field_poi_geofield
+field_name: field_poi_geofield
+entity_type: node
+bundle: poi
+label: 'Our location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

@@ -1,0 +1,11 @@
+uuid: 69b49072-b00c-4e8f-a2d8-1cb4334c574e
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: logo_ayuntamiento
+title: 'Logo ayuntamiento'
+content:
+  value: '<div class="conil-header-ayto-logo"><img src="/themes/custom/conil_theme/imagenes/CONIL_AYTO_SIN_SOMBRA.png" alt="Escudo Ayuntamiento de Conil de la Frontera"></div><div class="conil-header-ayto-mv"><img src="/themes/custom/conil_theme/imagenes/CONIL_AYTO_LOGO_MV.png" alt="Escudo Ayuntamiento de Conil de la Frontera"></div>'
+  format: full_html

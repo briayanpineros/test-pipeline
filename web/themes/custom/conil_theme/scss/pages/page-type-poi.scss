@@ -1,0 +1,463 @@
+.page-node-type-poi {
+  color: $conil-color-blue;
+
+  .region-content {
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    @include md {
+      margin: auto;
+    }
+
+    article {
+      padding-left: 30px;
+      padding-right: 30px;
+
+      .node__content {
+        max-width: 1200px;
+        margin: auto;
+
+        .field--type-comment {
+          .form-type-fivestar p.search {
+            display: none;
+          }
+        }
+
+        .field__label {
+          text-transform: uppercase;
+          font-size: 1.5rem;
+        }
+
+        .field--name-field-poi-media {
+          border-top: 6px solid $conil-color-aqua;
+          border-bottom: 6px solid $conil-color-lightgray;
+        }
+
+        .field--type-image,
+        .leaflet-container {
+          width: 100%;
+          border-top: solid 6px $conil-color-aqua;
+          border-bottom: 6px solid $conil-color-gray;
+          margin-bottom: 2rem;
+
+          img {
+            width: 100%;
+          }
+        }
+
+
+        .leaflet-container {
+          border-bottom: solid 6px $conil-color-aqua;
+        }
+
+        .content-container {
+          .sr-only {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+          }
+
+          @include md {
+            padding: 2%;
+            border: solid 2px $conil-color-gray;
+            display: grid;
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+          }
+
+          h3 {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+
+          .le {
+            @include md {
+              position: relative;
+              grid-column-start: 1;
+              grid-column-end: 9;
+              margin-right: 2%;
+              grid-row-start: 1;
+              margin-right: 5%;
+            }
+
+            .left {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+
+              .field--name-body {
+                margin-top: 1.5rem;
+
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                  font-size: 1.3rem;
+                }
+
+                p, li {
+                  line-height: 1.2rem;
+                }
+              }
+
+              .field--name-field-poi-subtitle {
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                font-weight: bold;
+                line-height: 1.6rem;
+                margin-top: 1.5rem;
+              }
+
+              .field--name-field-poi-social-media-share {
+                .field__label {
+                  text-transform: none;
+                  display: inline-block;
+                  font-size: 1rem;
+                  margin-top: 1.5rem;
+                }
+
+                .field__item {
+                  display: inline-block;
+                }
+
+                img {
+                  width: 15px;
+                  height: auto;
+                }
+
+                ul {
+                  margin-left: .5rem;
+
+                  li {
+                    margin-right: 5px;
+                  }
+                }
+
+              }
+
+              .field--name-field-poi-telephone {
+                position: relative;
+                margin-top: 1.5rem;
+                font-weight: none;
+
+                .field__label {
+                  @include headline('SourceSans-Regular', 1.4rem)
+                }
+
+                .field__item {
+                  @include headline('SourceSans-Bold', 1.4rem);
+
+                  a {
+                    color: $conil-color-blue;
+                  }
+
+                }
+
+              }
+            }
+          }
+
+          .right {
+            margin-top: 2rem;
+
+            @include md {
+              margin-top: 0;
+              position: relative;
+              grid-column-start: 9;
+              grid-column-end: 21;
+              grid-row-start: 1;
+            }
+          }
+
+          section {
+            grid-column-start: 1;
+            grid-column-end: 21;
+            grid-row-start: 2;
+          }
+        }
+
+        .our-data {
+          background-color: $conil-color-lightgray;
+          font-size: .8rem;
+          display: grid;
+          grid-template-columns: 1fr;
+          padding: .8%;
+
+          @include md {
+            grid-template-columns: 1fr 1fr;
+          }
+
+          & > div {
+            background-color: white;
+            margin: 1.5%;
+            padding: 5% 5% 5% 15%;
+            height: 80px;
+
+            a {
+              color: $conil-color-pink;
+            }
+
+          }
+
+          h3 {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+
+
+          .field__label {
+            @include headline('SourceSans-Bold', 1rem);
+            display: block;
+            text-transform: none;
+          }
+
+          .field__item {
+            line-height: .8rem;
+            display: block;
+          }
+
+
+          .field--name-field-poi-email {
+            position: relative;
+
+            &::before {
+              margin: 0;
+              position: absolute;
+              left: .7rem;
+              top: 1.4rem;
+              content: '\e158';
+              font-family: "Google-Icon";
+              font-size: 1.5rem;
+              color: $white;
+              background: $conil-color-aqua;
+              padding-left: .35rem;
+              border-radius: 50%;
+              width: 2.2rem;
+              height: 2.2rem;
+            }
+          }
+
+          .field--name-field-poi-telephone2 {
+            position: relative;
+
+            &::before {
+              margin: 0;
+              position: absolute;
+              left: .7rem;
+              top: 1.4rem;
+              content: '\e0b0';
+              font-family: "Google-Icon";
+              font-size: 1.5rem;
+              color: $white;
+              background: $conil-color-yellow;
+              padding-left: .35rem;
+              border-radius: 50%;
+              width: 2.2rem;
+              height: 2.2rem;
+            }
+          }
+
+          .field--name-field-poi-address {
+            position: relative;
+
+            &::before {
+              margin: 0;
+              position: absolute;
+              left: .7rem;
+              top: 1.4rem;
+              content: '\e177';
+              font-family: "Google-Icon";
+              font-size: 1.5rem;
+              color: $white;
+              background: $conil-color-pink;
+              padding-left: .35rem;
+              border-radius: 50%;
+              width: 2.2rem;
+              height: 2.2rem;
+            }
+          }
+
+
+          .field--name-field-poi-webpage {
+            position: relative;
+
+            &::before {
+              margin: 0;
+              position: absolute;
+              left: .7rem;
+              top: 1.4rem;
+              content: '\e894';
+              font-family: "Google-Icon";
+              font-size: 1.5rem;
+              color: $white;
+              background: $conil-color-purple;
+              padding-left: .35rem;
+              border-radius: 50%;
+              width: 2.2rem;
+              height: 2.2rem;
+            }
+          }
+
+          .how_to_get {
+            position: relative;
+
+            &::before {
+              margin: 0;
+              position: absolute;
+              left: .7rem;
+              top: 1.4rem;
+              content: '\e55b';
+              font-family: "Google-Icon";
+              font-size: 1.5rem;
+              color: $white;
+              background: $conil-color-turquoise;
+              padding-left: .35rem;
+              border-radius: 50%;
+              width: 2.2rem;
+              height: 2.2rem;
+            }
+          }
+        }
+
+        section.field--name-field-poi-comments {
+          h2 {
+            text-transform: none;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+          }
+
+          label {
+            font-weight: bold;
+          }
+
+          .field__label {
+            @include headline('SourceSans-Light', 2rem);
+          }
+
+          .cke_chrome {
+            border: 1px solid $conil-color-blue;
+
+          }
+
+          .SelectBox {
+            border: 1px solid $conil-color-blue;
+
+          }
+
+          .filter-wrapper,
+          .cke_bottom,
+          .cke_top {
+            border: none;
+          }
+
+          textarea {
+            border-radius: 15px;
+            border-color: $conil-color-blue;
+            color: $conil-color-darkgray;
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+
+          #edit-actions {
+            display: flex;
+            justify-content: flex-end;
+          }
+
+          #edit-submit,
+          #edit-submit--2,
+          .buttom-primary,
+          #edit-submit--3 {
+            background-color: $conil-color-blue;
+            color: white;
+            border-radius: 25px;
+            padding: 5px 15px;
+            border: none;
+            margin-right: 1rem;
+          }
+
+          #edit-preview {
+            border-color: $conil-color-blue;
+            border-radius: 25px;
+            background: white;
+            color: $conil-color-blue;
+          }
+        }
+      }
+
+    }
+  }
+
+  .region-layout-suffix {
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    @include md {
+      margin: auto;
+    }
+  }
+
+  #block-views-block-content-opinions-block-1 {
+    > h2 {
+      background-color: $conil-color-blue;
+    }
+  }
+
+  #block-views-block-carrousel-block-1 {
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+
+    .owl-stage-outer {
+      margin-left: 3rem;
+      margin-right: 3rem;
+
+      .owl-stage {
+        margin: auto;
+        .popupVideo {
+          cursor: pointer;
+        }
+      }
+
+      .field-content {
+        img {
+          border-top: 6px solid $conil-color-aqua;
+        }
+      }
+    }
+
+    .owl-nav {
+      position: relative;
+
+
+      button {
+        font-size: 5rem;
+
+        &:hover {
+          background-color: white;
+          color: $conil-color-blue;
+        }
+
+        &.owl-prev {
+          position: absolute;
+          top: -140px;
+          left: 5px;
+
+        }
+
+        &.owl-next span {
+          position: absolute;
+          top: -140px;
+          right: 5px;
+
+        }
+      }
+    }
+  }
+}

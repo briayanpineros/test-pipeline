@@ -1,0 +1,29 @@
+#backtotop {
+  width: 40px;
+  height: 40px;
+  @include border-radius(8px);
+  background: $branding-grey-dark;
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  color: $branding-grey-light;
+  border: 0;
+  right: 7px;
+  bottom: 7px;
+  &::after {
+      content: '';
+      position: absolute;
+      left: 13px;
+      top: 16px;
+      width: 14px;
+      height: 14px;
+      border-top: 4px solid $branding-grey-light;
+      border-left: 4px solid $branding-grey-light;
+      border-bottom: 0;
+      border-right: 0;
+      transform: rotate(45deg);
+      @include border-radius(3px);
+      clear: both;
+
+  }
+}

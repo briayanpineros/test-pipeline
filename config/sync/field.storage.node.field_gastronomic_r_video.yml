@@ -1,0 +1,24 @@
+uuid: 09ec1a3b-9e63-4f62-9094-306830baa64e
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - media
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_gastronomic_r_video
+field_name: field_gastronomic_r_video
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

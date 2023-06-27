@@ -1,0 +1,25 @@
+uuid: b7b5435e-753f-4574-986a-41a2744fb113
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.plain_text_custom
+  module:
+    - comment
+    - filter
+    - node
+    - system
+    - toolbar
+id: moderator_conil
+label: Moderador
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer comments'
+  - 'edit own comments'
+  - 'skip comment approval'
+  - 'use text format plain_text_custom'
+  - 'view own unpublished content'
+  - 'view the administration theme'

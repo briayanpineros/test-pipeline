@@ -1,0 +1,10 @@
+web-speech-synthesis:
+  version: VERSION
+  js:
+    js/webspeechsynthesis.js: {}
+  css:
+    theme:
+      css/style.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

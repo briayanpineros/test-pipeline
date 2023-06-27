@@ -1,0 +1,27 @@
+uuid: ab5fdcba-b282-411f-8542-b25e1d939da4
+langcode: es
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.link_logout
+  module:
+    - simple_block
+    - system
+  theme:
+    - conil_theme
+id: link_logout
+theme: conil_theme
+region: content
+weight: -15
+provider: null
+plugin: 'simple_block:link_logout'
+settings:
+  id: 'simple_block:link_logout'
+  label: link_logout
+  label_display: '0'
+  provider: simple_block
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'

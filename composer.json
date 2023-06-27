@@ -1,0 +1,379 @@
+{
+    "name": "drupal/recommended-project",
+    "description": "Project template for Drupal 9 projects with a relocated document root",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": {
+        "owlcarousel2": {
+            "type": "package",
+            "package": {
+                "name": "owlcarousel2/owlcarousel2",
+                "version": "2.3.4",
+                "type": "drupal-library",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/OwlCarousel2/OwlCarousel2/archive/2.3.4.zip"
+                }
+            }
+        },
+        "0": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "1": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "2": {
+            "type": "package",
+            "package": {
+                "name": "furf/jquery-ui-touch-punch",
+                "version": "1.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/furf/jquery-ui-touch-punch/archive/refs/heads/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "3": {
+            "type": "package",
+            "package": {
+                "name": "etd-framework/jquery.sumoselect",
+                "version": "3.0.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.sumoselect"
+                },
+                "dist": {
+                    "url": "https://github.com/etd-framework/jquery.sumoselect/archive/v3.0.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "4": {
+            "type": "package",
+            "package": {
+                "name": "dinbror/blazy",
+                "version": "1.8.2",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "blazy"
+                },
+                "dist": {
+                    "url": "https://github.com/dinbror/blazy/archive/refs/tags/1.8.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "5": {
+            "type": "package",
+            "package": {
+                "name": "kenwheeler/slick",
+                "version": "1.8.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "slick"
+                },
+                "dist": {
+                    "url": "https://github.com/kenwheeler/slick/archive/refs/tags/1.8.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "6": {
+            "type": "package",
+            "package": {
+                "name": "tholman/intense",
+                "version": "1.0.7",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "intense"
+                },
+                "dist": {
+                    "url": "https://github.com/tholman/intense-images/archive/refs/tags/1.0.7.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "7": {
+            "type": "package",
+            "package": {
+                "name": "jackmoore/colorbox",
+                "version": "1.6.4",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "8": {
+            "type": "package",
+            "package": {
+                "name": "mreq/slick-lightbox",
+                "version": "0.2.12",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "slick-lightbox"
+                },
+                "dist": {
+                    "url": "https://github.com/mreq/slick-lightbox/archive/refs/tags/v0.2.12.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        }
+    },
+    "require": {
+        "chillerlan/php-qrcode": "^4.3",
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
+        "dinbror/blazy": "^1.8",
+        "dompdf/dompdf": "^2.0",
+        "drupal/admin_audit_trail": "^1.0",
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/atls": "^1.0@alpha",
+        "drupal/backup_migrate": "^5.0",
+        "drupal/better_exposed_filters": "^5.0",
+        "drupal/better_social_sharing_buttons": "^3.2",
+        "drupal/blazy": "^2.5",
+        "drupal/block_exclude_pages": "^2.0",
+        "drupal/blockgroup": "^1.5",
+        "drupal/captcha": "^1.5",
+        "drupal/coffee": "^1.2",
+        "drupal/colorbox": "^2.0",
+        "drupal/colorbox_media_video": "^1.0",
+        "drupal/config_ignore": "^2.3",
+        "drupal/console": "^1.9",
+        "drupal/core": "^9.5",
+        "drupal/core-composer-scaffold": "^9.2",
+        "drupal/core-project-message": "^9.2",
+        "drupal/core-recommended": "^9.2",
+        "drupal/countries_info": "^1.2",
+        "drupal/csv_importer": "^1.14",
+        "drupal/csv_serialization": "^2.0",
+        "drupal/devel": "^4.1",
+        "drupal/domain": "^1.0@beta",
+        "drupal/domain_theme_switch": "^1.5",
+        "drupal/easy_breadcrumb": "^2.0",
+        "drupal/empty_page": "^3.0",
+        "drupal/entity_usage": "^2.0@beta",
+        "drupal/eu_cookie_compliance": "^1.24",
+        "drupal/extlink": "^1.7",
+        "drupal/feeds": "^3.0@beta",
+        "drupal/feeds_tamper": "^2.0@beta",
+        "drupal/field_group": "^3.4",
+        "drupal/field_permissions": "^1.2",
+        "drupal/firebase": "^3.0",
+        "drupal/fivestar": "1.x-dev@dev",
+        "drupal/flag": "^4.0@beta",
+        "drupal/fullcalendar_view": "^5.1",
+        "drupal/geolocation": "^3.10",
+        "drupal/gin": "^3.0@alpha",
+        "drupal/gin_login": "^1.0",
+        "drupal/gin_toolbar": "^1.0@beta",
+        "drupal/group": "^1.4",
+        "drupal/image_effects": "^3.2",
+        "drupal/intense": "^2.3",
+        "drupal/jquery_ui_accordion": "^1.1",
+        "drupal/key_auth": "^2.1",
+        "drupal/lang_dropdown": "^2.0",
+        "drupal/leaflet": "2.2.10",
+        "drupal/leaflet_more_maps": "^2.1",
+        "drupal/mailrelay_newsletter": "2.0.x-dev@dev",
+        "drupal/mailsystem": "^4.4",
+        "drupal/material_icons": "^1.0",
+        "drupal/media_library_form_element": "^2.0",
+        "drupal/menu_link_attributes": "^1.3",
+        "drupal/metatag": "^1.19",
+        "drupal/multivalue_form_element": "^1.0@beta",
+        "drupal/owlcarousel": "^2.0@RC",
+        "drupal/page_manager": "^4.0@beta",
+        "drupal/paragraphs": "^1.15",
+        "drupal/pathauto": "^1.10",
+        "drupal/poll": "^1.5",
+        "drupal/queue_ui": "^3.1",
+        "drupal/quick_node_clone": "^1.14",
+        "drupal/quicktabs": "^3.0@alpha",
+        "drupal/rate": "^3.0",
+        "drupal/recaptcha": "^3.1",
+        "drupal/reroute_email": "^2.1",
+        "drupal/restui": "^1.21",
+        "drupal/scheduler": "^1.4",
+        "drupal/schema_metatag": "^2.3",
+        "drupal/schema_place": "^2.3",
+        "drupal/schema_web_page": "^2.3",
+        "drupal/scn": "^2.0",
+        "drupal/screensaver": "^1.0",
+        "drupal/search_api": "^1.20",
+        "drupal/search_api_page": "^1.0@beta",
+        "drupal/search_api_solr": "^4.2",
+        "drupal/search_api_tracking": "^1.0",
+        "drupal/select2": "^1.13",
+        "drupal/sidr": "^3.1",
+        "drupal/simple_block": "^1.3",
+        "drupal/simple_sitemap": "^4.1",
+        "drupal/simplenews": "^3.0@beta",
+        "drupal/site_audit": "^3.0@RC",
+        "drupal/sitemap": "^2.0@beta",
+        "drupal/slick": "^2.6",
+        "drupal/slick_lightbox": "^1.4",
+        "drupal/slick_paragraphs": "^2.2",
+        "drupal/slick_views": "^2.6",
+        "drupal/smtp": "^1.0",
+        "drupal/social_link_field": "^1.1@alpha",
+        "drupal/social_media": "^1.9@RC",
+        "drupal/social_media_links": "^2.8",
+        "drupal/stage_file_proxy": "^1.2",
+        "drupal/starrating": "^4.1@alpha",
+        "drupal/status_messages": "^4.2",
+        "drupal/superfish": "^1.4",
+        "drupal/symfony_mailer": "^1.1@beta",
+        "drupal/tamper": "^1.0@alpha",
+        "drupal/time_field": "^2.1",
+        "drupal/toolbar_language_switcher": "^2.0@alpha",
+        "drupal/total_control": "^3.0",
+        "drupal/ultimate_cron": "^2.0@alpha",
+        "drupal/views_bulk_operations": "^4.2",
+        "drupal/views_data_export": "^1.1",
+        "drupal/views_filter_select": "^1.0",
+        "drupal/views_slideshow": "^5.0",
+        "drupal/votingapi": "^3.0@beta",
+        "drupal/webform": "^6.1",
+        "drupal/webform_gmap_field": "^1.1",
+        "drupal/webform_jsonschema": "^2.0",
+        "drupal/workbench_email": "^2.2",
+        "drupal/x_frame_options": "^1.3",
+        "drush/drush": "^10.6",
+        "etd-framework/jquery.sumoselect": "3.0.0",
+        "furf/jquery-ui-touch-punch": "*",
+        "jackmoore/colorbox": "^1.6",
+        "kenwheeler/slick": "^1.8",
+        "mreq/slick-lightbox": "^0.2.12",
+        "npm-asset/leaflet.locatecontrol": "^0.76.1",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "owlcarousel2/owlcarousel2": "^2.3",
+        "tholman/intense": "^1.0",
+        "videojs/video.js": "^7.18",
+        "wikimedia/composer-merge-plugin": "^2.0"
+    },
+    "replace": {
+        "minishlink/web-push": "*"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/console-extend-plugin": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "wikimedia/composer-merge-plugin": true,
+            "oomphinc/composer-installers-extender": true,
+            "cweagans/composer-patches": true
+        }
+    },
+    "extra": {
+        "enable-patching": true,
+        "merge-plugin": {
+            "include": [
+                "web/modules/contrib/sidr/composer.libraries.json"
+            ]
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-types": [
+            "npm-asset"
+        ],
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:npm-asset"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "drupal-core-project-message": {
+            "include-keys": [
+                "homepage",
+                "support"
+            ],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                         </>",
+                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
+                "<bg=blue;fg=white>                                                         </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+                "  * Install the site: https://www.drupal.org/docs/8/install",
+                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+                "  * Get support: https://www.drupal.org/support",
+                "  * Get involved with the Drupal community:",
+                "      https://www.drupal.org/getting-involved",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
+            ]
+        },
+        "patches": {
+            "drupal/leaflet": {
+                "Adding domoritz/leaflet-locatecontrol support to leaflet 2.2-x": "https://git.drupalcode.org/project/leaflet/-/merge_requests/22.diff"
+            },
+            "drupal/site_audit": {
+                "Site audit": "https://git.drupalcode.org/project/site_audit/-/merge_requests/3.diff"
+            },
+            "drupal/core": {
+                "Submitting a comment in the non default language redirects you to the default language": "https://www.drupal.org/files/issues/2021-11-29/2751269-106.patch",
+                "Adding translation tab to administer display for field group labels": "https://www.drupal.org/files/issues/2022-10-28/2546212-207.patch"
+            }
+        }
+    }
+}

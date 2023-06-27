@@ -1,0 +1,24 @@
+uuid: c8ac0c19-9c3d-4287-96c4-4b846264e415
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_nb_dates
+field_name: field_nb_dates
+entity_type: node
+type: daterange
+settings:
+  datetime_type: datetime
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

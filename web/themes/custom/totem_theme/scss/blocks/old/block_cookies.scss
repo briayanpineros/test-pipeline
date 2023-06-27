@@ -1,0 +1,33 @@
+.eu-cookie-compliance-banner {
+  .eu-cookie-compliance-message p {
+    font-size: 1rem;
+    display: block;
+    span {
+      color: $conil-color-yellow;
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: $conil-color-pink;
+      }
+    }
+  }
+
+
+  .decline-button {
+    display: none;
+  }
+
+  .agree-button {
+    background-color: $conil-color-yellow;
+    color: $conil-color-darkgreen;
+    border-radius: 1.5em;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.3em 2em;
+  }
+
+
+}

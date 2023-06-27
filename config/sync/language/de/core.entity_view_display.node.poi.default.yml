@@ -1,0 +1,10 @@
+third_party_settings:
+  field_group:
+    group_col_1:
+      label: 'Allgemeine Informationen über uns'
+    group_our_data:
+      label: 'Unsere Kontaktinformationen'
+    group_mail:
+      label: E-Mail
+    group_datos_de_interes:
+      label: 'Interessante Daten'

@@ -1,0 +1,19 @@
+uuid: 35c1eee6-af02-4787-b0f6-18019ff81467
+langcode: en
+status: true
+dependencies:
+  module:
+    - material_icons
+    - taxonomy
+id: taxonomy_term.field_turism_icon
+field_name: field_turism_icon
+entity_type: taxonomy_term
+type: material_icons
+settings: {  }
+module: material_icons
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

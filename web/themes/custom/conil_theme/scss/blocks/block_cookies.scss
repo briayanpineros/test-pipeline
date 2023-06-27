@@ -1,0 +1,54 @@
+.eu-cookie-compliance-banner {
+  .eu-cookie-compliance-content {
+    display: flex;
+    flex-wrap: wrap;
+    #popup-text {
+      flex: 1 1 100%;
+      @include sm {
+        flex: 1 1 50%
+      }
+      margin-top: 20px;
+      margin-bottom: 15px;
+
+      p {
+        font-size: 1rem;
+        display: block;
+
+        span {
+          color: $conil-color-yellow;
+          font-weight: bold;
+        }
+
+        a {
+          text-decoration: none;
+          color: $conil-color-pink3;
+          &:hover {
+            color: $conil-color-pink3;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    #popup-buttons {
+      flex: 1 1 100%;
+      align-self: center;
+      text-align: center;
+      @include sm {
+        flex: 1 1 50%
+      }
+
+      .decline-button {
+        display:none;
+      }
+
+      .agree-button {
+        background-color: $conil-color-yellow;
+        color: $conil-color-darkgreen;
+        border-radius: 1.5em;
+        font-weight: bold;
+        padding: 0.3em 2em;
+      }
+    }
+  }
+}

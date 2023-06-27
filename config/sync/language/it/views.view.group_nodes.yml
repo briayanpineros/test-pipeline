@@ -1,0 +1,88 @@
+label: 'Nodos de grupo'
+description: 'Enumera todos los nodos que se han añadido a un grupo.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Azzeramento
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        title:
+          label: Titolo
+          separator: ', '
+        type:
+          label: 'Tipo di contenuto'
+          separator: ', '
+        status:
+          label: Stato
+          settings:
+            format_custom_true: Pubblicato
+            format_custom_false: 'Non pubblicato'
+          separator: ', '
+        changed:
+          label: Aggiornato
+          separator: ', '
+        view_group_content:
+          admin_label: 'Ver enlace de relación'
+          label: 'Enlace al contenido del Grupo'
+          text: 'Ver relación'
+        edit_group_content:
+          admin_label: 'Editar enlace de relación'
+          label: 'Enlace para editar el contenido del Grupo'
+          text: 'Editar relación'
+        delete_group_content:
+          admin_label: 'Borrar el enlace de relación'
+          label: 'Enlace para eliminar el contenido del Grupo'
+          text: 'Eliminar relación'
+        edit_node:
+          admin_label: 'Editar enlace de nodo'
+          text: 'Editar nodo'
+        delete_node:
+          admin_label: 'Borrar enlace de nodo'
+          label: 'Enlace para eliminar Contenido'
+          text: 'Eliminar nodo'
+        dropbutton:
+          label: Operations
+      filters:
+        status:
+          expose:
+            label: 'Stato pubblicazione'
+          group_info:
+            label: 'Stato pubblicazione'
+            group_items:
+              1:
+                title: Pubblicato
+              2:
+                title: 'Non pubblicato'
+        type:
+          expose:
+            label: Tipo
+      empty:
+        area_text_custom:
+          content: 'Nessun contenuto disponibile.'
+      arguments:
+        gid:
+          exception:
+            title: All
+      title: Nodi
+  page_1:
+    display_title: Pagina
+    display_options:
+      menu:
+        title: Nodi

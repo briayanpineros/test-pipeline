@@ -1,0 +1,17 @@
+label: 'Gastronomic Recipes'
+display:
+  default:
+    display_options:
+      title: 'Gastronomic Recipes'
+      fields:
+        nothing:
+          alter:
+            text: "<div class=\"recipe-image-subtitle-desc-wrapper\">\r\n  <div class=\"recipe-image\">\r\n    {{ field_category_image }}\r\n  </div>\r\n  <div class=\"recipe-subtitle-desc\">\r\n    <div class=\"recipe-subtitle\">{{ field_category_subtitle }}</div>\r\n    <div class=\"recipe-desc\">{{ description__value }}</div>\r\n  </div>\r\n</div>\r\n<div class=\"recipe-list-title\">\r\n  <p>Recipe list of <span class=\"recipe-category\">\"{{ name_1 }}\"</span>:</p>\r\n</div>"
+        field_media_document:
+          alter:
+            text: '<a target="_blank" class="recipe-file-link" href="{{ field_media_document }}" alt="Open PDF in new tab">See recipe in PDF</a>'
+            alt: 'See PDF'
+      exposed_form:
+        options:
+          submit_button: Apply
+          exposed_sorts_label: 'Order By'

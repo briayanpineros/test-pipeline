@@ -1,0 +1,7 @@
+label: 'Di seguito'
+flag_short: 'Segui questo utente'
+flag_long: 'Fare clic sul link per seguire questo utente'
+flag_message: 'Stai seguendo l''utente'
+unflag_short: 'Non seguire questo utente'
+unflag_long: 'Fare clic sul link per non seguire questo utente'
+unflag_message: 'L''utente non è stato seguito'

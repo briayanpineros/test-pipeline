@@ -1,0 +1,22 @@
+uuid: 63275fc8-d877-4378-bf6d-de50e5a93ddf
+langcode: en
+status: true
+dependencies:
+  module:
+    - conil_totem
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: totem.field_interactive
+field_name: field_interactive
+entity_type: totem
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,454 @@
+<?php
+
+/**
+ * @file
+ * Contains conil_tweaks.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\views\ViewExecutable;
+use Drupal\views\Views;
+use Drupal\Component\Utility\Html;
+use Drupal\comment\Entity\CommentType;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\user\Entity\User;
+use Drupal\Core\Url;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\node\NodeInterface;
+use Drupal\Core\Link;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_help().
+ */
+function conil_tweaks_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the conil_tweaks module.
+    case 'help.page.conil_tweaks':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Conil general purpose module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function conil_tweaks_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'node_poi_form') {
+//    $form['field_poi_category']['widget']['#ajax'] = [
+//      'callback' => 'conil_tweaks_subcategoria_callback',
+//      'wrapper' => 'ajax-field_poi_subcategoy',
+//      'event' => 'change',
+//    ];
+//
+//
+//    $form['field_poi_subcategoy']['widget']['#options'] = NULL;
+//    $form['field_poi_subcategoy']['widget']['#multiple'] = TRUE;
+//    $form['field_poi_subcategoy']['widget']['#prefix'] = '<div id="ajax-field_poi_subcategoy">';
+//    $form['field_poi_subcategoy']['widget']['#suffix'] = '</div>';
+//
+//
+//    if (!empty($form['field_poi_category']['widget']['#default_value'])) {
+//      $ids = [];
+//      foreach ($form['field_poi_category']['widget']['#default_value'] as $value) {
+//        $ids[] = $value['target_id'];
+//      }
+//      $view = Views::getView('vista_referencia_subcategoria_interes');
+//      $view->setArguments([implode(',', $ids)]);
+//      $view->execute('default');
+//      foreach ($view->result as $result) {
+//        $form['field_poi_subcategoy']['widget']['#options'][$result->_entity->id()] = $result->_entity->label();
+//      }
+//    }
+//    else {
+//      if (!empty($form_state->getValue('field_poi_category'))) {
+//        $ids = [];
+//        foreach ($form_state->getValue('field_poi_category') as $value) {
+//          $ids[$value['target_id']] = $value['target_id'];
+//        }
+//        $view = Views::getView('vista_referencia_subcategoria_interes');
+//        $view->setArguments([$ids]);
+//        $view->execute('default');
+//        foreach ($view->result as $result) {
+//          $form['field_poi_subcategoy']['widget']['#options'][$result->_entity->id()] = $result->_entity->label();
+//        }
+//      }
+//      else {
+//        $form['field_poi_subcategoy']['widget']['#attributes']['placeholder'] = t("Seleccione primero una categoría");
+//      }
+//    }
+//
+    $form['#attached']['library'][] = 'conil_tweaks/load_sumoselect';
+//
+  }elseif ($form_id == 'node_poi_edit_form'){
+//    $form['field_poi_category']['widget']['#ajax'] = [
+//      'callback' => 'conil_tweaks_subcategoria_callback',
+//      'wrapper' => 'ajax-field_poi_subcategoy',
+//      'event' => 'change',
+//    ];
+//
+//
+//    $form['field_poi_subcategoy']['widget']['#options'] = NULL;
+//    $form['field_poi_subcategoy']['widget']['#multiple'] = TRUE;
+//    $form['field_poi_subcategoy']['widget']['#prefix'] = '<div id="ajax-field_poi_subcategoy">';
+//    $form['field_poi_subcategoy']['widget']['#suffix'] = '</div>';
+//
+//
+//    if (!empty($form_state->getUserInput()['field_poi_category'])) {
+//      $ids = [];
+//      foreach ($form_state->getUserInput()['field_poi_category'] as $value) {
+//        $ids[] = $value;
+//      }
+//      $view = Views::getView('vista_referencia_subcategoria_interes');
+//      $view->setArguments([$ids]);
+//      $view->execute('default');
+//      foreach ($view->result as $result) {
+//        $form['field_poi_subcategoy']['widget']['#options'][$result->_entity->id()] = $result->_entity->label();
+//      }
+//    }
+//    else {
+//      if (!empty($form['field_poi_category']['widget']['#default_value'])) {
+//        $ids = [];
+//        foreach ($form['field_poi_category']['widget']['#default_value'] as $value) {
+//          $ids[] = $value;
+//        }
+//        $view = Views::getView('vista_referencia_subcategoria_interes');
+//        $view->setArguments([$ids]);
+//        $view->execute('default');
+//        foreach ($view->result as $result) {
+//          $form['field_poi_subcategoy']['widget']['#options'][$result->_entity->id()] = $result->_entity->label();
+//        }
+//      }
+//      else {
+//        $form['field_poi_subcategoy']['widget']['#attributes']['placeholder'] = t("Seleccione primero una categoría");
+//      }
+//    }
+
+    $form['#attached']['library'][] = 'conil_tweaks/load_sumoselect';
+  }
+
+
+
+}
+
+
+function conil_tweaks_subcategoria_callback($form, FormStateInterface $form_state) {
+  return $form['field_poi_subcategoy'];
+}
+
+/**
+ * Implements hook_views_data().
+ */
+function conil_tweaks_views_data() {
+  $data['views']['table']['group'] = t('Custom Global');
+  $data['views']['table']['join'] = [
+    // #global is a special flag which allows a table to appear all the time.
+    '#global' => [],
+  ];
+
+  $data['views']['average_stars_counter'] = [
+    'title' => t('Average Stars Counter'),
+    'help' => t('The average Stars of a content using votes from its comments.'),
+    'field' => [
+      'id' => 'average_stars_counter',
+    ],
+  ];
+  return $data;
+}
+
+/**
+ * Implements hook_node_presave()
+ */
+function conil_tweaks_node_presave($node) {
+  //Comprobamos que el nodo que estamos creando sea de tipo agenda
+  if ($node->bundle() == "agenda" && $node->isPublished()&& $node->isNew()) {
+    //Comprobamos si hay alguien suscrito a esta categoría
+    if(!$node->field_agenda_categoria->isEmpty()) {
+      //Obtenemos la vista
+      $view = \Drupal\views\Views::getView("get_agenda_flag_users");
+      if (!$view) {
+      // The view could not be loaded. Add a watchdog message and leave the function
+      return false;
+      }
+      //Ejecutamos la vista y le pasamos el id del término de taxonomía
+      $view->setDisplay("default");
+      $view->setArguments(array($node->field_agenda_categoria->target_id));
+      $view->execute();
+      $view_result = $view->result;
+      if (count($view_result)) {
+        $queue = \Drupal::queue('conil_tweaks_user_email_notification');
+        $mails = [];
+        foreach ($view_result as $id => $row) {
+          if (!isset($mails[$view->field['mail']->getValue($row)])) {
+            $mails[$view->field['mail']->getValue($row)] = $view->field['mail']->getValue($row);
+            $queue->createItem([
+              'nid' => $node->id(),
+              'type' => $node->bundle(),
+              'name' => $view->field['name']->getValue($row),
+              'mail' => $view->field['mail']->getValue($row),
+              'tid' => $view->field['tid']->getValue($row),
+              'uid' => $view->field['uid']->getValue($row),
+              'agenda_category' => $node->field_agenda_categoria->entity->label(),
+            ]);
+          }
+        }
+      }
+    }
+  }
+
+  //FUNCIONALIDAD PARA NOTIFICAR A LOS USUARIOS SUSCRITOS AL CANAL DE NOTICIAS
+  if ($node->bundle() == "news" && $node->isPublished() && $node->isNew()) {
+    $view = \Drupal\views\Views::getView("get_news_flag_users");
+    if (!$view) {
+      // The view could not be loaded. Add a watchdog message and leave the function
+      return false;
+    }
+    //Ejecutamos la vista y le pasamos el id del término de taxonomía
+    $view->setDisplay("default");
+    $view->execute();
+    $view_result = $view->result;
+    if (count($view_result)) {
+      $queue = \Drupal::queue('conil_tweaks_user_email_notification');
+      $mails = [];
+      foreach ($view_result as $id => $row) {
+        if (!isset($mails[$view->field['mail']->getValue($row)])) {
+          $mails[$view->field['mail']->getValue($row)] = $view->field['mail']->getValue($row);
+          $queue->createItem([
+            'nid' => $node->id(),
+            'type' => $node->bundle(),
+            'name' => $view->field['name']->getValue($row),
+            'mail' => $view->field['mail']->getValue($row),
+            'uid' => $view->field['uid']->getValue($row),
+            'entity_id' => $view->field['entity_id']->getValue($row),
+          ]);
+        }
+      }
+    }
+  }
+
+  if ($node->bundle() == "news_bulletin" && ($node->mailrelay_newsletter_sent->isEmpty() || !$node->mailrelay_newsletter_sent->value)) {
+    if (!$node->field_nb_dates->isEmpty()) {
+      $query = \Drupal::entityQuery('node');
+      $query->condition('type', 'news');
+      $query->condition('status', NodeInterface::PUBLISHED);
+      $query->condition('created', strtotime($node->field_nb_dates->value), '>=');
+      $query->condition('created', strtotime($node->field_nb_dates->end_value), '<=');
+      $nodes_ids = $query->execute();
+      foreach ($nodes_ids as $nid) {
+        $node->field_nb_related_news[] = ['target_id' => $nid];
+      }
+    }
+  }
+
+}
+
+/**
+ * Implements hook_mail().
+ */
+function conil_tweaks_mail($key, &$message, $params) {
+  $options = array(
+    'langcode' => $message['langcode'],
+  );
+  switch ($key) {
+    case 'conil_new_agenda_content_notify':
+      $message['from'] = \Drupal::config('system.site')->get('mail');
+      $message['subject'] = $params['subject'];
+      $message['body'][] = Html::escape($params['message']);
+      break;
+
+  }
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function conil_tweaks_entity_extra_field_info() {
+  $extra = [];
+  foreach (CommentType::loadMultiple() as $bundle) {
+    $extra['comment'][$bundle->id()]['display']['conil_tweaks_h1_title'] = [
+      'label' => t('Conil: H1 title'),
+      'description' => t('H1 title.'),
+      'weight' => 1,
+      'visible' => FALSE,
+    ];
+    $extra['comment'][$bundle->id()]['display']['conil_tweaks_h2_title'] = [
+      'label' => t('Conil:  H2 title'),
+      'description' => t('H2 title.'),
+      'weight' => 1,
+      'visible' => FALSE,
+    ];
+    $extra['comment'][$bundle->id()]['display']['conil_tweaks_h3_title'] = [
+      'label' => t('Conil:  H3 title'),
+      'description' => t('H3 title.'),
+      'weight' => 1,
+      'visible' => FALSE,
+    ];
+    $extra['comment'][$bundle->id()]['display']['conil_tweaks_simple_title'] = [
+      'label' => t('Conil:  Simple title'),
+      'description' => t('Simple title.'),
+      'weight' => 1,
+      'visible' => FALSE,
+    ];
+    $extra['comment'][$bundle->id()]['display']['conil_tweaks_author_name'] = [
+      'label' => t('Conil:  Author name'),
+      'description' => t('Author name.'),
+      'weight' => 1,
+      'visible' => FALSE,
+    ];
+    $extra['node']['poi']['display']['how_to_get'] = [
+      'label' => t('How to get'),
+      'description' => t('link how to get there.'),
+      'weight' => 10,
+      'visible' => FALSE,
+    ];
+
+  }
+  return $extra;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function conil_tweaks_comment_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+
+  if ($display->getComponent('conil_tweaks_h2_title')) {
+    $build['conil_tweaks_h2_title'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => ['conil-tweaks-h2-title']],
+    ];
+    $build['conil_tweaks_h2_title']['title'] = [
+      '#markup' => '<h2>' . $entity->label() . '</h2>',
+    ];
+  }
+  if ($display->getComponent('conil_tweaks_h3_title')) {
+    $build['conil_tweaks_h3_title'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => ['conil-tweaks-h3-title']],
+    ];
+    $build['conil_tweaks_h3_title']['title'] = [
+      '#markup' => '<h3>' . $entity->label() . '</h3>',
+    ];
+  }
+  if ($display->getComponent('conil_tweaks_simple_title') && !$entity->name->isEmpty()) {
+    $build['conil_tweaks_simple_title'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => ['conil-tweaks-simple-title']],
+    ];
+    $build['conil_tweaks_simple_title']['title'] = [
+      '#markup' => '<div class="comment-title">' . $entity->label() . '</div>',
+    ];
+  }
+  if ($display->getComponent('conil_tweaks_author_name')) {
+    $build['conil_tweaks_author_name'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => ['conil-tweaks-author-name']],
+    ];
+    $build['conil_tweaks_author_name']['author_name'] = [
+      '#markup' => '<div class="comment-author-name">' . $entity->getAuthorName() . '</div>',
+    ];
+  }
+
+}
+
+
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function conil_tweaks_user_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  $current_path = \Drupal::service('path.current')->getPath();
+  if (strpos($current_path, '/user/') === 0  && ($view_mode == 'default' || $view_mode == 'full')) {
+    \Drupal::service('page_cache_kill_switch')->trigger();
+    $url = $entity->toUrl('edit-form');
+    $redirect = new RedirectResponse($url->toString());
+    $redirect->send();
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ * <div class="field__item"><a href="https://conil.org">Sitio web</a></div>
+ */
+function conil_tweaks_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($display->getComponent('how_to_get')) {
+    $values = $entity->field_poi_geofield->getValue();
+    $geo = explode(" ",$values[0]['value']);
+    $latitude = str_replace("(","",$geo[1]);
+    $longitude = str_replace(")","",$geo[2]);
+
+    $build['how_to_get'] = [
+      '#type' => 'container',
+      '#label_display' => 'above',
+      '#attributes' => ['class' => ['how_to_get']],
+      '#markup' => '<div class="field__label">' . t('How to get') . '</div>
+      <div class="field_how_to_get"><a href="http://www.google.com/maps/place/' . $longitude . "," . $latitude .'" target="_blank" >' . t('Google maps') .'</a></div>',
+    ];
+
+  }
+}
+
+/**
+ * Implements hook_entity_view_mode_alter().
+ */
+function conil_tweaks_entity_view_mode_alter(&$view_mode, \Drupal\Core\Entity\EntityInterface $entity) {
+  if(\Drupal::service('theme.manager')->getActiveTheme()->getName() == 'totem_theme' && $entity->bundle() == 'poi') {
+    $view_mode = 'default_totems';
+  }
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function conil_tweaks_page_attachments_alter(array &$attachments) {
+  $attachments['#attached']['library'][] = 'conil_tweaks/conil_tweaks.style';
+}
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function conil_tweaks_theme_registry_alter(&$theme_registry) {
+  // Replace the path to the registered template so that Drupal looks for
+  // it in your module's templates folder.
+  $theme_registry['mailrelay_newsletter_mail']['path'] =  	\Drupal::service('extension.list.module')->getPath('conil_tweaks') . '/templates';
+}
+
+/**
+ *
+ */
+function conil_tweaks_preprocess_mailrelay_newsletter_mail(&$variables) {
+  $node = $variables['node'];
+  $links = [];
+  foreach ($node->field_nb_related_news as $value) {
+    $entity = $value->entity;
+    $links[] = (string) $entity->toLink($entity->label(), 'canonical', ['absolute' => TRUE])->toString();
+  }
+  $content = '<ul><li>' . implode('</li><li>', $links) . '</li></ul>';
+  $variables['links'] = $content;
+}
+
+/**
+ * Implements hook_user_format_name_alter().
+ */
+function conil_tweaks_user_format_name_alter(&$name, AccountInterface $account) {
+  // Display the user's uid instead of name.
+  if ($account->id() && $account instanceof UserInterface) {
+    // field_nombre field_apellido
+    if (!$account->field_nombre->isEmpty() && !$account->field_apellido->isEmpty()) {
+      $name = $account->field_nombre->value . ' ' . $account->field_apellido->value;
+    }
+    elseif(!$account->field_nombre->isEmpty()) {
+      $name = $account->field_nombre->value;
+    }
+    elseif(!$account->field_apellido->isEmpty()) {
+      $name = $account->field_apellido->value;
+    }
+  }
+}

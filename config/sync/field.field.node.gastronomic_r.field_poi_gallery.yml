@@ -1,0 +1,35 @@
+uuid: 70feef76-3b67-493c-b0f2-e11e2d2b3e75
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_gallery
+    - media.type.cover
+    - media.type.image
+    - media.type.poi_media
+    - media.type.video
+    - node.type.gastronomic_r
+id: node.gastronomic_r.field_poi_gallery
+field_name: field_poi_gallery
+entity_type: node
+bundle: gastronomic_r
+label: 'Galería de imágenes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      cover: cover
+      image: image
+      poi_media: poi_media
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

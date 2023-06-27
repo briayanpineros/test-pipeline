@@ -1,0 +1,21 @@
+uuid: 9dff2fa0-6c99-42e5-b906-24dbb4bcc872
+langcode: en
+status: true
+dependencies: {  }
+id: node__punto_interes
+label: 'Content: Punto de interés'
+tags:
+  abstract: '[node:summary]'
+  content_language: '[node:language]'
+  description: '[node:body]'
+  geo_position: '[node:field_poi_geofield]'
+  image_src: '[node:field_poi_media]'
+  robots: nofollow
+  schema_place_address: 'a:2:{s:5:"@type";s:13:"PostalAddress";s:13:"streetAddress";s:30:"[node:field_poi_address:value]";}'
+  schema_place_description: '[node:body]'
+  schema_place_geo: 'a:3:{s:5:"@type";s:14:"GeoCoordinates";s:8:"latitude";s:29:"[node:field_poi_geofield:lat]";s:9:"longitude";s:29:"[node:field_poi_geofield:lon]";}'
+  schema_place_name: '[node:title]'
+  schema_place_telephone: '[node:field_poi_telephone]'
+  schema_place_type: Place
+  schema_place_url: '[node:url]'
+  title: '[node:title]'

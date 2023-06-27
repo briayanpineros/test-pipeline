@@ -1,0 +1,63 @@
+diff --git a/site_audit-unknown_column_error_audit_content-3294108-2.patch b/site_audit-unknown_column_error_audit_content-3294108-2.patch
+index 77ef35d..e69de29 100644
+--- a/site_audit-unknown_column_error_audit_content-3294108-2.patch
++++ b/site_audit-unknown_column_error_audit_content-3294108-2.patch
+@@ -1,58 +0,0 @@
+-diff --git a/src/Plugin/SiteAuditCheck/ContentFieldInstances.php b/src/Plugin/SiteAuditCheck/ContentFieldInstances.php
+-
+---- a/src/Plugin/SiteAuditCheck/ContentFieldInstances.php
+-+++ b/src/Plugin/SiteAuditCheck/ContentFieldInstances.php
+-
+-
+-public function calculateScore() {
+-    if (!isset($this->registry->fields)) {
+-      // We need to calculate, so call the class that does it.
+-      $this->checkInvokeCalculateScore('content_field_count');
+-    }
+-    $map = \Drupal::service('entity_field.manager')->getFieldMap();
+-    $this->registry->field_instance_counts = [];
+-    foreach ($map as $entity => $fields) {
+-      $bundle_column_name = \Drupal::service('entity_type.manager')->getDefinition($entity)->getKey('bundle');
+-      foreach ($fields as $field => $description) {
+-        if (!in_array($field, array_keys($this->registry->fields))) {
+-          continue;
+-        }
+-        foreach ($description['bundles'] as $bundle) {
+-+          try{
+-          switch ($description['type']) {
+-            case 'address':
+-              // Directly query tables for Address fields.
+-              $database = \Drupal\Core\Database\Database::getConnection();
+-              $table = $entity . '__' . $field;
+-              $query = $database->select($table);
+-              // Address fields are configured by country code.
+-              $query->condition($field . '_country_code', NULL, 'IS NOT NULL')
+-                ->condition('bundle', $bundle);
+-              $field_count = $query->countQuery()->execute()->fetchField();
+-              break;
+-            case 'office_hours':
+-              $table = $entity . '__' . $field;
+-              $field_count = $this->custom_field_count($bundle, $table, $field . '_starthours');
+-              break;
+-            case 'name':
+-              $table = $entity . '__' . $field;
+-              $field_count = $this->custom_field_count($bundle, $table, $field . '_given');
+-              break;
+-            default:
+-              $query = \Drupal::entityQuery($entity);
+-              if (!empty($bundle_column_name)) {
+-                $query->condition($bundle_column_name, $bundle);
+-              }
+-              $query->exists($field)
+-                ->count();
+-              $field_count = $query->execute();
+-          }
+-+        }catch(DatabaseExceptionWrapper $e){
+-+          \Drupal::logger('php')->notice($e->__toString());
+-+        }
+-          $this->registry->field_instance_counts[$bundle][$entity][$field] = $field_count;
+-        }
+-      }
+-    }
+-    return SiteAuditCheckBase::AUDIT_CHECK_SCORE_INFO;
+-  }

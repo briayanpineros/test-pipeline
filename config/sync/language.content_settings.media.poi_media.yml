@@ -1,0 +1,18 @@
+uuid: 8542f0b9-4078-4cfa-8a07-94a94510d629
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.poi_media
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.poi_media
+target_entity_type_id: media
+target_bundle: poi_media
+default_langcode: es
+language_alterable: false

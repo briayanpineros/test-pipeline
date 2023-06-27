@@ -1,0 +1,11 @@
+uuid: e664f3e4-6337-4c43-80ca-7c1a9d61739d
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: link_logout
+title: link_logout
+content:
+  value: '<h3 class="title1" id="title1">Cerrar sesión</h3><div id="form-logout"><p><a href="/user/logout" id="logout"><input id="button" type="button" value="Cerrar sesión"> &nbsp;</a></p></div>'
+  format: full_html

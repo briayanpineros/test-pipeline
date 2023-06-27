@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apache
+  namespace: portales
+  labels:
+    app: apache
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: apache
+  template:
+    metadata:
+      labels:
+        app: apache
+    spec:
+      containers:
+      - name: apache
+        image: public.ecr.aws/h1y1q1x5/drupal-php:1.3.4
+        resources:
+          requests:
+            memory: "4Gi"
+            cpu: "1"
+          limits:
+            memory: "4Gi"
+            cpu: "1"        
+        ports:
+        - containerPort: 80
+        envFrom:
+            - configMapRef:
+                name: apache-configmap
+        volumeMounts:
+        - mountPath: "/mnt/files"
+          name: mnt
+        - mountPath: "/var/www/html/web/sites/default/services.yml"
+          subPath: services
+          name: services
+        - mountPath: "/var/www/html/web/sites/default/settings.local.php"
+          subPath: settings.local
+          name: services
+        imagePullPolicy: Always
+      volumes:
+        - name: services
+          configMap:
+            name: php-services
+        - name: mnt
+          persistentVolumeClaim:
+            claimName: mnt-pvc

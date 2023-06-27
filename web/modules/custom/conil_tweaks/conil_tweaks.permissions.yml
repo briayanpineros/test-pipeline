@@ -1,0 +1,3 @@
+access secret notes:
+  title: 'send email user'
+  description: 'Send email notifications to subscribed users when new agenda content is created.'

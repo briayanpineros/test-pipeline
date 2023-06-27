@@ -1,0 +1,18 @@
+label: 'Page d''accueil des POI'
+display:
+  attachment_1:
+    display_title: 'Liens vers les endroits où dormir'
+  attachment_2:
+    display_title: 'Liens pour se rendre sur place'
+  attachment_3:
+    display_title: 'Liens "Où manger'
+  attachment_4:
+    display_title: 'Liens vers les activités à faire'
+  poi_como_llegar_block:
+    display_title: 'Comment se rendre ici'
+  poi_donde_comer_block:
+    display_title: 'Où manger'
+  poi_donde_dormir_block:
+    display_title: 'Où dormir'
+  poi_que_hacer_block:
+    display_title: 'Ce qu''il faut faire '

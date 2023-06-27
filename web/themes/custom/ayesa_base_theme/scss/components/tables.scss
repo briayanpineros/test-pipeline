@@ -1,0 +1,32 @@
+table {
+  width: 100%;
+  margin: 10px 0;
+  caption {
+    caption-side: top;
+    color: $branding-grey;
+    margin: 0;
+    padding: 0;
+  }
+  thead {
+    background: $branding-grey-light;
+    color: $branding-white;
+    tr {
+      th {
+
+      }
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid $branding-grey-light;
+      &:nth-child(even) {
+        background: $branding-grey-lighter;
+      }
+      td {
+        &.is-active {
+          background: none;
+        }
+      }
+    }
+  }
+}

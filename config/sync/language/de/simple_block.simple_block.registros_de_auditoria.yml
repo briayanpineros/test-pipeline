@@ -1,0 +1,4 @@
+title: Audit-Protokolle
+content:
+  value: '<p>Sie können die Audit-Protokolle der Änderungen unter dem folgenden Link einsehen:</p><p><a href="/es/admin/reports/audit-trail">Audit</a></p>'
+  format: basic_html

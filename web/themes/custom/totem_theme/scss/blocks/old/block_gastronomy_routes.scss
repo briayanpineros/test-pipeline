@@ -1,0 +1,116 @@
+#block-exposedformgastronomy-routesblock-1 {
+  background-color: $conil-color-aqua;
+
+  &> div:nth-child(2) {
+    content: url("../imagenes/rutas-gastronomicas.jpg");
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    background-color: $conil-color-lightblue;
+    top: 0;
+  }
+
+
+  h2 {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+
+    padding-left: 5%;
+    @include xl{
+      padding-left: 0;
+    }
+    padding-top: 2rem;
+    padding-bottom: 2rem !important;
+    color: white;
+    overflow: hidden;
+  }
+
+
+
+
+  p.SelectBox {
+    display: none;
+  }
+
+  select {
+    display: none;
+  }
+  .SumoSelect {
+    background-color: white;
+    padding-top: 10px;
+    margin-bottom: 0;
+    padding-left: 1rem;
+
+    .optWrapper {
+      overflow: scroll;
+      display: contents;
+      font-family: 'SourceSans-Light';
+      font-size: 1.1rem;
+
+      ul.options {
+        max-width: 1200px;
+        white-space: nowrap;
+        margin: auto;
+        position: relative;
+
+        li {
+          color: $conil-color-blue;
+          border-bottom: none;
+
+          @include md {
+            display: inline-block;
+            width: 25%;
+            text-align: center;
+          }
+          &.selected {
+            font-family: 'SourceSans-Bold';
+            @include md {
+              border-bottom: solid 6px $conil-color-lightgray;
+            }
+          }
+
+          &:first-child {
+            display: none;
+          }
+
+          &:hover {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+  .form-item {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+
+  .form-actions {
+    margin: 0;
+  }
+}
+
+#block-views-block-gastronomy-routes-block-1 {
+  background-color: $conil-color-lightgray;
+  .view-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+
+  }
+  &::after {
+    content: url("../imagenes/conil-saborealo.jpg");
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    background-color: $conil-color-lightblue;
+    top: 0;
+  }
+}
+
+
+

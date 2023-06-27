@@ -1,0 +1,19 @@
+uuid: 28954a5d-f662-4c75-97c6-8332dc0b96e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: news_details
+label: 'News details 540x320'
+effects:
+  7a00ff4d-a6f8-4a62-8001-8b133267a41f:
+    uuid: 7a00ff4d-a6f8-4a62-8001-8b133267a41f
+    id: image_effects_scale_and_smart_crop
+    weight: 1
+    data:
+      width: '540'
+      height: '320'
+      upscale: true
+      simulate: false
+      algorithm: entropy_slice

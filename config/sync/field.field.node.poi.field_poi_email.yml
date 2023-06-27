@@ -1,0 +1,19 @@
+uuid: 5331728a-c04f-4b81-8ae7-73fd93a045bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_email
+    - node.type.poi
+id: node.poi.field_poi_email
+field_name: field_poi_email
+entity_type: node
+bundle: poi
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,11 @@
+uuid: e0f17b72-effa-4cd9-8664-caeab4f2e240
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.medium
+id: logoayunt
+label: logoAyunt
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: medium

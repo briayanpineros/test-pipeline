@@ -1,0 +1,29 @@
+uuid: 64e50305-943e-4c52-b8ed-df0c76824984
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_category_image
+    - media.type.cover
+    - taxonomy.vocabulary.recipe_category
+id: taxonomy_term.recipe_category.field_category_image
+field_name: field_category_image
+entity_type: taxonomy_term
+bundle: recipe_category
+label: 'Imagen de portada'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      cover: cover
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

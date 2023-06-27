@@ -1,0 +1,11 @@
+uuid: d55e5372-2622-47be-8dd1-1c6c58238a1f
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: registros_de_auditoria
+title: 'Registros de auditoría'
+content:
+  value: "<p>Puede comprobar los registros de auditoría de cambios en el siguiente enlace:</p>\r\n\r\n<p><a href=\"/es/admin/reports/audit-trail\">Auditoría</a></p>\r\n"
+  format: basic_html

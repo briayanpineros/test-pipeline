@@ -1,0 +1,42 @@
+label: 'Freunde kennzeichnen'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Zurücksetzen
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          tags:
+            previous: '‹ Vorherige Seite'
+            next: 'Nächste Seite ›'
+            first: '« First'
+            last: 'Last »'
+      fields:
+        name:
+          label: Benutzername
+          separator: ', '
+        count:
+          label: Follower
+          format_plural_string: !!binary MQNAY291bnQ=
+      title: Follower
+      empty:
+        area:
+          content:
+            value: 'Sie folgen noch keinen Benutzern. :-('
+  page_1:
+    display_title: Seite
+    display_options:
+      menu:
+        title: 'Ich folge'
+      tab_options:
+        title: Follower

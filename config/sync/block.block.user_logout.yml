@@ -1,0 +1,30 @@
+uuid: f5cd834e-0611-4a32-8546-7b6fefd174dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.user_logout
+  module:
+    - simple_block
+    - user
+  theme:
+    - conil_theme
+id: user_logout
+theme: conil_theme
+region: header
+weight: -23
+provider: null
+plugin: 'simple_block:user_logout'
+settings:
+  id: 'simple_block:user_logout'
+  label: user_logout
+  label_display: '0'
+  provider: simple_block
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

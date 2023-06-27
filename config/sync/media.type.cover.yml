@@ -1,0 +1,14 @@
+uuid: 6de6059d-f0a1-4050-bf01-3245ef940f62
+langcode: en
+status: true
+dependencies: {  }
+id: cover
+label: 'Cover photo'
+description: 'Cover photos for covers in contents.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

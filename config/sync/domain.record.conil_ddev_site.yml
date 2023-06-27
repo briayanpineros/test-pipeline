@@ -1,0 +1,11 @@
+uuid: 51433c8d-5ebe-4620-bb92-21c336a939f6
+langcode: en
+status: true
+dependencies: {  }
+id: conil_ddev_site
+domain_id: 16523530
+hostname: conil.ddev.site
+name: 'Conil Tourism'
+scheme: variable
+weight: 1
+is_default: true

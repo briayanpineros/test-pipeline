@@ -1,0 +1,22 @@
+uuid: e9598488-7f20-43b9-8459-7642e7ee4def
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.content_grids_videos
+id: media.content_grids_videos.status
+field_name: status
+entity_type: media
+bundle: content_grids_videos
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,67 @@
+uuid: 77052049-4154-49b7-8a4f-7df6f511d774
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.plain_text_custom
+    - rest.resource.conil_visitors_api
+    - rest.resource.news_content_data_rest_api
+    - rest.resource.news_content_data_rest_api_lang
+    - rest.resource.news_list_content_data_rest_api
+    - rest.resource.news_list_content_data_rest_api_lang
+    - rest.resource.search_pois_service
+    - rest.resource.visitors_service
+    - rest.resource.visitors_service_total
+  module:
+    - comment
+    - contact
+    - empty_page
+    - eu_cookie_compliance
+    - filter
+    - flag
+    - media
+    - rest
+    - search
+    - shortcut
+    - sitemap
+    - system
+    - webform
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access sitemap'
+  - 'cancel account'
+  - 'create webform'
+  - 'display eu cookie compliance popup'
+  - 'flag agenda_channel_subscriptions'
+  - 'flag bookmark'
+  - 'flag news_channel_flag'
+  - 'flag news_channel_subscriptions'
+  - 'post comments'
+  - 'restful get conil_visitors_api'
+  - 'restful get news_content_data_rest_api'
+  - 'restful get news_content_data_rest_api_lang'
+  - 'restful get news_list_content_data_rest_api'
+  - 'restful get news_list_content_data_rest_api_lang'
+  - 'restful get search_pois_service'
+  - 'restful get visitors_service'
+  - 'restful get visitors_service_total'
+  - 'restful post conil_visitors_api'
+  - 'search content'
+  - 'unflag agenda_channel_subscriptions'
+  - 'unflag bookmark'
+  - 'unflag news_channel_flag'
+  - 'unflag news_channel_subscriptions'
+  - 'use text format basic_html'
+  - 'use text format plain_text_custom'
+  - 'view empty pages'
+  - 'view media'

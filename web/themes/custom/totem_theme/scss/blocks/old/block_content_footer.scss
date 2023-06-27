@@ -1,0 +1,8 @@
+.footer-border-gradient {
+  height: 15px;
+  z-index: 1;
+  position: relative;
+  display: block !important;
+
+  @include conil-gradient();
+}

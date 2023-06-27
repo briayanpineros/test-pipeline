@@ -1,0 +1,19 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ayesa_base_theme
+id: ayesa_base_theme_help
+theme: ayesa_base_theme
+region: help
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

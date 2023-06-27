@@ -1,0 +1,22 @@
+uuid: 2600a809-ef22-4670-a57d-04387efab977
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.poi
+id: node.poi.status
+field_name: status
+entity_type: node
+bundle: poi
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

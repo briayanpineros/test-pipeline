@@ -1,0 +1,19 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ayesa_base_theme
+id: ayesa_base_theme_messages
+theme: ayesa_base_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'System messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

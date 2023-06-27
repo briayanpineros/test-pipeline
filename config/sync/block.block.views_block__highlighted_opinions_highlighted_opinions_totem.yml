@@ -1,0 +1,30 @@
+uuid: c70622dd-897f-4499-a01a-39f893c23d73
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.highlighted_opinions
+  module:
+    - system
+    - views
+  theme:
+    - totem_theme
+id: views_block__highlighted_opinions_highlighted_opinions_totem
+theme: totem_theme
+region: layout_suffix
+weight: -8
+provider: null
+plugin: 'views_block:highlighted_opinions-highlighted_opinions_totem'
+settings:
+  id: 'views_block:highlighted_opinions-highlighted_opinions_totem'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/poi/*\r\n/poi/*/*\r\n!*/poi/*/*/*"

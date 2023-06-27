@@ -1,0 +1,11 @@
+uuid: 6c2fbcf3-cf73-4500-9ccc-533cef89ddef
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: user_logout
+title: user_logout
+content:
+  value: '<div class="header-user-profile-block"><p><a class="header-user-profile-icon" href="/es/user/edit">Mi perfil</a></p><ul class="nav" id="header-user-nav"><li><a href="/user/logout" id="header-user-logout">Cerrar sesión</a></li></ul></div>'
+  format: full_html

@@ -1,0 +1,37 @@
+uuid: ce92f53f-9f5e-4b68-9fd2-3444002e1cb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.categoria_agenda.field_categoria_interes_icon
+    - taxonomy.vocabulary.categoria_agenda
+  module:
+    - material_icons
+    - text
+id: taxonomy_term.categoria_agenda.default
+targetEntityType: taxonomy_term
+bundle: categoria_agenda
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_categoria_interes_icon:
+    type: material_icons
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  flag_agenda_channel_subscriptions:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

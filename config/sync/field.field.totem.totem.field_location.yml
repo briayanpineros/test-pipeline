@@ -1,0 +1,21 @@
+uuid: 6f358817-c42a-4ff1-9036-55a22c2259de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.totem.field_location
+  module:
+    - conil_totem
+    - geofield
+id: totem.totem.field_location
+field_name: field_location
+entity_type: totem
+bundle: totem
+label: Location
+description: 'Totem location'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

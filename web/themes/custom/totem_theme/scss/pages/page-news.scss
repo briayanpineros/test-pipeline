@@ -1,0 +1,174 @@
+.page-node-type-news {
+  width: 100%;
+
+  #block-titulodelapagina {
+    h1.page-title {
+      margin: 2rem 0 1rem;
+      color: $conil-color-blue;
+      &::after {
+        content: url("../imagenes/subline-headline.png");
+        position: relative;
+        display: block;
+        top: -0.8rem;
+      }
+    }
+  }
+
+  #block-contenidoprincipaldelapagina {
+
+    article.node--type-news {
+      width: auto;
+
+      footer.node__meta {
+
+        .node__submitted {
+          color: $conil-color-blue;
+          margin-bottom: 10px;
+
+
+          .field--name-uid a {
+            cursor: default;
+            pointer-events: none;
+            text-decoration: none;
+          }
+        }
+        article {
+          display: none;
+        }
+      }
+
+      .node__content {
+        position: relative;
+        .node__links {
+          display: none;
+        }
+        .container-subtitle-img {
+          display: block;
+          @include md {
+            display: flex;
+            &::before {
+            content: url("/themes/custom/totem_theme/imagenes/subline-headline.png");
+            position: absolute;
+            top: 1rem;
+            left: 2.1rem;
+          }
+          }
+
+          .subtitle {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            background-color: $conil-color-gray;
+
+            @include md {
+              font-size: 1.2rem;
+              padding: 3rem 2rem .5rem 2rem;
+              line-height: 1.7rem;
+              height: 320px;
+              width: 60%;
+              margin-bottom: 15px;
+            }
+            @include lg {
+              font-size: 1.4rem;
+            }
+            font-family: SourceSans-Regular;
+            color: $conil-color-blue;
+            padding: 10px;
+
+            .field--name-field-news-social-media-share {
+              display: none;
+            }
+          }
+
+          .cover {
+            //width: 100%;
+            @include md {
+              width: 40%;
+            }
+            display: block !important;
+            img {
+              @include md {
+                height: 320px;
+                object-fit: none;
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        .field--name-body {
+          color: $conil-color-blue;
+          blockquote {
+            width: 100%;
+            font-size: 12px;
+            text-align: left;
+
+            p {
+              text-align: center;
+              width: 100%;
+              padding: 2rem;
+              background-color: $conil-color-gray;
+              color: $conil-color-blue;
+              font-family: SourceSans-Regular;
+              font-size: 1.2rem;
+
+              &:before {
+                content: '“';
+                font-size: 2.5rem;
+                line-height: 1rem;
+                font-family: SourceSans-Bold;
+                bottom: -0.8rem;
+                margin-right: 5px;
+                position: relative;
+              }
+
+              &:after {
+
+                content: '”';
+                font-size: 2.5rem;
+                line-height: 1rem;
+                font-family: SourceSans-Bold;
+                bottom: -0.8rem;
+                margin-left: 5px;
+                position: relative;
+              }
+            }
+
+            &:after {
+              content: url("/themes/custom/totem_theme/imagenes/subline-headline-y.png");
+                position: relative;
+                top: 0;
+                left: 0;
+
+
+            }
+
+          }
+        }
+
+        .field--name-field-news-social-media-share {
+          width: 1200px;
+
+        }
+        .flag-news-channel-flag {
+          display: block;
+          font-size: 1.1rem;
+          width: 100%;
+          margin-bottom: 10px;
+          a.use-ajax {
+            color: $conil-color-pink;
+          }
+        }
+
+        .field--name-field-categoria-noticias{
+          width: 100%;
+          margin-bottom: 10px;
+          h2{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

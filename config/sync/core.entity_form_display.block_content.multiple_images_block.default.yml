@@ -1,0 +1,39 @@
+uuid: c7a35491-56f1-4d89-9a94-53e3c7e34945
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.multiple_images_block
+    - field.field.block_content.multiple_images_block.field_customblock_images
+    - image.style.thumbnail
+  module:
+    - image
+id: block_content.multiple_images_block.default
+targetEntityType: block_content
+bundle: multiple_images_block
+mode: default
+content:
+  field_customblock_images:
+    type: image_image
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

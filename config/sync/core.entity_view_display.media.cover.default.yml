@@ -1,0 +1,32 @@
+uuid: 61208a85-1277-4305-8b90-f9aff0c85b09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.cover.field_media_image
+    - media.type.cover
+  module:
+    - image
+id: media.cover.default
+targetEntityType: media
+bundle: cover
+mode: default
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: file
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

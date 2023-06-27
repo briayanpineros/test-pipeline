@@ -1,0 +1,17 @@
+uuid: a0bfb39b-767b-4d64-b0ef-4ed0c6a2415a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.tourist_office_group
+  enforced:
+    config:
+      - user.role.group_manager_conil
+id: tourist_office_group-f6b844e8a
+label: 'Director de grupo'
+weight: 6
+internal: true
+audience: outsider
+group_type: tourist_office_group
+permissions_ui: false
+permissions: {  }

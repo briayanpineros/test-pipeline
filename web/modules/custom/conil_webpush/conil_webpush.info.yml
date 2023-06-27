@@ -1,0 +1,8 @@
+name: Conil WebPush Notifications
+description: Conil WebPush notifications using Firebase for new content.
+type: module
+package: 'Conil'
+version: 1.0
+core_version_requirement: ^9 || ^10
+libraries:
+  - conil_webpush/firebase

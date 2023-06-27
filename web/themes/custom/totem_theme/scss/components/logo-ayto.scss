@@ -1,0 +1,28 @@
+//Bloque con el logo del ayuntamiento
+.block-simple-blocklogo-ayuntamiento {
+  .conil-header-ayto-mv {
+    width: 42px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: .5rem;
+    @include md {
+      display: none;
+    }
+  }
+
+  .conil-header-ayto-logo {
+    display: none;
+
+    @include md {
+      padding-top: 10px;
+      display: inline;
+      float: right;
+      width: 130px;
+      padding-left: 8px;
+    }
+
+    > img {
+      max-height: 90px;
+    }
+  }
+}

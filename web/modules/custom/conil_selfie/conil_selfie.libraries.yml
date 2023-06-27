@@ -1,0 +1,12 @@
+conil_selfie_webcam:
+  version: 1.x
+  css:
+    theme:
+      css/webcam.css: {}
+      css/loader.css: {}
+      css/modal.css: {}
+  js:
+    js/webcam.js: {}
+    js/loader.js: {}
+  dependencies:
+    - core/jquery

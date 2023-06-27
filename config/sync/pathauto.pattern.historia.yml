@@ -1,0 +1,22 @@
+uuid: d2914bcd-f01a-4c49-a857-3941507b0249
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: historia
+label: historia
+type: 'canonical_entities:node'
+pattern: 'historia/[node:title]'
+selection_criteria:
+  8651dbd8-a0c2-4402-b511-95db5aa59c3e:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 8651dbd8-a0c2-4402-b511-95db5aa59c3e
+    context_mapping:
+      node: node
+    bundles:
+      historia: historia
+selection_logic: and
+weight: -5
+relationships: {  }

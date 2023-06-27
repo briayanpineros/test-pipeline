@@ -1,0 +1,20 @@
+uuid: f54da64a-114e-4b7d-bf87-21df23e17473
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.content_grids_images
+id: media.content_grids_images.uid
+field_name: uid
+entity_type: media
+bundle: content_grids_images
+label: 'Escrito por'
+description: 'El ID de usuario del autor.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

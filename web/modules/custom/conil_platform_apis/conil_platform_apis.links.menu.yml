@@ -1,0 +1,6 @@
+conil_platform_apis.sensors_settings:
+  title: "Platform APIs settings"
+  description: "Platform APIs config settings"
+  route_name: conil_platform_apis.sensors_settings
+  parent: system.admin_config_services
+  weight: 99

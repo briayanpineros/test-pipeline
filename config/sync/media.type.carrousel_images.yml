@@ -1,0 +1,14 @@
+uuid: e23d47e8-4484-4348-82c8-da59c7b49727
+langcode: en
+status: true
+dependencies: {  }
+id: carrousel_images
+label: 'Imágenes para el carrusel de la portada'
+description: 'Media images for Carrousel'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

@@ -1,0 +1,18 @@
+uuid: 8fb14290-1947-4d8a-9cf4-93fc0ee791d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.remote_video
+id: media.remote_video.metatag
+field_name: metatag
+entity_type: media
+bundle: remote_video
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,36 @@
+uuid: cebebd2e-515b-491b-99ed-1a42643e8ed4
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.video.field_media_video_file
+    - field.field.media.video.field_media_video_preview
+    - media.type.video
+  module:
+    - blazy
+    - conil_totem
+_core:
+  default_config_hash: PDQo9eqAz3D8g87S89zPgXsm7Xy-dYMdEgwKBahFdy0
+id: media.video.media_library
+targetEntityType: media
+bundle: video
+mode: media_library
+content:
+  field_media_video_file:
+    type: image_media_poi_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      blazy:
+        blazy: false
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_video_preview: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

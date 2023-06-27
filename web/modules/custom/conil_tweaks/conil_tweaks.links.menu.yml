@@ -1,0 +1,11 @@
+conil_tweaks.csvimporter:
+  title: Import content
+  description: 'Import content from CSV.'
+  menu_name: admin-content
+  route_name: csv_importer.form
+conil_tweaks.incidenceform:
+  title: 'Complaints and claims'
+  description: 'Incidents form'
+  menu_name: sidr-navigation
+  weight: 100
+  url: "internal:/form/incident-form"

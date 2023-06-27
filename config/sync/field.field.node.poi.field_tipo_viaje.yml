@@ -1,0 +1,29 @@
+uuid: f5265c1d-b39f-4689-842f-3a3ea598e40c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_viaje
+    - node.type.poi
+    - taxonomy.vocabulary.tipo_viaje
+id: node.poi.field_tipo_viaje
+field_name: field_tipo_viaje
+entity_type: node
+bundle: poi
+label: 'Trip type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_viaje: tipo_viaje
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

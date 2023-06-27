@@ -1,0 +1,149 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "SourceSans-Regular";
+}
+
+h2 {
+  font-family: "SourceSans-Bold";
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  @include md {
+    font-size: 3rem;
+  }
+}
+
+.slick--less .slick-track {
+  text-align: justify !important;
+}
+
+.pager {
+  height: 100px;
+
+  h4#pagination-heading{
+    display: none;
+  }
+
+  ul {
+    margin-top: 50px;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: inline-block;
+        padding: 3px 10px;
+        color: $conil-color-blue;
+      }
+
+      &.is-active {
+        background-color: $conil-color-aqua;
+        color: white;
+      }
+
+      &:hover:not(.is-active) {
+        background-color: darkgrey;
+        transition: background-color .3s;
+      }
+
+      &.pager__item--next, &.pager__item--previous {
+        display: none;
+      }
+
+    }
+
+  }
+}
+
+
+.placeholder {
+  display: inline;
+  min-height: inherit;
+  vertical-align: inherit;
+  cursor: inherit;
+  background-color: inherit;
+  opacity: inherit;
+}
+
+
+//HEADER//
+#block-headerbot {
+  @include md {
+    display: initial !important;
+    background-color: $conil-color-blue;
+  }
+}
+
+li.statistics-counter{
+  display: none!important;
+}
+
+#block-mainpagecontent {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#block-conil-theme-page-title {
+  color: $conil-color-blue;
+  display: block;
+  max-width: 1200px;
+  margin: 30px;
+  @include xl{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    &::after {
+      content: url("/themes/custom/conil_theme/imagenes/subline-headline.png");
+      position: relative;
+      display: block;
+      top: -.8rem;
+    }
+    @include sm {
+      font-size: 2rem;
+    }
+    @include md {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+.region-layout-suffix {
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include md {
+    padding: 0;
+    max-width: none !important;
+    margin: 0 auto;
+  }
+}
+
+.content-wrapper main {
+  padding: 0;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.region-content {
+  padding: 0 !important;
+  max-width: 100%;
+}
+
+.layout-container {
+  margin: 0;
+}
+
+
+
+/*
+.content-wrapper main .layout-content{
+  flex: 1 0 auto!important;
+}
+*/

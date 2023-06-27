@@ -1,0 +1,18 @@
+uuid: 3238bc09-f9f5-4e9b-8775-bd4f6db391f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_viaje
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.tipo_viaje
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_viaje
+default_langcode: current_interface
+language_alterable: true

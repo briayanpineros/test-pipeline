@@ -1,0 +1,55 @@
+conil_totem.copy_totem:
+  path: '/admin/config/services/copy_totem_configuration/{clave}'
+  defaults:
+    _form: '\Drupal\conil_totem\Form\TotemCopyForm'
+    _title: 'Copy configuration of a totem to the rest.'
+  requirements:
+    _permission: 'form access'
+
+conil_totem.confirm_copy:
+  path: '/admin/config/services/confirm_copy_totem_configuration/{clave}/{totems}'
+  defaults:
+    _form: '\Drupal\conil_totem\Form\TotemConfirmForm'
+    _title: 'Confirm copy configuration of a totem to the rest.'
+  requirements:
+    _permission: 'form access'
+
+# conil_totem.content_grids_settings:
+#   path: '/admin/config/services/content_grids'
+#   defaults:
+#     _form: '\Drupal\conil_totem\Form\ContentGridsSettingsForm'
+#     _title: 'Configuration to content grids'
+#   requirements:
+#     _permission: 'form access'
+
+conil_totem.totems_settings:
+  path: '/admin/config/services/totems'
+  defaults:
+    _form: '\Drupal\conil_totem\Form\TotemsSettingsForm'
+    _title: 'Configuration to Totems'
+  requirements:
+    _permission: 'form access'
+
+conil_totem.print_pdf_event:
+  path: '/conil-totem/pdf-event/{id}'
+  defaults:
+    _title: 'Generar Plantilla Evento'
+    _controller: '\Drupal\conil_totem\Controller\TemplateGeneratorController::printPdfEvent'
+  requirements:
+    _permission: 'generate template event'
+
+conil_totem.print_pdf_poi:
+  path: '/conil-totem/pdf-poi/{id}'
+  defaults:
+    _title: 'Generar Plantilla POI'
+    _controller: '\Drupal\conil_totem\Controller\TemplateGeneratorController::printPdfPoi'
+  requirements:
+    _permission: 'generate template poi'
+
+conil_totem.main:
+  path: '/admin/config/Totem'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Totems'
+  requirements:
+    _permission: 'administer site configuration'

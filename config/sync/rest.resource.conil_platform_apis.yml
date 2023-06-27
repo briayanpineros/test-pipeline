@@ -1,0 +1,18 @@
+uuid: 2b2da7bd-ea20-4e5d-8ec0-1033acd5b9a4
+langcode: es
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - conil_platform_apis
+    - serialization
+id: conil_platform_apis
+plugin_id: conil_platform_apis
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth

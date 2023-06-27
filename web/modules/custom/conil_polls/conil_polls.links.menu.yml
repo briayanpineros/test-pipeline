@@ -1,0 +1,13 @@
+conil_polls.draft_mail_settings:
+  title: 'Send Draft Mail'
+  route_name: 'conil_polls.draft_mail_settings'
+  parent: 'entity.webform.collection'
+  description: 'Send mail by webform'
+  weight: 99
+
+conil_polls.sync_settings:
+  title: 'Sync Polls Settings'
+  route_name: 'conil_polls.sync_settings'
+  parent: 'system.admin_config_services'
+  description: 'Syncronization configuration'
+  weight: 99

@@ -1,0 +1,112 @@
+uuid: 5396a3ba-e145-438e-904f-690397350a9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.plain_text_custom
+    - group.content_type.group_content_type_cda3c4073664e
+    - group.content_type.group_content_type_f6facaead10bf
+    - group.content_type.group_content_type_fb27f2eca245b
+    - group.content_type.group_content_type_fcca1fec5f852
+    - group.type.tourist_office_group
+    - media.type.audio
+    - media.type.background_selfie
+    - media.type.carrousel_images
+    - media.type.cover
+    - media.type.document
+    - media.type.image
+    - media.type.poi_media
+    - media.type.remote_video
+    - media.type.video
+    - node.type.agenda
+    - node.type.general_information
+    - node.type.news
+    - node.type.poi
+    - taxonomy.vocabulary.agenda_tipos
+    - taxonomy.vocabulary.categoria_agenda
+    - taxonomy.vocabulary.categoria_informacion_general
+    - taxonomy.vocabulary.categoria_interes
+    - taxonomy.vocabulary.cit_countries_information
+    - taxonomy.vocabulary.otros_servicios
+    - taxonomy.vocabulary.tipo_viaje
+  module:
+    - content_translation
+    - filter
+    - group
+    - media
+    - node
+    - system
+    - toolbar
+id: tourist_office
+label: 'Oficina de Turismo '
+weight: 9
+is_admin: null
+permissions:
+  - 'access group overview'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'administer media'
+  - 'create agenda content'
+  - 'create audio media'
+  - 'create background_selfie media'
+  - 'create carrousel_images media'
+  - 'create content translations'
+  - 'create cover media'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
+  - 'create news content'
+  - 'create poi_media media'
+  - 'create remote_video media'
+  - 'create video media'
+  - 'delete agenda revisions'
+  - 'delete content translations'
+  - 'delete media'
+  - 'delete news revisions'
+  - 'delete own agenda content'
+  - 'delete own audio media'
+  - 'delete own background_selfie media'
+  - 'delete own carrousel_images media'
+  - 'delete own cover media'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own news content'
+  - 'delete own poi_media media'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'edit own agenda content'
+  - 'edit own audio media'
+  - 'edit own background_selfie media'
+  - 'edit own carrousel_images media'
+  - 'edit own cover media'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own news content'
+  - 'edit own poi_media media'
+  - 'edit own remote_video media'
+  - 'edit own video media'
+  - 'translate agenda node'
+  - 'translate agenda_tipos taxonomy_term'
+  - 'translate carrousel_images media'
+  - 'translate categoria_agenda taxonomy_term'
+  - 'translate categoria_informacion_general taxonomy_term'
+  - 'translate categoria_interes taxonomy_term'
+  - 'translate cit_countries_information taxonomy_term'
+  - 'translate editable entities'
+  - 'translate general_information node'
+  - 'translate group_content_type_cda3c4073664e group_content'
+  - 'translate group_content_type_f6facaead10bf group_content'
+  - 'translate group_content_type_fb27f2eca245b group_content'
+  - 'translate group_content_type_fcca1fec5f852 group_content'
+  - 'translate news node'
+  - 'translate otros_servicios taxonomy_term'
+  - 'translate poi node'
+  - 'translate tipo_viaje taxonomy_term'
+  - 'translate tourist_office_group group'
+  - 'update content translations'
+  - 'update media'
+  - 'use text format plain_text_custom'
+  - 'view all media revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'

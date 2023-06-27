@@ -1,0 +1,11 @@
+uuid: 40d3d3ac-9410-497d-bce7-0df9c7c65026
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: participa
+title: Participa
+content:
+  value: "<p>Desde este apartado el usuario del <strong>Portal de Datos Abiertos de Conil de la Frontera</strong>, podrá aportar ideas, realizar comentarios, informar de posibles errores y realizar sugerencias. Puede solicitar también la subida de alguna aplicación web o móvil que utilice datos del propio portal para alojarlo en la sección de \"Aplicaciones\". De igual forma se podrá realizar solicitud de datos que no estén disponibles en el Portal de Datos Abiertos.</p>\r\n\r\n<p>En el campo \"Categoría\" se debe selecionar el tipo de aportación que se desea realizar. Mediante el corro electróico solicitado en el propio formulario, el Ayuntamiento de Conil de la Frontera se podrá poner en contacto con el usuario en caso de que sea necesario.</p>\r\n\r\n<p class=\"participa-gracias\"><strong>Gracias por la participación</strong></p>\r\n"
+  format: full_html

@@ -1,0 +1,192 @@
+{#
+/**
+ * @file
+ * Default theme implementation for 'template-totem-pdf-weather.'
+ *
+ * Available variables:
+ * - css: CSS.
+ * - qr: QR con la url del portal de Conil.
+ * - conil_logo: Ruta del logo de conil, base64 imagen.
+ * - wind_img: Icono de viento en base64,
+ * - drop_img: Icono de humedad en base64,
+ * - data: Datos del tiempo con imagenes en base64 incluídas,
+ *
+ * https://storybook.paas.junta-andalucia.es/?path=/docs/mol%C3%A9culas-matter-header--header
+ */
+#}
+
+{% set fecha = data['day1']['date'] %}
+
+{% set fecha_obj = fecha|date('Y-m-d') %}
+{% set dia_semana = fecha_obj|date('l')|trans|upper %}
+{% set dia_mes = fecha_obj|date('j') %}
+{% set mes = fecha_obj|date('F')|trans|upper %}
+
+{% set dia_mes_ordinal = dia_mes|number_format(0, ',', '.') %}
+{% set fecha_formateada = dia_semana ~ ' ' ~ dia_mes_ordinal ~ ' DE ' ~ mes %}
+
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
+    <style type="text/css">{{ css }}</style>
+    <title>Weather</title>
+	</head>
+	<body class="pdf" style="background-image:url('{{ background }}') !important; background-repeat: no-repeat; background-size: cover;">
+		<div class="logo"><img src="{{ conil_logo }}"/></div>
+		<div class="contents">
+			<div class="description">
+				<div class="today">
+					<div class="left">
+						<div class="principalIcon"><img src="{{ data['day1']['icon'] }}"></div>
+						<div class="temp">{{ data['day1']['temperature_max'] }}&deg;</div>
+					</div>
+					<div class="right">
+						<div class="day">HOY<span>{{ fecha_formateada }}</span>
+						</div>
+              <table class="izq">
+                <tr>
+                  <td class="iconWind"><img src="{{ wind_img }}"></td>
+                  <td class="text">Viento</td>
+                </tr>
+                <tr>
+                  <td colspan=2 class="dato"><img src="{{ data['day1']['icon_wind'] }}"><span> {{ data['day1']['wind'] }}</span> Km/h</td>
+                </tr>
+              </table>
+              <table class="der">
+                <tr>
+                  <td class="iconDrop"><img src="{{ drop_img }}"></td>
+                  <td class="text">Humedad</td>
+                </tr>
+                <tr>
+                  <td colspan=2 class="dato"><span>{{ data['day1']['humidity'] }}</span>%</td>
+                </tr>
+              </table>
+					</div>
+				</div>
+				<div class="week">
+					<div class="title">Resto de la Semana</div>
+					<table class="weekTable">
+						<tr>
+							{% set fecha = data['day2']['date'] %}
+							{% set fecha_obj = fecha|date('Y-m-d') %}
+							{% set dia_semana = fecha_obj|date('l')|trans %}
+							{% set dia_mes = fecha_obj|date('j') %}
+							{% set dia_mes_ordinal = dia_mes|number_format(0, ',', '.') %}
+							{% set fecha_formateada = dia_mes_ordinal ~ ' ' ~ dia_semana %}
+							<td class="textday">{{ fecha_formateada }}</td>
+							<td class="temp">{{ data['day2']['temperature_max'] }}&deg;</td>
+							<td class="icon"><img src="{{ data['day2']['icon'] }}"></td>
+							<td class="textIcon">{{ data['day2']['text'] }}</td>
+							<td class="iconDrop"><img src="{{ drop_img }}"></td>
+							<td class="textDrop">{{ data['day2']['humidity'] }}%</td>
+							<td class="iconWind"><img src="{{ wind_img }}"></td>
+							<td class="directionWind"><img src="{{ data['day2']['icon_wind'] }}"></td>
+							<td class="speedWind">{{ data['day2']['wind'] }}Km/h</td>
+						</tr>
+						<tr>
+							{% set fecha = data['day3']['date'] %}
+							{% set fecha_obj = fecha|date('Y-m-d') %}
+							{% set dia_semana = fecha_obj|date('l')|trans %}
+							{% set dia_mes = fecha_obj|date('j') %}
+							{% set dia_mes_ordinal = dia_mes|number_format(0, ',', '.') %}
+							{% set fecha_formateada = dia_mes_ordinal ~ ' ' ~ dia_semana %}
+							<td class="textday">{{ fecha_formateada }}</td>
+							<td class="temp">{{ data['day3']['temperature_max'] }}&deg;</td>
+							<td class="icon"><img src="{{ data['day3']['icon'] }}"></td>
+							<td class="textIcon">{{ data['day3']['text'] }}</td>
+							<td class="iconDrop"><img src="{{ drop_img }}"></td>
+							<td class="textDrop">{{ data['day3']['humidity'] }}%</td>
+							<td class="iconWind"><img src="{{ wind_img }}"></td>
+							<td class="directionWind"><img src="{{ data['day3']['icon_wind'] }}"></td>
+							<td class="speedWind">{{ data['day3']['wind'] }}Km/h</td>
+						</tr>
+						<tr>
+							{% set fecha = data['day4']['date'] %}
+							{% set fecha_obj = fecha|date('Y-m-d') %}
+							{% set dia_semana = fecha_obj|date('l')|trans %}
+							{% set dia_mes = fecha_obj|date('j') %}
+							{% set dia_mes_ordinal = dia_mes|number_format(0, ',', '.') %}
+							{% set fecha_formateada = dia_mes_ordinal ~ ' ' ~ dia_semana %}
+							<td class="textday">{{ fecha_formateada }}</td>
+							<td class="temp">{{ data['day4']['temperature_max'] }}&deg;</td>
+							<td class="icon"><img src="{{ data['day4']['icon'] }}"></td>
+							<td class="textIcon">{{ data['day4']['text'] }}</td>
+							<td class="iconDrop"><img src="{{ drop_img }}"></td>
+							<td class="textDrop">{{ data['day4']['humidity'] }}%</td>
+							<td class="iconWind"><img src="{{ wind_img }}"></td>
+							<td class="directionWind"><img src="{{ data['day4']['icon_wind'] }}"></td>
+							<td class="speedWind">{{ data['day4']['wind'] }}Km/h</td>
+						</tr>
+						<tr>
+							{% set fecha = data['day5']['date'] %}
+							{% set fecha_obj = fecha|date('Y-m-d') %}
+							{% set dia_semana = fecha_obj|date('l')|trans %}
+							{% set dia_mes = fecha_obj|date('j') %}
+							{% set dia_mes_ordinal = dia_mes|number_format(0, ',', '.') %}
+							{% set fecha_formateada = dia_mes_ordinal ~ ' ' ~ dia_semana %}
+							<td class="textday">{{ fecha_formateada }}</td>
+							<td class="temp">{{ data['day5']['temperature_max'] }}&deg;</td>
+							<td class="icon"><img src="{{ data['day5']['icon'] }}"></td>
+							<td class="textIcon">{{ data['day5']['text'] }}</td>
+							<td class="iconDrop"><img src="{{ drop_img }}"></td>
+							<td class="textDrop">{{ data['day5']['humidity'] }}%</td>
+							<td class="iconWind"><img src="{{ wind_img }}"></td>
+							<td class="directionWind"><img src="{{ data['day5']['icon_wind'] }}"></td>
+							<td class="speedWind">{{ data['day5']['wind'] }}Km/h</td>
+						</tr>
+						<tr>
+							{% set fecha = data['day6']['date'] %}
+							{% set fecha_obj = fecha|date('Y-m-d') %}
+							{% set dia_semana = fecha_obj|date('l')|trans %}
+							{% set dia_mes = fecha_obj|date('j') %}
+							{% set dia_mes_ordinal = dia_mes|number_format(0, ',', '.') %}
+							{% set fecha_formateada = dia_mes_ordinal ~ ' ' ~ dia_semana %}
+							<td class="textday">{{ fecha_formateada }}</td>
+							<td class="temp">{{ data['day6']['temperature_max'] }}&deg;</td>
+							<td class="icon"><img src="{{ data['day6']['icon'] }}"></td>
+							<td class="textIcon">{{ data['day6']['text'] }}</td>
+							<td class="iconDrop"><img src="{{ drop_img }}"></td>
+							<td class="textDrop">{{ data['day6']['humidity'] }}%</td>
+							<td class="iconWind"><img src="{{ wind_img }}"></td>
+							<td class="directionWind"><img src="{{ data['day6']['icon_wind'] }}"></td>
+							<td class="speedWind">{{ data['day6']['wind'] }}Km/h</td>
+						</tr>
+						<tr>
+							{% set fecha = data['day7']['date'] %}
+							{% set fecha_obj = fecha|date('Y-m-d') %}
+							{% set dia_semana = fecha_obj|date('l')|trans %}
+							{% set dia_mes = fecha_obj|date('j') %}
+							{% set dia_mes_ordinal = dia_mes|number_format(0, ',', '.') %}
+							{% set fecha_formateada = dia_mes_ordinal ~ ' ' ~ dia_semana %}
+							<td class="textday">{{ fecha_formateada }}</td>
+							<td class="temp">{{ data['day7']['temperature_max'] }}&deg;</td>
+							<td class="icon"><img src="{{ data['day7']['icon'] }}"></td>
+							<td class="textIcon">{{ data['day7']['text'] }}</td>
+							<td class="iconDrop"><img src="{{ drop_img }}"></td>
+							<td class="textDrop">{{ data['day7']['humidity'] }}%</td>
+							<td class="iconWind"><img src="{{ wind_img }}"></td>
+							<td class="directionWind"><img src="{{ data['day7']['icon_wind'] }}"></td>
+							<td class="speedWind">{{ data['day7']['wind'] }}Km/h</td>
+						</tr>
+					</table>
+					<div class="about">Información ofrecida por
+						<span>https://www.tutiempo.net</span>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="qr"><img src="{{ qr }}"></div>
+					<div class="text">
+						<div class="more-information">Más información</div>
+						<div class="web">turismoconil<strong>.es</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="barra"></div>
+	</body>
+</html>

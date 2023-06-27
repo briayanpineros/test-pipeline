@@ -1,0 +1,19 @@
+uuid: 5db1abca-bfc5-4148-a522-eace3ebecc7b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_subtitle
+    - node.type.poi
+id: node.poi.field_poi_subtitle
+field_name: field_poi_subtitle
+entity_type: node
+bundle: poi
+label: Subtítulo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,51 @@
+uuid: ec8a7835-c416-4167-be56-4221bad009d6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.news_bulletin.body
+    - field.field.node.news_bulletin.field_nb_dates
+    - field.field.node.news_bulletin.field_nb_related_news
+    - node.type.news_bulletin
+  module:
+    - datetime_range
+    - text
+    - user
+id: node.news_bulletin.default
+targetEntityType: node
+bundle: news_bulletin
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_nb_dates:
+    type: daterange_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: medium
+      separator: '-'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_nb_related_news:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

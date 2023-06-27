@@ -1,0 +1,31 @@
+uuid: 24dcd3b2-76aa-43bf-9c70-bdfedd271dcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.events_front_page
+  module:
+    - system
+    - views
+  theme:
+    - conil_theme
+id: views_block__events_front_page_poi_block_1
+theme: conil_theme
+region: layout_suffix
+weight: -23
+provider: null
+plugin: 'views_block:events_front_page-poi_block_1'
+settings:
+  id: 'views_block:events_front_page-poi_block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping:
+    name: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/poi/*\r\n/poi/*/*"

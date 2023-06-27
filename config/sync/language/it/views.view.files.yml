@@ -1,0 +1,90 @@
+label: File
+description: 'Trova e gestisci i file.'
+display:
+  default:
+    display_title: Predefinito
+    display_options:
+      title: File
+      fields:
+        fid:
+          label: Fid
+        filename:
+          label: Nome
+          separator: ', '
+        filemime:
+          label: 'Tipo MIME'
+        filesize:
+          label: Size
+        status:
+          label: Stato
+          settings:
+            format_custom_false: Temporaneo
+            format_custom_true: Permanente
+        created:
+          label: 'Data di caricamento'
+        changed:
+          label: 'Data di ultima modifica'
+        count:
+          label: 'Usato in'
+      pager:
+        options:
+          tags:
+            next: 'Seguente ›'
+            previous: '‹ Precedente'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          submit_button: Filtra
+          reset_button_label: Azzeramento
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nessun file disponibile.'
+      filters:
+        filename:
+          expose:
+            label: 'Nome file'
+        filemime:
+          expose:
+            label: 'Tipo MIME'
+        status:
+          expose:
+            label: Stato
+  page_1:
+    display_title: 'Panoramica file'
+    display_options:
+      menu:
+        title: File
+  page_2:
+    display_title: 'Utilizzo del file'
+    display_options:
+      title: 'Utilizzo del file'
+      fields:
+        entity_label:
+          label: Entità
+        type:
+          label: 'Tipo di entità'
+        module:
+          label: 'Registrazione del modulo'
+        count:
+          label: 'Contatore di utilizzo'
+          format_plural_string: !!binary MQNAY291bnQ=
+      pager:
+        options:
+          tags:
+            next: 'Seguente ›'
+            previous: '‹ Precedente'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      arguments:
+        fid:
+          exception:
+            title: All
+          title: 'Información de uso de archivos para {{ arguments.fid }}'

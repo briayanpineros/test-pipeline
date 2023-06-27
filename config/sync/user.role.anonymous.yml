@@ -1,0 +1,55 @@
+uuid: 4477775a-75fe-4ee5-99b8-8d292f466aca
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.plain_text_custom
+    - rest.resource.conil_visitors_api
+    - rest.resource.news_content_data_rest_api
+    - rest.resource.news_content_data_rest_api_lang
+    - rest.resource.news_list_content_data_rest_api
+    - rest.resource.news_list_content_data_rest_api_lang
+    - rest.resource.search_pois_service
+    - rest.resource.visitors_service
+    - rest.resource.visitors_service_total
+  module:
+    - comment
+    - conil_selfie
+    - contact
+    - empty_page
+    - eu_cookie_compliance
+    - filter
+    - media
+    - rest
+    - search
+    - sitemap
+    - system
+    - webform
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'access sitemap'
+  - 'create webform'
+  - 'display eu cookie compliance popup'
+  - 'post comments'
+  - 'restful get conil_visitors_api'
+  - 'restful get news_content_data_rest_api'
+  - 'restful get news_content_data_rest_api_lang'
+  - 'restful get news_list_content_data_rest_api'
+  - 'restful get news_list_content_data_rest_api_lang'
+  - 'restful get search_pois_service'
+  - 'restful get visitors_service'
+  - 'restful get visitors_service_total'
+  - 'restful post conil_visitors_api'
+  - 'search content'
+  - 'take a selfie'
+  - 'use text format plain_text_custom'
+  - 'view empty pages'
+  - 'view media'

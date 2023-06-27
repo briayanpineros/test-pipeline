@@ -1,0 +1,10 @@
+uuid: 5ff14700-20cd-4278-882a-8729f0701a2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.image_carousel
+label: 'Image Carousel'
+targetEntityType: media
+cache: true

@@ -1,0 +1,21 @@
+uuid: 856d21c9-f1ef-47c3-a17f-a5dee96d2528
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_telephone
+    - node.type.gastronomic_r
+  module:
+    - telephone
+id: node.gastronomic_r.field_poi_telephone
+field_name: field_poi_telephone
+entity_type: node
+bundle: gastronomic_r
+label: Contacto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

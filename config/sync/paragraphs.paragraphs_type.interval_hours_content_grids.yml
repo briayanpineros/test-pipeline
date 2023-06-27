@@ -1,0 +1,10 @@
+uuid: 0f7cc3ad-11e6-4501-b1a1-eedfaaa7f771
+langcode: en
+status: true
+dependencies: {  }
+id: interval_hours_content_grids
+label: 'Interval hours content grids'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

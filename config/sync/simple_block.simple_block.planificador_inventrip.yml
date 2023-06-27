@@ -1,0 +1,11 @@
+uuid: c2fb3c50-c270-4664-9542-262fccd0cf98
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: planificador_inventrip
+title: 'Planificador Inventrip'
+content:
+  value: '<div class="more-link"><a href="https://inventrip.com/conil/" target="_blank"><strong>Planificador</strong> INVENTRIP</a></div>'
+  format: full_html

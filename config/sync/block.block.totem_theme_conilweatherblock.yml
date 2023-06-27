@@ -1,0 +1,24 @@
+uuid: d8047e0b-333a-43c7-a5fa-6f4f8074d97e
+langcode: en
+status: true
+dependencies:
+  module:
+    - conil_weather
+  theme:
+    - totem_theme
+id: totem_theme_conilweatherblock
+theme: totem_theme
+region: header
+weight: -23
+provider: null
+plugin: conil_weather_block
+settings:
+  id: conil_weather_block
+  label: 'Conil Weather Block'
+  label_display: '0'
+  provider: conil_weather
+  api_city_id: '2519289'
+  api_key: 4e5dcc9197e551b54c98566379eb35d0
+  api_unit: metric
+  api_lang: auto
+visibility: {  }

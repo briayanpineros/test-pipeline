@@ -1,0 +1,22 @@
+uuid: a87f25aa-adc6-410f-80f3-ed1a0d959f73
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: video
+label: Video
+type: 'canonical_entities:media'
+pattern: 'video/[media:name]'
+selection_criteria:
+  f37961c2-36c9-4fb8-95f5-b2c582d49499:
+    id: 'entity_bundle:media'
+    negate: false
+    uuid: f37961c2-36c9-4fb8-95f5-b2c582d49499
+    context_mapping:
+      media: media
+    bundles:
+      remote_video: remote_video
+selection_logic: and
+weight: -5
+relationships: {  }

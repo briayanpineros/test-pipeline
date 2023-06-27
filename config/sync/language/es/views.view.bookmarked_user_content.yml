@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      filters:
+        field_poi_subcategoy_target_id:
+          expose:
+            label: Filtros
+      title: 'Mis favoritos'
+      header:
+        area:
+          content:
+            value: '<p class="my-favourites-description-title">Activa y desactiva tus favoritos</p><p class="my-favourites-description">En Conil le ponemos mucho corazón para que vuelvas a visitarnos. Desde "Mis Favoritos" podrás ver todos tus rincones o servicios preferidos <strong>marcados con el corazón de Conil</strong>, pero debes estar previamente <a href="/user/register">registrado</a>. No olvides marcar tu corazón en los sitios que no te quieras perder :) y <strong>"Vive Conil"</strong>.</p><ul><li>Pulsa el corazón para <strong>activar</strong></li><li>Vuelve a Pulsa el corazón para desactivar y eliminar el contenido de la carpeta</li></ul><p>&nbsp;</p>'
+            format: full_html
+      empty:
+        area_text_custom:
+          content: "<div class=\"bookmarked-no-results\">\r\n<h1>No hay contenido marcado</h1>\r\n</div>"
+      arguments:
+        uid:
+          exception:
+            title: Todos
+      footer:
+        area_text_custom:
+          content: "<div class=\"enlace_eliminar\">\r\n<a href=\"/bookmarked/delete\">Borrar todo</a>\r\n</div>"
+  page_1:
+    display_title: Página

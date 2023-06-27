@@ -1,0 +1,18 @@
+label: 'Pagina principale dei POI'
+display:
+  attachment_1:
+    display_title: 'Link a dove dormire'
+  attachment_2:
+    display_title: 'Link a come arrivare'
+  attachment_3:
+    display_title: 'Link a dove mangiare'
+  attachment_4:
+    display_title: 'Link a cosa fare'
+  poi_como_llegar_block:
+    display_title: 'Come arrivare'
+  poi_donde_comer_block:
+    display_title: 'Dove mangiare'
+  poi_donde_dormir_block:
+    display_title: 'Dove dormire'
+  poi_que_hacer_block:
+    display_title: 'Cosa fare '

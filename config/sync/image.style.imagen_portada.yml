@@ -1,0 +1,15 @@
+uuid: b4e1bb3e-4e42-4aa5-8e53-4604f07bc1b0
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_portada
+label: 'Imagen Portada'
+effects:
+  821ce393-a2b3-4e52-9bac-7f4b97bcccd1:
+    uuid: 821ce393-a2b3-4e52-9bac-7f4b97bcccd1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 500
+      anchor: center-center

@@ -1,0 +1,22 @@
+uuid: 7f08d853-c38f-49b4-9159-511e9dca1157
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_fotos
+id: taxonomy_term.categoria_fotos.status
+field_name: status
+entity_type: taxonomy_term
+bundle: categoria_fotos
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

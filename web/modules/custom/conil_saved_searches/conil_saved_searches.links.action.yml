@@ -1,0 +1,5 @@
+entity.saved_searches.add_form:
+  route_name: entity.saved_searches.add_form
+  title: 'Add Saved Searches'
+  appears_on:
+    - entity.saved_searches.collection

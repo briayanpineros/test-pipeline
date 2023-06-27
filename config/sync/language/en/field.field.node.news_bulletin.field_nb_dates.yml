@@ -1,0 +1,2 @@
+label: 'Date range'
+description: 'If this field is left empty, news will not be automatically associated and the related news field must be filled in manually.'

@@ -1,0 +1,23 @@
+.block-video-promocional-totem-principal{
+  width: 100%;
+  height: fit-content;
+  .view-content {
+    &::after{
+      width: 100%;
+      height: 10px;
+      display: block;
+      position: relative;
+      top: -8px;
+      content: ' ';
+      @include conil-gradient();
+    }
+  }
+}
+.view-video-promocional-totem {
+  .field--name-name {
+    display: none;
+  }
+  .field--name-field-description{
+    display: none;
+  }
+}

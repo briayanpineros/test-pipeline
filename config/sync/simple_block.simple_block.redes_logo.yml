@@ -1,0 +1,11 @@
+uuid: 2f9de9ff-84ab-4b10-b9d1-42c2f8266e8e
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: redes_logo
+title: redes-logo
+content:
+  value: '<div><div class="redes-logo"><div class="ministerio"><a href="https://portal.mineco.gob.es/" target="_blank" title="Ministerio Asuntos económicos y transformación digital"><img src="/themes/custom/conil_theme/imagenes/ministerio-asuntos-economicos-transformacion-digital.png" alt="Logotipo Ministerio Asuntos económicos y transformación digital">&nbsp;</a></div><div class="redes"><a href="https://red.es/" target="_blank" title="Red.es"><img src="/themes/custom/conil_theme/imagenes/redes.png" alt="Logotipo Red.es"></a></div><div class="ayuntamiento"><a href="https://www.conildelafrontera.es/" target="_blank" title="Ayuntamiento Conil de la Frontera"><img src="/themes/custom/conil_theme/imagenes/ayuntamiento-conil.png" alt="Logotipo Ayuntamiento Conil de la Frontera"></a></div><div class="feder"><a href="https://www.europarl.europa.eu/factsheets/es/sheet/95/el-fondo-europeo-de-desarrollo-regional-feder-" target="_blank" title="Fondos DEDER"><img src="/themes/custom/conil_theme/imagenes/fondos-feder.png" alt="Logotipo Fondos DEDER"></a></div></div><p><strong>Fondo Europeo de Desarrollo Regional</strong></p><p><em>"Una manera de hacer Europa"</em></p></div>'
+  format: full_html

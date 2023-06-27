@@ -1,0 +1,6 @@
+welcome: 'Bienvenida o bienvenido al portal de Turismo de Conil, se empezará a reproducir las noticias. Cuando termine una noticia, deberá de pulsar una vez para escuchar la siguiente. Si está escuchando una noticia y pulsa una vez, pasa a la siguiente. En caso de que termine la noticia y no pulse nada, se parará la reproducción y se restablecerá. Pulse para empezar.'
+rate: '1'
+pitch: '1'
+selectorLang: '#edit-lang-dropdown-select'
+class: body-speech
+seconds: '5'

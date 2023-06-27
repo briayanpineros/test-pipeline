@@ -1,0 +1,13 @@
+{
+    "name": "conil_saved_searches",
+    "type": "drupal-module",
+    "description": "Module to allocate a custom entity to save search api searches",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/conil_saved_searches",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/conil_saved_searches",
+        "source": "http://cgit.drupalcode.org/conil_saved_searches"
+    }
+}

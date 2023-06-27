@@ -1,0 +1,14 @@
+uuid: 9a4f6cd7-1478-4620-a401-840a31d13573
+langcode: es
+status: true
+dependencies: {  }
+id: node__webform
+label: 'Contenido: Webform'
+tags:
+  abstract: '[node:summary]'
+  content_language: '[node:language]'
+  description: '[node:body]'
+  geo_position: '[node:field_poi_geofield]'
+  image_src: '[node:field_imagen_portada]'
+  robots: nofollow
+  title: '[node:title]'

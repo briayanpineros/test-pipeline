@@ -1,0 +1,49 @@
+display:
+  default:
+    display_options:
+      title: 'No te lo pierdas'
+      fields:
+        view_node:
+          text: 'Más información'
+        nothing:
+          alter:
+            text: "{{ field_agenda_cover }}\r\n<div class=\"description\">\r\n<div class=\"title\">{{ title }}</div>\r\n{{ body }}\r\n<div class=\"date\">\r\n<div class=\"dates\">\r\n{{ field_agenda_inicio_fecha }}{{ field_agenda_inicio_fecha_1 }} Inicio\r\n</div>\r\n{% if field_agenda_fin_fecha is empty %}\r\n</div>\r\n{% else %}\r\n<div class=\"dates\">\r\n{{ field_agenda_fin_fecha }}{{ field_agenda_fin_fecha_1 }} Final\r\n</div></div>\r\n{% endif %}\r\n{{ average_stars_counter }}\r\n<div class=\"button\">{{ view_node }}</div>\r\n</div>\r\n"
+      header:
+        area_text_custom:
+          content: '<div class="events-agenda-link"><h3><a href="/agenda"><div class="events-agenda-link-text"><div class="events-agenda-link-strong">Agenda </div>de eventos</div></a></h3></div>'
+      empty:
+        area_text_custom:
+          content: 'No hay eventos próximos.'
+  block:
+    display_title: 'No te lo pierdas'
+    display_options:
+      block_description: 'Eventos portada'
+      fields:
+        view_node:
+          text: 'Más información'
+        nothing:
+          alter:
+            text: "{{ field_agenda_cover }}\r\n<div class=\"description\">\r\n<div class=\"title\">{{ title }}</div>\r\n{{ body }}\r\n<div class=\"date\">\r\n<div class=\"dates\">\r\n{{ field_agenda_inicio_fecha }}{{ field_agenda_inicio_fecha_1 }} Inicio\r\n</div>\r\n{% if field_agenda_fin_fecha is empty %}\r\n</div>\r\n{% else %}\r\n<div class=\"dates\">\r\n{{ field_agenda_fin_fecha }}{{ field_agenda_fin_fecha_1 }} Fin\r\n</div></div>\r\n{% endif %}\r\n{{ average_stars_counter }}\r\n<div class=\"button\">{{ view_node }}</div>\r\n</div>\r\n"
+      header:
+        area_text_custom:
+          content: '<div class="events-agenda-link"><h3><a href="/agenda"><div class="events-agenda-link-text"><div class="events-agenda-link-strong">Agenda</div> de eventos</div></a></h3></div>'
+  block_1:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: "{{ field_agenda_cover }}\r\n<div class=\"description\">\r\n<div class=\"title\">{{ title }} {{ link_flag }} </div>\r\n{{ body }}\r\n<div class=\"date\">\r\n<div class=\"dates\">\r\n{{ field_agenda_inicio_fecha }}{{ field_agenda_inicio_fecha_1 }} Inicio\r\n</div>\r\n{% if field_agenda_fin_fecha is empty %}\r\n</div>\r\n{% else %}\r\n<div class=\"dates\">\r\n{{ field_agenda_fin_fecha }}{{ field_agenda_fin_fecha_1 }} Final\r\n</div></div>\r\n{% endif %}\r\n{{ average_stars_counter }}\r\n\r\n</div>\r\n"
+      block_description: 'Detalle de los eventos'
+      header:
+        area_text_custom:
+          content: "<div class=\"events-agenda-link\">\r\n<h3><a href=\"/agenda\"><div class=\"events-agenda-link-text\"><div class=\"events-agenda-link-strong\">Agenda de </div>eventos</div></a></h3>\r\n</div>"
+  poi_block_1:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: "{{ field_poi_media }}\r\n<div class=\"description\">\r\n<div class=\"title\">{{ title }}</div>\r\n<div class=\"body\">{{ body }}</div>\r\n<div class=\"location\">\r\n<p>Localización</p>\r\n<span> Dirección:</span> {{ field_poi_address }} </br>\r\n<span> Telefono: </span> {{ field_poi_telephone }}\r\n</div>\r\n<div class=\"highlighted\">\r\n<p>Destacado</p>\r\n{{ field_poi_extratags }}\r\n</div>\r\n<div class=\"button\">{{ view_node }}</div>\r\n</div>\r\n"
+        view_node:
+          text: 'Más información'
+      block_description: 'Eventos portada'
+label: 'Eventos de portada'

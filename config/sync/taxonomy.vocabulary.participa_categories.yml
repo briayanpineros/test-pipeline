@@ -1,0 +1,8 @@
+uuid: 0af3b30e-ac3f-4ac2-b1a1-c1326ba3e072
+langcode: es
+status: true
+dependencies: {  }
+name: 'Participa categories'
+vid: participa_categories
+description: 'Categorías para participa'
+weight: 0

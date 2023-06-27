@@ -1,0 +1,7 @@
+uuid: 568374fc-8c53-4c37-a1a9-75bf54cb4c3d
+langcode: es
+status: true
+dependencies: {  }
+name: carrusel_portada_grande
+label: 'Carrusel portada grande'
+effects: {  }

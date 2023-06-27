@@ -1,0 +1,14 @@
+reports:
+  content: content
+  security: security
+  users: users
+  best_practices: 0
+  block: 0
+  cache: 0
+  codebase: 0
+  cron: 0
+  database: 0
+  extensions: 0
+  status: 0
+  views: 0
+  watchdog: 0

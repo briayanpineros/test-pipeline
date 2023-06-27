@@ -1,0 +1,21 @@
+uuid: 88cbc2f9-0dbf-4349-88fb-e133ba2d9e40
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_address_region
+    - node.type.poi
+id: node.poi.field_poi_address_region
+field_name: field_poi_address_region
+entity_type: node
+bundle: poi
+label: Región
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Andalucía
+default_value_callback: ''
+settings: {  }
+field_type: string

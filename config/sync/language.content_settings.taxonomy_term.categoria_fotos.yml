@@ -1,0 +1,18 @@
+uuid: f3911ddb-b9cb-4fc2-8c8c-e7ad5c046e37
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_fotos
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.categoria_fotos
+target_entity_type_id: taxonomy_term
+target_bundle: categoria_fotos
+default_langcode: site_default
+language_alterable: false

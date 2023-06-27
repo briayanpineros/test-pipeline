@@ -1,0 +1,19 @@
+label: 'Opinions sur le contenu'
+display:
+  default:
+    display_options:
+      title: Avis
+      empty:
+        area_text_custom:
+          content: '<div class="opinions-no-result"><span>Il n''y a pas encore de commentaires pour ce site. Soyez le premier à commenter</span></div>'
+      arguments:
+        nid:
+          exception:
+            title: Tous
+      use_more_text: plus
+  block_2:
+    display_options:
+      fields:
+        title:
+          alter:
+            text: 'Il y a un total de {{ cid }} avis avec une note moyenne de {{ (field_fivestar /20)|round(1, ''floor'')}}. / 5'

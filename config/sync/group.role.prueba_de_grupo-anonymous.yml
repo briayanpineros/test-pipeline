@@ -1,0 +1,14 @@
+uuid: b4dcb165-38b7-4218-8c7b-ef6270c347ba
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.prueba_de_grupo
+id: prueba_de_grupo-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: prueba_de_grupo
+permissions_ui: true
+permissions: {  }

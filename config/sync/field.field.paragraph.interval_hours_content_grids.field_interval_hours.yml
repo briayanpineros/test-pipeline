@@ -1,0 +1,21 @@
+uuid: 3e31bbea-111b-4f4e-a084-7150f071a6b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_interval_hours
+    - paragraphs.paragraphs_type.interval_hours_content_grids
+  module:
+    - time_field
+id: paragraph.interval_hours_content_grids.field_interval_hours
+field_name: field_interval_hours
+entity_type: paragraph
+bundle: interval_hours_content_grids
+label: 'Interval hours'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: time_range

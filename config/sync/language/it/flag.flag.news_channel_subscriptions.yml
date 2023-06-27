@@ -1,0 +1,6 @@
+label: 'Abbonamenti ai canali di notizie'
+flag_short: 'Abbonati a questo canale'
+flag_long: 'Se ti iscrivi riceverai una notifica via e-mail ogni volta che è disponibile un nuovo contenuto per questa notizia.'
+flag_message: Abbonati!
+unflag_short: 'Cancellati da questo canale'
+unflag_long: 'Se ti cancelli da questo canale non riceverai alcuna notifica via e-mail ogni volta che sarà disponibile un nuovo contenuto per '

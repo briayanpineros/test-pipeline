@@ -1,0 +1,2 @@
+label: 'intervallo di date'
+description: 'Se questo campo viene lasciato vuoto, le notizie non verranno associate automaticamente e il relativo campo notizie dovrà essere compilato manualmente.'

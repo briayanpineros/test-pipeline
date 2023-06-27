@@ -1,0 +1,15 @@
+label: 'Maßgeschneiderte Reise'
+display:
+  default:
+    display_title: 'Maßgeschneiderte Reise'
+    display_options:
+      empty:
+        area_text_custom:
+          content: 'Keine Ergebnisse'
+      title: 'Maßgeschneiderte Reise'
+      header:
+        area_text_custom:
+          admin_label: Ergebniszähler
+          content: '<div class="header"><h3 class="subcategory"><noscript>Tourismus ohne grenzen</noscript></h3><p class="counter"> <b>[view:total-rows]</b> gefundene ergebnisse</p> </div>'
+  block_1:
+    display_title: 'Maßgeschneiderte Reise'

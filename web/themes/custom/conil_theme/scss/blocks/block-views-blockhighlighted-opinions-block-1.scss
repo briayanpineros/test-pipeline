@@ -1,0 +1,220 @@
+div#block-views-block-highlighted-opinions-block-1,
+div#block-views-block-highlighted-opinions-highlighted-poi-opinions {
+
+  background-image: url(/themes/custom/conil_theme/imagenes/opiniones_ancho.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 3%;
+
+  .more-link{
+    flex: 1 1 100%;
+    text-align: center;
+    a {
+      border: 2px solid white;
+      border-radius: 1.5em;
+      display: inline-block;
+      font-weight: bold;
+      padding: .5em 1.5em;
+      color: white;
+      margin-bottom: 5%;
+    }
+  }
+
+  h2 {
+    font-weight: bold;
+    font-family: SourceSans-Bold;
+    text-align: right !important;
+    max-width: 1200px;
+    font-size: 3rem;
+    margin-right: 1rem;
+
+
+    @include lg {
+      font-size: 8rem;
+    }
+
+    color: #06BCD8;
+  }
+
+  .highlighted-poi-opinions-category {
+    font-weight: bold;
+    font-family: SourceSans-Bold;
+    text-align: right !important;
+    margin-right: 1rem;
+    max-width: 1200px;
+    font-size: 3rem;
+    color: #06BCD8;
+    text-transform: uppercase;
+
+    @include xl {
+      margin: auto;
+    }
+  }
+
+  div {
+    .view-highlighted-opinions {
+      max-width: 1200px;
+      margin: auto;
+
+      .view-content {
+
+        div.slick--view--highlighted-opinions,
+        div.slick--view--highlighted-opinions--highlighted-poi-opinions {
+          div.slick-slider {
+            padding-left: 12%;
+            padding-right: 12%;
+            padding-bottom: 2%;
+
+
+            .slide__description {
+              display: flex !important;
+              flex-wrap: wrap;
+              align-items: center;
+              text-align: left;
+
+              .views-field-user-picture {
+                width: 25%;
+                border-radius: 50%;
+
+                .field-content {
+                  img {
+                    max-width: 75%;
+                    border-radius: 50%;
+                  }
+                }
+              }
+
+              .views-field-field-comment-body {
+                width: 75%;
+
+                .field-content {
+                    font-size: 1rem;
+
+                    @include md {
+                      font-size: 1.5rem;
+                    }
+
+                    color: white;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+
+                    &::before {
+                      content: "\201C";
+                    }
+
+                    &::after {
+                      content: "\201D";
+                    }
+
+                }
+              }
+
+              .views-field-nothing {
+                width: 100% !important;
+                margin-left: 25%;
+
+                .highlighted-user-and-poi {
+                  @include md {
+                    font-size: 1.5rem;
+                  }
+
+                  color: $conil-color-gray;
+
+                  .highlighted-user-name {
+                    @include md {
+                      font-size: 1.5rem;
+                    }
+
+                    font-family: SourceSans-Italic;
+                    display: inline;
+                    color: $conil-color-gray;
+                    text-transform: capitalize;
+
+                    a {
+                      text-decoration: none;
+                      color: white !important;
+                      pointer-events: none;
+                    }
+                  }
+
+                  .highlighted-poi-title {
+                    display: inline;
+
+                    a {
+                      @include md {
+                        font-size: 1.5rem;
+                      }
+
+                      font-family: SourceSans-Bold;
+                      color: $conil-color-gray;
+                      text-transform: uppercase;
+                    }
+
+                    a:hover {
+                      color: $conil-color-aqua;
+                    }
+                  }
+
+                }
+              }
+
+              .views-field-field-fivestar {
+                margin-left: 25%;
+
+                .fivestar-static-form-item {
+                  .js-form-item.form-item.js-form-type-item.form-type-item.js-form-item-.form-item- {
+                    display: flex;
+
+                    .description {
+                      span {
+                        color: white;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          nav {
+            top: 40%;
+
+            .slick-prev {
+              margin-left: 3%;
+
+              &::before {
+                content: none;
+
+                content: '\e5e0';
+                font-family: "Google-Icon";
+                font-size: 3rem;
+                color: white;
+
+              }
+            }
+
+            .slick-next {
+              margin-right: 3%;
+
+              &::before {
+                content: none;
+
+                content: '\e5e1';
+                font-family: "Google-Icon";
+                font-size: 3rem;
+                color: white;
+
+              }
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}

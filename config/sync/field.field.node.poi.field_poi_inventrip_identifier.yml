@@ -1,0 +1,19 @@
+uuid: 4b1d4539-bebd-4b17-99dd-e3511d4f549b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_inventrip_identifier
+    - node.type.poi
+id: node.poi.field_poi_inventrip_identifier
+field_name: field_poi_inventrip_identifier
+entity_type: node
+bundle: poi
+label: 'Inventrip Identifier'
+description: 'Internal Identifier for POI sync with inventrip'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

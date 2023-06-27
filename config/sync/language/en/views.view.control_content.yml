@@ -1,0 +1,60 @@
+label: 'control_content (Content)'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        node_bulk_form:
+          action_title: Action
+        title:
+          label: Title
+          separator: ', '
+        uid:
+          label: Author
+          separator: ', '
+        created:
+          label: 'Create date'
+          separator: ', '
+        changed:
+          label: 'Updated date'
+          separator: ', '
+        status:
+          label: Published
+          separator: ', '
+        edit_node:
+          label: Edit
+          text: edit
+      filters:
+        status:
+          expose:
+            label: Published
+        uid:
+          expose:
+            label: 'Authored by'
+        combine:
+          expose:
+            label: Contains
+        type:
+          expose:
+            label: Type
+      title: 'All Content'
+  page_1:
+    display_title: 'All Content details'

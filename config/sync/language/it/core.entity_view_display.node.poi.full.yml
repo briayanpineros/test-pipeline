@@ -1,0 +1,6 @@
+third_party_settings:
+  field_group:
+    group_our_data:
+      label: 'I nostri dati di contatto'
+    group_mail:
+      label: Email

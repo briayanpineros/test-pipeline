@@ -1,0 +1,21 @@
+uuid: 36a81c85-64e0-45b5-b88b-f3b6d392c0f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_address_country
+    - node.type.poi
+id: node.poi.field_poi_address_country
+field_name: field_poi_address_country
+entity_type: node
+bundle: poi
+label: País
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ES
+default_value_callback: ''
+settings: {  }
+field_type: string

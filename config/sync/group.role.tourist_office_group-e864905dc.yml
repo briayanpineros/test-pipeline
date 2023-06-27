@@ -1,0 +1,17 @@
+uuid: 5b271f26-bda2-4521-bf34-7c83db04bc77
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.tourist_office_group
+  enforced:
+    config:
+      - user.role.tourist_office
+id: tourist_office_group-e864905dc
+label: 'Oficina de Turismo '
+weight: 9
+internal: true
+audience: outsider
+group_type: tourist_office_group
+permissions_ui: false
+permissions: {  }

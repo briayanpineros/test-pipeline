@@ -1,0 +1,3 @@
+content:
+  value: '<div class="buttom-bookmarked"><a class="buttom-bookmarked-link" href="/it/bookmarked">I miei preferiti</a></div>'
+  format: full_html

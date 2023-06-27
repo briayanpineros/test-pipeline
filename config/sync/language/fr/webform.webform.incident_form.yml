@@ -1,0 +1,36 @@
+title: 'Notification des incidents'
+description: 'Formulaire permettant aux utilisateurs d&#39;envoyer les incidents trouv&eacute;s dans conil'
+elements: |
+  name:
+    '#title': nom
+  telephone:
+    '#title': téléphone
+  email:
+    '#title': courriel
+  add_claim:
+    '#title': 'ajouter un incident'
+  address:
+    '#title': adresse
+    '#description': 'Adresse de l&#39;incident'
+    '#required_error': 'Champ obligatoire'
+  incident_reason:
+    '#title': commentaire
+  incident_image:
+    '#title': 'joindre une image'
+  state:
+    '#title': état
+    '#options':
+      new: nouveau
+      'in progress': 'en cours'
+      finished: terminé
+settings:
+  submission_label: envoyer
+handlers:
+  confirmation_email:
+    settings:
+      subject: 'incident confirmé enregistré'
+      body: "<p>&nbsp;</p>\r\n\r\n<p>Bonjour<br />\r\nVotre incident a &eacute;t&eacute; correctement enregistr&eacute; avec les informations suivantes :<br />\r\n<br />\r\n[webform_submission:values:incident_reason]<br />\r\n<br />\r\nMerci beaucoup de nous avoir contact&eacute;s.</p>"
+  incident_confirmation_closed:
+    label: 'confirmation de l''incident fermé'
+    settings:
+      body: "<p>Bonjour,<br />\r\n<br />\r\nNous vous informons que votre incident avec les informations suivantes :<br />\r\n<br />\r\n[webform_submission:values:incident_reason]<br />\r\n<br />\r\na &eacute;t&eacute; ferm&eacute;.<br />\r\n<br />\r\nMerci beaucoup de nous avoir contact&eacute;s.</p>"

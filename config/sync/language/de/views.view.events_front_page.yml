@@ -1,0 +1,37 @@
+display:
+  block:
+    display_title: 'Nicht verpassen'
+    display_options:
+      block_description: 'Veranstaltungen Titelseite'
+      header:
+        area_text_custom:
+          content: '<div class="events-agenda-link"><h3><a href="/agenda"><div class="events-agenda-link-text"><div class="events-agenda-link-strong">Liste</div> der Veranstaltungen</div></a></h3></div>'
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'Mehr Informationen'
+      header:
+        area_text_custom:
+          content: '<div class="events-agenda-link"><h3><a href="/agenda"><div class="events-agenda-link-text"><div class="events-agenda-link-strong">Liste</div> der Veranstaltungen</div></a></h3></div>'
+      title: 'Verpassen Sie es nicht'
+      empty:
+        area_text_custom:
+          content: 'Es gibt keine bevorstehenden Veranstaltungen.'
+  block_1:
+    display_options:
+      header:
+        area_text_custom:
+          content: "<div class=\"events-agenda-link\">\r\n<h3><a href=\"/agenda\"><div class=\"events-agenda-link-text\"><div class=\"events-agenda-link-strong\"></div>Veranstaltungskalender</div></a></h3>\r\n</div>"
+      block_description: 'Veranstaltungen Detail'
+  poi_block_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Mehr Infos'
+        nothing:
+          alter:
+            text: "{{ field_poi_media }}\r\n<div class=\"description\">\r\n<div class=\"title\">{{ title }}</div>\r\n<div class=\"body\">{{ body }}</div>\r\n<div class=\"location\">\r\n<p>Standort</p>\r\n<span> Anschrift:</span> {{ field_poi_address }} </br>\r\n<span> Telefon: </span> {{ field_poi_telephone }}\r\n</div>\r\n<div class=\"highlighted\">\r\n<p>Hervorgehoben</p>\r\n{{ field_poi_extratags }}\r\n</div>\r\n<div class=\"button\">{{ view_node }}</div>\r\n</div>\r\n"
+      block_description: 'Veranstaltungen Titelseite'
+    display_title: 'Nicht verpassen POI Block'
+label: 'Veranstaltungen Titelseite'

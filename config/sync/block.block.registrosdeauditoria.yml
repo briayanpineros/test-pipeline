@@ -1,0 +1,35 @@
+uuid: 112ba6a2-33d2-4896-a507-a21e77ebda96
+langcode: es
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.registros_de_auditoria
+  module:
+    - simple_block
+    - system
+    - user
+  theme:
+    - gin
+id: registrosdeauditoria
+theme: gin
+region: content
+weight: -2
+provider: null
+plugin: 'simple_block:registros_de_auditoria'
+settings:
+  id: 'simple_block:registros_de_auditoria'
+  label: 'Registros de auditoría'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /admin/reports/site-audit
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator

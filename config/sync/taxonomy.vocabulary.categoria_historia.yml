@@ -1,0 +1,8 @@
+uuid: 71f359b0-ae87-4a2f-a9b9-6ea16edd4979
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categoría Historia'
+vid: categoria_historia
+description: ''
+weight: 0

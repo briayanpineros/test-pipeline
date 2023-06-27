@@ -1,0 +1,118 @@
+.block-actualidad-en-conil-portada {
+  margin-top: 43px;;
+  margin-bottom: 0;
+  h1 {
+    margin: 0 0 30px 0;
+  }
+  .more-link {
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    @include md {
+      margin-left: auto;
+      margin-right: 50px;
+      padding-top: 25px;
+    }
+
+    a {
+      @include yellowbutton();
+      margin-top: 22px;
+    }
+  }
+
+  .view-header {
+    color: $conil-color-blue;
+    text-transform: uppercase;
+    margin-left: 50px;
+  }
+
+  div.view-content {
+    margin: 0 50px;
+    display: grid;
+    // width: 100%;
+    //flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+
+    div.views-row {
+      flex: 1 1 300px;
+
+      position: relative;
+
+      .views-field-nothing {
+        width: 100%;
+        height: auto;
+        position: relative;
+
+        .img-and-shadow {
+          &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.50) !important;
+            content: '';
+            display: block;
+            z-index: 1;
+          }
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+
+      > .views-field-title {
+        height: 100%;
+        line-height: 1.2rem;
+        width: 100%;
+        font-weight: bold;
+        position: absolute;
+        z-index: 2;
+        left: 2%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1em;
+
+
+        > span {
+          > ::after {
+            content: '\e930';
+            font-family: "Google-Icon";
+            color: white;
+            position: absolute;
+            bottom: 0;
+            font-size: 3rem;
+            left: 10px;
+
+          }
+          a {
+            //margin-left: 10%;
+            font-family: SourceSans-Bold, sans-serif;
+            font-weight: bold;
+            line-height: 1.2;
+            font-size: 1.5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            max-width: 100%;
+            width: 100%;
+            color: white;
+          }
+        }
+      }
+
+      .views-field-body {
+        font-size: $h3-font-size-custom;
+        display: none;
+        color: $conil-color-darkgreen;
+      }
+    }
+  }
+}

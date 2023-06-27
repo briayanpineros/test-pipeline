@@ -1,0 +1,8 @@
+uuid: af53c9ba-64ed-4bed-abf0-0234bdd992aa
+langcode: es
+status: true
+dependencies: {  }
+id: sidr-navigation
+label: 'Navegación del menú lateral'
+description: 'Menú de navegación del menú lateral del Portal Turístico'
+locked: false

@@ -1,0 +1,7 @@
+label: Suivi
+flag_short: 'Suivez cet utilisateur'
+flag_long: 'Cliquez sur le lien pour suivre cet utilisateur'
+flag_message: 'Vous suivez l''utilisateur'
+unflag_short: 'Désactiver cet utilisateur'
+unflag_long: 'Cliquez sur le lien pour ne plus suivre cet utilisateur'
+unflag_message: 'Vous n''avez pas suivi l''utilisateur'

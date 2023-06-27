@@ -1,0 +1,19 @@
+uuid: fa00d25f-a20e-4e8f-8ccd-3c0144ef550a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - social_media
+id: node.field_agenda_social_media_share
+field_name: field_agenda_social_media_share
+entity_type: node
+type: social_media
+settings: {  }
+module: social_media
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

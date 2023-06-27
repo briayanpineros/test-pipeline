@@ -1,0 +1,6 @@
+web_speech_synthesis_api.web_speech_synthesis_settings:
+  title: Web speech synthesis settings
+  description: Web Speech Synthesis Settings
+  parent: system.admin_config_system
+  route_name: web_speech_synthesis_api.web_speech_synthesis_settings
+  weight: 10

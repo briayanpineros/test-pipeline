@@ -1,0 +1,202 @@
+.path-find {
+
+  .breadcrumb {
+    margin-bottom: 0;
+
+    ol {
+      margin-bottom: revert;
+    }
+  }
+
+  #block-conil-theme-page-title {
+    display: none;
+  }
+
+  #block-mainpagecontent {
+    max-width: 100%;
+    margin-right: -30px;
+
+    @include xl {
+      padding: 0;
+    }
+
+    .view-search {
+      display: flex;
+      flex-wrap: wrap;
+
+      .view-header {
+        width: 100%;
+        order: 1;
+        padding: 2rem 1rem;
+
+        @include md {
+          padding: 2rem 0rem;
+        }
+
+        h2 {
+          max-width: 1200px;
+          margin: auto;
+          font-family: SourceSans-Bold;
+          font-size: 1.8rem;
+          color: $conil-color-blue;
+
+          &::after {
+            content: url("/themes/custom/conil_theme/imagenes/subline-headline.png");
+            position: relative;
+            display: block;
+            top: -.8rem;
+          }
+        }
+      }
+
+      .view-filters {
+        background-color: $conil-color-gray;
+        border-top: 0.5rem solid $conil-color-lightgray;
+        width: 100%;
+        height: 140px;
+        padding-left: 30px;
+        margin-left: -30px;
+        padding-right: 30px;
+        margin-right: -30px;
+
+        @include md {
+          height: 125px;
+        }
+
+        order:0;
+
+        form.views-exposed-form {
+          max-width: 1200px;
+          margin: auto;
+          padding: 2rem 1rem 0.5rem;
+
+          @include md {
+            padding: 2rem 0rem 0.5rem;
+          }
+
+          .js-form-type-textfield {
+            @include md {
+              display: flex;
+            }
+
+            display: block;
+            margin-top: 0;
+            align-items: center;
+
+            label {
+              width: 100%;
+              margin-bottom: 1rem;
+
+              @include md {
+                width: 20%;
+                margin-bottom: 0.5rem;
+              }
+            }
+
+            input {
+              @include md {
+                width: 80%;
+              }
+
+              width: 100%;
+              border-radius: 1rem;
+              padding-left: 20px;
+              padding-right: 50px;
+            }
+          }
+        }
+
+        .form-actions {
+          float: right;
+          position: relative;
+          top: -85px;
+
+          @include md {
+            top: -100px;
+          }
+
+          .js-form-submit {
+            background: none;
+            border: none;
+            color: transparent;
+            margin-left: -14%;
+
+            @include sm {
+              margin-left: -9%;
+            }
+
+            @include md {
+              margin-left: -11%;
+            }
+
+            margin-top: 16px;
+            height: 36px;
+            width: 50px;
+            background-image: url(/themes/custom/conil_theme/imagenes/icono_lupa_busqueda.png);
+            background-position: center center;
+            background-size: 25px;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+
+      .view-content {
+        order: 2;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 2rem 1rem;
+
+        @include xl {
+          padding: 2rem 0rem;
+        }
+
+        footer.node__meta {
+          display: none;
+        }
+
+        h2 {
+          font-family: SourceSans-Bold;
+          font-size: 1.8rem;
+        }
+
+        article {
+          border-bottom: 1px solid #E1E1E1;
+          padding-bottom: 1rem;
+          margin-bottom: 1rem;
+
+          div.node__content{
+            display: flex;
+            margin-top: 1rem;
+            div.field__item{
+
+              color: $conil-color-blue;
+
+              &:first-child{
+                flex: 1 1 20%;
+                margin-right: 2rem;
+              }
+
+              &:last-child{
+                flex: 1 1 80%;
+                margin: auto;
+              }
+
+
+              &:only-child{
+                flex: 1 1 100%;
+              }
+            }
+          }
+
+        }
+      }
+
+      nav.pager {
+        order: 3;
+        width: 100%;
+      }
+
+    }
+  }
+}

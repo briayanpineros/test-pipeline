@@ -1,0 +1,8 @@
+uuid: d14ae15c-f59f-457d-99bb-d6e2652fa006
+langcode: en
+status: true
+dependencies: {  }
+name: 'Gastronomy routes'
+vid: gastronomy_routes
+description: ''
+weight: 0

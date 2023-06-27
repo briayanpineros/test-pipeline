@@ -1,0 +1,20 @@
+.cover img {
+  height: 840px !important;
+  /* 1=>1340px, 2=>1100px, 3=>840px, 4=>544px */
+}
+
+.image1 {
+  border-top: 8px solid #2cb9d8;
+}
+
+.image2 {
+  display: block !important;
+}
+
+.image3 {
+  display: block !important;
+}
+
+.image4 {
+  display: none !important;
+}

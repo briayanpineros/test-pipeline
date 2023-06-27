@@ -1,0 +1,11 @@
+uuid: 4d8cb4f8-6fa0-4a8d-842a-1edd66af9e25
+langcode: en
+status: true
+dependencies: {  }
+id: tourist_office_group
+label: 'Tourist office group'
+description: ''
+new_revision: true
+creator_membership: true
+creator_wizard: false
+creator_roles: {  }

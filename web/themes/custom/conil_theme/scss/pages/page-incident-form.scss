@@ -1,0 +1,248 @@
+body.entity-webform-canonical {
+
+  .content-wrapper {
+    #block-conil-theme-page-title {
+      max-width: 1200px;
+      margin: auto 2rem;
+
+      @include xl {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h1 {
+        font-family: SourceSans-Bold;
+        color: $conil-color-blue;
+        //padding: 1rem 2rem;
+        padding-bottom: 0;
+        padding-top: 1rem;
+
+        @include xl {
+          padding-top: 2rem;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
+    #block-mainpagecontent {
+      //max-width: 100%;
+
+      .notification-of-incidents-form {
+        display: flex;
+        flex-wrap: wrap;
+        color: $conil-color-blue;
+
+        label {
+          font-family: SourceSans-Bold;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+
+        }
+
+        .iti--allow-dropdown {
+          display: block;
+        }
+
+        .form-item-name,
+        .form-item-telephone {
+          background-color: $conil-color-gray;
+          flex-basis: 100%;
+
+          @include sm {
+            flex-basis: 50%;
+          }
+
+          margin: 0;
+          padding: 1rem 6rem;
+
+          label {
+            display: block;
+          }
+        }
+
+        .form-item-name {
+          padding: 1rem 2rem 0rem 2rem;
+
+          @include sm {
+            padding: 1rem 1rem 1rem 2rem;
+          }
+
+          @include md {
+            padding: 1rem 1rem 1rem 6rem !important;
+            border-top-left-radius: 10px;
+          }
+
+          input {
+            border-radius: 1rem;
+          }
+        }
+
+        .form-item-telephone {
+
+          padding: 0rem 2rem 1rem 2rem;
+
+          @include sm {
+            padding: 1rem 2rem 1rem 1rem;
+          }
+
+          @include md {
+            padding: 1rem 6rem 1rem 1rem !important;
+            border-top-right-radius: 10px;
+          }
+
+          .iti--allow-dropdown {
+            width: 100%;
+          }
+
+          input[type=tel] {
+            padding-left: 52px !important;
+            border-radius: 1rem;
+          }
+        }
+
+
+        .form-item-address,
+        .form-item-incident-reason,
+        .form-item-incident-image,
+        .form-actions,
+        .form-item-email,
+        .add-claim {
+          flex-basis: 100%;
+          padding: 0 2rem;
+
+          @include md {
+            padding: 0 6rem !important;
+          }
+
+          label {
+            text-transform: uppercase;
+          }
+        }
+
+        .form-item-incident-reason {
+          background: transparent;
+          margin-right: 0;
+        }
+
+        .form-item-address,
+        .form-textarea-wrapper {
+
+          input,
+          textarea {
+            border-radius: 1rem;
+          }
+
+          .description {
+            display: none;
+          }
+
+          background: transparent;
+          margin-right: 0;
+          width: 100%;
+
+        }
+
+        .form-item-address,
+        .form-item-incident-reason {
+          label {
+            margin-right: auto;
+          }
+        }
+
+        .add-claim {
+          font-family: SourceSans-Light;
+          font-size: 1.8rem;
+          margin-top: 2rem;
+          text-transform: uppercase;
+        }
+
+        .form-item-email {
+          background-color: $conil-color-gray;
+          margin: 0;
+          padding-bottom: 3rem !important;
+
+          input {
+            width: 100%;
+            border-radius: 1rem;
+          }
+
+          @include sm {
+            input {
+              width: 49%;
+            }
+          }
+
+          @include md {
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+            input {
+              width: 100%;
+            }
+          }
+
+        }
+
+        .form-actions {
+          width: 100%;
+          margin-right: 0%;
+          text-align: right;
+
+          @include sm {
+            input {
+              width: fit-content;
+            }
+          }
+
+          input#edit-continue-later {
+            display: none;
+          }
+
+          input {
+            border-radius: 1.5rem;
+            background-color: $conil-color-blue;
+            color: white;
+          }
+        }
+
+        input {
+          width: 100%;
+          font-family: SourceSans-Regular;
+          font-size: 1.2rem;
+          color: $conil-color-darkgray;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+
+        textarea {
+          font-family: SourceSans-Regular;
+          font-size: 1.2rem;
+          color: $conil-color-darkgray;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+
+        #ajax-wrapper {
+          width: 100%;
+
+          input {
+            border-radius: 1rem;
+            padding: 1.5rem;
+          }
+
+          .description {
+            padding: 1rem;
+            color: black;
+            font-weight: bold;
+          }
+        }
+
+        .form-item-state {
+          visibility: hidden;
+          display: none;
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,657 @@
+body.entity-webform-canonical {
+
+  form.webform-submission-form {
+    margin: 2rem;
+
+    #edit-thanks-image {
+      background: transparent;
+    }
+
+    section {
+      border: 2px solid $conil-color-blue;
+      color: $conil-color-blue;
+      width: 100%;
+      margin-right: 70px;
+
+      .webform-section-wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.5rem;
+
+        h4 {
+          font-weight: bold;
+        }
+
+        h4:last-child {
+          text-align: end !important;
+        }
+      }
+    }
+
+    >div.js-form-item {
+      background-color: #f0f0f0;
+      text-transform: uppercase;
+      padding: 5px 30px 20px 30px !important;
+      color: $conil-color-blue;
+
+      table {
+        thead {
+          background-color: #f0f0f0;
+          color: $conil-color-blue;
+          margin-bottom: 2%;
+
+          th {
+            text-align: center;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            div {
+              >label {
+                font-weight: normal !important;
+                display: block;
+              }
+            }
+          }
+        }
+      }
+
+      label {
+        font-weight: bold;
+        display: block;
+        align-self: center;
+        padding-top: 5px !important;
+      }
+
+      .description {
+        text-align: center;
+        text-transform: initial;
+        margin-bottom: 15px;
+      }
+
+      input {
+        color: $conil-color-darkgray !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+      }
+    }
+
+    @include xl {
+      margin: 0rem;
+    }
+
+    @include md {
+      display: flex;
+      flex-grow: 2;
+      flex-wrap: wrap;
+
+      >div.form-item,
+      .form-wrapper>div.form-item {
+        background-color: #f0f0f0;
+        //padding: 10%;
+
+
+        label {
+          font-weight: bold;
+        }
+
+        @include md {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 30%;
+
+          .SumoSelect {
+            width: 100%;
+          }
+
+          input {
+            width: 90%;
+            color: $conil-color-darkgray;
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+        }
+      }
+
+      fieldset.fieldset-fse {
+        >legend {
+          display: none !important;
+        }
+
+        div.fieldset-wrapper {
+          >fieldset {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+
+            >legend {
+              padding: 0px 5px 0px 30px !important;
+            }
+          }
+        }
+      }
+
+      >div.js-form-item {
+        text-transform: uppercase;
+        padding: 5px 30px 10px 30px !important;
+        color: $conil-color-blue;
+        margin-right: 2%;
+
+        table {
+          thead {
+            background-color: #f0f0f0;
+            color: $conil-color-blue;
+            margin-bottom: 2%;
+
+            th {
+              text-align: center;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              div {
+                >label {
+                  font-weight: normal !important;
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+
+        label {
+          display: block;
+          align-self: center;
+          padding-top: 5px !important;
+        }
+      }
+
+    }
+
+    margin-top: 30px;
+
+    >fieldset {
+      @include md {
+        width: 30%;
+        margin-right: 2%;
+      }
+    }
+  }
+
+  fieldset.fieldgroup,
+  .fieldset-wrapper {
+    background-color: #f0f0f0;
+    padding-bottom: 10px;
+    height: auto;
+
+    .form-item-province,
+    .form-item-country,
+    .form-item-other-area,
+    .form-item-other-days,
+    .form-item-other-season,
+    .form-item-other-transport,
+    .form-item-other-accompaniment,
+    .form-item-other-purchasing-level,
+    .form-item-other-use-of-accommodation
+     {
+      color: $conil-color-blue;
+      padding: 0 30px 0px 30px;
+      margin-bottom: 0;
+      margin-top: 0;
+
+      label {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .SumoSelect {
+        label {
+          font-weight: lighter;
+          text-transform: capitalize;
+        }
+      }
+
+      input {
+        color: $conil-color-darkgray;
+      }
+    }
+
+    >legend {
+      background-color: #f0f0f0;
+      color: $conil-color-blue;
+      padding: 10px 5px 0px 30px;
+      text-transform: uppercase;
+
+      @include md {
+        display: flex;
+        justify-content: center;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .fieldset-wrapper {
+      span {
+        color: $conil-color-blue;
+      }
+
+      .js-webform-checkboxes {
+        padding-left: 30px;
+        color: $conil-color-blue;
+      }
+
+      &>.field-prefix {
+        text-align: -webkit-center;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+
+  }
+
+  #edit-employ-set {
+    margin-bottom: 8px !important;
+  }
+
+  fieldset.fieldgroup {
+    margin-bottom: 37px;
+
+    &#edit-age--wrapper {
+      margin-bottom: 15px !important;
+    }
+  }
+
+  #webform-submission-survey-destination-perception-add-form,
+  #webform-submission-survey-analysis-of-accommodation-add-form,
+  #webform-submission-survey-additional-analysis-tour-add-form,
+  #webform-submission-survey-additional-ana-occupancy-add-form {
+    #edit-nationality-set {
+      padding-bottom: 7px;
+      margin-top: 8px;
+    }
+
+    #edit-how-many-people-are-in-your-household-parents-and-children-still--wrapper {
+      margin-bottom: 15px !important;
+    }
+
+    #edit-would-you-stay-in-the-same-accommodation-again--wrapper {
+      padding-bottom: 32px;
+    }
+  }
+
+  @include md {
+    .fieldset-wrapper {
+      height: 100% !important;
+      display: flex;
+      flex-direction: column;
+
+      div {
+        width: 100%;
+      }
+    }
+  }
+
+  .form-actions {
+    width: 100%;
+    margin-right: 7%;
+    text-align: right;
+
+    input {
+      border-radius: 25px;
+      background: $conil-color-blue;
+      min-width: 100px;
+      color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    #edit-continue-later {
+      margin-left: 1rem;
+      border-color: $conil-color-blue;
+      border-radius: 25px;
+      background: white;
+      min-width: 100px;
+      color: $conil-color-blue;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .webform-options-display-buttons-wrapper {
+    padding: 0 5px 0px 30px;
+    margin-bottom: 0;
+
+    &:hover {
+      background-color: #eaeaea;
+    }
+  }
+
+  .webform-options-display-buttons {
+    flex-direction: column;
+  }
+
+  .webform-options-display-buttons .form-item {
+
+    margin: 0;
+    background-image: url("../imagenes/webform-icono-check.png");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-color: inherit;
+    background-size: 20px;
+
+    label.webform-options-display-buttons-label {
+      color: $conil-color-blue;
+      border: none;
+      text-align: left;
+      padding-left: 30px;
+      background-color: unset;
+
+    }
+
+    input:checked+label.webform-options-display-buttons-label,
+    input:checked+div.webform-options-display-buttons-wrapper {
+      box-shadow: none;
+      background-image: url("../imagenes/webform-icono-check-seleccionado.png");
+      background-position: center left;
+      background-repeat: no-repeat;
+      background-color: inherit;
+      background-size: 20px;
+    }
+  }
+}
+
+//Add scss for "Contact form for POI"
+#webform-submission-contact-poi-form-add-form {
+  //For bigger screens than mobiles
+  background-color: #f1f1f1;
+  border-radius: 1em;
+  text-transform: uppercase;
+  padding: 5px 30px 10px 30px !important;
+  color: $conil-color-blue;
+  width: 100%;
+
+
+  >div {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    >label {
+      font-family: SourceSans-Bold;
+      font-size: 1.2rem;
+    }
+
+    >input {
+      width: 90% !important;
+      margin: auto !important;
+      color: $conil-color-darkgray !important;
+      padding-left: 5px !important;
+      padding-right: 5px !important;
+    }
+  }
+
+  details {
+    input {
+      width: 90%;
+      margin: auto;
+      color: $conil-color-darkgray !important;
+      padding-left: 5px !important;
+      padding-right: 5px !important;
+    }
+  }
+
+  //Equal lenghts of subcategory and language with the others
+  .js-form-item-subcategory,
+  .js-form-item-language {
+    .SumoSelect {
+      margin: auto;
+      width: 90%;
+    }
+  }
+
+  //These are suposed to have 100% width
+  #reserva_table,
+  #nuestra_web_table,
+  .js-text-format-wrapper {
+    width: 100%;
+
+    >div {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+
+      >label {
+        font-family: SourceSans-Bold;
+        font-size: 1.2rem;
+      }
+
+      table tbody tr {
+        border: 0px;
+      }
+
+      .fieldset-wrapper,
+      legend,
+      fieldset {
+        background-color: #f1f1f1;
+      }
+    }
+  }
+
+  //Put the border radius and inputs together
+  #nuestra_web_table,
+  #reserva_table {
+    margin: auto;
+    width: 100%;
+
+    td {
+      white-space: unset;
+    }
+  }
+
+  //Put both inputs to the same width than the others
+
+  .js-form-item-about-us-value {
+    margin: auto;
+    width: 90%;
+  }
+
+  //These are away from the main form and has white background
+  #ajax-wrapper {
+    width: 100%;
+
+    >div {
+      width: 100%;
+
+      >label {
+        font-family: SourceSans-Bold;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  #edit-actions {
+    width: 100%;
+    margin-right: 7%;
+    text-align: right;
+    background-color: #f1f1f1;
+
+    input {
+      width: 200px;
+      margin: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  //Code to get off the background of the edit button
+  .contextual {
+    background-color: transparent;
+  }
+
+
+
+  //    De aquí para abajo, cambiará el estilo cuando la pantalla sea más grandede 758px   //
+  //For bigger screens than mobiles and tablets
+  @include md {
+    font-weight: bold;
+    flex-direction: row;
+    text-transform: uppercase;
+    padding: 5px 30px 10px 30px !important;
+    color: $conil-color-blue;
+
+    >div {
+      align-items: center;
+      width: 50%;
+      margin: auto;
+      background-color: #f1f1f1;
+
+      >label {
+        font-family: SourceSans-Bold;
+        font-size: 1.2rem;
+      }
+
+    }
+
+    //Equal lenghts of subcategory and language with the others
+    .js-form-item-subcategory,
+    .js-form-item-language {
+      .SumoSelect {
+        width: 90%;
+      }
+    }
+
+    //These are suposed to have 100% width
+    #reserva_table,
+    #nuestra_web_table,
+    .js-text-format-wrapper {
+      width: 100%;
+      margin: auto;
+
+      >div {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+
+        >label {
+          font-family: SourceSans-Bold;
+          font-size: 1.2rem;
+        }
+
+        table tbody tr {
+          border: 0px;
+        }
+
+        .fieldset-wrapper,
+        legend,
+        fieldset {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+
+    //Put the border radius and inputs together
+    #nuestra_web_table {
+      border-bottom-right-radius: 1em;
+      border-bottom-left-radius: 1em;
+      margin: auto;
+
+      .webform-multiple-table--operations,
+      .webform-multiple-table--handle {
+        width: 5%;
+      }
+
+      td {
+        white-space: unset;
+        margin: auto;
+
+        .fieldset-wrapper {
+          margin: auto;
+        }
+
+
+        @media (min-width: 1200px) {
+          .fieldset-wrapper {
+            display: block ruby;
+            margin: auto;
+
+            div {
+              width: 48%;
+            }
+
+          }
+        }
+      }
+    }
+
+    .js-form-item-title {
+      border-top-left-radius: 1em;
+    }
+
+    .js-form-item-email-de-contacto {
+      border-top-right-radius: 1em;
+    }
+
+    //Put the input of contact telephone with the same width than the others
+    #reserva_table {
+
+      .webform-multiple-table--operations,
+      .webform-multiple-table--handle {
+        width: 5%;
+      }
+    }
+
+    //Put both inputs to the same width than the others
+    .js-form-item-additional-services {
+      width: 100%;
+
+      input {
+        width: 95%;
+      }
+    }
+
+    .js-form-item-about-us-value {
+      .form-textarea-wrapper {
+        width: 95%;
+        margin: auto;
+
+        textarea#edit-about-us-value {
+          color: $conil-color-darkgray;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    }
+
+    //These are away from the main form and has white background
+    #ajax-wrapper {
+      width: 100%;
+
+      >div {
+        align-items: center;
+        text-align: left;
+
+        >label {
+          font-family: SourceSans-Bold;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    //Code to get off the background of the edit button
+    .contextual {
+      background-color: transparent;
+    }
+  }
+
+}

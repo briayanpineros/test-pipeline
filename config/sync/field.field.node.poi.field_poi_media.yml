@@ -1,0 +1,38 @@
+uuid: ba6b01e8-f3b6-4fd9-9aec-64946c0f8f1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_media
+    - media.type.cover
+    - media.type.image
+    - media.type.poi_media
+    - node.type.poi
+  content:
+    - 'media:poi_media:e5cb531e-3f07-4477-b307-75a4c0fda404'
+id: node.poi.field_poi_media
+field_name: field_poi_media
+entity_type: node
+bundle: poi
+label: 'Cover image'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: e5cb531e-3f07-4477-b307-75a4c0fda404
+    weight: 0
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      cover: cover
+      image: image
+      poi_media: poi_media
+    sort:
+      field: created
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

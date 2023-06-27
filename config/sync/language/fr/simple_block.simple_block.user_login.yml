@@ -1,0 +1,3 @@
+content:
+  value: '<div class="header-user-profile-block"><p><a class="header-user-profile-icon" href="/fr/user/login">Mon profil</a></p></div>'
+  format: full_html

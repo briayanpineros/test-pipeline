@@ -1,0 +1,24 @@
+uuid: bb5fe627-076e-4f2d-bb23-ba080f351111
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - conil_theme
+id: breadcrumbs
+theme: conil_theme
+region: header_bottom
+weight: -12
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

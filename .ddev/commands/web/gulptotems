@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Description: Run gulp inside the web container
+## Usage: gulptotems
+## Example: "ddev gulptotems"
+
+cd /var/www/html/web/themes/custom/totem_theme && npm install && gulp

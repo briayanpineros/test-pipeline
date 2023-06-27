@@ -1,0 +1,57 @@
+label: Systemprotokoll
+description: 'Aktuelle Protokollnachrichten'
+display:
+  default:
+    display_title: Standard
+    display_options:
+      title: 'Aktuelle Protokollnachrichten'
+      fields:
+        nothing:
+          admin_label: Symbol
+        wid:
+          label: WID
+        severity:
+          label: Schweregrad
+        type:
+          label: Typ
+        timestamp:
+          label: Datum
+        message:
+          label: Nachricht
+          alter:
+            path: 'admin/reports/dblog/event/{{ wid }}'
+            alt: '{{ message }}'
+        name:
+          label: Benutzer
+          separator: ', '
+        link:
+          label: Operations
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Zurücksetzen
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area:
+          admin_label: 'Keine Protokollnachrichten verfügbar.'
+          content: 'Keine Protokollnachrichten verfügbar.'
+      filters:
+        type:
+          expose:
+            label: Typ
+        severity:
+          expose:
+            label: Schweregrad
+  page:
+    display_title: Seite

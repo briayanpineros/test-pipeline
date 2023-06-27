@@ -1,0 +1,36 @@
+title: 'Benachrichtigung über Vorfälle'
+description: 'Formulario para que los usuarios env&iacute;en las incidencias encontradas en conil'
+elements: |
+  name:
+    '#title': Name
+  telephone:
+    '#title': Telefon
+  email:
+    '#title': E-Mail
+  add_claim:
+    '#title': 'Vorfall hinzufügen'
+  address:
+    '#title': Adresse
+    '#description': 'Adresse des Vorfalls'
+    '#required_error': 'Obligatorisches Feld'
+  incident_reason:
+    '#title': Kommentar
+  incident_image:
+    '#title': 'Bild anhängen'
+  state:
+    '#title': Staat
+    '#options':
+      new: neu
+      'in progress': 'in Arbeit'
+      finished: fertig
+settings:
+  submission_label: senden
+handlers:
+  confirmation_email:
+    settings:
+      subject: 'bestätigt Vorfall registriert'
+      body: "<p>&nbsp;</p>\r\n\r\n<p>Hallo<br />\r\nIhr Vorfall wurde korrekt mit den folgenden Informationen registriert:<br />\r\n<br />\r\n[webform_submission:values:incident_reason]<br />\r\n<br />\r\nVielen Dank, dass Sie sich mit uns in Verbindung gesetzt haben.</p>"
+  incident_confirmation_closed:
+    label: 'Vorfallsbestätigung geschlossen'
+    settings:
+      body: "<p>Guten Tag,<br />\r\n<br />\r\nWir informieren Sie, dass Ihr Vorfall mit den folgenden Informationen:<br />\r\n<br />\r\n[webform_submission:values:incident_reason]<br />\r\n<br />\r\ngeschlossen wurde.<br />\r\n<br />\r\nVielen Dank, dass Sie sich mit uns in Verbindung gesetzt haben.</p>"

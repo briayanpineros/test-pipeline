@@ -1,0 +1,23 @@
+uuid: b3e18bde-89be-4139-92e7-20f65a6e8189
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.news_bulletin
+  module:
+    - text
+id: node.news_bulletin.body
+field_name: body
+entity_type: node
+bundle: news_bulletin
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

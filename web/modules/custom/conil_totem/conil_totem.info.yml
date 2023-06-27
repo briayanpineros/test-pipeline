@@ -1,0 +1,5 @@
+name: 'Conil Totem'
+type: module
+description: 'Conil Totem module'
+package: 'Conil'
+core_version_requirement: ^8.8 || ^9

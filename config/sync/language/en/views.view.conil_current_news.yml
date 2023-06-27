@@ -1,0 +1,11 @@
+label: 'News in Conil'
+display:
+  block_1:
+    display_title: 'News in Conil'
+    display_options:
+      use_more_text: 'See more'
+  default:
+    display_title: 'News in Conil'
+    display_options:
+      title: 'News in Conil'
+description: 'News and events in Conil.'

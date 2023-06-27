@@ -1,0 +1,23 @@
+uuid: 76c76ca5-ba3e-4a85-9c4c-80595adff310
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.poi
+  module:
+    - text
+id: node.poi.body
+field_name: body
+entity_type: node
+bundle: poi
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

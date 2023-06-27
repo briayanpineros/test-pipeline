@@ -1,0 +1,8 @@
+third_party_settings:
+  field_group:
+    group_subtitle:
+      label: Subtítulo
+    group_cover:
+      label: Portada
+    group_container:
+      label: Contenedor

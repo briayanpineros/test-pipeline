@@ -1,0 +1,24 @@
+uuid: d0587c0a-0305-4165-813f-9b406d7eca1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.poi_frontpage
+  module:
+    - views
+  theme:
+    - conil_theme
+id: views_block__poi_frontpage_poi_donde_comer_block
+theme: conil_theme
+region: blockgroup_poi_frontpage
+weight: -22
+provider: null
+plugin: 'views_block:poi_frontpage-poi_donde_comer_block'
+settings:
+  id: 'views_block:poi_frontpage-poi_donde_comer_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

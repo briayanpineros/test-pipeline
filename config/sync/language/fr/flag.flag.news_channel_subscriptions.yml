@@ -1,0 +1,6 @@
+label: 'Abonnement à la chaîne d''information'
+flag_short: 'S''abonner à cette chaîne'
+flag_long: 'Si vous vous abonnez, vous recevrez une notification par e-mail chaque fois qu''un nouveau contenu sera disponible pour ce canal '
+flag_message: 'Abonné !'
+unflag_short: 'Se désabonner de cette chaîne'
+unflag_long: 'Si vous vous désabonnez, vous ne recevrez pas de notification par courriel à chaque fois qu''un nouveau contenu est disponible po'

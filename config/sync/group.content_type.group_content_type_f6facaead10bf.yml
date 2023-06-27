@@ -1,0 +1,19 @@
+uuid: 2691d540-12c6-4043-8ff5-769fb6d53590
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.tourist_office_group
+    - node.type.poi
+  module:
+    - gnode
+    - node
+id: group_content_type_f6facaead10bf
+label: 'Tourist office group: Group node (Point of Interest)'
+description: 'Adds <em class="placeholder">Point of Interest</em> content to groups both publicly and privately.'
+group_type: tourist_office_group
+content_plugin: 'group_node:poi'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

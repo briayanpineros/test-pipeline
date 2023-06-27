@@ -1,0 +1,25 @@
+uuid: 1888c9b8-ede4-4906-9342-c02ffa8e7373
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.group_content.prueba_de_grupo-group_membership.group_roles
+    - group.content_type.prueba_de_grupo-group_membership
+id: group_content.prueba_de_grupo-group_membership.default
+targetEntityType: group_content
+bundle: prueba_de_grupo-group_membership
+mode: default
+content:
+  group_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden:
+  entity_id: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true

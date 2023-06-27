@@ -1,0 +1,14 @@
+uuid: 8b632f03-c6a2-4799-bc80-a8094ee2b972
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.prueba_de_grupo
+id: prueba_de_grupo-member
+label: Miembro
+weight: -100
+internal: true
+audience: member
+group_type: prueba_de_grupo
+permissions_ui: true
+permissions: {  }

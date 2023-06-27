@@ -1,0 +1,7 @@
+label: 'Suscripciones al canal de la agenda'
+flag_short: 'Suscríbase a este canal'
+flag_long: 'Si se suscribe, recibirá una notificación por email cada vez que haya nuevos contenidos disponibles para esta categoría'
+flag_message: ¡Suscrito!
+unflag_short: 'Cancelar la suscripción a este canal'
+unflag_long: 'Si se da de baja, no recibirá ninguna notificación por email cuando haya nuevos contenidos disponibles para esta categoría'
+unflag_message: 'No suscrito'

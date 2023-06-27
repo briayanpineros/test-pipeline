@@ -1,0 +1,32 @@
+uuid: ca8dd7f1-32d7-45bf-92f4-8be9e36506e8
+langcode: es
+status: true
+dependencies:
+  module:
+    - domain
+    - system
+  theme:
+    - totem_theme
+id: titulodelapagina
+theme: totem_theme
+region: content
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      https_totem001_conil_ddev_site_: https_totem001_conil_ddev_site_
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/eventos"

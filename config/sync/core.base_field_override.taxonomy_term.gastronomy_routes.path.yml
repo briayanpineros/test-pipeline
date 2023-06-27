@@ -1,0 +1,20 @@
+uuid: 99b054e9-8b9a-4a08-97cd-84be7944d9a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gastronomy_routes
+  module:
+    - path
+id: taxonomy_term.gastronomy_routes.path
+field_name: path
+entity_type: taxonomy_term
+bundle: gastronomy_routes
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

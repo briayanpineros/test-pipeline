@@ -1,0 +1,29 @@
+uuid: 85de0aa3-22d3-4a70-afeb-14bd6271b204
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_general_info_category
+    - node.type.general_information
+    - taxonomy.vocabulary.gastronomy_routes
+id: node.general_information.field_general_info_category
+field_name: field_general_info_category
+entity_type: node
+bundle: general_information
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gastronomy_routes: gastronomy_routes
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,35 @@
+uuid: 81812342-219f-4459-9795-3d3e9f2f0d21
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.content_grids_videos.field_media_video_file
+    - media.type.content_grids_videos
+  module:
+    - file
+id: media.content_grids_videos.default
+targetEntityType: media
+bundle: content_grids_videos
+mode: default
+content:
+  field_media_video_file:
+    type: file_video
+    label: visually_hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+      muted: false
+      width: 640
+      height: 480
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

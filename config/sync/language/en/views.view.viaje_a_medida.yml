@@ -1,0 +1,12 @@
+label: 'A tailor-made trip'
+display:
+  default:
+    display_options:
+      title: 'A tailor-made trip'
+      empty:
+        area_text_custom:
+          content: 'No results found'
+      header:
+        area_text_custom:
+          content: '<div class="header"><h3 class="subcategory"><noscript>Tourims whithout limits</noscript></h3><p class="counter"> <b>[view:total-rows]</b> results found</p> </div>'
+          admin_label: 'Result counter'

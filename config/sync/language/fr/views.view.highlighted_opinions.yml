@@ -1,0 +1,12 @@
+label: 'Avis mis en évidence'
+display:
+  default:
+    display_options:
+      title: AVIS
+      fields:
+        nothing:
+          admin_label: 'Utilisateur et POI'
+  block_1:
+    display_title: 'Avis mis en évidence'
+  highlighted_poi_opinions:
+    display_title: 'Avis des POI mis en évidence'

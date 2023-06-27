@@ -1,0 +1,19 @@
+label: 'Inhaltliche Stellungnahmen'
+display:
+  default:
+    display_options:
+      title: Meinungen
+      empty:
+        area_text_custom:
+          content: '<div class="opinions-no-result"><span>Es gibt noch keine Bewertungen für diese Seite. Seien Sie der Erste, der einen Kommentar abgibt</span></div>'
+      arguments:
+        nid:
+          exception:
+            title: Alle
+      use_more_text: mehr
+  block_2:
+    display_options:
+      fields:
+        title:
+          alter:
+            text: 'Es gibt insgesamt {{ cid }} Bewertungen mit einer durchschnittlichen Bewertung von {{ (field_fivestar /20)|round(1, ''floor'')}}. / 5'

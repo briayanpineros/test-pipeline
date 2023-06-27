@@ -1,0 +1,21 @@
+uuid: 49d78c1f-4fea-434f-b119-008afa56073a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_address_province
+    - node.type.poi
+id: node.poi.field_poi_address_province
+field_name: field_poi_address_province
+entity_type: node
+bundle: poi
+label: Provincia
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Cádiz
+default_value_callback: ''
+settings: {  }
+field_type: string

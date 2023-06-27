@@ -1,0 +1,8 @@
+# General settings form
+conil_totem_sync.settings:
+  path: '/admin/config/services/conil-totem-sync/settings'
+  defaults:
+    _form: '\Drupal\conil_totem_sync\Form\ConilTotemSyncSettings'
+    _title: 'Conil Totem Syncronization Settings'
+  requirements:
+    _permission: 'administer site configuration'

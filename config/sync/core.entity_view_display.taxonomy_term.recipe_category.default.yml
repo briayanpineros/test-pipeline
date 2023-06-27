@@ -1,0 +1,41 @@
+uuid: dde7e750-d061-4b6a-b4bc-dcfd9ccf2484
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.recipe_category.field_category_image
+    - field.field.taxonomy_term.recipe_category.field_category_subtitle
+    - taxonomy.vocabulary.recipe_category
+  module:
+    - text
+id: taxonomy_term.recipe_category.default
+targetEntityType: taxonomy_term
+bundle: recipe_category
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_category_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_category_subtitle:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

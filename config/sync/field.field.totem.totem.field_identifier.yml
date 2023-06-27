@@ -1,0 +1,20 @@
+uuid: 6b702cf4-dd65-477d-a330-6fb2457b939e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.totem.field_identifier
+  module:
+    - conil_totem
+id: totem.totem.field_identifier
+field_name: field_identifier
+entity_type: totem
+bundle: totem
+label: Identifier
+description: 'Totem identifier'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

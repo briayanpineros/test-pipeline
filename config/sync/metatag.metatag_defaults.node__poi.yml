@@ -1,0 +1,14 @@
+uuid: 2de19fdf-da8c-4835-a3c6-d058754bb485
+langcode: es
+status: true
+dependencies: {  }
+id: node__poi
+label: 'Contenido: Punto de Interés'
+tags:
+  abstract: '[node:summary]'
+  content_language: '[node:language]'
+  description: '[node:body]'
+  geo_position: '[node:field_poi_geofield]'
+  image_src: '[node:field_poi_media]'
+  robots: nofollow
+  title: '[node:title]'

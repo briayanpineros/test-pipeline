@@ -1,0 +1,17 @@
+uuid: 36abcdac-97e2-42cd-8930-d0a9746d25dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.tourist_office_group
+  enforced:
+    config:
+      - user.role.moderator_conil
+id: tourist_office_group-2cfb93dc7
+label: Moderador
+weight: 4
+internal: true
+audience: outsider
+group_type: tourist_office_group
+permissions_ui: false
+permissions: {  }

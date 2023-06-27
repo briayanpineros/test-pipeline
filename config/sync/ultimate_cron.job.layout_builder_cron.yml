@@ -1,0 +1,17 @@
+uuid: 91f5cd75-10a6-4f11-a378-d737c8af610f
+langcode: es
+status: true
+dependencies:
+  module:
+    - layout_builder
+title: 'Manejador de cron por defecto'
+id: layout_builder_cron
+weight: 0
+module: layout_builder
+callback: layout_builder_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

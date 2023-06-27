@@ -1,0 +1,25 @@
+uuid: ea0f45e7-55c3-49fb-a791-e7cc616d0c0c
+langcode: en
+status: true
+dependencies:
+  module:
+    - conil_totem
+    - entity_reference_revisions
+    - field_permissions
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: totem.field_media_library
+field_name: field_media_library
+entity_type: totem
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

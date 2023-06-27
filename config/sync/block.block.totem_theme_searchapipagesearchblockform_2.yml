@@ -1,0 +1,31 @@
+uuid: 2509245a-e28d-4022-8a49-8ec456b378f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api_page.search_api_page.search_block
+  module:
+    - domain
+    - search_api_page
+  theme:
+    - totem_theme
+id: totem_theme_searchapipagesearchblockform_2
+theme: totem_theme
+region: footer_bottom
+weight: 0
+provider: null
+plugin: search_api_page_form_block
+settings:
+  id: search_api_page_form_block
+  label: 'Menú accesible Totems'
+  label_display: '0'
+  provider: search_api_page
+  search_api_page: search_block
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      https_totem001_conil_ddev_site_: https_totem001_conil_ddev_site_

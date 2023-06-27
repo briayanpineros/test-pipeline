@@ -1,0 +1,371 @@
+#block-quicktabspoislideandmap{
+
+  div.quicktabs-wrapper{
+
+    &>.item-list{
+      display: none;
+      @include md{
+        display: inherit;
+      }
+      //max-width: 1200px;
+      //margin: auto;
+
+      ul.quicktabs-tabs{
+        margin-top: 20px;
+        position: absolute;
+        z-index: 3;
+        //max-width: 1200px;
+        right: 0;
+        text-align: end;
+
+        li{
+          padding: 0.5rem 1rem;
+          background-color: white;
+          margin: 0;
+          color: $conil-color-blue;
+
+          &.active{
+            font-weight: bold;
+            font-family: SourceSans-Bold, serif;
+          }
+
+          &:first-child{
+            border-right: 1px solid rgba(225, 225, 225, 0.5);
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+          }
+
+          &:last-child{
+            border-bottom-right-radius: 4px;
+            border-top-right-radius: 4px;
+            margin-right: 1rem;
+          }
+
+          &.map::after {
+            font-family: 'Google-Icon';
+            content: '\f10d';
+            margin-left: 0.5rem;
+            position: relative;
+            bottom: -3px;
+          }
+
+          &.list::after {
+            font-family: 'Google-Icon';
+            content: '\e9b0';
+            margin-left: 0.5rem;
+            font-size: 1rem;
+            position: relative;
+            bottom: -3px;
+          }
+
+        }
+
+      }
+
+
+    }
+
+    #quicktabs-tabpage-poi_slide_map-0 { //Listado de imágenes
+      .slick-slide {
+        .views-field-field-poi-media .field-content img {
+          margin: auto;
+          width: 100%;
+          max-height: 400px;
+          object-fit: cover;
+          border-bottom: 10px solid #6cca98;
+        }
+      }
+
+      .slick-dots {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        position: absolute;
+        list-style-type: none;
+        width: 100%;
+        margin: auto;
+        bottom: 0;
+
+        li {
+          margin: 0 0.25rem;
+        }
+
+        button {
+          display: block;
+          width: 0.5rem;
+          height: 0.5rem;
+          @include md{
+            width: 0.75rem;
+            height: 0.75rem;
+          }
+          padding: 0;
+
+          border: 1px solid $conil-color-lightgray;
+          border-radius: 100%;
+          background-color: transparent;
+
+          text-indent: -9999px;
+        }
+
+        li.slick-active button {
+          background-color: $white;
+        }
+
+      }
+    }
+
+    #quicktabs-tabpage-poi_slide_map-1 { //Mapa con los puntos de interés
+      .view-poi-full-map{
+        .leaflet-container{
+          width: 100%;
+          //max-width: 1200px;
+          margin: auto;
+          border-bottom: 10px solid $conil-color-aqua;
+        }
+      }
+
+    }
+  }
+}
+
+
+/*#block-quicktabspoislideandmap {
+  border-radius: 0%;
+  position: relative;
+  width: 100%;
+
+  .slick-prev::before {
+      content: '\e5e0';
+      font-family: "Google-Icon";
+      font-size: 3rem;
+      color: white;
+      margin-left: 1rem;
+  }
+
+  .slick-next::before {
+      content: '\e5e1';
+      font-family: "Google-Icon";
+      font-size: 3rem;
+      color: white;
+      margin-right: 1rem;
+  }
+
+  /*
+  h2 {
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 2;
+    background: transparent;
+    color: white;
+    width: 100%;
+    font-size: 20%;
+    padding-left: 6%;
+    text-align: left;
+  }
+  */
+/*
+  #quicktabs-poi_slide_map {
+
+    div.item-list {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+      box-shadow: 0px 8px 0px 0px #0000001a;
+      position: relative !important;
+      z-index: 1;
+
+      #block-conil-theme-page-title h1{
+        background-color: $conil-color-aqua;
+        padding-left: 5%;
+        color: $conil-color-lightgray;
+        font-family: SourceSans-Light;
+        font-size: 3rem;
+        @include xl{
+          padding-left: 0;
+        }
+      }
+
+      ul.quicktabs-tabs {
+        display: inline;
+        background: $conil-color-aqua;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        direction: rtl;
+
+        li {
+          float: right;
+          padding: 0.5em;
+          border: none;
+          border-radius: 5px;
+          position: relative;
+
+          &.active {
+            background-color: white;
+
+            &.map::after {
+              font-family: 'Google-Icon';
+              content: '\f10d';
+              color: $conil-color-aqua;
+            }
+
+            &.list::after {
+              font-family: 'Google-Icon';
+              content: '\e9b0';
+              color: $conil-color-aqua;
+            }
+
+            a {
+              color: $conil-color-aqua;
+              text-decoration: none;
+              border-radius: 0;
+              background-color: unset !important;
+            }
+          }
+
+          &.map::after {
+            font-family: 'Google-Icon';
+            content: '\f10d';
+            color: white;
+            margin-left: 0.5rem;
+            position: relative;
+            bottom: -3px;
+          }
+
+          &.list::after {
+            font-family: 'Google-Icon';
+            content: '\e9b0';
+            color: white;
+            margin-left: 0.5rem;
+            font-size: 1rem;
+            position: relative;
+            bottom: -3px;
+          }
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+          border-radius: 0;
+          background-color: unset !important;
+        }
+      }
+
+    }
+
+
+  }
+
+  #quicktabs-poi_slide_map {
+    padding: 0% !important;
+
+    #quicktabs-container-poi_slide_map {
+      width: 100%;
+      background-color: $conil-color-gray;
+      position: relative !important;
+      #quicktabs-tabpage-poi_slide_map-0 {
+        max-width: 1200px;
+        margin: auto;
+        border-bottom: 5px solid $conil-color-aqua;
+
+        .leaflet-popup-content .leaflet-poi-title-cover-popup{
+
+          .leaflet-popup-poi-cover a img{
+            max-width: 300px;
+            max-height: 300px;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+          }
+
+          .leaflet-popup-poi-title a{
+            color: $conil-color-blue;
+            font-family: SourceSans-Light;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            text-align: justify-all;
+          }
+
+          .leaflet-popup-poi-address{
+            color: $conil-color-blue;
+            font-family: SourceSans-Regular;
+            margin-bottom: 10px;
+          }
+
+        }
+        div {
+          .views-element-container {
+            .view-poi-full-map {
+              .view-content {
+                background-color: $conil-color-aqua;
+
+                #leaflet-map-view-poi-full-map-poi-full-map-block {
+                  min-width: 150px;
+                  height: 450px!important;
+                  position: relative;
+                  outline: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+      #quicktabs-tabpage-poi_slide_map-0 {
+        max-width: 1200px;
+        margin: auto;
+        border-bottom: 5px solid $conil-color-aqua;
+
+        .views-element-container {
+              #slick-views-poi-list-gallery-block-block-1-1 {
+
+                position: relative;
+
+                #slick-views-poi-list-gallery-block-block-1-1-slider {
+                  //background-color: $conil-color-aqua;
+                  margin-bottom: 0;
+
+                  .slick-list {
+                    .slick-track {
+                      /*max-width: 1200px !important;
+                      width: 100% !important;
+                      height: 50rem;
+                      padding-bottom: 50rem;*/
+
+                     /* .slick__slide {
+
+
+                        span.views-field-field-poi-media {
+                          span.field-content {
+                            img {
+                              width: 100% !important;
+                              display: block;
+                              overflow: hidden;
+                              object-position: 20% 10%;
+                              object-fit: cover;
+                              height: auto;
+                              max-width: 1200px;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  .slick-dots {
+                    bottom: 6px !important;
+
+                    li>button::before {
+                      color: white !important;
+                    }
+                  }
+                }
+              }
+        }
+      }
+
+    }
+
+  }
+}
+*/

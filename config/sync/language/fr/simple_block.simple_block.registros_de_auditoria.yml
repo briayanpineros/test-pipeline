@@ -1,0 +1,4 @@
+title: 'Journaux d''audit'
+content:
+  value: '<p>Vous pouvez consulter les journaux d''audit des modifications à l''aide du lien suivant :</p><p><a href="/es/admin/reports/audit-trail">Audit</a></p>'
+  format: basic_html

@@ -1,0 +1,16 @@
+label: 'Hervorgehobene Stellungnahmen'
+display:
+  default:
+    display_options:
+      title: STELLUNGNAHMEN
+      fields:
+        nothing:
+          admin_label: 'Benutzer und POI'
+  block_1:
+    display_title: 'Hervorgehobene Meinungen'
+  highlighted_poi_opinions:
+    display_title: 'Hervorgehobene POI-Meinungen'
+    display_options:
+      fields:
+        nothing:
+          admin_label: 'Benutzer und POI'

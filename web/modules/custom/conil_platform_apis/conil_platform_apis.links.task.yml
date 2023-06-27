@@ -1,0 +1,6 @@
+conil_platform_apis.sensors_settings:
+  title: 'Sensors Information sync Settings'
+  route_name: conil_platform_apis.sensors_settings
+  base_route: conil_platform_apis.sensors_settings
+  weight: 1
+

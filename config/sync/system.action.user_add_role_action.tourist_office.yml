@@ -1,0 +1,14 @@
+uuid: 6e5d4898-1c57-47d8-ba6f-ab46e4de95e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tourist_office
+  module:
+    - user
+id: user_add_role_action.tourist_office
+label: 'Add the Tourist office role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: tourist_office

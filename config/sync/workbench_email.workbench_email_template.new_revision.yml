@@ -1,0 +1,56 @@
+uuid: 9ecf4f1a-dcc6-4411-a890-1e23e9e13ffd
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.moderator_conil
+id: new_revision
+label: 'New revision'
+format: null
+subject: '[node:title] needs to be reviewed'
+recipient_types:
+  author:
+    id: author
+    provider: workbench_email
+    status: false
+    settings: {  }
+  email:
+    id: email
+    provider: workbench_email
+    status: false
+    settings:
+      fields: {  }
+  entity_reference_user:
+    id: entity_reference_user
+    provider: workbench_email
+    status: false
+    settings:
+      fields: {  }
+  fixed_email:
+    id: fixed_email
+    provider: workbench_email
+    status: false
+    settings:
+      recipients: ''
+  last_revision_author:
+    id: last_revision_author
+    provider: workbench_email
+    status: false
+    settings: {  }
+  role:
+    id: role
+    provider: workbench_email
+    status: true
+    settings:
+      roles: {  }
+  roles_with_access:
+    id: roles_with_access
+    provider: workbench_email
+    status: false
+    settings:
+      roles: {  }
+bundles: {  }
+body:
+  value: 'Content [node:title] has been created and needs to be reviewed.'
+  format: plain_text
+replyTo: ''

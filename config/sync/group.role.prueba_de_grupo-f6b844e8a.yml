@@ -1,0 +1,17 @@
+uuid: 34cd649b-608f-4edc-ab65-be2a71c5b800
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.prueba_de_grupo
+  enforced:
+    config:
+      - user.role.group_manager_conil
+id: prueba_de_grupo-f6b844e8a
+label: 'Director de grupo'
+weight: 6
+internal: true
+audience: outsider
+group_type: prueba_de_grupo
+permissions_ui: false
+permissions: {  }

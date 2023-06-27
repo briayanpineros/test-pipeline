@@ -1,0 +1,25 @@
+uuid: fb67b7f2-71ad-46fe-a595-8c9742cc5eaf
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - conil_theme
+id: quicktabspoislideandmap
+theme: conil_theme
+region: content
+weight: -23
+provider: null
+plugin: 'quicktabs_block:poi_slide_map'
+settings:
+  id: 'quicktabs_block:poi_slide_map'
+  label: 'QuickTabs - POI Slide and Map'
+  label_display: '0'
+  provider: quicktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/poi/*/*\r\n!/poi/*/*/*"

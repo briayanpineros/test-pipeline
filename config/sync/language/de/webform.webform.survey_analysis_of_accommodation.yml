@@ -1,0 +1,113 @@
+title: 'Analyse von Unterkünften, Belegungsraten und Touristenunterkünften'
+elements: |
+  nationality_set:
+    '#title': 'Nationalität auswählen'
+  nacionality:
+    '#title': Nationalität
+    '#description': 'Geben Sie Ihre Staatsangeh&ouml;rigkeit an'
+    '#help_title': 'Geben Sie Ihre Staatsangehörigkeit an'
+    '#options':
+      Resident: Wohnsitz
+      Spain: Spanien
+      'Other country': 'Anderes Land'
+    '#required_error': 'Erforderliche Staatsangehörigkeit'
+  province:
+    '#title': Provinz
+    '#required_error': 'Benötigte Provinz'
+  country:
+    '#title': Land
+    '#required_error': 'Erforderliches Land'
+  gender:
+    '#title': Geschlecht
+    '#description': 'Bitte geben Sie Ihr Geschlecht an'
+    '#help_title': 'Bitte geben Sie Ihr Geschlecht an'
+    '#options':
+      Male: Männlich
+      Female: Weiblich
+    '#required_error': 'Gewünschtes Geschlecht'
+  age:
+    '#title': Altersgruppe
+    '#description': 'Bitte geben Sie Ihre Altersgruppe an'
+    '#help_title': 'Bitte geben Sie Ihre Altersgruppe an'
+    '#options':
+      'Less than 18': 'Weniger als 18 '
+      'Beetween 18 and 29': "Zwischen 18 und 29 \t"
+      'Beetween 30 and 44': 'Zwischen 30 und 44 '
+      'Beetween 45 and 65': 'Zwischen 45 und 65 '
+      'More than 65': 'Mehr als 65 Jahre '
+    '#required_error': 'Erforderliches Alter'
+  transport_set:
+    '#title': 'Transportmethode festlegen'
+  transport_used_to_arrive:
+    '#title': 'Art der Beförderung'
+    '#description': 'Bitte geben Sie an, mit welchem Verkehrsmittel Sie Ihr Ziel erreichen m&ouml;chten'
+    '#help_title': 'Bitte geben Sie an, mit welchem Verkehrsmittel Sie Ihr Ziel erreichen möchten'
+    '#options':
+      'Own car': 'Eigenes Auto'
+      'Rental car': Mietauto
+      Plane: Flugzeug
+      Train: Zug
+      Other: Andere
+    '#required_error': 'Benötigte Transportmethode'
+  other_transport:
+    '#title': 'Anderes Transportmittel'
+    '#required_error': 'Muss angegeben werden'
+  companion_set:
+    '#title': 'Begleiter einstellen'
+  type_of_accompaniment:
+    '#title': Begleitperson
+    '#description': 'Bitte geben Sie an, mit wem Sie gereist sind'
+    '#help_title': 'Bitte geben Sie an, mit wem Sie gereist sind'
+    '#options':
+      Alone: 'Alleine '
+      'With a partner': 'Mit einem Partner'
+      'With family': 'Mit der Familie'
+      'With a group of friends': 'Mit einer Gruppe von Freunden'
+      'With other couples': 'Mit anderen Paaren'
+      'With organised groups': 'Mit organisierten Gruppen'
+      'With others': 'Mit anderen'
+    '#required_error': 'Benötigte Transportart'
+  other_accompaniment:
+    '#title': 'Andere Begleitung'
+    '#required_error': Erforderlich
+  employ_set:
+    '#title': 'Eingestellte Beschäftigung'
+  purchasing_level:
+    '#title': 'Status der Beschäftigung'
+    '#description': 'Bitte geben Sie Ihren Besch&auml;ftigungsstatus an'
+    '#help_title': 'Bitte geben Sie Ihren Beschäftigungsstatus an'
+    '#options':
+      Unemployed: Arbeitslos
+      'Household work': 'Arbeit im Haushalt'
+      Employed: 'Angestellt '
+      Manager: 'Manager '
+      Entrepreneur: 'Unternehmer '
+      'Medium civil servant': 'Mittlerer Beamter'
+      'Senior civil servant': 'Hoher Beamter'
+      'Liberal profession': 'Freier Beruf'
+      Retired: 'Im Ruhestand'
+      Other: Andere
+    '#required_error': Erforderlich
+  other_purchasing_level:
+    '#title': 'Sonstiges Einkaufsniveau'
+    '#required_error': Erforderlich
+  reason_trip_set:
+    '#title': 'Grund der Reise festlegen '
+  use_of_accommodation:
+    '#title': 'Grund der Reise'
+    '#description': 'Bitte geben Sie den Grund f&uuml;r Ihre Reise an'
+    '#help_title': 'Bitte geben Sie den Grund für Ihre Reise an'
+    '#options':
+      'Work or business': 'Arbeit oder Geschäft'
+      'Holiday or leisure': 'Urlaub oder Freizeit'
+      'Visiting family or friends': 'Besuch bei Familie oder Freunden'
+      Other: Sonstiges
+    '#required_error': Erforderlich
+  other_use_of_accommodation:
+    '#title': 'Anderer Grund für die Reise'
+    '#required_error': Erforderlich
+  actions:
+    '#title': 'Schaltfläche Senden'
+    '#submit__label': 'Senden Sie'
+settings:
+  submission_label: 'Senden Sie'

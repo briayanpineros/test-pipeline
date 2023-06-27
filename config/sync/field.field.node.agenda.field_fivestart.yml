@@ -1,0 +1,29 @@
+uuid: dc304012-bdad-47f7-adc2-b8804dd3a0c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fivestart
+    - node.type.agenda
+  module:
+    - fivestar
+id: node.agenda.field_fivestart
+field_name: field_fivestart
+entity_type: node
+bundle: agenda
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  stars: 5
+  allow_clear: false
+  allow_revote: true
+  allow_ownvote: true
+  rated_while: viewing
+  enable_voting_target: false
+  target_bridge_field: ''
+  target_fivestar_field: ''
+field_type: fivestar

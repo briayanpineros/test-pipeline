@@ -1,0 +1,18 @@
+uuid: 669eb96b-f438-45e1-b450-ceb023af366f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.provincias_espana
+id: taxonomy_term.provincias_espana.name
+field_name: name
+entity_type: taxonomy_term
+bundle: provincias_espana
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

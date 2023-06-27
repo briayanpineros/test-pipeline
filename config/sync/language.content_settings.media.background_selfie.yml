@@ -1,0 +1,11 @@
+uuid: f6e1158e-bf47-4107-bfc1-c25c3a8a632d
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.background_selfie
+id: media.background_selfie
+target_entity_type_id: media
+target_bundle: background_selfie
+default_langcode: site_default
+language_alterable: false

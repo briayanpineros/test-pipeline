@@ -1,0 +1,23 @@
+conil_polls.draft_mail_settings:
+  path: '/admin/structure/webform/draft-mail-settings'
+  defaults:
+    _form: '\Drupal\conil_polls\Form\DraftMailSettingsForm'
+    _title: 'Draft Mail Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+conil_polls.sync_settings:
+  path: '/admin/config/services/polls/settings'
+  defaults:
+    _form: '\Drupal\conil_polls\Form\SyncSettings'
+    _title: "Synchronize Polls Settings"
+  requirements:
+    _permission: 'administer site configuration'
+
+conil_polls.send_draft_form:
+  path: '/send-draft-form/{webform}/{data}'
+  defaults:
+    _form: '\Drupal\conil_polls\Form\SendDraftMailForm'
+    _title: 'Send Poll'
+  requirements:
+    _access: 'TRUE'

@@ -1,0 +1,21 @@
+uuid: e2d975fc-7185-4d5a-a6e9-6db939eced10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_end_time
+    - paragraphs.paragraphs_type.content_grids_configuration
+  module:
+    - datetime
+id: paragraph.content_grids_configuration.field_end_time
+field_name: field_end_time
+entity_type: paragraph
+bundle: content_grids_configuration
+label: 'End time'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

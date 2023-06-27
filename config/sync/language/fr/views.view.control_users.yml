@@ -1,0 +1,56 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        user_bulk_form:
+          action_title: Action
+        name:
+          label: Nom
+          separator: ', '
+        mail:
+          label: Courriel
+          separator: ', '
+        roles:
+          label: Rôles
+          separator: ', '
+        created:
+          label: Created
+          separator: ', '
+        login:
+          label: 'Dernière connexion'
+          separator: ', '
+        edit_user:
+          label: Modifier
+          text: edit
+      filters:
+        roles_target_id:
+          expose:
+            label: Rôles
+        uid:
+          expose:
+            label: Nom
+        mail:
+          expose:
+            label: Courriel
+      title: 'Cuentas de usuario'
+  page_1:
+    display_title: 'Usuario administrador'

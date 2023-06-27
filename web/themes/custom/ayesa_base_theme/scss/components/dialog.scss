@@ -1,0 +1,9 @@
+.ui-dialog {
+  .ui-dialog-titlebar-close {
+    background-image: url(../images/close.png);
+    background-repeat: no-repeat;
+    .ui-icon-closethick {
+      background: none;
+    }
+  }
+}

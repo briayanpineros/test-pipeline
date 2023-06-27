@@ -1,0 +1,9 @@
+label: 'Nouvelles à Conil'
+display:
+  block_1:
+    display_options:
+      use_more_text: 'Voir plus'
+  default:
+    display_options:
+      title: 'Actualités à Conil'
+description: 'Nouvelles et événements à venir à Conil.'

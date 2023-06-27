@@ -1,0 +1,15 @@
+firebase:
+  js:
+    https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js: { type: external }
+    https://www.gstatic.com/firebasejs/8.8.1/firebase-messaging.js: { type: external }
+
+conil_webpush:
+  js:
+    js/conil_webpush.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+    - conil_webpush/firebase
+
+

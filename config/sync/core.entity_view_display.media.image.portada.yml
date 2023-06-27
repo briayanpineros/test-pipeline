@@ -1,0 +1,41 @@
+uuid: 88b22b86-c888-45ac-a4f3-af0b7e9c575d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.portada
+    - field.field.media.image.field_media_image
+    - image.style.imagen_portada
+    - media.type.image
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.portada
+targetEntityType: media
+bundle: image
+mode: portada
+content:
+  field_media_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: imagen_portada
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

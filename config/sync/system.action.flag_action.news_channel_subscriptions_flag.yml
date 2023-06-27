@@ -1,0 +1,15 @@
+uuid: 31eb30cd-7974-489d-b163-18ecf1c26f74
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.news_channel_subscriptions
+  module:
+    - flag
+id: flag_action.news_channel_subscriptions_flag
+label: 'Subscribe to this channel'
+type: taxonomy_term
+plugin: 'flag_action:news_channel_subscriptions_flag'
+configuration:
+  flag_id: news_channel_subscriptions
+  flag_action: flag

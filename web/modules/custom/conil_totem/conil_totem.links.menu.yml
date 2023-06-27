@@ -1,0 +1,35 @@
+
+# Totem menu items definition
+conil_totem.main:
+  title: Totems
+  description: 'Totems Settings'
+  route_name: conil_totem.main
+  parent: system.admin_structure
+
+entity.totem.collection:
+  title: 'Totems List'
+  route_name: entity.totem.collection
+  description: 'List Totem entities'
+  parent: conil_totem.main
+  weight: 1
+
+totem.admin.structure.settings:
+  title: 'Totems Settings'
+  description: 'Configure Totems entities'
+  route_name: totem.settings
+  parent: conil_totem.main
+  weight: 0
+
+conil_totem.totems_settings:
+  title: 'Totems Default Settings'
+  description: 'Configure Totemss default'
+  route_name: conil_totem.totems_settings
+  parent: conil_totem.main
+  weight: 2
+
+# conil_totem.content_grids_settings:
+#   title: 'Content Grids Settings'
+#   description: 'Configure content grids'
+#   route_name: conil_totem.content_grids_settings
+#   parent: conil_totem.main
+#   weight: 5

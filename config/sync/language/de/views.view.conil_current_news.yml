@@ -1,0 +1,11 @@
+label: 'Neuigkeiten in Conil'
+display:
+  block_1:
+    display_title: 'Neuigkeiten in Conil'
+    display_options:
+      use_more_text: 'Mehr sehen'
+  default:
+    display_title: 'Neuigkeiten in Conil'
+    display_options:
+      title: 'Nachrichten in Conil'
+description: 'Nachrichten und kommende Ereignisse in Conil.'

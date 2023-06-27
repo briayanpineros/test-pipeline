@@ -1,0 +1,51 @@
+uuid: 7c47fb81-4de8-4443-83c8-e6d129422bb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.news.body
+    - field.field.node.news.field_categoria_noticias
+    - field.field.node.news.field_news_cover
+    - field.field.node.news.field_news_metatags
+    - field.field.node.news.field_news_shadow
+    - field.field.node.news.field_news_social_media_share
+    - field.field.node.news.field_news_subtitle
+    - node.type.news
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.news.search_index
+targetEntityType: node
+bundle: news
+mode: search_index
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_categoria_noticias: true
+  field_news_cover: true
+  field_news_metatags: true
+  field_news_shadow: true
+  field_news_social_media_share: true
+  field_news_subtitle: true
+  flag_news_channel_flag: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

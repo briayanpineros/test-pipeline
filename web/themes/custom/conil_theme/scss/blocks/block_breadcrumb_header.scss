@@ -1,0 +1,54 @@
+#block-breadcrumbs{
+
+    display: none;
+
+    @include md{
+        display: inherit;
+    }
+
+    padding-left: 150px;;
+
+    *{
+        font-size: 1rem;
+        font-family: SourceSans-Light;
+        text-transform: uppercase;
+
+        img{
+            max-height: 10px;
+        }
+
+    }
+
+    .breadcrumb{
+        padding: 0;
+        background: none;
+        ol {
+            margin-top: .6rem;
+        }
+        li{
+            color: $branding-white;
+            a{
+            color: $branding-white;
+            }
+        }
+
+    }
+    .breadcrumb{
+        li:nth-child(odd){
+            font-weight: bold;
+        }
+    }
+    .breadcrumb li::before{
+        content: "";
+        color: $conil-color-lightgray;
+        background: url("/themes/custom/conil_theme/imagenes/arrow-breadcrumb.png") left center no-repeat;
+        background-size: 12px auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .breadcrumb li:nth-child(1)::before{
+        content: none !important;
+       // font-size: 1.2rem;
+    }
+}

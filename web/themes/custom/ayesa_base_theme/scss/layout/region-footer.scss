@@ -1,0 +1,5 @@
+.region-footer {
+  @include clearfix();
+  @include wrapper();
+  padding: 10px 0;
+}

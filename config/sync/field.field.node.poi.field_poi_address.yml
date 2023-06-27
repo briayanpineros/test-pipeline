@@ -1,0 +1,19 @@
+uuid: a7847aae-352d-46cd-a1ae-788a63c60fac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_address
+    - node.type.poi
+id: node.poi.field_poi_address
+field_name: field_poi_address
+entity_type: node
+bundle: poi
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

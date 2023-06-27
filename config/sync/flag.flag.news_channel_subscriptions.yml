@@ -1,0 +1,30 @@
+uuid: 7e9f3efc-6cea-4177-b472-816aa9be8466
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: news_channel_subscriptions
+label: 'News channel subscriptions'
+bundles:
+  - categoria_noticias
+entity_type: taxonomy_term
+global: false
+flag_short: 'Subscribe to this channel'
+flag_long: 'If you subscribe yourself you will receive an email notification whenever is new content available for this news'
+flag_message: Subscribed!
+unflag_short: 'Unsubscribe from this channel'
+unflag_long: 'If you unsubscribe yourself you will not receive any email notification whenever is new content available for this news'
+unflag_message: ''
+unflag_denied_text: ''
+weight: 0
+flag_type: 'entity:taxonomy_term'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links:
+    token: token
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions: {  }
+linkTypeConfig: {  }

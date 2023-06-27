@@ -1,0 +1,32 @@
+<?php
+
+use Drupal\Core\Database\Database;
+
+/**
+ * Adds paragraphs_item table to the database and its required fields to fix
+ * and error preventing the paragraphs module and every other module to be
+ * unistalled. [IMPORTANT] Unistall and reinstall paragraphs module after this
+ * update, and them, reimport the configuration of the site.
+ */
+function conil_tweaks_update_91001(&$sandbox) {
+
+  $spec = [
+    'description' => 'paragraphs_item table to fix an error with the paragraphs module',
+    'fields' => [
+      'id' => [
+        'description' => 'ID field',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ],
+      'revision_id' => [
+        'description' => 'Revision ID field',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ],
+    ],
+  ];
+  $schema = Database::getConnection()->schema();
+  $schema->createTable('paragraphs_item', $spec);
+}

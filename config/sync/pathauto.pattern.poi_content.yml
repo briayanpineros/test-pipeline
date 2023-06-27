@@ -1,0 +1,22 @@
+uuid: d4206cc1-dde2-42f4-9d0f-af8bc730adab
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: poi_content
+label: 'Contenido Punto de interés'
+type: 'canonical_entities:node'
+pattern: 'poi/[node:field_poi_category]/[node:field_poi_subcategoy]/[node:title]'
+selection_criteria:
+  672cae83-85a8-4e15-a989-89f8355df84f:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 672cae83-85a8-4e15-a989-89f8355df84f
+    context_mapping:
+      node: node
+    bundles:
+      poi: poi
+selection_logic: and
+weight: -5
+relationships: {  }

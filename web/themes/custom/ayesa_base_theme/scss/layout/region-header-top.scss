@@ -1,0 +1,10 @@
+.region-header-top {
+  @include clearfix();
+  background: $branding-grey;
+  padding: 10px;
+  text-align: right;
+  ul.menu {
+    @include wrapper();
+    text-align: right;
+  }
+}

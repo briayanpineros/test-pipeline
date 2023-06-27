@@ -1,0 +1,18 @@
+uuid: 500c218c-7273-467a-ba17-4e9c647e3ffa
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.webform
+id: node.webform.created
+field_name: created
+entity_type: node
+bundle: webform
+label: 'Fecha de autoría'
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

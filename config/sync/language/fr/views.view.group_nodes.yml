@@ -1,0 +1,88 @@
+label: 'Nœud de groupe'
+description: 'Enumera todos los nodos que se han añadido a un grupo.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        title:
+          label: Titre
+          separator: ', '
+        type:
+          label: 'Type de contenu'
+          separator: ', '
+        status:
+          label: État
+          settings:
+            format_custom_true: Publié
+            format_custom_false: 'Non publié'
+          separator: ', '
+        changed:
+          label: 'Mis à jour'
+          separator: ', '
+        view_group_content:
+          admin_label: 'Ver enlace de relación'
+          label: 'Enlace al contenido del Grupo'
+          text: 'Ver relación'
+        edit_group_content:
+          admin_label: 'Editar enlace de relación'
+          label: 'Enlace para editar el contenido del Grupo'
+          text: 'Modifier la relation'
+        delete_group_content:
+          admin_label: 'Borrar el enlace de relación'
+          label: 'Enlace para eliminar el contenido del Grupo'
+          text: 'Supprimer la relation'
+        edit_node:
+          admin_label: 'Editar enlace de nodo'
+          text: 'Modifier le nœud'
+        delete_node:
+          admin_label: 'Borrar enlace de nodo'
+          label: 'Enlace para eliminar Contenido'
+          text: 'Supprimer le nœud'
+        dropbutton:
+          label: Operations
+      filters:
+        status:
+          expose:
+            label: 'Statut de publication'
+          group_info:
+            label: 'Statut de publication'
+            group_items:
+              1:
+                title: Publié
+              2:
+                title: 'Non publié'
+        type:
+          expose:
+            label: Type
+      empty:
+        area_text_custom:
+          content: 'Aucun contenu disponible.'
+      arguments:
+        gid:
+          exception:
+            title: All
+      title: Nœuds
+  page_1:
+    display_title: Page
+    display_options:
+      menu:
+        title: Nœuds

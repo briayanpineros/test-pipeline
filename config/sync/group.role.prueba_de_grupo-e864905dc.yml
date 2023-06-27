@@ -1,0 +1,17 @@
+uuid: ba072e21-20d5-49c4-adb9-5793069470f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.prueba_de_grupo
+  enforced:
+    config:
+      - user.role.tourist_office
+id: prueba_de_grupo-e864905dc
+label: 'Oficina de Turismo '
+weight: 9
+internal: true
+audience: outsider
+group_type: prueba_de_grupo
+permissions_ui: false
+permissions: {  }

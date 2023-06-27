@@ -1,0 +1,10 @@
+conil_polls.draft_mail:
+  route_name: conil_polls.draft_mail_settings
+  title: Send Draft Mail
+  base_route: entity.webform.collection
+
+# conil_polls.draft_mail_settings:
+#   route_name: conil_polls.draft_mail_settings
+#   title: Settings
+#   base_route: conil_polls.draft_mail_settings
+

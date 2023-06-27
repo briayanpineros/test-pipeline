@@ -1,0 +1,8 @@
+uuid: 1916ec92-84fb-4f2e-8bb9-d50ac0adf0b1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Calendar category'
+vid: categoria_agenda
+description: ''
+weight: 0

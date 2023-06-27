@@ -1,0 +1,136 @@
+/* #edit-camera {
+  position: relative;
+  margin: 20px;
+  width: 460px;
+  height: 420px;
+}
+
+#video {
+  border: 1px solid black;
+  box-shadow: 2px 2px 3px black;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+#photo {
+  border: 1px solid black;
+  box-shadow: 2px 2px 3px black;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+#canvas {
+  display: none;
+}
+
+.camera {
+  width: 340px;
+  display: inline-block;
+}
+
+.output {
+  width: 340px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#startbutton {
+  border: 0;
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  color: transparent;
+  background: transparent;
+}
+
+#buttonsCamera {
+  grid-column: 2;
+  grid-row: 2;
+  position: relative;
+  top: -110px;
+}
+
+#buttonsCamera.restart::after {
+  content: "\ea38";
+  font-size: 60px;
+  font-family: 'Material Icons';
+  color: red;
+  position: relative;
+  top: -20px;
+  left: 0px;
+  pointer-events: none;
+}
+
+#buttonsCamera.shot::after {
+  content: "\e412";
+  font-size: 60px;
+  font-family: 'Material Icons';
+  color: green;
+  position: relative;
+  top: -20px;
+  left: 0px;
+  pointer-events: none;
+}
+
+#edit-backgrounds {
+    display: grid;
+    grid-template-rows: 180px 180px 180px;
+    grid-template-columns: repeat(3, 250px);
+    max-height: 1800px;
+}
+
+form.conil-selfie-selfie {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 600px));
+  grid-template-rows: 460px 0px auto auto;
+  justify-items: center;
+}
+
+form.conil-selfie-selfie legend {
+  margin-left: 35px;
+}
+
+input[id^="edit-backgrounds"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input[id^="edit-backgrounds"]+ label > img {
+  cursor: pointer;
+}
+
+input[id^="edit-backgrounds"]:checked + label > img {
+  border: 3px solid indianred;
+}
+
+.form-item-backgrounds {
+  min-width: 220px;
+  text-align: center;
+}
+
+fieldset#edit-backgrounds--wrapper {
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+
+div#edit-actions {
+  grid-column: 1 / span 2;
+}
+
+#imgSelected {
+  align-self: center;
+}
+
+#imgSelected img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+} */

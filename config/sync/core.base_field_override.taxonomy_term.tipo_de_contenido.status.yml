@@ -1,0 +1,22 @@
+uuid: 6617d713-1cd5-4f01-abb4-2c8455185b56
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_contenido
+id: taxonomy_term.tipo_de_contenido.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipo_de_contenido
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

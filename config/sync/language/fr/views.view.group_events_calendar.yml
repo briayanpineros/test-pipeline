@@ -1,0 +1,8 @@
+label: 'Calendrier des événements du groupe'
+display:
+  default:
+    display_options:
+      filters:
+        field_agenda_categoria_target_id:
+          expose:
+            description: ''

@@ -1,0 +1,154 @@
+.path-find {
+
+  .breadcrumb{
+    margin-bottom: 0;
+  }
+  #block-titulodelapagina {
+    display:none;
+  }
+  #block-contenidoprincipaldelapagina {
+        max-width: 100%;
+        @include xl{
+            padding: 0;
+        }
+
+        .view-search{
+          display: flex;
+          flex-wrap: wrap;
+          .view-header{
+            width: 100%;
+            order:1;
+            padding: 2rem 1rem;
+            @include md {
+              padding: 2rem 0rem;
+            }
+            h2{
+              max-width: 1200px;
+              margin:auto;
+              font-family: SourceSans-Bold;
+              font-size: 1.8rem;
+              &::after {
+                content: '\e930';
+                font-family: "Google-Icon";
+                font-size: 4rem;
+                line-height: 0rem;
+                color: #EC6455;
+                position: relative;
+                left: -14.1rem;
+                top: 4rem;
+              }
+            }
+          }
+          .view-filters{
+            background-color: $conil-color-gray;
+            border-top: 0.5rem solid $conil-color-lightgray;
+            width: 100%;
+            height: 140px;
+            @include md {
+              height: 125px;
+            }
+            order:0;
+              form.views-exposed-form{
+                max-width: 1200px;
+                margin: auto;
+                padding: 2rem 1rem 0.5rem;
+                @include md {
+                  padding: 2rem 0rem 0.5rem;
+                }
+
+                  .js-form-type-textfield {
+                    @include md {
+                      display:flex;
+                    }
+                    display: block;
+                    margin-top: 0;
+                    align-items: center;
+                      label{
+                        width: 100%;
+                        margin-bottom: 1rem;
+                        @include md {
+                          width: 20%;
+                          margin-bottom: 0.5rem;
+                        }
+                      }
+                      input {
+                        @include md {
+                          width: 80%;
+                        }
+                        width: 100%;
+                        border-radius: 1rem;
+                        padding-left: 20px;
+                        padding-right: 50px;
+                      }
+                    }
+              }
+
+              .form-actions{
+                float: right;
+                position: relative;
+                top: -85px;
+                @include md {
+                  top: -100px;
+                }
+
+                .js-form-submit {
+                  background: none;
+                  border: none;
+                  color: transparent;
+                  margin-left: -14%;
+                  @include sm {
+                    margin-left: -9%;
+                  }
+                  @include md {
+                    margin-left: -11%;
+                  }
+                  margin-top: 16px;
+                  height: 36px;
+                  width: 50px;
+                  background-image: url(/themes/custom/totem_theme/imagenes/icono_lupa_busqueda.png);
+                  background-position: center center;
+                  background-size: 25px;
+                  background-repeat: no-repeat;
+                }
+              }
+          }
+          .view-content{
+            order:2;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem 1rem;
+            @include md {
+              padding: 2rem 0rem;
+            }
+            footer.node__meta{
+              display:none;
+            }
+            h2{
+              font-family: SourceSans-Bold;
+              font-size: 1.8rem;
+            }
+            article{
+              border-bottom: 1px solid $conil-color-lightgray;
+              margin-bottom: 2rem;
+            }
+          }
+          nav.pager {
+              background-color: $conil-color-lightgray;
+              padding: 2rem 0rem;
+              order:3;
+              width: 100%;
+              li {
+                text-transform: uppercase;
+
+                &.is-active a {
+                  color: $conil-color-yellow;
+                  border-bottom: 3px solid $conil-color-yellow;
+                }
+              }
+
+            }
+
+        }
+    }
+}

@@ -1,0 +1,140 @@
+#block-poifrontpageblockgroup {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 5% ;
+
+  @include xl {
+    padding: 5rem 0 1rem 0;
+  }
+
+  .views-field-description__value {
+    @include md {
+      height: 200px;
+      text-align: justify;
+
+      >span>p {
+        font-size: 15px;
+      }
+    }
+
+  }
+
+  li {
+
+    .views-field-field-categoria-interes-icon {
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+
+    .views-field-name {
+      display: inline;
+
+      span a {
+        vertical-align: top;
+        line-height: 20px;
+      }
+    }
+  }
+
+  h2 {
+    padding: .5rem;
+    width: 100%;
+    color: $conil-color-blue;
+    text-transform: uppercase;
+  }
+
+  .views-element-container {
+
+    flex: 1 1 95%;
+    @include sm {
+      flex: 1 1 45%;
+    }
+    margin-left: .5rem;
+    margin-right: .5rem;
+    color: $conil-color-blue;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+
+    @include xl {
+      flex: 1 1 20%
+    }
+
+    .views-field-name {
+      color: $conil-color-blue;
+      font-weight: bolder;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 0.8rem;
+      margin-right: 1rem;
+      text-align: left;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .views-element-container {
+      margin: 0rem;
+      width: 100%;
+    }
+
+    div.item-list ul{
+      display: flex;
+      flex-direction: column-reverse;
+      li {
+        width: 100%;
+
+        .views-field-field-categoria-interes-icon {
+          position: relative;
+          bottom: -6px;
+        }
+
+
+        .views-field-nothing {
+          display: inline-block;
+
+          a {
+            font-weight: 700;
+            font-size: 0.8rem;
+            @include md {
+              font-size: 1rem;
+            }
+
+            text-transform: none;
+          }
+        }
+      }
+    }
+
+
+
+  }
+
+  #block-views-block-poi-frontpage-poi-como-llegar-block {
+    border-top: #EC6455 0.4rem solid;
+    border-bottom: #EC6455 0.4rem solid;
+
+  }
+
+  #block-views-block-poi-frontpage-poi-donde-dormir-block {
+    border-top: #EA5C96 0.4rem solid;
+    border-bottom: #EA5C96 0.4rem solid;
+  }
+
+  #block-views-block-poi-frontpage-poi-donde-comer-block {
+    border-top: $conil-color-yellow 0.4rem solid;
+    border-bottom: $conil-color-yellow 0.4rem solid;
+
+  }
+
+  #block-views-block-poi-frontpage-poi-que-hacer-block {
+    border-top: $conil-color-aqua 0.4rem solid;
+    border-bottom: $conil-color-aqua 0.4rem solid;
+  }
+}

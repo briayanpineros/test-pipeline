@@ -1,0 +1,21 @@
+uuid: 19027483-c811-4ef1-ab02-b06eaa42a244
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_carrousel_images_phrase
+    - media.type.carrousel_images
+id: media.carrousel_images.field_carrousel_images_phrase
+field_name: field_carrousel_images_phrase
+entity_type: media
+bundle: carrousel_images
+label: 'Conil phrase'
+description: 'Phrase for the changing subtitle under Conil logo'
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Atardeceres con vistas al mar'
+default_value_callback: ''
+settings: {  }
+field_type: string

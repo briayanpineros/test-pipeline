@@ -1,0 +1,26 @@
+display:
+  page_1:
+    display_options:
+      header:
+        area_text_custom:
+          content: '<div class="header"><h2 class="subcategory">{{ name }}</h2><p class="counter"><b>[view:total-rows]</b> gefundene ergebnisse</p></div>'
+          admin_label: 'Zähler der Ergebnisse'
+      title: 'Interessante Punkte'
+    display_title: 'Liste der POI mit zwei Parametern'
+  default:
+    display_options:
+      empty:
+        area_text_custom:
+          content: '<div class="poi-list-no-results-text">Keine Ergebnisse gefunden</div>'
+      arguments:
+        name_1:
+          admin_label: 'Name der POI-Kategorie'
+      header:
+        area_text_custom:
+          admin_label: 'Zähler der Ergebnisse'
+          content: "<div class=\"header\"><p>Sie müssen </p><div class=\"counter\"> [view:total-rows] </div> <div class=\"subcategory\">{{ name }}</div> <p>genießen</p></div>\r\n"
+  page_2:
+    display_title: 'Auflistung von POI mit einem Parameter'
+    display_options:
+      title: 'Interessante Punkte'
+label: 'Interessante Punkte'

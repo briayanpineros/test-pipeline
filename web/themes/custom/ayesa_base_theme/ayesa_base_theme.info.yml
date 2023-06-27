@@ -1,0 +1,32 @@
+name: Ayesa Base Theme
+type: theme
+base theme: classy
+description: 'Base theme for Ayesa Projects.'
+package: Other
+core_version_requirement: ^8.8.0 || ^9 || ^10
+libraries:
+  - ayesa_base_theme/global-styling
+stylesheets-remove:
+  - core/assets/vendor/normalize-css/normalize.css
+  - core/modules/system/css/system.module.css
+  - core/modules/system/css/system.theme.css
+  - core/modules/views/css/views.module.css
+regions:
+  header_top: 'Header Top'
+  header: 'Header'
+  header_bottom: 'Header Bottom'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  breadcrumbs: 'Breadcrumbs'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  layout_prefix: 'Layout prefix'
+  content_top: 'Content top'
+  content: 'Content'
+  content_bottom: 'Content bottom'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  layout_suffix: 'Layout suffix'
+  footer_top: 'Footer top'
+  footer: 'Footer'
+  footer_bottom: 'Footer bottom'

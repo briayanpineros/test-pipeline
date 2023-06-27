@@ -1,0 +1,3 @@
+content:
+  value: '<div class="header-user-profile-block"><p><a class="header-user-profile-icon" href="/fr/user/edit">Mon profil</a></p><ul class="nav" id="header-user-nav"><li><a href="/user/logout" id="header-user-logout">Déconnexion</a></li></ul></div>'
+  format: full_html

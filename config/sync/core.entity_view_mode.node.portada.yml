@@ -1,0 +1,10 @@
+uuid: 85889197-2ae2-4dd2-8ad6-6dfbc47e14f7
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.portada
+label: Portada
+targetEntityType: node
+cache: true

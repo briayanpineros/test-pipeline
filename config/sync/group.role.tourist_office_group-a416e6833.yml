@@ -1,0 +1,17 @@
+uuid: 2761b188-e47b-444f-9fdf-3caa499e9493
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.tourist_office_group
+  enforced:
+    config:
+      - user.role.administrator
+id: tourist_office_group-a416e6833
+label: Administrador
+weight: 2
+internal: true
+audience: outsider
+group_type: tourist_office_group
+permissions_ui: false
+permissions: {  }

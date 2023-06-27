@@ -1,0 +1,8 @@
+uuid: 7bf64c08-900a-4301-818c-75aa0611b125
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categoría Recetas'
+vid: recipe_category
+description: 'Categoría del contenido Recetas Gastronómicas'
+weight: 0

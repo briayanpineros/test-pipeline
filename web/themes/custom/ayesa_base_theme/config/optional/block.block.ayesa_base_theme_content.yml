@@ -1,0 +1,19 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ayesa_base_theme
+id: ayesa_base_theme_content
+theme: ayesa_base_theme
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main content'
+  provider: system
+  label_display: '0'
+visibility: {  }

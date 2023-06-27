@@ -1,0 +1,7 @@
+sincronization:
+  version: 1.0
+  js:
+    js/sincronization.js: {}
+  css:
+    component:
+      css/style.css: {}

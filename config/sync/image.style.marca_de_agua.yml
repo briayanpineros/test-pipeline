@@ -1,0 +1,21 @@
+uuid: 17b4bf54-4575-4dab-a329-b7ff04591bfd
+langcode: es
+status: true
+dependencies:
+  module:
+    - image_effects
+name: marca_de_agua
+label: '4k Marca de agua'
+effects:
+  067774e4-a657-45e2-9557-36ec18415f21:
+    uuid: 067774e4-a657-45e2-9557-36ec18415f21
+    id: image_effects_watermark
+    weight: 1
+    data:
+      watermark_image: themes/custom/conil_theme/imagenes/conil-marca-agua.png
+      watermark_width: '284'
+      watermark_height: '420'
+      placement: right-bottom
+      x_offset: ''
+      y_offset: ''
+      opacity: 100

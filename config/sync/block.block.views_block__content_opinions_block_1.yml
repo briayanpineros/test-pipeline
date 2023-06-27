@@ -1,0 +1,33 @@
+uuid: 3f4fbed8-7e1c-426d-9573-013ea9076b46
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_opinions
+  module:
+    - node
+    - views
+  theme:
+    - conil_theme
+id: views_block__content_opinions_block_1
+theme: conil_theme
+region: layout_suffix
+weight: -17
+provider: null
+plugin: 'views_block:content_opinions-block_1'
+settings:
+  id: 'views_block:content_opinions-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      poi: poi

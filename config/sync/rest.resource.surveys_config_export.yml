@@ -1,0 +1,18 @@
+uuid: 1e33d734-1c9b-4e71-8320-b4ba27b735a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - conil_platform_apis
+    - serialization
+id: surveys_config_export
+plugin_id: surveys_config_export
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth

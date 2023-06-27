@@ -1,0 +1,20 @@
+uuid: d4ee0265-da39-47c6-8879-f54aff680dec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.totem.field_input_url
+  module:
+    - conil_totem
+id: totem.totem.field_input_url
+field_name: field_input_url
+entity_type: totem
+bundle: totem
+label: 'Input Url'
+description: 'Totem input url'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

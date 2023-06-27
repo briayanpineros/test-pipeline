@@ -1,0 +1,6 @@
+display:
+  page_1:
+    display_title: Diary
+  default:
+    display_options:
+      title: 'Event schedule'

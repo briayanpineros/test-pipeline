@@ -1,0 +1,20 @@
+uuid: d1437d49-12fd-4a1a-b2f1-b18951aa9393
+langcode: en
+status: true
+dependencies:
+  module:
+    - geofield
+    - node
+id: node.field_poi_geofield
+field_name: field_poi_geofield
+entity_type: node
+type: geofield
+settings:
+  backend: geofield_backend_default
+module: geofield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

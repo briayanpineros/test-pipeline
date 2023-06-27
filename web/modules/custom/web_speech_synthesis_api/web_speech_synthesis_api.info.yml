@@ -1,0 +1,5 @@
+name: 'Web Speech Synthesis API'
+type: module
+description: 'Web Speech Synthesis API'
+package: 'Web Speech API'
+core_version_requirement: ^8.8 || ^9

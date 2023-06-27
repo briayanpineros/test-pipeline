@@ -1,0 +1,25 @@
+uuid: 22b152f9-b152-4e67-bfee-8f7788cd3f80
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.carrousel
+  module:
+    - views
+  theme:
+    - conil_theme
+id: views_block__carrousel_block_2
+theme: conil_theme
+region: layout_suffix
+weight: -18
+provider: null
+plugin: 'views_block:carrousel-block_2'
+settings:
+  id: 'views_block:carrousel-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

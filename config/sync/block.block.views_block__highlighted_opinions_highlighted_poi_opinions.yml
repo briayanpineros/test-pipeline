@@ -1,0 +1,31 @@
+uuid: 28dc406a-519a-4a18-a87f-074043344811
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.highlighted_opinions
+  module:
+    - system
+    - views
+  theme:
+    - conil_theme
+id: views_block__highlighted_opinions_highlighted_poi_opinions
+theme: conil_theme
+region: layout_suffix
+weight: -19
+provider: null
+plugin: 'views_block:highlighted_opinions-highlighted_poi_opinions'
+settings:
+  id: 'views_block:highlighted_opinions-highlighted_poi_opinions'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping:
+    name: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/poi/*\r\n/poi/*/*\r\n*/poi/*/*/*"

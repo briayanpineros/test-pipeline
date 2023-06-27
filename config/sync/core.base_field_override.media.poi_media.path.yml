@@ -1,0 +1,20 @@
+uuid: c693d1c5-87fb-4c9f-85ce-f375d27d25d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.poi_media
+  module:
+    - path
+id: media.poi_media.path
+field_name: path
+entity_type: media
+bundle: poi_media
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

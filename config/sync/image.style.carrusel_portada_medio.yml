@@ -1,0 +1,15 @@
+uuid: 6f1f2427-f921-4550-91ba-fb22fcb2178f
+langcode: es
+status: true
+dependencies: {  }
+name: carrusel_portada_medio
+label: 'Carrusel portada medio'
+effects:
+  48ffaed3-d50f-442f-a406-7db97f518569:
+    uuid: 48ffaed3-d50f-442f-a406-7db97f518569
+    id: image_scale
+    weight: 1
+    data:
+      width: 849
+      height: null
+      upscale: false

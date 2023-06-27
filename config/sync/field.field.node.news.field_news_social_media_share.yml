@@ -1,0 +1,25 @@
+uuid: 282bae3c-42bd-47be-b38c-2722441b2d28
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_social_media_share
+    - node.type.news
+  module:
+    - social_media
+id: node.news.field_news_social_media_share
+field_name: field_news_social_media_share
+entity_type: node
+bundle: news
+label: 'Compartir en'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: social_media

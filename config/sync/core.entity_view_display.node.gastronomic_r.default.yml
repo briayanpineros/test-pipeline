@@ -1,0 +1,226 @@
+uuid: 4669241b-cd31-467c-a47e-ec001076d70d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.gastronomic_r.body
+    - field.field.node.gastronomic_r.field_gastronomic_r_video
+    - field.field.node.gastronomic_r.field_poi_address
+    - field.field.node.gastronomic_r.field_poi_gallery
+    - field.field.node.gastronomic_r.field_poi_media
+    - field.field.node.gastronomic_r.field_poi_social_media_share
+    - field.field.node.gastronomic_r.field_poi_subtitle
+    - field.field.node.gastronomic_r.field_poi_telephone
+    - field.field.node.gastronomic_r.field_poi_telephone2
+    - image.style.max_1300x1300
+    - node.type.gastronomic_r
+  module:
+    - conil_tweaks
+    - field_group
+    - media
+    - social_media
+    - telephone
+    - user
+third_party_settings:
+  field_group:
+    group_div:
+      children:
+        - group_general_informacion
+        - group_col2
+      label: div
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: content-container
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_general_informacion:
+      children:
+        - group_col1
+      label: 'Información general'
+      parent_name: group_div
+      region: content
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: le
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_col1:
+      children:
+        - field_poi_subtitle
+        - body
+        - field_poi_social_media_share
+        - field_poi_telephone
+      label: col1
+      parent_name: group_general_informacion
+      region: content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: left
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_col2:
+      children:
+        - field_poi_media
+        - field_gastronomic_r_video
+        - group_data_of_interest
+      label: col2
+      parent_name: group_div
+      region: content
+      weight: 6
+      format_type: html_element
+      format_settings:
+        classes: right
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_data_of_interest:
+      children:
+        - group_our_data
+      label: 'Data of interest'
+      parent_name: group_col2
+      region: content
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_our_data:
+      children:
+        - field_poi_address
+        - field_poi_telephone2
+      label: 'Our data'
+      parent_name: group_data_of_interest
+      region: content
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: our-data
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.gastronomic_r.default
+targetEntityType: node
+bundle: gastronomic_r
+mode: default
+content:
+  body:
+    type: conil_text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_gastronomic_r_video:
+    type: entity_reference_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: media_library
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_poi_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_poi_media:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: max_1300x1300
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_poi_social_media_share:
+    type: social_media_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_poi_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_poi_telephone:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_poi_telephone2:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_poi_gallery: true
+  langcode: true
+  search_api_excerpt: true

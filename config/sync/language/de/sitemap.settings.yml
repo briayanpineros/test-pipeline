@@ -1,0 +1,11 @@
+plugins:
+  frontpage:
+    settings:
+      title: Titelseite
+  'menu:footer':
+    settings:
+      title: Fußzeile
+  'menu:sidr-navigation':
+    settings:
+      title: 'Menü Navigation'
+page_title: Inhaltsverzeichnis

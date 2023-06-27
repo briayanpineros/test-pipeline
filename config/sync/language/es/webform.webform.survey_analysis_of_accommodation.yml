@@ -1,0 +1,114 @@
+title: 'Análisis de alojamientos, índices de ocupación y alojamientos turísticos'
+elements: |
+  nationality_set:
+    '#title': 'Seleccione la nacionalidad'
+  nacionality:
+    '#title': Nacionalidad
+    '#description': 'Por favor, indique su nacionalidad'
+    '#help_title': 'Por favor, indique su nacionalidad'
+    '#options':
+      Resident: Residente
+      Spain: Español
+      'Other country': 'Otro país'
+    '#required_error': 'Nationalidad necesaria'
+  province:
+    '#title': Provincia
+    '#required_error': 'Provincia necesaria'
+  country:
+    '#title': País
+    '#required_error': 'País necesario'
+  gender:
+    '#title': Género
+    '#description': 'Por favor, indique su sexo'
+    '#help_title': 'Por favor, indique su sexo'
+    '#options':
+      Male: Hombre
+      Female: Mujer
+    '#required_error': 'Género necesario'
+  age:
+    '#title': 'Rango de edad'
+    '#description': 'Indique su grupo de edad'
+    '#help_title': 'Indique su grupo de edad'
+    '#options':
+      'Less than 18': 'Menos de 18'
+      'Beetween 18 and 29': 'Entre 18 y 29'
+      'Beetween 30 and 44': 'Entre 30 y 44'
+      'Beetween 45 and 65': 'Entre 45 y 65'
+      'More than 65': 'Más de 65'
+    '#required_error': 'Rango de edad necesario'
+  transport_set:
+    '#title': 'Establecer método de transporte'
+  transport_used_to_arrive:
+    '#title': 'Método de transporte'
+    '#description': 'Por favor, indique el m&eacute;todo de transporte utilizado para llegar a su destino:'
+    '#help_title': 'Por favor, indique el método de transporte utilizado para llegar a su destino:'
+    '#options':
+      'Own car': 'Coche propio'
+      'Rental car': 'Coche de alquiler'
+      Plane: Avión
+      Train: Tren
+      Bus: Autobús
+      Other: Otro
+    '#required_error': 'Método de transporte necesario'
+  other_transport:
+    '#title': 'Otro transporte'
+    '#required_error': 'Especificación necesaria'
+  companion_set:
+    '#title': 'Seleccionar acompañante'
+  type_of_accompaniment:
+    '#title': Acompañante
+    '#description': 'Indique con qui&eacute;n ha viajado'
+    '#help_title': 'Indique con quién ha viajado'
+    '#options':
+      Alone: Solo
+      'With a partner': 'Con una pareja'
+      'With family': 'Con familiares'
+      'With a group of friends': 'Con un grupo de amigos'
+      'With other couples': 'Con otras parejas'
+      'With organised groups': 'Con grupos organizados'
+      'With others': 'Con otros'
+    '#required_error': 'Campo necesario'
+  other_accompaniment:
+    '#title': 'Otro acompañante'
+    '#required_error': 'Campo necesario'
+  employ_set:
+    '#title': 'Seleccione empleo'
+  purchasing_level:
+    '#title': 'Situación laboral'
+    '#description': 'Indique su situaci&oacute;n laboral'
+    '#help_title': 'Indique su situación laboral'
+    '#options':
+      Unemployed: 'Sin empleo'
+      'Household work': 'Empleado de casa'
+      Employed: Empleado
+      Manager: Gerente
+      Entrepreneur: Empresario
+      'Medium civil servant': 'Funcionario medio'
+      'Senior civil servant': 'Funcionario superior'
+      'Liberal profession': 'Profesión liberal'
+      Retired: Jubilado
+      Other: Otro
+    '#required_error': 'Situación laboral necesaria'
+  other_purchasing_level:
+    '#title': 'Otro nivel de adquisición'
+    '#required_error': 'Nivel adquisitivo necesario'
+  reason_trip_set:
+    '#title': 'Motivo del viaje'
+  use_of_accommodation:
+    '#title': 'Motivo del viaje'
+    '#description': 'Indique el motivo de su viaje'
+    '#help_title': 'Indique el motivo de su viaje'
+    '#options':
+      'Work or business': 'Trabajo o negocios'
+      'Holiday or leisure': 'Vacaciones u ocio'
+      'Visiting family or friends': 'Visitar familiares o amigos'
+      Other: 'Otro motivo'
+    '#required_error': 'Razón de su viaje necesaria'
+  other_use_of_accommodation:
+    '#title': 'Otro motivo del viaje'
+    '#required_error': 'Razón del viaje necesaria'
+  actions:
+    '#title': 'Botón de envío'
+    '#submit__label': Enviar
+settings:
+  submission_label: Enviar

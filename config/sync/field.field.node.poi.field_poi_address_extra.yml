@@ -1,0 +1,19 @@
+uuid: d022cc7f-5441-408b-ad53-8ce2d15a97b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_address_extra
+    - node.type.poi
+id: node.poi.field_poi_address_extra
+field_name: field_poi_address_extra
+entity_type: node
+bundle: poi
+label: 'Address Complement'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

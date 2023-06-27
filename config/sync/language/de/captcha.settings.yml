@@ -1,0 +1,2 @@
+description: 'Diese Sicherheitsfrage überprüft, ob Sie ein menschlicher Besucher sind und verhindert automatisches Spamming.'
+wrong_captcha_response_message: 'Die von Ihnen eingegebene Antwort war nicht passend.'

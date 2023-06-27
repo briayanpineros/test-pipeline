@@ -1,0 +1,18 @@
+uuid: 23a3f478-c5a1-422b-b385-6da373438cdb
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.prueba_de_grupo-group_membership
+id: group_content.prueba_de_grupo-group_membership.label
+field_name: label
+entity_type: group_content
+bundle: prueba_de_grupo-group_membership
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

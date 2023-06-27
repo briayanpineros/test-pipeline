@@ -1,0 +1,21 @@
+# Saved Searches routing definition
+saved_searches.settings_tab:
+  route_name: saved_searches.settings
+  title: 'Settings'
+  base_route: saved_searches.settings
+
+entity.saved_searches.canonical:
+  route_name: entity.saved_searches.canonical
+  base_route: entity.saved_searches.canonical
+  title: 'View'
+
+entity.saved_searches.edit_form:
+  route_name: entity.saved_searches.edit_form
+  base_route: entity.saved_searches.canonical
+  title: 'Edit'
+
+entity.saved_searches.delete_form:
+  route_name:  entity.saved_searches.delete_form
+  base_route:  entity.saved_searches.canonical
+  title: Delete
+  weight: 10

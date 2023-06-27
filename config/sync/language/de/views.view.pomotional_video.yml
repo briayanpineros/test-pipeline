@@ -1,0 +1,16 @@
+label: 'Videos für Werbezwecke'
+display:
+  default:
+    display_options:
+      title: 'Videos für Werbezwecke'
+      filters:
+        mid:
+          expose:
+            description: ''
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+  page_1:
+    display_options:
+      menu:
+        title: 'Videos für Werbezwecke'

@@ -1,0 +1,5 @@
+base_url: 'https://api.inventrip.com/v100/pois'
+api_key: conil%25%26%2A20220422
+tourist_destination: conil
+image_base_url: 'https://api.inventrip.com/v100/image'
+image_quality: medium

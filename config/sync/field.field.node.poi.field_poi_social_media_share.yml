@@ -1,0 +1,25 @@
+uuid: d9595cc7-b8f8-420f-bf4e-a6da14faeb72
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_social_media_share
+    - node.type.poi
+  module:
+    - social_media
+id: node.poi.field_poi_social_media_share
+field_name: field_poi_social_media_share
+entity_type: node
+bundle: poi
+label: 'Compartir en'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: social_media

@@ -1,0 +1,20 @@
+uuid: cf37504e-0a2e-4f3d-91d2-3527ea165809
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.prueba_de_grupo-group_membership
+  module:
+    - path
+id: group_content.prueba_de_grupo-group_membership.path
+field_name: path
+entity_type: group_content
+bundle: prueba_de_grupo-group_membership
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

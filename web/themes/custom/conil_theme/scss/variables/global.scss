@@ -1,0 +1,67 @@
+// COLORS
+$branding-white: #ffffff;
+$branding-red: #e01c28;
+$branding-green: #007737;
+$branding-grey: #333333;
+$branding-grey-1: #e2e2e2;
+$branding-grey-2: #efefef;
+$branding-grey-lighter: #f9f9fa;
+$branding-grey-light: #bababa;
+$branding-grey-dark: #4b4b4b;
+$branding-black: #000000;
+$branding-blue-light: #afdaf2;
+$branding-alt1: #4e60b7;
+$branding-alt2: #cea716;
+$branding-yellow: #fee566;
+$branding-yellow-light: #ffffd3;
+
+$conil-color-blue: #01587D;
+$conil-color-aqua: #6cca98;
+$conil-color-yellow: #e3b645;
+$conil-color-gray: #f1f1f1;
+$conil-color-lightgray: #E1E1E1;
+$conil-color-lightblue: #00c1de;
+$conil-color-darkgreen: #003b4a;
+$conil-color-red: #dd564b;
+$azul-sombra: #0069a7;
+$conil-color-pink: #C61486;
+$conil-color-pink2: #d8417b;
+$conil-color-pink3: #d9569a;
+$conil-color-purple: #a873bc;
+$conil-color-turquoise: #02b3c6;
+$conil-color-green: #7ff0b8;
+$conil-color-lightgray-transparent: #E1E1E190;
+$conil-color-darkgray: #212529;
+
+
+
+// Breakpoints
+$size-xs: 576px;
+$size-s: 576px 768px;
+$size-m: 768px 992px;
+$size-l: 992px 1200px;
+$size-xl: 1200px;
+
+
+//Minimun Widths
+// Old devices
+$screen-xs-min: 326px;
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+
+$font-size-base-custom: 1em !default; // Assumes the browser default, typically `16px`
+$h1-font-size-custom: $font-size-base-custom * 2.25 !default;
+$h2-font-size-custom: $font-size-base-custom * 1.50 !default;
+$h3-font-size-custom: $font-size-base-custom * 1.40 !default;
+$h4-font-size-custom: $font-size-base-custom * 1.30 !default;
+$h5-font-size-custom: $font-size-base-custom * 1.20 !default;
+$h6-font-size-custom: $font-size-base-custom * 1.10!default;
+
+

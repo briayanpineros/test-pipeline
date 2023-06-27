@@ -1,0 +1,38 @@
+// Ejemplo
+// @font-face {
+//     font-family: 'Noto Sans';
+//     font-style: normal;
+//     font-weight: 400;
+//     src: local('Noto Sans'), local('NotoSans-Regular'),
+//         url(../fonts/noto-sans/NotoSans-Regular.ttf) format('truetype');
+// }
+
+@font-face {
+  font-family: "Google-Icon";
+  src: url(../fonts/IconsGoogle/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSans-Bold";
+  src: url(../fonts/SourceSansPro/SourceSansPro-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSans-Italic";
+  src: url(../fonts/SourceSansPro/SourceSansPro-It.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSans-Light";
+  src: url(../fonts/SourceSansPro/SourceSansPro-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSans-Regular";
+  src: url(../fonts/SourceSansPro/SourceSansPro-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSans-Semibold";
+  src: url(../fonts/SourceSansPro/SourceSansPro-Semibold.ttf) format("truetype");
+}

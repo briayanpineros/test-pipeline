@@ -1,0 +1,17 @@
+uuid: 1f3b350b-e94b-4bf2-805c-c346dd846956
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+title: 'Updates indexable active search pages'
+id: search_cron
+weight: 0
+module: search
+callback: search_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

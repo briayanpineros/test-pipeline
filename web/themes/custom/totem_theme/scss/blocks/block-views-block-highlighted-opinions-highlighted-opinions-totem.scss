@@ -1,0 +1,195 @@
+div#block-views-block-highlighted-opinions-highlighted-opinions-totem {
+  background-image: url(../imagenes/opiniones_ancho.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .view-highlighted-opinions {
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    .view-header {
+      position: absolute;
+      right: 0;
+      top: 1rem;
+      z-index: 1;
+      h2 {
+        font-weight: bold;
+        font-family: SourceSans-Bold;
+        text-align: right !important;
+        font-size: 4rem;
+        margin-right: 1rem;
+
+        color: #b2d4f7;
+      }
+    }
+
+    .view-content {
+      position: relative;
+      padding-top: 5rem;
+      div.slick--view--highlighted-opinions {
+        position: relative;
+        div.slick-slider {
+          padding-left: 12%;
+          padding-right: 12%;
+          padding-bottom: 2%;
+
+
+          .slide__description {
+            display: flex !important;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            text-align: left;
+
+            .views-field-user-picture {
+              width: 15%;
+              border-radius: 50%;
+
+              .field-content {
+                img {
+                  max-width: 75%;
+                  border-radius: 50%;
+                }
+              }
+            }
+
+            .views-field-field-comment-body {
+              width: 85%;
+
+              .field-content {
+                  font-size: 1rem;
+
+                  @include md {
+                    font-size: 1.5rem;
+                  }
+
+                  color: white;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 2;
+                  -webkit-box-orient: vertical;
+
+                  &::before {
+                    content: "\201C";
+                  }
+
+                  &::after {
+                    content: "\201D";
+                  }
+
+              }
+            }
+
+            .views-field-nothing {
+              width: 75%;
+
+              .highlighted-user-and-poi {
+                @include md {
+                  font-size: 1.5rem;
+                }
+
+                color: $conil-color-gray;
+
+                .highlighted-user-name {
+                  @include md {
+                    font-size: 1.5rem;
+                  }
+
+                  font-family: SourceSans-Italic;
+                  display: inline;
+                  color: $conil-color-gray;
+                  text-transform: capitalize;
+
+                  a {
+                    text-decoration: none;
+                    color: white !important;
+                    pointer-events: none;
+                  }
+                }
+
+                .highlighted-poi-title {
+                  display: inline;
+
+                  a {
+                    @include md {
+                      font-size: 1.5rem;
+                    }
+
+                    font-family: SourceSans-Bold;
+                    color: $conil-color-gray;
+                    text-transform: uppercase;
+                  }
+
+                  a:hover {
+                    color: $conil-color-aqua;
+                  }
+                }
+
+              }
+            }
+
+            .views-field-field-fivestar {
+              margin-left: 25%;
+
+              .fivestar-static-form-item {
+                .js-form-item.form-item.js-form-type-item.form-type-item.js-form-item-.form-item- {
+                  display: flex;
+
+                  .description {
+                    span {
+                      color: white;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        nav {
+          height: 0;
+          .slick-arrow {
+            background: none;
+            border: 0;
+            width: 50px;
+            overflow: hidden;
+          }
+          .slick-prev {
+            position: absolute;
+            left: 5%;
+            top: 20%;
+
+            &::before {
+              content: none;
+
+              content: '\e5e0';
+              font-family: "Google-Icon";
+              font-size: 3rem;
+              color: white;
+
+            }
+          }
+
+          .slick-next {
+            position: absolute;
+            right: 5%;
+            top: 20%;
+
+            &::before {
+              content: none;
+
+              content: '\e5e1';
+              font-family: "Google-Icon";
+              font-size: 3rem;
+              color: white;
+
+            }
+          }
+
+
+        }
+      }
+    }
+  }
+}

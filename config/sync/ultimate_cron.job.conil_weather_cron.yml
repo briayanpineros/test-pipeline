@@ -1,0 +1,17 @@
+uuid: 92c86428-b927-439a-8164-65a088f1f8f6
+langcode: es
+status: true
+dependencies:
+  module:
+    - conil_weather
+title: 'Manejador de cron por defecto'
+id: conil_weather_cron
+weight: 0
+module: conil_weather
+callback: conil_weather_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

@@ -1,0 +1,23 @@
+uuid: 8ed44772-0b81-479b-83b4-1e0a577a8bdb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.gastronomic_r
+  module:
+    - text
+id: node.gastronomic_r.body
+field_name: body
+entity_type: node
+bundle: gastronomic_r
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,7 @@
+label: 'Abonnements aux chaînes de l''agenda'
+flag_short: 'S''abonner à cette chaîne'
+flag_long: 'Si vous vous inscrivez, vous recevrez une notification par courrier électronique chaque fois qu''un nouveau contenu sera disponib'
+flag_message: 'Souscrit !'
+unflag_short: 'Se désabonner de ce canal'
+unflag_long: 'Si vous vous désinscrivez, vous ne recevrez pas de notification par courrier électronique lorsqu''un nouveau contenu sera disponi'
+unflag_message: 'Non inscrit'

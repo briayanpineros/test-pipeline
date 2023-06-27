@@ -1,0 +1,150 @@
+.view-group-nodes-page-1, .view-group-members-page-1{
+    #block-conil-theme-page-title{
+        padding-top: 0;
+        @include sm{
+            padding-top: 1em;
+        }
+        h1{
+            padding: 0 1rem;
+            @include sm{
+                padding: 0;    
+            }    
+        }
+    }
+    .action-links{
+        li:nth-child(2){
+            font-family: "SourceSans-Bold"
+        }
+        padding: 0 1rem;
+        @include sm{
+            padding: 0;    
+        }
+    }
+    .block-local-actions-block{
+        .action-links{
+            @include sm{
+                float: right;
+                position: relative;
+                top: 20px;
+                right: 30px;
+                z-index: 10;
+            }
+            
+        }
+        
+    }
+    .exposed-form-wrapper{
+        padding: 0 1rem;
+        @include sm{
+            padding: 0;    
+        }
+    }
+
+    #block-mainpagecontent{
+        max-width: 100%;
+
+        .view-filters{
+            background-color: $conil-color-gray;
+            border-top: 0.5rem solid $conil-color-lightgray;
+            .views-exposed-form{
+                max-width: 1200px;
+                margin: auto;
+                color: $conil-color-blue;
+                label{
+                    font-family: "SourceSans-Bold";
+                }
+                .SumoSelect{
+                    label{
+                        font-family: "SourceSans-Regular";    
+                    }
+                }
+                .js-form-item{
+                    min-width: 20%;
+                    margin-right: 10px;
+                }
+                p {
+                    border: none;
+                    label{
+                        i{
+                            background-image: none;
+                            border: solid $conil-color-blue;
+                            border-width: 0 3px 3px 0;
+                            display: inline-block;
+                            padding: 5px;
+                            margin-top: -4px;
+                            transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);   
+                        }
+                    }
+                }
+                .optWrapper{
+                    font-family: "SourceSans-Regular";
+                } 
+                .form-submit{
+                    border-radius: 15px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    background: white;
+                    color: $conil-color-blue;    
+                }               
+            }
+        }
+    }
+    table{
+        max-width: 1200px;
+        margin: auto;
+        margin-bottom: 1rem;
+        color: $conil-color-blue;
+        thead{
+            background: transparent;
+            color: $conil-color-blue;    
+        }
+        td{
+            .dropbutton-multiple{
+                padding-right: 2em;
+            }
+        }
+        tbody{
+            tr{
+                background: transparent;
+                border-bottom: 3px solid $conil-color-gray;
+                td{
+                    padding: 2px;
+                    button{
+                        .dropbutton-arrow{
+                            border: solid $conil-color-blue;
+                            border-width: 0 3px 3px 0;
+                            display: inline-block;
+                            padding: 5px;
+                            margin-top: -8px;
+                            transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                        }
+                    }
+                }
+                td:first-child{
+                    @media (max-width: #{$screen-lg-min}) {
+                        width: 20%;
+                      }
+                }
+                .dropbutton-widget{
+                    border-radius: 15px;
+                    .dropbutton{
+                        border-right: 0px;    
+                    }   
+                }
+            }
+        }
+    }
+    tr{
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;    
+    }
+    th{
+        border-color: #32383e;
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;   
+        padding: 0.75rem;
+    }
+}

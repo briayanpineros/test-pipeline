@@ -1,0 +1,11 @@
+uuid: 5797a46c-c23d-4ef0-96c8-570c951a7576
+langcode: en
+status: true
+dependencies:
+  module:
+    - conil_saved_searches
+id: saved_searches.saved_searches
+target_entity_type_id: saved_searches
+target_bundle: saved_searches
+default_langcode: site_default
+language_alterable: false

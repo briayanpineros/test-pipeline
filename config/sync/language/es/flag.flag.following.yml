@@ -1,0 +1,7 @@
+label: Siguiendo
+flag_short: 'Sigue a este usuario'
+flag_long: 'Haz clic en el enlace para seguir a este usuario'
+flag_message: 'Estás siguiendo al usuario'
+unflag_short: 'Deja de seguir a este usuario'
+unflag_long: 'Haz clic en el enlace para dejar de seguir a este usuario'
+unflag_message: 'Has dejado de seguir al usuario'

@@ -1,0 +1,35 @@
+uuid: f6e44b6d-0753-4afd-ade2-7c3bbce78631
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.interval_hours_content_grids.field_interval_hours
+    - field.field.paragraph.interval_hours_content_grids.field_media_content_grids
+    - paragraphs.paragraphs_type.interval_hours_content_grids
+  module:
+    - time_field
+id: paragraph.interval_hours_content_grids.default
+targetEntityType: paragraph
+bundle: interval_hours_content_grids
+mode: default
+content:
+  field_interval_hours:
+    type: time_range_formatter
+    label: inline
+    settings:
+      time_format: 'H:i:s'
+      timerange_format: 'start ~ end'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_media_content_grids:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

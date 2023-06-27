@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+      header:
+        area:
+          content:
+            value: '<h2>Search results</h2>'
+            format: basic_html
+  page_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 'What do you need to know?'

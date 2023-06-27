@@ -1,0 +1,51 @@
+#block-views-block-content-opinions-block-1 {
+  max-width: 1200px;
+  min-height: 100px;
+  margin: auto;
+  h2 {
+    background-color: $conil-color-aqua;
+    color: white;
+    padding: 2rem;
+    margin-bottom: 0;
+  }
+
+  .view-header {
+    font-size: 1.5rem;
+    padding: 2rem;
+    .views-row .field-content {
+      background-color: white;
+    }
+  }
+  .view-content {
+    .views-row {
+      &:nth-of-type(odd) {
+        background-color: $conil-color-gray;
+      }
+
+      .field-content {
+        display: flex;
+        
+        .five-star, .user-name {
+          display: inline-block;
+          margin-right: 2rem;
+        }
+        .comment-fields {
+          padding-left: 2rem;
+          padding-top: 1rem;
+          .user-name {
+            padding-bottom: 1rem;
+          }
+        }
+
+        .user-pic {
+          padding: 2rem;
+          img {
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+          }
+        }
+      }
+    }
+  }
+}

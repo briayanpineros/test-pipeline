@@ -1,0 +1,48 @@
+uuid: ffd9a448-ce0a-41c9-bfdb-732a0e508fe6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gastronomic_r.body
+    - field.field.node.gastronomic_r.field_gastronomic_r_video
+    - field.field.node.gastronomic_r.field_poi_address
+    - field.field.node.gastronomic_r.field_poi_gallery
+    - field.field.node.gastronomic_r.field_poi_media
+    - field.field.node.gastronomic_r.field_poi_social_media_share
+    - field.field.node.gastronomic_r.field_poi_subtitle
+    - field.field.node.gastronomic_r.field_poi_telephone
+    - field.field.node.gastronomic_r.field_poi_telephone2
+    - node.type.gastronomic_r
+  module:
+    - text
+    - user
+id: node.gastronomic_r.teaser
+targetEntityType: node
+bundle: gastronomic_r
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_gastronomic_r_video: true
+  field_poi_address: true
+  field_poi_gallery: true
+  field_poi_media: true
+  field_poi_social_media_share: true
+  field_poi_subtitle: true
+  field_poi_telephone: true
+  field_poi_telephone2: true
+  langcode: true
+  search_api_excerpt: true

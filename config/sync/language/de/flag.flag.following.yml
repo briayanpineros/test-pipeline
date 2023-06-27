@@ -1,0 +1,7 @@
+label: 'Ich folge'
+flag_short: 'Diesem Benutzer folgen'
+flag_long: 'Klicken Sie auf den Link, um dem Benutzer zu folgen'
+flag_message: 'Sie folgen diesem Benutzer'
+unflag_short: 'Diesem Benutzer nicht mehr folgen'
+unflag_long: 'Klicken Sie auf dem Link, um dem Benutzer nicht mehr zu folgen'
+unflag_message: 'Sie haben dem Benutzer nicht mehr gefolgt'

@@ -1,0 +1,17 @@
+uuid: 82af8acf-0135-42c8-94fc-3e36790f7174
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.tourist_office_group
+  enforced:
+    config:
+      - user.role.manager_conil
+id: tourist_office_group-c83860d05
+label: Gerente
+weight: 5
+internal: true
+audience: outsider
+group_type: tourist_office_group
+permissions_ui: false
+permissions: {  }

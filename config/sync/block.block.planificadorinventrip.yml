@@ -1,0 +1,27 @@
+uuid: 1d506b25-ae68-49f5-a415-1e4a0812a0fe
+langcode: es
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.planificador_inventrip
+  module:
+    - simple_block
+    - system
+  theme:
+    - conil_theme
+id: planificadorinventrip
+theme: conil_theme
+region: layout_suffix
+weight: -22
+provider: null
+plugin: 'simple_block:planificador_inventrip'
+settings:
+  id: 'simple_block:planificador_inventrip'
+  label: 'Planificador Inventrip'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

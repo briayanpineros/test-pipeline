@@ -1,0 +1,8 @@
+name: 'Conil Weather'
+description: 'Personalized block that synchronizes the current climate and the temperature of Conil de la Frontera.'
+package: Conil
+configure: conil_weather.configuration_form
+
+type: module
+core_version_requirement: ^8.8 || ^9
+

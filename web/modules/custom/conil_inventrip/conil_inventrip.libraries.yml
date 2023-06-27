@@ -1,0 +1,5 @@
+conil_inventrip:
+  js:
+    js/conil_inventrip.js: {}
+  dependencies:
+    - core/jquery

@@ -1,0 +1,14 @@
+a {
+    color: $conil-color-blue;
+    text-decoration: none;
+
+    &.active,
+    &:visited,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  p a {
+    color: $conil-color-pink;
+  }

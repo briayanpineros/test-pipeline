@@ -1,0 +1,6 @@
+conil_bulk_upload.bulk_upload:
+  title: Media Bulk Upload
+  description: 'Page to upload multimedia files'
+  route_name: conil_bulk_upload.bulk_upload
+  parent: system.admin_content
+  weight: 1

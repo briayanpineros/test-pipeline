@@ -1,0 +1,27 @@
+uuid: 12e5adfe-f257-4ca6-892a-ae518ed354b7
+langcode: es
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.participa
+  module:
+    - simple_block
+    - system
+  theme:
+    - conil_theme
+id: participa
+theme: conil_theme
+region: content
+weight: -19
+provider: null
+plugin: 'simple_block:participa'
+settings:
+  id: 'simple_block:participa'
+  label: Participa
+  label_display: '0'
+  provider: simple_block
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "*/form/participa\r\n*/form/colaboracion-ciudadana"

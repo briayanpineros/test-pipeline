@@ -1,0 +1,19 @@
+label: Ricerca
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<h2>Risultati della ricerca</h2>'
+            format: basic_html
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 'cosa è necessario sapere?'
+  page_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 'cosa è necessario sapere?'

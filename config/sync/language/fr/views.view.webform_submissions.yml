@@ -1,0 +1,178 @@
+label: 'Soumissions de webform'
+description: 'Vue par défaut des soumissions de webform.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        sid:
+          label: '#'
+          separator: ', '
+        in_draft:
+          label: Brouillon
+          separator: ', '
+        created:
+          label: Created
+          separator: ', '
+        remote_addr:
+          label: 'IP address'
+          separator: ', '
+        view_webform_submission:
+          label: Operations
+          text: view
+      header:
+        result:
+          content: 'Displaying @start - @end of @total'
+      empty:
+        area_text_custom:
+          content: 'Aucune soumission n''est disponible.'
+      arguments:
+        in_draft:
+          exception:
+            title: All
+      title: 'Soumissions de webform'
+  embed_default:
+    display_title: 'Intégrer : Par défaut'
+    display_options:
+      display_description: 'Afficher les soumissions.'
+  embed_administer:
+    display_title: 'Intégrer : Administrer'
+    display_options:
+      display_description: 'Administrer les soumissions.'
+      fields:
+        webform_submission_bulk_form:
+          action_title: Action
+        sid:
+          label: '#'
+          separator: ', '
+        in_draft:
+          label: Brouillon
+          separator: ', '
+        sticky:
+          label: Sticky
+          separator: ', '
+        locked:
+          label: Locked
+          separator: ', '
+        created:
+          label: Created
+          separator: ', '
+        completed:
+          label: Completed
+          separator: ', '
+        remote_addr:
+          label: 'IP address'
+          separator: ', '
+        operations:
+          label: Operations
+      filters:
+        in_draft:
+          expose:
+            label: 'Est un brouillon'
+        sticky:
+          expose:
+            label: Sticky
+        locked:
+          expose:
+            label: Locked
+  embed_manage:
+    display_title: 'Intégrer : Gérer'
+    display_options:
+      display_description: 'Gérer les soumissions.'
+      fields:
+        webform_submission_bulk_form:
+          action_title: Action
+        sid:
+          label: '#'
+          separator: ', '
+        in_draft:
+          label: Brouillon
+          separator: ', '
+        sticky:
+          label: Sticky
+          separator: ', '
+        locked:
+          label: Locked
+          separator: ', '
+        created:
+          label: Created
+          separator: ', '
+        completed:
+          label: Completed
+          separator: ', '
+        remote_addr:
+          label: 'IP address'
+          separator: ', '
+        view_webform_submission:
+          label: Operations
+          text: view
+        edit_webform_submission:
+          label: Operations
+          text: edit
+      filters:
+        in_draft:
+          expose:
+            label: 'Est un brouillon'
+        sticky:
+          expose:
+            label: Sticky
+        locked:
+          expose:
+            label: Locked
+  embed_review:
+    display_title: 'Intégrer : Évaluer'
+    display_options:
+      display_description: 'Évaluer les soumissions.'
+      fields:
+        sid:
+          label: '#'
+          separator: ', '
+        in_draft:
+          label: Brouillon
+          separator: ', '
+        sticky:
+          label: Sticky
+          separator: ', '
+        locked:
+          label: Locked
+          separator: ', '
+        created:
+          label: Created
+          separator: ', '
+        completed:
+          label: Completed
+          separator: ', '
+        remote_addr:
+          label: 'IP address'
+          separator: ', '
+        view_webform_submission:
+          label: Operations
+          text: view
+      filters:
+        in_draft:
+          expose:
+            label: 'Est un brouillon'
+        sticky:
+          expose:
+            label: Sticky
+        locked:
+          expose:
+            label: Locked

@@ -1,0 +1,10 @@
+# Default settings should not be located here. This file is only used to
+# override existing settings.
+
+# If you want to use logo.png, change 'use_default' to false before installation or re-install this theme.
+logo:
+  path: '/themes/custom/ayesa_base_theme/logo.png'
+  use_default: false
+favicon:
+  path: '/themes/custom/ayesa_base_theme/favicon.png'
+  use_default: false

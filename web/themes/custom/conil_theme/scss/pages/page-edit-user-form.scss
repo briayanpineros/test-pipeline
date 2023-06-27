@@ -1,0 +1,352 @@
+.entity-user-edit-form {
+
+  .title1 {
+    order: -1;
+    width: 100%;
+    font-size: 2rem;
+    color: $conil-color-blue;
+    margin-top: 2rem;
+  }
+
+  .mayu {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 6rem;
+  }
+
+  .passtitle {
+    order: 3 !important;
+  }
+
+  .form-text, .form-email {
+    padding-left: 10px;
+    height: 35px;
+  }
+
+  .password-suggestions{
+    display: none!important;
+  }
+
+  #edit-user-picture-wrapper {
+    background-color: $conil-color-blue;
+    width: 30%;
+    float: left;
+    height: 239px;
+    @media (max-width: #{$screen-sm-min}) {
+      width: 100%;
+    }
+
+    .form-item-user-picture-0 {
+      label {
+        display: none;
+      }
+
+      .file {
+        display: none;
+      }
+
+      .file-size {
+        display: none;
+      }
+
+      .image-preview {
+        text-align: center;
+        width: 100%;
+        height: 150px;
+
+        .image-style-thumbnail {
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+
+    .description {
+      display: none;
+    }
+
+    .image-widget-data {
+      width: 100%;
+      text-overflow: ellipsis;
+      .form-file {
+        text-overflow: ellipsis;
+        margin: 25% 3rem 0;
+        width: 80%;
+      }
+
+      .form-submit{
+        text-align: center;
+        background-color: $conil-color-blue;
+        color: white;
+        border: none;
+        margin-top: 10px;
+        margin-left: 40%;
+      }
+
+      #edit-user-picture-0--label {
+        display: none;
+      }
+
+      #edit-user-picture-0--description {
+        display: none;
+      }
+
+      .form-submit {
+        background-color: $conil-color-yellow;
+        border-radius: 1rem;
+        padding: 0.5rem;
+      }
+
+      .form-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #edit-field-nombre-wrapper {
+    background-color: $conil-color-blue;
+    float: left;
+    color: white;
+    padding-top: 1rem;
+    width: 70%;
+    @media (max-width: #{$screen-sm-min}) {
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    #edit-field-nombre-0-value {
+      width: 80%;
+    }
+
+    .form-item {
+      margin: 0;
+    }
+
+    .form-text {
+      margin: 0;
+    }
+
+    #edit-field-nombre-0-value {
+      border-radius: 1rem;
+    }
+  }
+
+  #edit-field-apellido-wrapper {
+    background-color: $conil-color-blue;
+    float: left;
+    width: 70%;
+    color: white;
+    padding-top: 1rem;
+    height: 156px;
+    padding-top: 2rem;
+    @media (max-width: #{$screen-sm-min}) {
+      width: 100%;
+    }
+
+    #edit-field-apellido-0-value {
+      width: 80%;
+    }
+
+    .form-item {
+      margin: 0;
+    }
+
+    #edit-field-apellido-0-value {
+      border-radius: 1rem;
+    }
+  }
+
+  #edit-account {
+    clear: left;
+    display: flex;
+    flex-wrap: wrap;
+    color: $conil-color-blue;
+
+    .form-item-mail {
+      background-color: $conil-color-lightgray;
+      order: 1;
+      width: 50%;
+      @media (max-width: #{$screen-sm-min}) {
+        width: 100%;
+      }
+      padding-top: 1rem;
+      padding-left: 1rem;
+      padding-bottom: 2rem;
+
+      label {
+        font-size: 1.5rem;
+      }
+
+      #edit-mail {
+        border-radius: 1rem;
+        margin-top: 10px;
+      }
+
+      #edit-mail--description {
+        display: none;
+      }
+    }
+
+    .form-item-current-pass {
+      background-color: $conil-color-lightgray;
+      order: 2;
+      width: 50%;
+      padding-top: 1rem;
+      position: relative;
+      height: 140px;
+      @media (max-width: #{$screen-sm-min}) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      @media (max-width: #{$screen-sm-min}) {
+        width: 100%;
+      }
+
+      label {
+        vertical-align: bottom;
+        font-size: 1.5rem;
+        height: 36px;
+        float: left;
+      }
+
+      #edit-current-pass {
+        border-radius: 1rem;
+        padding-right: 1rem;
+        float: left;
+        width: 350px;
+        clear: both;
+        margin-top: 10px;
+      }
+
+      #edit-current-pass--description {
+        color: gray;
+        padding: 1rem;
+        padding-top: 2.5rem;
+        width: 30%;
+        float: right;
+        position: initial;
+        transform: translateY(-50%);
+      }
+    }
+
+    #edit-pass {
+      order: 9;
+      width: 100%;
+      background-color: $conil-color-lightgray;
+      color: $conil-color-blue;
+      display: flex;
+      @media (max-width: #{$screen-sm-min}) {
+        flex-wrap: wrap;
+      }
+
+      .form-item-pass-pass1 {
+        width: 35%;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 2rem;
+        @media (max-width: #{$screen-sm-min}) {
+          width: 100%;
+        }
+
+        label {
+          font-size: 1.5rem;
+        }
+
+        .password-strength {
+          display: none;
+        }
+
+        .password-field {
+          width: 350px;
+          border-radius: 1rem;
+        }
+      }
+
+      .form-item-pass-pass2 {
+        width: 35%;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        @media (max-width: #{$screen-sm-min}) {
+          width: 100%;
+        }
+
+        label {
+          font-size: 1.5rem;
+        }
+
+        .password-confirm {
+          width: 350px;
+          border-radius: 1rem;
+        }
+
+        .js-password-confirm-message {
+          display: none;
+        }
+      }
+
+      #edit-pass--description {
+        width: 30%;
+        padding: 1rem;
+        padding-top: 2.5rem;
+        font-size: 1rem;
+        @media (max-width: #{$screen-sm-min}) {
+          width: 100%;
+        }
+        color: gray;
+      }
+    }
+  }
+
+  #edit-actions {
+    text-align: end;
+
+    #edit-submit {
+      background-color: $conil-color-blue;
+      border-radius: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      color: white;
+    }
+  }
+
+  #block-link-logout {
+    order: 11;
+    width: 1200px;
+    margin: auto;
+    color: $conil-color-blue;
+    @media (max-width: #{$screen-sm-min}) {
+      flex-wrap: wrap;
+    }
+
+    #form-logout {
+      width: 100%;
+      background-color: $conil-color-lightgray;
+      padding-top: 1rem;
+      padding-left: 1rem;
+      padding-bottom: 2rem;
+      @media (max-width: #{$screen-sm-min}) {
+        width: 100%;
+      }
+
+      label {
+        font-size: 1.5rem;
+      }
+      
+      p {
+        transform: translateY(40%);
+        a:hover {
+          text-decoration: none;
+        }
+      }
+
+      #button {
+        background-color: $conil-color-blue;
+        border-radius: 1rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        color: white;
+      }
+    }
+  }
+}

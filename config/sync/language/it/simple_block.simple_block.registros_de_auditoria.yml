@@ -1,0 +1,4 @@
+title: 'Registri di audit'
+content:
+  value: '<p>È possibile controllare i log di audit delle modifiche al seguente link:</p><p><a href="/es/admin/reports/audit-trail">Audit</a></p>'
+  format: basic_html

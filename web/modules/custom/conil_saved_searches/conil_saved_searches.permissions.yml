@@ -1,0 +1,20 @@
+add saved searches entities:
+  title: 'Create new Saved Searches entities'
+
+administer saved searches entities:
+  title: 'Administer Saved Searches entities'
+  description: 'Allow to access the administration form to configure Saved Searches entities.'
+  restrict access: true
+
+delete saved searches entities:
+  title: 'Delete Saved Searches entities'
+
+edit saved searches entities:
+  title: 'Edit Saved Searches entities'
+
+view published saved searches entities:
+  title: 'View published Saved Searches entities'
+
+view unpublished saved searches entities:
+  title: 'View unpublished Saved Searches entities'
+

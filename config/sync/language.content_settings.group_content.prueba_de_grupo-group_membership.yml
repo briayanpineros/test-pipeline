@@ -1,0 +1,18 @@
+uuid: 98fcc907-5221-4932-83e6-44423f2db41c
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.prueba_de_grupo-group_membership
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: group_content.prueba_de_grupo-group_membership
+target_entity_type_id: group_content
+target_bundle: prueba_de_grupo-group_membership
+default_langcode: site_default
+language_alterable: false

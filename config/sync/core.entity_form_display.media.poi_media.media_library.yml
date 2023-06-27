@@ -1,0 +1,33 @@
+uuid: 445de2a9-2d24-46bd-a107-761ecccca418
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.poi_media.field_categoria_poi
+    - field.field.media.poi_media.field_media_image
+    - image.style.thumbnail
+    - media.type.poi_media
+  module:
+    - image
+id: media.poi_media.media_library
+targetEntityType: media
+bundle: poi_media
+mode: media_library
+content:
+  field_media_image:
+    type: image_image
+    weight: -50
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_categoria_poi: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

@@ -1,0 +1,120 @@
+label: Mediateca
+description: 'Buscar y administrar medios.'
+display:
+  default:
+    display_title: Predefinito
+    display_options:
+      title: Media
+      fields:
+        media_bulk_form:
+          action_title: Action
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          submit_button: 'Applica filtri'
+          reset_button_label: Azzeramento
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Non è disponibile alcun contributo mediale.'
+      sorts:
+        created:
+          expose:
+            label: 'Prima i più recenti'
+        name:
+          expose:
+            label: 'Nombre (A-Z)'
+        name_1:
+          expose:
+            label: 'Nombre (Z-A)'
+      filters:
+        status:
+          expose:
+            label: 'Stato di pubblicazione'
+          group_info:
+            label: Pubblicato
+            group_items:
+              1:
+                title: Pubblicato
+              2:
+                title: 'Non pubblicato'
+        name:
+          expose:
+            label: Nome
+        bundle:
+          expose:
+            label: 'Tipos multimedia'
+          group_info:
+            label: 'Tipos multimedia'
+        langcode:
+          expose:
+            label: Language
+  page:
+    display_title: Pagina
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Action
+        name:
+          separator: ', '
+        edit_media:
+          alter:
+            text: 'Editar {{ nombre }}'
+            alt: 'Editar {{ nombre }}'
+          text: Modifica
+        delete_media:
+          alter:
+            text: 'Borrar {{ nombre }}'
+            alt: 'Borrar {{ nombre }}'
+          text: Cancella
+  widget:
+    display_title: Widget
+    display_options:
+      arguments:
+        bundle:
+          exception:
+            title: All
+      filters:
+        name:
+          expose:
+            label: Nome
+      header:
+        display_link_grid:
+          label: Griglia
+        display_link_table:
+          label: Tabella
+  widget_table:
+    display_title: 'Widget (tabla)'
+    display_options:
+      fields:
+        thumbnail__target_id:
+          label: Miniatura
+        name:
+          label: Nome
+        uid:
+          label: Autore
+        changed:
+          label: Aggiornato
+      arguments:
+        bundle:
+          exception:
+            title: All
+      filters:
+        name:
+          expose:
+            label: Nome
+      header:
+        display_link_grid:
+          label: Griglia
+        display_link_table:
+          label: Tabella

@@ -1,0 +1,340 @@
+body.view-points-of-interest-page-1 {
+
+
+  #block-conil-theme-page-title {
+    display: none;
+  }
+
+  div.dialog-off-canvas-main-canvas > div > div.header-group {
+    //border-bottom: 0.5rem solid rgba(225, 225, 225, 0.5);
+    border: none;
+  }
+
+  .view-points-of-interest {
+    background-color: $conil-color-gray;
+
+    .view-header {
+      max-width: 1200px;
+      margin: auto auto auto 1rem;
+      @include xl{
+        margin-left: auto;
+      }
+      padding-top: 2rem;
+      @include xl {
+        padding-left: 0rem;
+      }
+
+      .header {
+        margin-bottom: 2rem;
+        font-size: 18px;
+        @include sm{
+          font-size: 26px;
+        }
+        color: #01587D;
+        div,
+        p {
+          display: inline;
+          margin-right: 0.4%;
+        }
+
+        p.counter {
+          font-size: 16pt;
+        }
+
+        h2.subcategory {
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: 0;
+          font-size: 1em;
+        }
+      }
+    }
+
+    .view-filters {
+      .exposed-form-wrapper {
+        max-width: 1200px;
+        margin: auto auto auto 1rem;
+        @include xl{
+          margin-left: auto;
+        }
+
+        details.form-item {
+          color: $conil-color-blue;
+          background-color: white;
+          display: block;
+          padding: 1rem;
+          border: none;
+          list-style: none;
+          text-align: right;
+          line-height: 2rem;
+
+          fieldset {
+            width: 100%;
+            margin: 0;
+            @include md {
+              width: 50%;
+            }
+          }
+
+          .form-item-field-poi-geofield-proximity-value {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            input {
+              margin: 5px 10px 15px;
+              border-radius: 20px;
+              padding-left: 15px;
+              color: $conil-color-blue;
+            }
+          }
+
+          .form-actions {
+            text-align: left;
+            margin: 0;
+            width: 100%;
+            display: block;
+            padding: 1.4rem 0rem;
+            @include md {
+              width: 50%;
+              display: inline-block;
+              padding: 1.4rem 0rem;
+            }
+          }
+
+          .details-wrapper {
+            padding: 0;
+          }
+
+          #edit-submit-points-of-interest {
+            border: 2px solid $conil-color-blue;
+            color: $conil-color-blue;
+            border-radius: 1.5em;
+            display: inline-block;
+            margin: auto;
+            background-color: white;
+            font-weight: bold;
+            padding: 0.5em 1.5em;
+          }
+        }
+
+
+        &:hover {
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        .fieldset-wrapper {
+          font-weight: normal;
+          cursor: auto;
+        }
+      }
+    }
+
+    .view-empty {
+      max-width: 1200px;
+      margin: auto auto auto 1rem;
+      @include xl{
+        margin-left: auto;
+      }
+      padding-top: 2rem;
+      color: $conil-color-blue;
+      font-size: 2rem;
+    }
+
+    .view-content {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      row-gap: 2rem;
+      column-gap: 1rem;
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0 1rem;
+
+      @include sm{
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include lg {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include xl{
+        padding: 0;
+      }
+
+      .views-row {
+
+        div.views-field-field-poi-media {
+          margin-bottom: 15px;
+          .field-content img {
+            border-top: solid 5px $conil-color-aqua;
+            width: 100%;
+          }
+        }
+
+        .views-field-nothing {
+          font-size: 16px;
+          font-family: SourceSans-Bold, serif;
+          font-weight: bold;
+          height: 40px;
+        }
+
+        .views-field-body {
+          font-size: 16px;
+
+          div.field-content {
+            margin-top: 0.5rem;
+
+            p {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 3;
+              overflow: hidden;
+
+            }
+
+            h2, h3, h4, h5, h6 {
+              font-size: .7rem;
+              text-transform: none;
+              font-family: "SourceSans-Regular";
+              line-height: 1.5;
+            }
+          }
+        }
+
+        .views-field-average-stars-counter {
+          margin-bottom: 0.5rem;
+
+          .field-content {
+
+            .fivestar-static-form-item,
+            .average-stars-field-counter {
+              display: inline-block;
+            }
+          }
+        }
+
+        .title-flag {
+          display: flex;
+        }
+
+        .title {
+          text-transform: uppercase;
+          display: inline-block;
+          font-family: 'SourceSans-Bold';
+          line-height: 1rem;
+          min-height: 2rem;
+          font-size: 18px;
+        }
+
+        .flag-bookmark a {
+          width: 2rem;
+          padding-left: .3rem;
+        }
+      }
+
+
+    }
+
+    .view-empty {
+
+      min-height: 1000px;
+
+      .empty {
+        padding: 5%;
+      }
+    }
+
+  }
+
+  #block-views-block-poi-subcategory-menu-block-1 {
+    max-width: 1200px;
+    margin: auto;
+    //overflow-y: hidden;
+    //overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      background-color: $conil-color-gray;
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 1rem;
+      background: $conil-color-aqua;
+    }
+
+    scrollbar-color: $conil-color-aqua $conil-color-gray;
+    scrollbar-darkshadow-color: transparent;
+
+
+    div {
+      .selected-option{
+        font-family: 'SourceSans-Bold';
+        //border-bottom: solid 10px $conil-color-gray;
+        background-color: #01587D !important;
+        .material-icons {
+          color: #6CCA98;
+        }
+        a {
+          color: white;
+        }
+      }
+      .view-poi-subcategory-menu {
+
+        .view-content {
+          //min-height: 90px;
+          display: flex;
+          //scrollbar-color: $conil-color-aqua;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding-left: 16px;
+          @include xl {
+            padding-left: 0px;
+          }
+
+          .btn {
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            a {
+              &:hover {
+                text-decoration: underline !important;
+              }
+            }
+          }
+
+          .views-row {
+            padding: 0 1rem;
+            display: grid;
+            margin-right: 0.3rem;
+            margin-top: 0.1rem;
+            margin-bottom: 0.1rem;
+            height: 40px;
+
+            .views-field-field-categoria-interes-icon{
+              margin-right: 0.5rem;
+              top: 2px;
+              position: relative;
+            }
+
+            .views-field {
+              display: inline;
+              align-self: center;
+              grid-row: none;
+              color: $conil-color-blue;
+
+              span.field-content {
+                a {
+                  white-space: nowrap;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

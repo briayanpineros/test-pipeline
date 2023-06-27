@@ -1,0 +1,14 @@
+uuid: 73281d62-64e5-43be-b109-5e0273c57187
+langcode: en
+status: true
+dependencies: {  }
+name: event
+label: 'Event 990×1400'
+effects:
+  d118cabc-97c2-4562-b776-52e7e2799ec9:
+    uuid: d118cabc-97c2-4562-b776-52e7e2799ec9
+    id: image_resize
+    weight: -10
+    data:
+      width: 990
+      height: 1400

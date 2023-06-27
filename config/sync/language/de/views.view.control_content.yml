@@ -1,0 +1,60 @@
+label: 'control_content (Inhalt)'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Zurücksetzen
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        node_bulk_form:
+          action_title: Action
+        title:
+          label: Titel
+          separator: ', '
+        uid:
+          label: Autor
+          separator: ', '
+        created:
+          label: Erzeugungsdatum
+          separator: ', '
+        changed:
+          label: Aktualisierungszeitpunkt
+          separator: ', '
+        status:
+          label: Veröffentlicht
+          separator: ', '
+        edit_node:
+          label: Bearbeiten
+          text: edit
+      filters:
+        status:
+          expose:
+            label: Veröffentlicht
+        uid:
+          expose:
+            label: 'Geschrieben von'
+        combine:
+          expose:
+            label: Enthält
+        type:
+          expose:
+            label: Typ
+      title: 'Alle Inhalte'
+  page_1:
+    display_title: 'Details zu allen Inhalten'

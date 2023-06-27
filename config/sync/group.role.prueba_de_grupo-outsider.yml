@@ -1,0 +1,14 @@
+uuid: 5cc6640b-f03c-445d-b22a-f848403c38b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.prueba_de_grupo
+id: prueba_de_grupo-outsider
+label: Forastero
+weight: -101
+internal: true
+audience: outsider
+group_type: prueba_de_grupo
+permissions_ui: true
+permissions: {  }

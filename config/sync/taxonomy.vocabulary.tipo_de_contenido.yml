@@ -1,0 +1,8 @@
+uuid: cb197fc4-f6fe-43ae-a634-b693e387354f
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de contenido'
+vid: tipo_de_contenido
+description: ''
+weight: 0

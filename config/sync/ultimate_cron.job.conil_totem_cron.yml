@@ -1,0 +1,17 @@
+uuid: 214ebab1-3d02-4f01-859f-55c49b5c8cfd
+langcode: es
+status: true
+dependencies:
+  module:
+    - conil_totem
+title: 'Manejador de cron por defecto'
+id: conil_totem_cron
+weight: 0
+module: conil_totem
+callback: conil_totem_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

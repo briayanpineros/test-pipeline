@@ -1,0 +1,33 @@
+label: 'control_content_panes (Content)'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        title:
+          separator: ', '
+        type:
+          separator: ', '
+        uid:
+          label: ' by'
+          separator: ', '
+        created:
+          label: ' on'
+          separator: ', '
+      title: 'New Content'
+      empty:
+        area:
+          content:
+            value: 'A fresh site. Neat! Once you starting adding content, most recent ones will appear here. <a href="/node/add">Start adding content now</a>!'
+  pane_tc_new:
+    display_title: 'Total Control new content summary'
+    display_options:
+      block_description: 'New Content'
+      block_category: Dashboard

@@ -1,0 +1,546 @@
+uuid: 3a4e8fa4-90c5-437e-9c43-e5f934662779
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.poi.status
+    - field.field.node.poi.body
+    - field.field.node.poi.field_poi_address
+    - field.field.node.poi.field_poi_address_cp
+    - field.field.node.poi.field_poi_address_locality
+    - field.field.node.poi.field_poi_address_province
+    - field.field.node.poi.field_poi_category
+    - field.field.node.poi.field_poi_email
+    - field.field.node.poi.field_poi_gallery
+    - field.field.node.poi.field_poi_geofield
+    - field.field.node.poi.field_poi_media
+    - field.field.node.poi.field_poi_subcategoy
+    - field.field.node.poi.field_poi_subtitle
+    - field.field.node.poi.field_poi_telephone
+    - field.field.node.poi.field_poi_telephone2
+    - field.field.node.poi.field_poi_webpage
+    - field.field.node.poi.field_tipo_viaje
+    - node.type.poi
+  module:
+    - feeds_tamper
+    - geofield
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      a47c4910-93d4-4fb8-9e84-e363ab8bdf29:
+        separator: ;
+        limit: null
+        uuid: a47c4910-93d4-4fb8-9e84-e363ab8bdf29
+        plugin: explode
+        source: field_tipo_viaje
+        weight: 0
+        label: Explode
+      b4eb478e-bbb5-43c7-b03a-a885a7af6819:
+        separator: ;
+        limit: null
+        uuid: b4eb478e-bbb5-43c7-b03a-a885a7af6819
+        plugin: explode
+        source: field_poi_gallery
+        weight: 0
+        label: Explode
+label: 'Importar fichas de POI desde archivo'
+id: importar_poi
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: poi
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 1
+custom_sources:
+  status:
+    value: status
+    label: status
+    machine_name: status
+    type: csv
+  field_poi_category:
+    value: field_poi_category
+    label: field_poi_category
+    machine_name: field_poi_category
+    type: csv
+  field_poi_subcategoy:
+    value: field_poi_subcategoy
+    label: field_poi_subcategoy
+    machine_name: field_poi_subcategoy
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  title_en:
+    value: title_en
+    label: title_en
+    machine_name: title_en
+    type: csv
+  title_fr:
+    value: title_fr
+    label: title_fr
+    machine_name: title_fr
+    type: csv
+  title_it:
+    value: title_it
+    label: title_it
+    machine_name: title_it
+    type: csv
+  title_de:
+    value: title_de
+    label: title_de
+    machine_name: title_de
+    type: csv
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: csv
+  body_en:
+    value: body_en
+    label: body_en
+    machine_name: body_en
+    type: csv
+  body_fr:
+    value: body_fr
+    label: body_fr
+    machine_name: body_fr
+    type: csv
+  body_it:
+    value: body_it
+    label: body_it
+    machine_name: body_it
+    type: csv
+  body_de:
+    value: body_de
+    label: body_de
+    machine_name: body_de
+    type: csv
+  field_poi_address:
+    value: field_poi_address
+    label: field_poi_address
+    machine_name: field_poi_address
+    type: csv
+  '':
+    value: ''
+    label: ''
+    machine_name: ''
+    type: csv
+  field_poi_telephone:
+    value: field_poi_telephone
+    label: field_poi_telephone
+    machine_name: field_poi_telephone
+    type: csv
+  field_poi_telephone2:
+    value: field_poi_telephone2
+    label: field_poi_telephone2
+    machine_name: field_poi_telephone2
+    type: csv
+  field_poi_email:
+    value: field_poi_email
+    label: field_poi_email
+    machine_name: field_poi_email
+    type: csv
+  field_poi_webpage:
+    value: field_poi_webpage
+    label: field_poi_webpage
+    machine_name: field_poi_webpage
+    type: csv
+  latitud:
+    value: latitud
+    label: latitud
+    machine_name: latitud
+    type: csv
+  longitud:
+    value: longitud
+    label: longitud
+    machine_name: longitud
+    type: csv
+  status_es:
+    value: status_es
+    label: status_es
+    machine_name: status_es
+    type: csv
+  status_en:
+    value: status_en
+    label: status_en
+    machine_name: status_en
+    type: csv
+  status_fr:
+    value: status_fr
+    label: status_fr
+    machine_name: status_fr
+    type: csv
+  status_it:
+    value: status_it
+    label: status_it
+    machine_name: status_it
+    type: csv
+  status_de:
+    value: status_de
+    label: status_de
+    machine_name: status_de
+    type: csv
+  field_tipo_viaje:
+    value: field_tipo_viaje
+    label: field_tipo_viaje
+    machine_name: field_tipo_viaje
+    type: csv
+  field_poi_media:
+    value: field_poi_media
+    label: field_poi_media
+    machine_name: field_poi_media
+    type: csv
+  field_poi_gallery:
+    value: field_poi_gallery
+    label: field_poi_gallery
+    machine_name: field_poi_gallery
+    type: csv
+  field_poi_gallery_en:
+    value: field_poi_gallery_en
+    label: field_poi_gallery_en
+    machine_name: field_poi_gallery_en
+    type: csv
+  field_poi_gallery_fr:
+    value: field_poi_gallery_fr
+    label: field_poi_gallery_fr
+    machine_name: field_poi_gallery_fr
+    type: csv
+  field_poi_gallery_it:
+    value: field_poi_gallery_it
+    label: field_poi_gallery_it
+    machine_name: field_poi_gallery_it
+    type: csv
+  field_poi_gallery_de:
+    value: field_poi_gallery_de
+    label: field_poi_gallery_de
+    machine_name: field_poi_gallery_de
+    type: csv
+  field_poi_address_cp:
+    value: field_poi_address_cp
+    label: field_poi_address_cp
+    machine_name: field_poi_address_cp
+    type: csv
+  field_poi_address_locality:
+    value: field_poi_address_locality
+    label: field_poi_address_locality
+    machine_name: field_poi_address_locality
+    type: csv
+  field_poi_address_province:
+    value: field_poi_address_province
+    label: field_poi_address_province
+    machine_name: field_poi_address_province
+    type: csv
+  id_drupal:
+    value: id_drupal
+    label: id_drupal
+    machine_name: id_drupal
+    type: csv
+  geometry:
+    value: geometry
+    label: geometry
+    machine_name: geometry
+    type: csv
+  subtitle:
+    value: subtitle
+    label: subtitle
+    machine_name: subtitle
+    type: csv
+  subtitle_en:
+    value: subtitle_en
+    label: subtitle_en
+    machine_name: subtitle_en
+    type: csv
+  subtitle_fr:
+    value: subtitle_fr
+    label: subtitle_fr
+    machine_name: subtitle_fr
+    type: csv
+  subtitle_it:
+    value: subtitle_it
+    label: subtitle_it
+    machine_name: subtitle_it
+    type: csv
+  subtitle_de:
+    value: subtitle_de
+    label: subtitle_de
+    machine_name: subtitle_de
+    type: csv
+  id_drupal1:
+    value: id_drupal
+    label: id_drupal
+    machine_name: id_drupal1
+    type: csv
+mappings:
+  -
+    target: field_poi_category
+    map:
+      target_id: field_poi_category
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+  -
+    target: field_poi_subcategoy
+    map:
+      target_id: field_poi_subcategoy
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: es
+    unique: {  }
+  -
+    target: title
+    map:
+      value: title_en
+    settings:
+      language: en
+    unique: {  }
+  -
+    target: title
+    map:
+      value: title_fr
+    settings:
+      language: fr
+    unique: {  }
+  -
+    target: title
+    map:
+      value: title_it
+    settings:
+      language: it
+    unique: {  }
+  -
+    target: title
+    map:
+      value: title_de
+    settings:
+      language: de
+    unique: {  }
+  -
+    target: body
+    map:
+      value: body
+      summary: ''
+    settings:
+      language: es
+      format: plain_text
+  -
+    target: body
+    map:
+      value: body_en
+      summary: ''
+    settings:
+      language: en
+      format: plain_text
+  -
+    target: body
+    map:
+      value: body_fr
+      summary: ''
+    settings:
+      language: fr
+      format: plain_text
+  -
+    target: body
+    map:
+      value: body_it
+      summary: ''
+    settings:
+      language: it
+      format: plain_text
+  -
+    target: body
+    map:
+      value: body_de
+      summary: ''
+    settings:
+      language: de
+      format: plain_text
+  -
+    target: field_poi_address
+    map:
+      value: field_poi_address
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_poi_telephone
+    map:
+      value: field_poi_telephone
+    settings:
+      language: null
+  -
+    target: field_poi_telephone2
+    map:
+      value: field_poi_telephone2
+    settings:
+      language: null
+  -
+    target: field_poi_email
+    map:
+      value: field_poi_email
+    settings:
+      language: null
+      defuse: false
+    unique: {  }
+  -
+    target: field_poi_webpage
+    map:
+      uri: field_poi_webpage
+      title: ''
+    settings:
+      language: null
+  -
+    target: field_poi_geofield
+    map:
+      lat: latitud
+      lon: longitud
+      value: ''
+    settings:
+      language: ''
+  -
+    target: status
+    map:
+      value: status_es
+    settings:
+      language: es
+  -
+    target: field_tipo_viaje
+    map:
+      target_id: field_tipo_viaje
+    settings:
+      language: es
+      reference_by: name
+      autocreate: 0
+  -
+    target: field_poi_media
+    map:
+      target_id: field_poi_media
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 0
+  -
+    target: field_poi_gallery
+    map:
+      target_id: field_poi_gallery
+    settings:
+      language: es
+      reference_by: name
+      autocreate: 0
+  -
+    target: field_poi_address_cp
+    map:
+      value: field_poi_address_cp
+    settings:
+      language: ''
+    unique: {  }
+  -
+    target: field_poi_address_locality
+    map:
+      value: field_poi_address_locality
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_poi_address_province
+    map:
+      value: field_poi_address_province
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: status
+    map:
+      value: status_de
+    settings:
+      language: de
+  -
+    target: status
+    map:
+      value: status_en
+    settings:
+      language: en
+  -
+    target: status
+    map:
+      value: status_fr
+    settings:
+      language: fr
+  -
+    target: status
+    map:
+      value: status_it
+    settings:
+      language: it
+  -
+    target: field_poi_subtitle
+    map:
+      value: subtitle
+    settings:
+      language: es
+    unique: {  }
+  -
+    target: field_poi_subtitle
+    map:
+      value: subtitle_en
+    settings:
+      language: en
+    unique: {  }
+  -
+    target: field_poi_subtitle
+    map:
+      value: subtitle_fr
+    settings:
+      language: fr
+    unique: {  }
+  -
+    target: field_poi_subtitle
+    map:
+      value: subtitle_it
+    settings:
+      language: it
+    unique: {  }
+  -
+    target: field_poi_subtitle
+    map:
+      value: subtitle_de
+    settings:
+      language: de
+    unique: {  }
+  -
+    target: nid
+    map:
+      value: id_drupal1
+    settings: {  }
+    unique:
+      value: '1'

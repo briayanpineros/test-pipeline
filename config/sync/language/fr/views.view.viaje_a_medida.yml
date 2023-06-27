@@ -1,0 +1,21 @@
+label: 'Voyage sur mesure'
+description: 'Voyage sur mesure'
+display:
+  default:
+    display_title: 'Voyage sur mesure'
+    display_options:
+      title: 'Voyage sur mesure'
+      filters:
+        field_poi_subcategoy_target_id:
+          expose:
+            label: filtre
+            description: filtre
+      empty:
+        area_text_custom:
+          content: 'Aucun résultat'
+      header:
+        area_text_custom:
+          content: "<div class=\"header\"><h3 class=\"subcategory\"><noscript>Un tourisme sans limites</noscript></h3><p class=\"counter\"> <b>[view:total-rows]</b> résultats trouvés</p> </div>\r\n\r\n"
+          admin_label: 'Compteur de résultats'
+  block_1:
+    display_title: 'Voyage sur mesure'

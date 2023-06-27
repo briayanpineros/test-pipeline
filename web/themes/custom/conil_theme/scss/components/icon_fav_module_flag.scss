@@ -1,0 +1,24 @@
+
+    .flag-bookmark.flag a{
+        visibility: hidden;
+        font-size: 0;
+    }
+    
+    .flag-bookmark.action-flag a::before{
+        content: url("/themes/custom/conil_theme/imagenes/icon_fav_desmar.png");
+        visibility: visible;
+    }
+    
+    .flag-bookmark.action-unflag a::before{
+        content: url("/themes/custom/conil_theme/imagenes/icon_fav_mar.png");
+        visibility: visible;
+    }
+
+    .flag-bookmark .ajax-progress-throbber {
+        display: none;
+    }
+
+
+
+
+

@@ -1,0 +1,20 @@
+uuid: 25573286-05d3-4906-8b51-88f2348e6ed9
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.content_grids_images
+  module:
+    - path
+id: media.content_grids_images.path
+field_name: path
+entity_type: media
+bundle: content_grids_images
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,5 @@
+name: Conil inventrip module
+description: Module for Inventrip funcitons
+package: Conil
+type: module
+core_version_requirement: ^8 || ^9

@@ -1,0 +1,7 @@
+label: 'Abbonamenti al canale Agenda'
+flag_short: 'Abbonati a questo canale'
+flag_long: 'Se ti iscrivi riceverai una notifica via email ogni volta che saranno disponibili nuovi contenuti per questa categoria.'
+flag_message: Abbonati!
+unflag_short: 'Cancellati da questo canale'
+unflag_long: 'Se ti cancelli da questo canale non riceverai alcuna notifica via email ogni volta che saranno disponibili nuovi contenuti per q'
+unflag_message: 'Non iscritto'

@@ -1,0 +1,9 @@
+label: Galleria
+display:
+  default:
+    display_options:
+      title: 'Album fotografico'
+  page_1:
+    display_options:
+      menu:
+        title: 'Album fotografico'

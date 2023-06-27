@@ -1,0 +1,354 @@
+html {
+  margin: 0;
+}
+
+body {
+  font-family: Source Sans Pro, sans-serif;
+}
+
+.logo {
+  margin: 56px 56px 40px 40px;
+}
+
+.logo img{
+  width: 300px;
+}
+
+.contents {
+  width: 1080px;
+  margin: 0 56px 45px 56px;
+}
+
+.image img {
+  height: 237px;
+  width: 461px;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+
+.cover img {
+  height: 1340px;
+}
+
+.title {
+  margin: 45px 0px 45px 0px;
+  font-size: 35px;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.body {
+  font-size: 20pt;
+  color: white;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.details {
+  display: block;
+  height: auto;
+}
+
+.text {
+  font-size: 27pt;
+  margin-bottom: 33px;
+}
+
+.textIcon {
+  text-align: left;
+}
+
+.more-information {
+  color: white;
+  font-weight: 800;
+}
+
+.web {
+  color: #1ee2c1;
+  font-weight: lighter;
+  line-height: 30px;
+}
+
+.web strong {
+  color: #1ee2c1;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.sentence {
+  color: white;
+  font-size: 30pt;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.iconDrop img,
+.iconWind img {
+  width: 50px;
+  height: 50px;
+}
+
+.week {
+  width: 970px;
+}
+
+.weekTable {
+  color: #01587D;
+  font-weight: 800;
+  font-size: 17pt;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.weekTable tr:nth-child(even) {
+  background-color: white;
+}
+
+.weekTable tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.weekTable td {
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+}
+
+.weekTable .icon img {
+  width: 50px;
+}
+
+.weekTable .textday {
+  text-align: left !important;
+}
+
+.weekTable .directionWind,
+.weekTable .iconDrop {
+  width: 50px;
+  padding: 0px;
+}
+
+.weekTable .directionWind img {
+  width: 30px;
+}
+
+.weekTable .textIcon {
+  text-align: left !important;
+}
+
+.about {
+  text-align: right;
+  color: white;
+  margin-top: 10px;
+}
+
+.about span {
+  font-weight: 800;
+}
+
+.today {
+  width: 970px;
+  height: 360px;
+  border-top: 15px solid #2cb9d8;
+}
+
+.today .left sup {
+  font-size: 50px;
+  position: relative;
+  top:-20px;
+}
+
+.today .left {
+  float: left;
+  background-color: #eee;
+  width: 40%;
+  height: 100%;
+}
+
+.today .right {
+  float: left;
+  background-color: white;
+  width: 60%;
+  height: 100%;
+}
+
+.left .principalIcon {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.left .principalIcon img {
+  width: 120px;
+}
+
+.left .temp {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 800;
+  color: #01587D;
+}
+
+.right {
+  color: #01587D;
+}
+
+.right div {
+  margin: 40px 40px 10px 60px;
+}
+
+.today table {
+  margin: 20px 40px 10px 60px;
+}
+
+table .dato {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 35px;
+  padding: 5px 10px 10px 10px;
+}
+
+table .text {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.izq {
+  float: left;
+}
+
+.der {
+  float: right;
+}
+
+table .dato span {
+  font-weight: 800;
+}
+
+table .dato img {
+  width: 30px;
+  position: relative;
+  top: 4px;
+}
+
+td.temp {
+  font-size: 22pt;
+}
+
+.right .day {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.right .day span {
+  display: block;
+  font-size: 20px;
+}
+
+.windDrop {
+  display: inline-block;
+  margin: 0px !important;
+}
+
+.windDrop div {
+  margin-top: 10px;
+}
+
+.right .iconWind {
+  float: left;
+  margin-right: 0px;
+}
+
+.right .iconWind img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.right .windText {
+  float: left;
+  margin-left: 15px;
+  position: relative;
+  top: 25px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.right .iconDrop {
+  float: left;
+  margin-right: 0px;
+  height: 90px;
+}
+
+.right .iconDrop img {
+  width: 65px;
+  height: 65px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.right .dropText {
+  margin-left: 5px;
+  position: relative;
+  top: 25px;
+  float: left;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.right .speedWind {
+  width: 160px;
+  font-size: 35px;
+  background-color: #f1f1f1;
+  padding: 5px 5px 5px 10px;
+  border-radius: 10px;
+  float: left;
+  margin-top: 5px;
+}
+
+.right .speedWind img {
+  width: 30px;
+}
+
+.right .speedWind span {
+  font-weight: bold;
+}
+
+.right .speedText {
+  width: 160px;
+  font-size: 35px;
+  background-color: #f1f1f1;
+  padding: 5px 5px 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+  float: left;
+  margin-top: 5px;
+}
+
+.right .speedText span {
+  font-weight: bold;
+}
+
+.bottom {
+  margin-top: 229px;
+}
+
+.qr {
+  width: 100%;
+  height: 100px;
+}
+
+.qr img {
+  width: 90px;
+  height: 90px;
+  float: left;
+  margin-left: -9px;
+}
+
+.barra {
+  background-color: #2cb9d8;
+  width: 1080px;
+  height: 15px;
+  position: absolute;
+  bottom: 0;
+}

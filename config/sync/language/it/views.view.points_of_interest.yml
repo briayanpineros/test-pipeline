@@ -1,0 +1,25 @@
+display:
+  page_1:
+    display_options:
+      header:
+        area_text_custom:
+          content: "<div class=\"header\"><h2 class=\"subcategory\">{{ name }}</h2><p class=\"counter\"><b>[view:total-rows]</b> risultati trovati</p> </div>\r\n"
+      title: 'Punti di interesse'
+    display_title: 'Elenco dei POI a due parametri'
+  default:
+    display_options:
+      empty:
+        area_text_custom:
+          content: '<div class="poi-list-no-results-text">Nessun risultato trovato</div>'
+      arguments:
+        name_1:
+          admin_label: 'Nome categoria POI'
+      header:
+        area_text_custom:
+          admin_label: 'Contatore dei risultati'
+          content: "<div class=\"header\"><p>Hai </p><div class=\"counter\"> [view:total-rows] </div> <div class=\"subcategory\">{{ name }}</div> <p>godere di</p></div>\r\n"
+  page_2:
+    display_title: 'Elenco dei POI a un parametro'
+    display_options:
+      title: 'Punti di interesse'
+label: 'Punti di interesse'

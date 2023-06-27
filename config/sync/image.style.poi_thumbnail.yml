@@ -1,0 +1,15 @@
+uuid: be00547f-0cc8-4631-97d5-ba5a13b096a1
+langcode: en
+status: true
+dependencies: {  }
+name: poi_thumbnail
+label: 'POI thumbnail'
+effects:
+  3f5a706e-216f-440e-8409-08b51bb60d73:
+    uuid: 3f5a706e-216f-440e-8409-08b51bb60d73
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 270
+      height: 160
+      anchor: center-center

@@ -1,0 +1,11 @@
+conil_inventrip.import_pois:
+  title: 'Sync POI from Inventrip'
+  route_name: conil_inventrip.import_pois
+  base_route: conil_inventrip.import_pois
+  weight: 1
+
+conil_inventrip.settings:
+  title: 'Inventrip POI sync Settings'
+  route_name: conil_inventrip.settings
+  base_route: conil_inventrip.import_pois
+  weight: 2

@@ -1,0 +1,27 @@
+uuid: bbbdb685-9ffd-4301-a47a-ab17442758d6
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - ayesa_base_theme
+_core:
+  default_config_hash: CnwFSx4B4tGJ83_AOVnZQSJ-XpD--w5mOEgzFmbi2x0
+id: ayesa_base_theme_main_menu
+theme: ayesa_base_theme
+region: primary_menu
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

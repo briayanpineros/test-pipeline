@@ -1,0 +1,24 @@
+uuid: 39f056a8-737c-485b-9512-45b504e62960
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.poi_frontpage
+  module:
+    - views
+  theme:
+    - conil_theme
+id: views_block__poi_frontpage_poi_donde_dormir_block
+theme: conil_theme
+region: blockgroup_poi_frontpage
+weight: -23
+provider: null
+plugin: 'views_block:poi_frontpage-poi_donde_dormir_block'
+settings:
+  id: 'views_block:poi_frontpage-poi_donde_dormir_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,36 @@
+label: 'Inhalt des Followers kennzeichnen'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Zurücksetzen
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          tags:
+            previous: '‹ Vorherige Seite'
+            next: 'Nächste Seite ›'
+            first: '« First'
+            last: 'Last »'
+      fields:
+        title:
+          separator: ', '
+      title: Leseliste
+      empty:
+        area:
+          content:
+            value: 'Die Benutzer, denen Sie folgen, haben noch keine Inhalte veröffentlicht. :-('
+  page_1:
+    display_title: Seite
+    display_options:
+      menu:
+        title: Inhalt

@@ -1,0 +1,634 @@
+.header-group {
+  position: relative;
+  width: 100%;
+  border-bottom: 0.5rem solid #E1E1E1;
+  background-color: $conil-color-blue;
+  z-index: 6;
+
+  > ::after {
+    height: 15px;
+    @include conil-gradient();
+  }
+
+  .header-wrapper {
+    background-color: $conil-color-blue;
+
+    @include md {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .header-logo {
+      background-color: $conil-color-blue;
+      display: flex;
+
+
+
+      >div {
+        z-index: 2;
+      }
+
+
+      .conil-main-logo {
+        width: 40%;
+        padding-top: 10px;
+        color: $conil-color-gray;
+        height: fit-content;
+
+        @include md {
+          height: initial;
+          padding-left: 20px;
+          padding-top: 20px;
+          width: 49%;
+        }
+
+        img {
+          width: 125px;
+
+          @include md {
+            width: 210px;
+          }
+
+          font-family: "Helvetica Neue",
+          Helvetica,
+          Arial,
+          sans-serif;
+        }
+      }
+
+      .region-header-wrapper {
+        width: 55%;
+
+        .region-header {
+          display: flex;
+          justify-content: flex-end;
+
+          @include md {
+            width: 210px;
+          }
+
+          height: 120px;
+          margin-right: 10px;
+
+          @include md {
+            width: 420px;
+            margin-left: auto;
+            margin-right: 0;
+            padding: 0;
+          }
+
+
+          #block-bookmarked {
+
+            height: 40px;
+            margin-top: 5px;
+            border-radius: 12%;
+            display: inline;
+            margin-left: .4rem;
+
+            @include md {
+              display: inline;
+              background-color: rgba(255, 255, 255, 0);
+              padding: 2px 0 0 0;
+            }
+
+            .buttom-bookmarked {
+              z-index: 20;
+              font-size: .8rem;
+              margin-top: 10px;
+              @include md{
+                margin-top: 14px;
+              }
+
+
+              a {
+                max-height: 37px;
+                font-size: 0;
+
+                &::after {
+                  font-size: 1rem;
+                  line-height: .3rem;
+
+                  @include md {
+                    font-size: 1.6rem;
+                    line-height: 1.4rem;
+                  }
+                }
+
+                @include md {
+                  font-size: .9rem;
+                  display: block;
+                  position: relative;
+                  width: 155px !important;
+                }
+
+              }
+
+              @include md {
+                display: block;
+                position: relative;
+                width: max-content;
+
+              }
+
+              .buttom-bookmarked-link {
+                color: $conil-color-blue;
+                border-radius: 1.5rem;
+                text-align: center;
+
+                @include md {
+                  padding: .45rem .7rem;
+                  @include conil-gradient();
+                }
+              }
+
+              .buttom-bookmarked-link:hover {
+                color: white;
+                background-color: $conil-color-red;
+              }
+
+              .buttom-bookmarked-link::after {
+                content: url("/themes/custom/conil_theme/imagenes/icon-fav-but-m.png");
+
+                @include md {
+                  content: url("/themes/custom/conil_theme/imagenes/icon-fav-but.png");
+                  vertical-align: text-top;
+                  padding-left: .5rem;
+                  padding-bottom: .2rem;
+                }
+              }
+            }
+
+            .clearfix::after {
+              display: block;
+              clear: none;
+            }
+          }
+
+
+
+          #block-conil-theme-conilweatherblock {
+            display: none;
+            position: relative;
+            margin-left: .4rem;
+
+            #conil-weather-icon {
+              width: 40px;
+              margin: auto;
+            }
+
+            margin-top: 5px;
+
+            @include md {
+              display: inline;
+              flex: 1 0 85px;
+              margin-top: 20px;
+              max-width: 85px;
+            }
+
+            .conil-weather-block {
+              border-radius: .3rem;
+              text-align: right;
+              color: white;
+              background-color: rgba(255, 255, 255, 0.3);
+
+              #conil-weather-temperature {
+                font-size: 1.1rem;
+                vertical-align: middle;
+                font-family: SourceSans-Regular;
+              }
+            }
+          }
+
+          #block-logoayuntamiento {
+            display: inline;
+
+            .conil-header-ayto-mv {
+              width: 42px;
+              height: 70px;
+              margin-top: 5px;
+              margin-left: .5rem;
+
+              @include md {
+                display: none;
+              }
+            }
+
+            .conil-header-ayto-logo {
+              display: none;
+
+              @include md {
+                padding-top: 20px;
+                display: inline;
+                float: right;
+                width: 130px;
+                height: 180px;
+                padding-left: 8px;
+              }
+
+              >img {
+                max-height: 180px;
+              }
+            }
+          }
+
+
+          #block-user-login {
+            height: 40px;
+            margin-top: 5px;
+            border-radius: 12%;
+            display: inline;
+            margin-left: .4rem;
+
+            @include md {
+              display: inline;
+              background-color: rgba(255, 255, 255, 0);
+              padding: 2px 0 0 0;
+            }
+
+            .header-user-profile-block {
+              z-index: 20;
+              font-size: .8rem;
+              margin-right: 10px;
+              margin-top: 10px;
+
+              a {
+                font-size: 0;
+
+                &::after {
+                  font-size: 1rem;
+                  line-height: .3rem;
+
+                  @include md {
+                    font-size: 1.6rem;
+                    line-height: 1.4rem;
+                  }
+                }
+
+                @include md {
+                  font-size: .9rem;
+                }
+
+              }
+
+              @include md {
+                display: block;
+                position: relative;
+                margin-top: 22px;
+                width: max-content;
+
+              }
+
+              .header-user-profile-icon {
+                color: $conil-color-blue;
+                border-radius: 1.5rem;
+                text-align: center;
+
+                @include md {
+                  padding: .6rem 1rem;
+                  @include conil-gradient();
+                }
+              }
+
+              .header-user-profile-icon:hover {
+                color: white;
+                background-color: $conil-color-red;
+              }
+
+              .header-user-profile-icon::after {
+                content: "";
+                background-image: url("/themes/custom/conil_theme/imagenes/login.png");
+                background-size: 30px 27px;
+                display: inline-block;
+                width: 30px;
+                height: 27px;
+
+                @include md {
+                  content: "";
+                  background-image: url("/themes/custom/conil_theme/imagenes/login.png");
+                  background-size: 20px 25px;
+                  display: inline-block;
+                  width: 20px;
+                  height: 25px;
+                  vertical-align: text-top;
+                  margin-left: 10px;
+                  margin-top: -3px;
+                }
+              }
+            }
+
+            .clearfix::after {
+              display: block;
+              clear: none;
+            }
+          }
+
+          #block-user-logout {
+            height: 40px;
+            margin-top: 5px;
+            border-radius: 12%;
+            display: inline;
+            margin-left: .4rem;
+
+            @include md {
+              display: inline;
+              background-color: rgba(255, 255, 255, 0);
+              padding: 2px 0 0 0;
+            }
+
+            .header-user-profile-block {
+              z-index: 20;
+              font-size: .8rem;
+              margin-right: 10px;
+              margin-top: 10px;
+
+              a {
+                font-size: 0;
+
+                &::after {
+                  font-size: 1rem;
+                  line-height: .3rem;
+
+                  @include md {
+                    font-size: 1.6rem;
+                    line-height: 1.4rem;
+                  }
+                }
+
+                @include md {
+                  font-size: .9rem;
+                }
+
+              }
+
+              @include md {
+                display: block;
+                position: relative;
+                width: max-content;
+                margin-top: 22px;
+              }
+
+              .header-user-profile-icon {
+                color: $conil-color-blue;
+                border-radius: 1.5rem;
+                text-align: center;
+
+                @include md {
+                  padding: .6rem 1rem;
+                  @include conil-gradient();
+                }
+              }
+
+              .header-user-profile-icon:hover {
+                color: white;
+                background-color: $conil-color-red;
+              }
+
+              .header-user-profile-icon::after {
+                content: "";
+                background-image: url("/themes/custom/conil_theme/imagenes/login.png");
+                background-size: 30px 27px;
+                display: inline-block;
+                width: 30px;
+                height: 27px;
+
+                @include md {
+                  content: "";
+                  background-image: url("/themes/custom/conil_theme/imagenes/login.png");
+                  background-size: 20px 25px;
+                  display: inline-block;
+                  width: 20px;
+                  height: 25px;
+                  vertical-align: text-top;
+                  margin-left: 10px;
+                  margin-top: -3px;
+                }
+              }
+            }
+
+            .header-user-profile-block:hover {
+              @include md {
+                #header-user-nav {
+                  display: table;
+                }
+              }
+            }
+
+            #header-user-nav {
+              display: none;
+              margin: auto;
+              width: max-content;
+
+              li {
+                background-color: transparent;
+
+                a {
+                  color: white;
+                  background-color: rgba(255, 255, 255, 0.3);
+                  padding: 0.5rem 1rem;
+                  border-radius: .3rem;
+                }
+              }
+            }
+
+            .clearfix::after {
+              display: block;
+              clear: none;
+            }
+          }
+
+          .block-lang-dropdown {
+            margin-top: 5px;
+            position: absolute;
+            right: 3px;
+            top: 75px;
+            z-index: 10;
+
+            @include md {
+              right: 25px;
+              top: 125px;
+            }
+
+            .lang-dropdown-form {
+              .sumo_lang_dropdown_select {
+                .CaptionCont {
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                  color: $conil-color-gray;
+                  font-family: SourceSans-Regular;
+                  font-size: 1.25rem;
+                  border-radius: .3rem;
+                  background-color: rgba(255, 255, 255, 0.3);
+                  padding: 0 .3rem;
+
+                  //padding-left: 1rem;
+                  label {
+                    width: 20px;
+
+                    i {
+                      background-image: url("/themes/custom/conil_theme/imagenes/arrow-language-dropdown.png");
+                      left: -10px;
+                    }
+                  }
+
+                  span {
+                    padding: 0;
+                  }
+                }
+
+                .optWrapper>.options {
+                  width: 98px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .region-header-top {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        background-color: $conil-color-blue;
+        margin-top: 10px;
+
+        @include md {
+          margin-top: 40px;
+          height: 80px;
+          background: none;
+          margin-left: 30px;
+        }
+
+
+        #block-sidrtriggerbuttonblock {
+
+          display: initial;
+          height: 100%;
+
+          @include md {
+            display: flex;
+            align-items: center;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    .region-header-bottom {
+      .search-api-page-block-form-search-block{
+        h2 {
+          text-align: center;
+          color: whitesmoke;
+          font-size: 2rem;
+          text-transform: initial;
+          font-family: SourceSans-Bold;
+          text-shadow: 1px 1px black;
+          width: fit-content;
+          margin: auto;
+
+        }
+
+        z-index: 2;
+        display: initial;
+
+        @include md {
+          position: absolute;
+          bottom: 3em;
+          left: 0;
+          right: 0;
+          width: 75%;
+          max-width: 1200px;
+          margin: auto;
+        }
+
+        @media (max-width: #{$screen-sm-min}) {
+          display: none;
+        }
+
+        #search-api-page-block-form-search-block {
+          display: flex;
+          justify-content: center;
+
+          input {
+            margin-left: 15px;
+          }
+
+          #edit-actions {
+            display: flex;
+            align-content: flex-end;
+
+            .js-form-submit {
+              background: none;
+              border: none;
+              color: transparent;
+              margin-left: -38px;
+              margin-top: 16px;
+              height: 36px;
+              width: 105px;
+              background-image: url(/themes/custom/conil_theme/imagenes/icono_lupa_busqueda.png);
+              background-position: center center;
+              background-size: 25px;
+              background-repeat: no-repeat;
+            }
+          }
+
+          .form-item-keys {
+            width: 100%;
+
+            #edit-keys {
+              width: 100%;
+              border-radius: 1rem;
+              padding-left: 20px;
+
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.path-frontpage {
+
+  .header-group{
+    z-index: auto;
+    border-bottom: none;
+
+    >::after {
+      display: none;
+    }
+  }
+
+  * .header-wrapper {
+    @include md {
+      position: absolute !important;
+    }
+
+    .header-logo {
+      @include md {
+        background: linear-gradient(180deg, rgba(48, 125, 191, 1) 10%, rgba(48, 125, 191, 0) 100%);
+        z-index: 2;
+        position: relative;
+      }
+    }
+
+    .conil-main-logo {
+      img {
+        width: 120px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+        @include md {
+          width: 410px !important;
+        }
+      }
+    }
+
+
+  }
+}

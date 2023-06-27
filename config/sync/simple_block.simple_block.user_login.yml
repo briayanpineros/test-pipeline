@@ -1,0 +1,11 @@
+uuid: f1f2ee2c-dd57-48ab-acdb-72a49d410b3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: user_login
+title: user_login
+content:
+  value: '<div class="header-user-profile-block"><p><a class="header-user-profile-icon" href="/en/user/login">My profile</a></p></div>'
+  format: full_html

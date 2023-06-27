@@ -1,0 +1,25 @@
+uuid: 2b458d44-fd8f-4365-99a3-8f43128cba33
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agenda_social_media_share
+    - node.type.agenda
+  module:
+    - social_media
+id: node.agenda.field_agenda_social_media_share
+field_name: field_agenda_social_media_share
+entity_type: node
+bundle: agenda
+label: 'Compartir en redes sociales'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: social_media

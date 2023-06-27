@@ -1,0 +1,26 @@
+display:
+  default:
+    display_options:
+      header:
+        area_text_custom:
+          content: "<div class=\"header\"><p>Il dispose de </p><div class=\"counter\"> [view:total-rows] </div> <div class=\"subcategory\">{{ name }}</div> <p> pour profiter</p></div>\r\n"
+          admin_label: 'Compteur de résultats'
+      empty:
+        area_text_custom:
+          content: '<div class="poi-list-no-results-text">Aucun résultat trouvé</div>'
+      arguments:
+        name_1:
+          admin_label: 'Nom de la catégorie de POI'
+  page_1:
+    display_options:
+      header:
+        area_text_custom:
+          content: "<div class=\"header\"><h2 class=\"subcategory\">{{ name }}</h2><p class=\"counter\"><b>[view:total-rows]</b> résultats trouvés</p> </div>\r\n"
+          admin_label: 'Compteur de résultats'
+      title: 'Points d''intérêt'
+    display_title: 'Liste des POI à deux paramètres'
+  page_2:
+    display_title: 'Liste des POI à un seul paramètre'
+    display_options:
+      title: 'Points d''intérêt'
+label: 'Points d''intérêt'

@@ -1,0 +1,5 @@
+name: 'Conil Saved Searches'
+type: module
+description: 'Module to allocate a custom entity to save search api searches'
+core_version_requirement: ^8.8 || ^9
+package: 'Custom'

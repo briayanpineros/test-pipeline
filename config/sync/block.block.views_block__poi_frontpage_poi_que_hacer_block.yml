@@ -1,0 +1,24 @@
+uuid: d9105831-d106-4fdb-ba6d-874fdf90c12a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.poi_frontpage
+  module:
+    - views
+  theme:
+    - conil_theme
+id: views_block__poi_frontpage_poi_que_hacer_block
+theme: conil_theme
+region: blockgroup_poi_frontpage
+weight: -21
+provider: null
+plugin: 'views_block:poi_frontpage-poi_que_hacer_block'
+settings:
+  id: 'views_block:poi_frontpage-poi_que_hacer_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

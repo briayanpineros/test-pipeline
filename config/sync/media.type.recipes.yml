@@ -1,0 +1,13 @@
+uuid: a48fdf35-1cf5-47dd-9dca-360b1ee2abe4
+langcode: es
+status: true
+dependencies: {  }
+id: recipes
+label: 'Recetas Gastronómicas'
+description: ''
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_document
+field_map: {  }

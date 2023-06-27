@@ -1,0 +1,35 @@
+uuid: fbda1694-f5de-47fb-b4f1-34d331ca6140
+langcode: en
+status: true
+dependencies:
+  module:
+    - mailrelay_newsletter
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - gastronomy-routes
+    parent: 'gastronomy-routes:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+  mailrelay_newsletter:
+    mailrelay_newsletter_send: 0
+name: 'Contenido legal'
+type: general_information
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

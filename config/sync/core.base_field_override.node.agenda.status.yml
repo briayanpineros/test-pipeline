@@ -1,0 +1,22 @@
+uuid: e358bc47-8d2d-46b3-ad3e-2080a17f981e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.agenda
+id: node.agenda.status
+field_name: status
+entity_type: node
+bundle: agenda
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

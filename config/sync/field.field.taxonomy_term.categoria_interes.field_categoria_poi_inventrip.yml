@@ -1,0 +1,19 @@
+uuid: 885155aa-7025-4ee9-a377-45c3a6e6c0ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_categoria_poi_inventrip
+    - taxonomy.vocabulary.categoria_interes
+id: taxonomy_term.categoria_interes.field_categoria_poi_inventrip
+field_name: field_categoria_poi_inventrip
+entity_type: taxonomy_term
+bundle: categoria_interes
+label: 'Identificador Tipo Inventrip'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

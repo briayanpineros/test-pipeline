@@ -1,0 +1,7 @@
+web_speech_synthesis_api.web_speech_synthesis_settings:
+  path: '/admin/config/system/web-speech-synthesis-settings'
+  defaults:
+    _title: 'Web speech synthesis settings'
+    _form: 'Drupal\web_speech_synthesis_api\Form\WebSpeechSynthesisSettingsForm'
+  requirements:
+    _permission: 'administer site configuration'

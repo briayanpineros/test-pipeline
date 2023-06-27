@@ -1,0 +1,10 @@
+uuid: 0e8bd9b0-5ec7-4640-ac3d-3531419bc41c
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.news_channel_subscription
+label: 'News channel subscription'
+targetEntityType: taxonomy_term
+cache: true

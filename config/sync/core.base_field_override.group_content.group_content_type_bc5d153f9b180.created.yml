@@ -1,0 +1,18 @@
+uuid: e10d1dc4-ec6f-4810-9948-828753b18220
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.group_content_type_bc5d153f9b180
+id: group_content.group_content_type_bc5d153f9b180.created
+field_name: created
+entity_type: group_content
+bundle: group_content_type_bc5d153f9b180
+label: 'Creado en'
+description: 'The time that the group content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

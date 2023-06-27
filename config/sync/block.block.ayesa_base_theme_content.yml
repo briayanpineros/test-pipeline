@@ -1,0 +1,22 @@
+uuid: 63d8b707-5ee0-4f8d-a98e-fc4d43383f49
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ayesa_base_theme
+_core:
+  default_config_hash: 11EeN2zekqUPW3oGK9MvlmBW9essCKeN30OY0VamsZ8
+id: ayesa_base_theme_content
+theme: ayesa_base_theme
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main content'
+  label_display: '0'
+  provider: system
+visibility: {  }

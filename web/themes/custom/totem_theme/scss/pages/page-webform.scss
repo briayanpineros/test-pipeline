@@ -1,0 +1,540 @@
+body.path-webform {
+  .region-content {
+    padding-left: 40px !important;
+    width: 100%;
+  }
+}
+
+body.entity-webform-canonical {
+  fieldset {
+    margin-top: 0 !important;
+  }
+  form.webform-submission-form {
+    #edit-thanks-image {
+      background: transparent;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    @include md {
+      display: flex;
+      flex-grow: 2;
+      flex-wrap: wrap;
+
+      > div.form-item,
+      .form-wrapper > div.form-item {
+        background-color: #f0f0f0;
+        margin-top: 0% !important;
+        //padding: 10%;
+
+        label {
+          font-weight: bold;
+        }
+
+        @include md {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 45%;
+
+          .SumoSelect {
+            width: 100%;
+          }
+
+          input {
+            width: 90%;
+          }
+        }
+      }
+      .webform-section {
+        border: 2px solid #01587d;
+        color: #01587d;
+        width: 100%;
+        margin-right: 70px;
+        .webform-section-wrapper {
+          padding-left: 50px;
+          padding-right: 50px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: 1.5rem;
+          h4 {
+            &:last-child {
+              text-align: end !important;
+            }
+            font-weight: bold;
+          }
+        }
+      }
+
+      fieldset.fieldset-fse {
+        > legend {
+          display: none !important;
+        }
+
+        div.fieldset-wrapper {
+          > fieldset {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+
+            /*  > legend {
+              padding: 0px 5px 0px 30px !important;
+            } */
+          }
+        }
+      }
+
+      > div.js-form-item {
+        text-transform: uppercase;
+        padding: 5px 30px 10px 30px !important;
+        color: $conil-color-blue;
+        margin-right: 2%;
+
+        table {
+          thead {
+            background-color: #f0f0f0;
+            color: $conil-color-blue;
+            margin-bottom: 2%;
+
+            th {
+              text-align: center;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              div {
+                > label {
+                  font-weight: normal !important;
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+
+        label {
+          display: block;
+          align-self: center;
+          padding-top: 5px !important;
+        }
+      }
+    }
+
+    > fieldset {
+      @include md {
+        width: 45%;
+        margin-right: 2%;
+      }
+    }
+    fieldset#edit-age--wrapper {
+      height: 260px;
+    }
+    fieldset#edit-datos-personales {
+      height: 220px;
+    }
+  }
+
+  fieldset.fieldgroup,
+  .fieldset-wrapper {
+    background-color: #f0f0f0;
+    padding-bottom: 10px;
+    height: auto;
+
+    .form-item-province,
+    .form-item-country,
+    .form-item-other-area,
+    .form-item-other-days,
+    .form-item-other-season,
+    .form-item-other-transport {
+      color: $conil-color-blue;
+      padding: 0 30px 0px 30px;
+      margin-bottom: 0;
+      margin-top: 0;
+      label {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .SumoSelect {
+        label {
+          font-weight: lighter;
+          text-transform: capitalize;
+        }
+      }
+      input {
+        color: $conil-color-blue;
+      }
+    }
+    > legend {
+      background-color: #f0f0f0;
+      color: $conil-color-blue;
+      padding: 10px 5px 0px 30px;
+      text-transform: uppercase;
+
+      @include md {
+        display: flex;
+        justify-content: center;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .fieldset-wrapper {
+      span {
+        color: $conil-color-blue;
+      }
+
+      .js-webform-checkboxes {
+        padding-left: 30px;
+        color: $conil-color-blue;
+      }
+
+      & > .field-prefix {
+        text-align: -webkit-center;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
+
+  /*  fieldset.fieldgroup {
+    margin-bottom: 37px;
+  } */
+
+  @include md {
+    .fieldset-wrapper {
+      height: 100% !important;
+      display: flex;
+      flex-direction: column;
+      min-height: 350px;
+
+      div {
+        width: 100%;
+      }
+    }
+  }
+
+  .form-actions {
+    width: 100%;
+    margin-right: 7%;
+    text-align: right;
+
+    .button--primary {
+      border-radius: 25px;
+      background: #01587d;
+      min-width: 100px;
+      color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .secondary {
+      margin-left: 1rem;
+      border-color: #01587d;
+      border-radius: 25px;
+      background: white;
+      min-width: 100px;
+      color: #01587d;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .webform-options-display-buttons-wrapper {
+    padding: 0 5px 0px 30px;
+    margin-bottom: 0;
+
+    &:hover {
+      background-color: #eaeaea;
+    }
+  }
+
+  .webform-options-display-buttons {
+    flex-direction: column;
+  }
+
+  .webform-options-display-buttons .form-item {
+    margin: 0;
+    background-image: url("../imagenes/webform-icono-check.png");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-color: inherit;
+    background-size: 20px;
+
+    label.webform-options-display-buttons-label {
+      color: $conil-color-blue;
+      border: none;
+      text-align: left;
+      padding-left: 30px;
+      background-color: unset;
+    }
+
+    input:checked + label.webform-options-display-buttons-label,
+    input:checked + div.webform-options-display-buttons-wrapper {
+      box-shadow: none;
+      background-image: url("../imagenes/webform-icono-check-seleccionado.png");
+      background-position: center left;
+      background-repeat: no-repeat;
+      background-color: inherit;
+      background-size: 20px;
+    }
+  }
+}
+
+//Add scss for "Contact form for POI"
+#webform-submission-contact-poi-form-add-form {
+  //For bigger screens than mobiles
+  background-color: #f1f1f1;
+  border-radius: 1em;
+  text-transform: uppercase;
+  padding: 5px 30px 10px 30px !important;
+  color: $conil-color-blue;
+  width: 100%;
+
+  > div {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    > label {
+      font-family: SourceSans-Bold;
+      font-size: 1.2rem;
+    }
+
+    > input {
+      width: 90%;
+      margin: auto;
+    }
+  }
+
+  //Equal lenghts of subcategory and language with the others
+  .js-form-item-subcategory,
+  .js-form-item-language {
+    .SumoSelect {
+      margin: auto;
+      width: 90%;
+    }
+  }
+
+  //These are suposed to have 100% width
+  #reserva_table,
+  #nuestra_web_table,
+  .js-text-format-wrapper {
+    width: 100%;
+
+    > div {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+
+      > label {
+        font-family: SourceSans-Bold;
+        font-size: 1.2rem;
+      }
+
+      table tbody tr {
+        border: 0px;
+      }
+
+      .fieldset-wrapper,
+      legend,
+      fieldset {
+        background-color: #f1f1f1;
+      }
+    }
+  }
+
+  //Put the border radius and inputs together
+  #nuestra_web_table,
+  #reserva_table {
+    margin: auto;
+    width: 100%;
+
+    td {
+      white-space: unset;
+    }
+  }
+
+  //Put both inputs to the same width than the others
+
+  .js-form-item-about-us-value {
+    margin: auto;
+    width: 90%;
+  }
+
+  //These are away from the main form and has white background
+  #ajax-wrapper {
+    width: 100%;
+    > div {
+      width: 100%;
+
+      > label {
+        font-family: SourceSans-Bold;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  #edit-actions {
+    width: 100%;
+
+    background-color: #f1f1f1;
+    input {
+      width: 200px;
+      margin: auto;
+    }
+  }
+
+  //Code to get off the background of the edit button
+  .contextual {
+    background-color: transparent;
+  }
+
+  //    De aquí para abajo, cambiará el estilo cuando la pantalla sea más grandede 758px   //
+  //For bigger screens than mobiles and tablets
+  @include md {
+    font-weight: bold;
+    flex-direction: row;
+    text-transform: uppercase;
+    padding: 5px 30px 10px 30px !important;
+    color: $conil-color-blue;
+
+    > div {
+      align-items: center;
+      width: 50%;
+      margin: auto;
+      background-color: #f1f1f1;
+
+      > label {
+        font-family: SourceSans-Bold;
+        font-size: 1.2rem;
+      }
+    }
+
+    //Equal lenghts of subcategory and language with the others
+    .js-form-item-subcategory,
+    .js-form-item-language {
+      .SumoSelect {
+        width: 90%;
+      }
+    }
+
+    //These are suposed to have 100% width
+    #reserva_table,
+    #nuestra_web_table,
+    .js-text-format-wrapper {
+      width: 100%;
+      margin: auto;
+
+      > div {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+
+        > label {
+          font-family: SourceSans-Bold;
+          font-size: 1.2rem;
+        }
+
+        table tbody tr {
+          border: 0px;
+        }
+
+        .fieldset-wrapper,
+        legend,
+        fieldset {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+
+    //Put the border radius and inputs together
+    #nuestra_web_table {
+      border-bottom-right-radius: 1em;
+      border-bottom-left-radius: 1em;
+      margin: auto;
+
+      .webform-multiple-table--operations,
+      .webform-multiple-table--handle {
+        width: 5%;
+      }
+
+      td {
+        white-space: unset;
+        margin: auto;
+
+        .fieldset-wrapper {
+          margin: auto;
+        }
+
+        @media (min-width: 1200px) {
+          .fieldset-wrapper {
+            display: block ruby;
+            margin: auto;
+
+            div {
+              width: 48%;
+            }
+          }
+        }
+      }
+    }
+
+    .js-form-item-title {
+      border-top-left-radius: 1em;
+    }
+
+    .js-form-item-email-de-contacto {
+      border-top-right-radius: 1em;
+    }
+
+    //Put the input of contact telephone with the same width than the others
+    #reserva_table {
+      .webform-multiple-table--operations,
+      .webform-multiple-table--handle {
+        width: 5%;
+      }
+    }
+
+    //Put both inputs to the same width than the others
+    .js-form-item-additional-services {
+      width: 100%;
+
+      input {
+        width: 95%;
+      }
+    }
+
+    .js-form-item-about-us-value {
+      .form-textarea-wrapper {
+        width: 95%;
+        margin: auto;
+      }
+    }
+
+    //These are away from the main form and has white background
+    #ajax-wrapper {
+      width: 100%;
+
+      > div {
+        align-items: center;
+        text-align: left;
+
+        > label {
+          font-family: SourceSans-Bold;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    //Code to get off the background of the edit button
+    .contextual {
+      background-color: transparent;
+    }
+  }
+}

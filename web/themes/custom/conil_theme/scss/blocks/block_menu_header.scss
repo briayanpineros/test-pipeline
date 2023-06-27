@@ -1,0 +1,380 @@
+#block-sidrtriggerbuttonblock button.sidr-trigger {
+  background: none;
+  background-image: url(/themes/custom/conil_theme/imagenes/menu_cerrado.png);
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  width: 30px;
+  height: 30px;
+  margin-top: -40%;
+
+  @include md {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+.sidr-inner {
+  box-shadow: 2px 13px 28px -7px rgba(0, 0, 0, 0.31);
+
+  .region-sidr-menu {
+    min-height: 100vh;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    #block-conilmainlogoandsidrclose {
+      position: relative;
+      padding-bottom: 1rem;
+      background: white;
+    }
+
+    #block-navegaciondemenu {
+      position: relative;
+    }
+
+  }
+
+  .region-sidr-menu div.search-block-form {
+    bottom: 0;
+    width: 100%;
+    @include conil-gradient();
+    padding-top: 15px;
+    padding-bottom: 30px;
+    display: block;
+    position: relative;
+    align-self: end;
+    margin-top: auto;
+
+    h2 {
+      text-transform: uppercase;
+      color: white;
+      font-size: 20px;
+      margin-left: 4%;
+
+    }
+
+    form {
+      justify-content: center;
+      width: 100%;
+
+      div.form-actions {
+        position: relative;
+
+        .js-form-submit {
+          background: none;
+          border: none;
+          color: transparent;
+          margin-left: -14%;
+          @include sm {
+            margin-left: -9%;
+          }
+          @include md {
+            margin-left: -11%;
+          }
+          margin-top: 16px;
+          height: 36px;
+          width: 50px;
+          background-image: url(/themes/custom/conil_theme/imagenes/icono_lupa_busqueda.png);
+          background-position: center center;
+          background-size: 25px;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .form-type-search {
+
+        input {
+          margin-left: 4%;
+          width: 85%;
+          border-radius: 1rem;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+
+  * #superfish-sidr-navigation-toggle {
+    display: none;
+  }
+
+  * #superfish-sidr-navigation-accordion {
+    display: block !important;
+    left: auto !important;
+    position: relative !important;
+    top: auto !important;
+
+    a:focus {
+      background-color: $conil-color-blue;
+    }
+
+    li.sf-depth-1 {
+      font-weight: bold;
+      color: white;
+
+      > span:hover, > a:hover {
+        text-decoration: underline;
+        color: $conil-color-aqua;
+      }
+
+      > span.menuparent:hover {
+        background: none;
+        font-weight: bold;
+        cursor: pointer;
+        color: $conil-color-aqua;
+      }
+
+      li.sf-depth-2 {
+
+        li.sf-depth-3 {
+          > a, >span{
+            text-transform: initial;
+            font-weight: normal;
+
+            &:before{
+              display: inline-block;
+              content: '';
+              width: 5px;
+              height: 5px;
+              background-color: $conil-color-aqua;
+              margin: 4px;
+            }
+
+          }
+
+          > a:hover {
+            text-decoration: underline;
+            font-weight: normal;
+            color: $conil-color-gray;
+          }
+        }
+
+        > a, > span {
+          text-transform: initial;
+          font-weight: normal;
+          color: $conil-color-gray;
+        }
+
+        > span:hover, > a:hover {
+          text-decoration: underline;
+          font-weight: normal;
+          color: $conil-color-gray;
+        }
+
+        &.sf-expanded > a{
+          font-weight: normal;
+          color: $conil-color-gray;
+          text-decoration: underline;
+
+        }
+        > span.sf-depth-2:hover {
+          background: none;
+          font-weight: normal;
+          cursor: pointer;
+        }
+      }
+
+    }
+
+
+    > li:nth-child(1) > span:nth-child(1) {
+      border-top: 1px solid $conil-color-lightgray;
+    }
+
+    li.sf-expanded {
+
+      > a span.sf-sub-indicator::after {
+        content: '\e5ce' !important;
+        font-family: "Google-Icon";
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+      }
+
+      > ul {
+
+        span {
+          color: white;
+          font-weight: normal;
+        }
+
+        > li:last-child.sf-depth-2 {
+          border-bottom: 1px solid $conil-color-lightgray;
+          padding-bottom: 10px;
+        }
+
+        > li:first-child {
+          padding-top: 10px;
+        }
+      }
+    }
+
+
+    > li {
+      background: none;
+
+      a:hover {
+        background: none;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      > span {
+        color: white;
+        border-bottom: 1px solid $conil-color-lightgray;
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+
+      ul li {
+        background: none;
+        font-size: 20px;
+
+        a {
+          color: white;
+        }
+
+      }
+    }
+
+    #sidr-navigation-conil-tweaksincidenceform-accordion, .sf-no-children {
+
+      &.sf-depth-1 {
+        border-bottom: 1px solid $conil-color-lightgray;
+      }
+
+      text-transform: uppercase;
+      font-size: 20px;
+
+      &.sf-depth-3 {
+        text-transform: initial;
+      }
+
+      a {
+        color: white;
+      }
+    }
+
+    .menuparent {
+      font-size: 20px;
+
+      &:not(.sf-expanded).sf-depth-1 {
+        //border-bottom: 1px solid $conil-color-lightgray;
+      }
+
+      &:last-of-type:not(.sf-expanded).sf-depth-1 a {
+        //border-bottom: none;
+      }
+
+      a {
+        color: white;
+      }
+
+    }
+
+    * .sf-sub-indicator {
+      width: 30px;
+      height: 30px;
+    }
+
+    * .sf-sub-indicator::after {
+      content: '\e5cf';
+      font-family: "Google-Icon";
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+    }
+
+  }
+
+  #block-navegaciondemenu {
+    @include clearfix();
+  }
+
+  #block-conilmainlogoandsidrclose .field {
+    .field__label {
+      display: none;
+    }
+
+    .field__items {
+
+      .field__item:nth-child(1) {
+        width: 50px;
+        height: auto;
+        display: inline;
+        position: relative;
+        margin-left: 3%;
+        margin-right: 3%;
+        @include md {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+        padding: 10px;
+        cursor: pointer;
+
+        img {
+          width: 30px;
+          height: auto;
+
+        }
+
+      }
+
+      .field__item:nth-child(2) {
+        display: inline;
+        position: relative;
+        padding-bottom: 50px;
+
+        img {
+          width: 250px;
+          height: auto;
+          margin-top: 30px;
+          @include md {
+            width: 300px;
+          }
+        }
+
+
+      }
+    }
+  }
+}
+
+#sidr {
+  background: $conil-color-blue !important;
+  width: 100vw;
+  height: 100vh;
+  //position: absolute;
+  @include md {
+    width: 500px;
+    max-height: 100vh;
+  }
+
+}
+
+.sidr.left {
+  left: -100vh;
+  @include md {
+    left: -500px;
+  }
+}
+
+#superfish-sidr-navigation {
+  width: 100%;
+}
+
+ul.sf-menu.sf-vertical li {
+  color: $conil-color-lightgray;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-top: 1px;
+}
+

@@ -1,0 +1,55 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        node_bulk_form:
+          action_title: Action
+        title:
+          label: Titre
+          separator: ', '
+        uid:
+          label: Auteur
+          separator: ', '
+        created:
+          separator: ', '
+        changed:
+          label: 'Date de mise à jour'
+          separator: ', '
+        status:
+          label: Publié
+          separator: ', '
+        edit_node:
+          label: Modifier
+          text: edit
+      filters:
+        status:
+          expose:
+            label: Publié
+        uid:
+          expose:
+            label: 'Écrit par'
+        combine:
+          expose:
+            label: Contient
+        type:
+          expose:
+            label: Type

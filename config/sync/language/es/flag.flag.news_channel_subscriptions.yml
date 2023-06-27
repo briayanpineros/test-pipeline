@@ -1,0 +1,6 @@
+label: 'Suscripciones al canal de noticias'
+flag_short: 'Suscribirse a este canal'
+flag_long: 'Si te suscribes recibirás una notificación por correo electrónico cada vez que haya nuevo contenido disponible para estas notici'
+flag_message: ¡Suscrito!
+unflag_short: 'Darse de baja de este canal'
+unflag_long: 'Si se da de baja no recibirá ninguna notificación por correo electrónico cada vez que haya nuevo contenido disponible para esta '

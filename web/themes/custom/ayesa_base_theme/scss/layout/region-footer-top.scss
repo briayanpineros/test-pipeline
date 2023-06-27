@@ -1,0 +1,6 @@
+.region-footer-top {
+  @include clearfix();
+  @include wrapper();
+  padding: 20px 0 10px;
+  border-bottom: 1px solid $branding-white;
+}

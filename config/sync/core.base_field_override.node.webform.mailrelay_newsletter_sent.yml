@@ -1,0 +1,22 @@
+uuid: 66570153-5884-4201-9351-b24d8a1f21de
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.webform
+id: node.webform.mailrelay_newsletter_sent
+field_name: mailrelay_newsletter_sent
+entity_type: node
+bundle: webform
+label: null
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

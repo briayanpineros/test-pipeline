@@ -1,0 +1,17 @@
+uuid: 09fb73d5-6b32-4d40-a43c-e7fff57d31c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.prueba_de_grupo
+  enforced:
+    config:
+      - user.role.manager_conil
+id: prueba_de_grupo-c83860d05
+label: Gerente
+weight: 5
+internal: true
+audience: outsider
+group_type: prueba_de_grupo
+permissions_ui: false
+permissions: {  }

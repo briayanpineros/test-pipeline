@@ -1,0 +1,36 @@
+title: 'Notifica degli incidenti'
+description: 'Formulario per l&#39;invio degli incidenti in forma anonima da parte degli utenti'
+elements: |
+  name:
+    '#title': nome
+  telephone:
+    '#title': telefono
+  email:
+    '#title': e-mail
+  add_claim:
+    '#title': 'Aggiungi incidente'
+  address:
+    '#title': indirizzo
+    '#description': 'Indirizzo del sinistro'
+    '#required_error': 'Campo obbligatorio'
+  incident_reason:
+    '#title': commento
+  incident_image:
+    '#title': 'allegare immagine'
+  state:
+    '#title': stato
+    '#options':
+      new: nuovo
+      'in progress': 'in corso'
+      finished: finito
+settings:
+  submission_label: inviare
+handlers:
+  confirmation_email:
+    settings:
+      subject: 'incidente confermato registrato'
+      body: "<p><br />\r\nSalve<br />\r\nIl suo incidente &egrave; stato correttamente registrato con le seguenti informazioni:<br />\r\n<br />\r\n[webform_submission:values:incident_reason].<br />\r\n<br />\r\nGrazie per averci contattato.</p>"
+  incident_confirmation_closed:
+    label: 'conferma dell''incidente chiusa'
+    settings:
+      body: "<p>Salve,<br />\r\n<br />\r\nLa informiamo che il suo incidente con le seguenti informazioni:<br />\r\n<br />\r\n[webform_submission:values:incident_reason]<br />\r\n<br />\r\n&egrave; stato chiuso.<br />\r\n<br />\r\nGrazie per averci contattato.</p>"

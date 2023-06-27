@@ -1,0 +1,18 @@
+uuid: 178d3fc6-4e06-4a88-a96a-0309d4926642
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gastronomy_routes
+id: taxonomy_term.gastronomy_routes.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: gastronomy_routes
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

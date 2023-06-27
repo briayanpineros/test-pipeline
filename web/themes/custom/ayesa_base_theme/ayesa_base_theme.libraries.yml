@@ -1,0 +1,36 @@
+# SumoSelect.
+sumoselect:
+  css:
+    theme:
+      /libraries/jquery.sumoselect/sumoselect.css: {}
+  js:
+    /libraries/jquery.sumoselect/jquery.sumoselect.min.js: {}
+
+load_sumoselect:
+  version: 1.0
+  js:
+    js/load_sumoselect.js: {}
+  css:
+    component:
+      css/load_sumoselect.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - ayesa_base_theme/sumoselect
+
+# Theme specific.
+global-styling:
+  version: 1.0
+  js:
+    js/bootstrap.min.js: {}
+    js/global.js: {}
+  css:
+    component:
+      css/bootstrap.css: {}
+      css/style.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - ayesa_base_theme/load_sumoselect

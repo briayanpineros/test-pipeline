@@ -1,0 +1,15 @@
+uuid: cceab061-19d1-4209-a844-87cf420231b6
+langcode: en
+status: true
+dependencies: {  }
+name: image_1918x750
+label: 'Image 1918x750'
+effects:
+  1c8d6334-5af7-4a05-8ca8-5de6e782d4d9:
+    uuid: 1c8d6334-5af7-4a05-8ca8-5de6e782d4d9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1918
+      height: 750
+      anchor: center-center

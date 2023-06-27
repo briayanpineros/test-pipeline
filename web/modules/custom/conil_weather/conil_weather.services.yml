@@ -1,0 +1,4 @@
+services:
+  conil_weather.weather:
+    class: Drupal\conil_weather\ConilWeather
+    arguments: ['@renderer','@file_system','@extension.list.module','@extension.list.theme','@http_client_factory','@logger.factory', '@config.factory', '@current_user']

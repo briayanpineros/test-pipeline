@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: VF_tqgtNgkdaK2Ww_mLnit3qxFcXvltQjFmgdkwY7Cs
+langcode: es
+favicon:
+  path: /themes/custom/ayesa_base_theme/favicon.png
+  use_default: false
+logo:
+  path: /themes/custom/ayesa_base_theme/logo.png
+  use_default: false

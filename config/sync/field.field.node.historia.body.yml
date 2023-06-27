@@ -1,0 +1,23 @@
+uuid: 8ccbff01-7bce-4276-965c-4a8c20c4e285
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.historia
+  module:
+    - text
+id: node.historia.body
+field_name: body
+entity_type: node
+bundle: historia
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

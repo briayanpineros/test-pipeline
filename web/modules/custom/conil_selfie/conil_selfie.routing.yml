@@ -1,0 +1,31 @@
+conil_selfie.background:
+  path: '/admin/config/conil_selfie_settings'
+  defaults:
+    _form: '\Drupal\conil_selfie\Form\BackgroundSelfieSettingsForm'
+    _title: 'Backgrounds Selfie Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+conil_selfie.selfie:
+  path: '/conil-selfie/selfie'
+  defaults:
+    _title: 'Selfie'
+    _form: 'Drupal\conil_selfie\Form\SelfieForm'
+  requirements:
+    _permission: 'take a selfie'
+
+conil_selfie.selfie_confirm:
+  path: '/conil-selfie/selfie-confirm/{selfie}/{background}'
+  defaults:
+    _title: 'Selfie confirm'
+    _form: 'Drupal\conil_selfie\Form\SelfieConfirmForm'
+  requirements:
+    _permission: 'take a selfie'
+
+conil_selfie.selfie_send_email:
+  path: '/conil-selfie/send-email/{selfie}/{background}'
+  defaults:
+    _title: 'Send Email Selfie'
+    _controller: '\Drupal\conil_selfie\Controller\SelfieSendEmailController::openModalForm'
+  requirements:
+    _permission: 'take a selfie'

@@ -1,0 +1,35 @@
+uuid: c16ce392-976e-4fc6-878a-626a0b19f4fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.content
+id: search_block
+label: 'Bloque de búsqueda'
+path: find
+clean_url: true
+show_all_when_no_keys: false
+index: content
+limit: 10
+searched_fields:
+  body: body
+  field_news_subtitle: field_news_subtitle
+  name: name
+  name_1: name_1
+  title: title
+style: view_modes
+view_mode_configuration:
+  'entity:node':
+    default: default
+    overrides:
+      agenda: ''
+      gastronomic_r: ''
+      general_information: ''
+      general_page: ''
+      historia: ''
+      news: ''
+      news_bulletin: ''
+      poi: ''
+      webform: ''
+show_search_form: true
+parse_mode: direct

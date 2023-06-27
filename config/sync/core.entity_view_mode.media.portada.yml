@@ -1,0 +1,10 @@
+uuid: a525faf2-b14b-40a2-abd9-bf02eb61b89d
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.portada
+label: Portada
+targetEntityType: media
+cache: true

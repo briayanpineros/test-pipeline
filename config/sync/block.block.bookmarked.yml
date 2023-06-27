@@ -1,0 +1,30 @@
+uuid: 09eb8dd8-f0c8-4ade-ae70-3a5754c57046
+langcode: es
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.bookmarked
+  module:
+    - simple_block
+    - user
+  theme:
+    - conil_theme
+id: bookmarked
+theme: conil_theme
+region: header
+weight: -25
+provider: null
+plugin: 'simple_block:bookmarked'
+settings:
+  id: 'simple_block:bookmarked'
+  label: Bookmarked
+  label_display: '0'
+  provider: simple_block
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

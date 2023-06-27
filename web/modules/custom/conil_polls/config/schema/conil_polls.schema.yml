@@ -1,0 +1,55 @@
+conil_polls.draft_mail_settings:
+  type: config_object
+  label: 'Conil Polls Send Draft Mail'
+  mapping:
+    aes_key:
+      type: string
+      label: 'AES Key'
+    aes_salt:
+      type: string
+      label: 'AES Salt'
+    aes_vector:
+      type: string
+      label: 'AES Vector'
+    send_draft_mail:
+      type: mail
+      label: 'Draft Mail'
+
+
+conil_polls.sync_settings:
+  type: config_object
+  label: 'Sync Settings'
+  mapping:
+    sync_hour:
+      type: integer
+      label: 'Sync hour'
+    endpoint_config_active:
+      type: boolean
+      label: 'Active'
+    endpoint_config_url:
+      type: string
+      label: 'Url'
+    endpoint_config_user:
+      type: string
+      label: 'User'
+    endpoint_config_pass:
+      type: string
+      label: 'Password'
+    endpoint_config_ssl:
+      type: boolean
+      label: 'SSL'
+    endpoint_results_active:
+      type: boolean
+      label: 'Active'
+    endpoint_results_url:
+      type: string
+      label: 'Url'
+    endpoint_results_user:
+      type: string
+      label: 'User'
+    endpoint_results_pass:
+      type: string
+      label: 'Password'
+    endpoint_results_ssl:
+      type: boolean
+      label: 'SSL'

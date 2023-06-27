@@ -1,0 +1,18 @@
+uuid: ae676d23-61a0-4fa8-8912-d708f99784c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_noticias
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.categoria_noticias
+target_entity_type_id: taxonomy_term
+target_bundle: categoria_noticias
+default_langcode: es
+language_alterable: false

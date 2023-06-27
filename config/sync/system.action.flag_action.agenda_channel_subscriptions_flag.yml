@@ -1,0 +1,15 @@
+uuid: b0d6e566-6017-4295-9367-8cfe5809a88f
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.agenda_channel_subscriptions
+  module:
+    - flag
+id: flag_action.agenda_channel_subscriptions_flag
+label: Subscribe
+type: taxonomy_term
+plugin: 'flag_action:agenda_channel_subscriptions_flag'
+configuration:
+  flag_id: agenda_channel_subscriptions
+  flag_action: flag

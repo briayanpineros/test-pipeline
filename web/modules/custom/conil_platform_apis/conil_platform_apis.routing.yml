@@ -1,0 +1,15 @@
+conil_platform_apis.sensors_settings:
+  path: '/admin/config/services/sensors/settings'
+  defaults:
+    _form: '\Drupal\conil_platform_apis\Form\SensorsInfoSettingsForm'
+    _title: "Sensors Info settings"
+  requirements:
+    _permission: 'administer site configuration'
+
+conil_platform_apis.surveys_settings:
+  path: '/admin/config/services/surveys/settings'
+  defaults:
+    _form: '\Drupal\conil_platform_apis\Form\SurveysSettingsForm'
+    _title: "Surveys info settings"
+  requirements:
+    _permission: 'administer site configuration'

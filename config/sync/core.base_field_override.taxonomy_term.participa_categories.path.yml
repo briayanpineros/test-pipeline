@@ -1,0 +1,20 @@
+uuid: afb7b423-0989-47d4-beda-7b955462a267
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.participa_categories
+  module:
+    - path
+id: taxonomy_term.participa_categories.path
+field_name: path
+entity_type: taxonomy_term
+bundle: participa_categories
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

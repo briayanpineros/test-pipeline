@@ -1,0 +1,20 @@
+uuid: 754cd40d-4f95-4b31-b34d-77b3635922a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.provincias_espana
+  module:
+    - path
+id: taxonomy_term.provincias_espana.path
+field_name: path
+entity_type: taxonomy_term
+bundle: provincias_espana
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,13 @@
+conil_weather.settings:
+  type: config_object
+  label: 'Conil Weather Configuration Form'
+  mapping:
+    api_city_id:
+      type: text
+      label: 'Id of the city.'
+    api_key:
+      type: text
+      label: 'Api Key tutiempo.net.'
+    api_lang:
+      type: text
+      label: 'Languaje to show weather.'

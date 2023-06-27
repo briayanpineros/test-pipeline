@@ -1,0 +1,22 @@
+uuid: e0142e91-4e93-4a2b-952d-a69845e273c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: comment.field_promote_hl_opinion
+field_name: field_promote_hl_opinion
+entity_type: comment
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,37 @@
+{
+    "name": "ayesa/ayesa_base_theme",
+    "description": "The Ayesa Base Theme for custom sites.",
+    "type": "drupal-theme",
+    "homepage": "http://servidorgit.ayesa.link/drupal/themes/ayesa_base_theme",
+    "authors": [
+        {
+            "name": "Ayesa Team",
+            "homepage": "https://www.drupal.org/ayesa",
+            "role": "Maintainer"
+        }
+    ],
+    "license": "GPL-2.0+",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "etd-framework/jquery.sumoselect",
+                "version": "3.0.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.sumoselect"
+                },
+                "dist": {
+                    "url": "https://github.com/etd-framework/jquery.sumoselect/archive/v3.0.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        }
+    ],
+    "require": {
+        "etd-framework/jquery.sumoselect": "^3.0"
+    }
+}

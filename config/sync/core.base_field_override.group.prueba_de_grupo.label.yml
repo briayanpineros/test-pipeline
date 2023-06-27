@@ -1,0 +1,18 @@
+uuid: a6754e70-b81e-4a29-885d-c2c8209cd91f
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.prueba_de_grupo
+id: group.prueba_de_grupo.label
+field_name: label
+entity_type: group
+bundle: prueba_de_grupo
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

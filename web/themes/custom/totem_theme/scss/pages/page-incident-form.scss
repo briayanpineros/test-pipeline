@@ -1,0 +1,177 @@
+body.entity-webform-canonical {
+    #block-titulodelapagina {
+        max-width: 1200px;
+        margin: auto;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        @include xl {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {
+            font-family: SourceSans-Bold;
+            color: $conil-color-blue;
+            //padding: 1rem 2rem;
+            padding-bottom: 0;
+            padding-top: 1rem;
+            @include xl{
+                padding-top: 2rem;
+                padding-bottom: 1rem;
+            }
+        }
+
+    }
+
+    .breadcrumb{
+        margin-bottom: 0;
+    }
+    #block-contenidoprincipaldelapagina{
+
+        //max-width: 100%;
+
+    #webform-submission-incident-form-add-form{
+        display: flex;
+        flex-wrap: wrap;
+        color: $conil-color-blue;
+        text-transform: capitalize;
+
+        input, textarea{
+            padding-left: 20px;
+        }
+
+        label{
+            font-family: SourceSans-Bold;
+            font-size: 1.2rem;
+
+        }
+        .iti--allow-dropdown{
+            display: block;
+        }
+        .form-item-name, .form-item-telephone{
+            background-color: $conil-color-gray;
+            flex-basis: 100%;
+            @include sm{
+                flex-basis: 50%;
+            }
+            margin: 0;
+            padding: 1rem 6rem;
+            label{
+                display: block;
+            }
+        }
+        .form-item-name{
+            padding: 1rem 2rem 0rem 2rem;
+            @include sm{
+                padding: 1rem 1rem 1rem 2rem;
+            }
+            @include md {
+                padding: 1rem 1rem 1rem 6rem !important;
+                border-top-left-radius: 10px;
+            }
+        }
+        .form-item-telephone{
+
+            padding: 0rem 2rem 1rem 2rem;
+            @include sm{
+                padding: 1rem 2rem 1rem 1rem;
+            }
+            @include md {
+                padding: 1rem 6rem 1rem 1rem !important;
+                border-top-right-radius: 10px;
+            }
+            .iti--allow-dropdown{
+                width: 100%;
+            }
+            input[type=tel]{
+                padding-left: 52px;
+            }
+        }
+        .form-item-address, .form-item-incident-reason, .form-item-incident-image, .form-actions, .form-item-email, .form-item-incident-image, .add-claim{
+            flex-basis: 100%;
+            padding: 0 2rem;
+            @include md {
+                padding: 0 6rem !important;
+            }
+        }
+
+        .form-item-incident-reason{
+            background: transparent;
+            margin-right: 0;
+        }
+
+        .form-item-address, .form-textarea-wrapper{
+            input, textarea{
+                border-radius: 1rem;
+            }
+            .description{
+                display:none;
+            }
+            background: transparent;
+            margin-right: 0;
+            width: 100%;
+        }
+        .add-claim{
+            font-family: SourceSans-Light;
+            font-size: 1.8rem;
+            margin-top: 2rem;
+        }
+        .form-item-email{
+            background-color: $conil-color-gray;
+            margin: 0;
+            padding-bottom: 3rem !important;
+            @include sm{
+                input{
+                    width: 49%;
+                }
+            }
+            @include md {
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+        }
+        .form-actions{
+            @include sm{
+                input{
+                    width: 150px;
+                }
+            }
+            input{
+
+                float: right;
+                border-radius: 1.5rem;
+                background-color: $conil-color-blue;
+                color: white;
+            }
+        }
+        input{
+            width: 100%;
+            font-family: SourceSans-Regular;
+            font-size: 1.2rem;
+            color: $conil-color-blue;
+        }
+        textarea{
+            font-family: SourceSans-Regular;
+            font-size: 1.2rem;
+            color: $conil-color-blue;
+        }
+        #ajax-wrapper{
+            width: 100%;
+            input {
+                border-radius: 1rem;
+                padding: 1.5rem;
+            }
+            .description{
+                padding: 1rem;
+                color: black;
+                font-weight: bold;
+            }
+        }
+        .form-item-state{
+            visibility: hidden;
+            display: none;
+        }
+
+    }
+    }
+}

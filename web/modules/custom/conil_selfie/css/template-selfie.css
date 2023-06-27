@@ -1,0 +1,57 @@
+html {
+  margin: 0;
+}
+
+body {
+  background-color: #01587D;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+.marco {
+  position: relative;
+  width: 834px;
+  height: 1076px;
+}
+
+.marco img {
+  position: absolute;
+  z-index: 1;
+}
+
+.selfie {
+  position: absolute;
+  top: 0px;
+  z-index: 98;
+}
+
+.selfie img {
+  max-height: 950px;
+  width: 794px;
+  position: absolute;
+  top: 200px;
+  margin: 20px;
+  margin-top: 0px;
+  z-index: 99;
+}
+
+.text {
+  position: absolute;
+  top: 780px;
+  margin: 20px;
+  color: #01587D;
+  font-size: 16px;
+  z-index: 2;
+}
+
+.body {
+  margin: 0 20px 0 25px;
+  font-size: 12pt;
+  color: #02587d;
+  line-height: 20px;
+  text-align: justify;
+}
+
+p {
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+}

@@ -1,0 +1,31 @@
+uuid: 6221652d-01e0-43a7-96ac-bcd1e169443e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_content_grids
+    - media.type.content_grids_images
+    - media.type.content_grids_videos
+    - paragraphs.paragraphs_type.interval_hours_content_grids
+id: paragraph.interval_hours_content_grids.field_media_content_grids
+field_name: field_media_content_grids
+entity_type: paragraph
+bundle: interval_hours_content_grids
+label: 'Media content grids'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      content_grids_images: content_grids_images
+      content_grids_videos: content_grids_videos
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: content_grids_images
+field_type: entity_reference

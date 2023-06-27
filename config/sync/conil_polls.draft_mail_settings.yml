@@ -1,0 +1,9 @@
+aes_key: HS;TwZhQ1v
+aes_salt: PX1F!pBvYn
+aes_vector: j1SHc$cWiS
+send_draft_mail:
+  subject: 'Poll Draft'
+  body: "The poll draft is:\r\n\r\n{{ link }}\r\n\r\nGreetings."
+send_draft_mail_body:
+  subject: 'Poll Draft'
+  body: "The poll draft is:\r\n\r\n{{ link }}\r\n\r\nGreetings."

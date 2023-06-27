@@ -1,0 +1,2 @@
+label: 'Index du plan du site'
+description: 'L''index du sitemap répertoriant tous les autres sitemaps - utile s''il existe au moins deux autres sitemaps. Dans la plupart des cas, ce sitemap doit être le dernier de la file d''attente de génération et être défini comme le sitemap par défaut.'

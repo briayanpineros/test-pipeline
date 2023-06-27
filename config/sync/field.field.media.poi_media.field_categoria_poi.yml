@@ -1,0 +1,29 @@
+uuid: 8d69ad4b-b998-4d6c-ba59-ce13d03ccb32
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_categoria_poi
+    - media.type.poi_media
+    - taxonomy.vocabulary.categoria_fotos
+id: media.poi_media.field_categoria_poi
+field_name: field_categoria_poi
+entity_type: media
+bundle: poi_media
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria_fotos: categoria_fotos
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          tags: {  }
+          expose:
+            items_per_page_label: 'Objetos por página'
+            items_per_page_options_all_label: '- Todas -'
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Resetear
+          exposed_sorts_label: 'Ordenar por'
+      use_more_text: mas
+      title: 'Lista de noticias'
+  page_1:
+    display_title: Página
+label: 'Lista de noticias'

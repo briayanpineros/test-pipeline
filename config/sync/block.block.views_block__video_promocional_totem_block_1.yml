@@ -1,0 +1,37 @@
+uuid: 1749c782-322a-4b5a-9267-76269b366972
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.video_promocional_totem
+  module:
+    - domain
+    - system
+    - views
+  theme:
+    - totem_theme
+id: views_block__video_promocional_totem_block_1
+theme: totem_theme
+region: content_bottom
+weight: -9
+provider: null
+plugin: 'views_block:video_promocional_totem-block_1'
+settings:
+  id: 'views_block:video_promocional_totem-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      https_totem001_conil_ddev_site_: https_totem001_conil_ddev_site_
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

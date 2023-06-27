@@ -1,0 +1,9 @@
+label: 'Agenda of main events groups'
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<p><span><a href=\"url]/nodes\">Lista de Contenidos</a></span></p>\r\n"
+            format: basic_html

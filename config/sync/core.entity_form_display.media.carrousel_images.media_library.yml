@@ -1,0 +1,38 @@
+uuid: a9a06a6b-604b-4871-8c72-791f96d032c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.carrousel_images.field_carrousel_images_phrase
+    - field.field.media.carrousel_images.field_media_image
+    - image.style.thumbnail
+    - media.type.carrousel_images
+  module:
+    - image
+id: media.carrousel_images.media_library
+targetEntityType: media
+bundle: carrousel_images
+mode: media_library
+content:
+  field_media_image:
+    type: image_image
+    weight: -50
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_carrousel_images_phrase: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

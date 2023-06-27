@@ -1,0 +1,8 @@
+uuid: be1f5505-51b8-44e7-8f18-28807ceadcb4
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de Agenda'
+vid: agenda_tipos
+description: ''
+weight: 0

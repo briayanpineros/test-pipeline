@@ -1,0 +1,11 @@
+plugins:
+  frontpage:
+    settings:
+      title: Portada
+  'menu:footer':
+    settings:
+      title: 'Pie de página'
+  'menu:sidr-navigation':
+    settings:
+      title: 'Menú de navegación'
+page_title: 'Mapa del sitio'

@@ -1,0 +1,22 @@
+uuid: a9c953f6-7cc0-4eab-b4a2-d918ff3a8321
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gastronomy_routes
+id: taxonomy_term.gastronomy_routes.status
+field_name: status
+entity_type: taxonomy_term
+bundle: gastronomy_routes
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

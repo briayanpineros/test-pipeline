@@ -1,0 +1,18 @@
+uuid: 9d64d2a2-92ae-4e00-9cad-bceb364683e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.carrousel_images
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.carrousel_images
+target_entity_type_id: media
+target_bundle: carrousel_images
+default_langcode: current_interface
+language_alterable: true

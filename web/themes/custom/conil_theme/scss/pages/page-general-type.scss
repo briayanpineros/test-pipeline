@@ -1,0 +1,46 @@
+.page-node-type-general-page {
+
+  .region-content {
+
+    max-width: 1200px;
+    width: 100%;
+
+    #block-mainpagecontent {
+      article.node--type-general-page {
+        color: #007cc2;
+        font-family: 'SourceSans-Regular';
+
+        .node__content {
+          .node__links > ul.links > li.statistics-counter {
+            color: $conil-color-blue;
+          }
+
+          .field--name-body {
+            width: 100%;
+            font-size: 16px;
+            text-align: left;
+            float: left;
+
+            h1, h2, h3, h4, h5, h6 {
+              font-family: 'SourceSans-Bold';
+            }
+
+            p, ul {
+              color: $conil-color-blue;
+              font-family: SourceSans-Regular;
+
+              a {
+                color: $conil-color-pink;
+                &:hover {
+                  color: $conil-color-pink;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

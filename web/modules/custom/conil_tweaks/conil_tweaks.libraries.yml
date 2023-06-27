@@ -1,0 +1,26 @@
+# SumoSelect
+sumoselect:
+  css:
+    theme:
+      /libraries/jquery.sumoselect/sumoselect.css: {}
+  js:
+    /libraries/jquery.sumoselect/jquery.sumoselect.min.js: {}
+
+load_sumoselect:
+  version: 1.0
+  js:
+    js/load_sumoselect.js: {}
+  css:
+    component:
+      css/load_sumoselect.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - conil_tweaks/sumoselect
+
+
+conil_tweaks.style:
+  css:
+    theme:
+      css/ginlogin.css: {}

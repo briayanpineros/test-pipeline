@@ -1,0 +1,34 @@
+uuid: f189cf32-3764-42f2-901a-1cd9491a1216
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tipo_viaje.field_turism_icon
+    - field.field.taxonomy_term.tipo_viaje.field_turism_inventrip
+    - taxonomy.vocabulary.tipo_viaje
+  module:
+    - material_icons
+    - text
+id: taxonomy_term.tipo_viaje.default
+targetEntityType: taxonomy_term
+bundle: tipo_viaje
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_turism_icon:
+    type: material_icons
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_turism_inventrip: true
+  langcode: true
+  search_api_excerpt: true

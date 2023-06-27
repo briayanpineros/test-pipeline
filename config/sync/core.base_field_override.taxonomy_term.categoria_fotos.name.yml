@@ -1,0 +1,18 @@
+uuid: 92509def-46c2-4885-940f-bd35e72a1000
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_fotos
+id: taxonomy_term.categoria_fotos.name
+field_name: name
+entity_type: taxonomy_term
+bundle: categoria_fotos
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

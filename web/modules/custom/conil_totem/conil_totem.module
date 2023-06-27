@@ -1,0 +1,164 @@
+<?php
+
+/**
+ * @file
+ * This is the module for conil_totem.
+ */
+
+use Drupal\Core\Url;
+use Drupal\Core\Render\BubbleableMetadata;
+use Drupal\Core\Render\Markup;
+
+/**
+ * Implements hook_entity_operation_alter().
+ */
+function conil_totem_entity_operation_alter(array &$operations, \Drupal\Core\Entity\EntityInterface $entity) {
+  if ($entity->bundle() == 'agenda') {
+    // PDF.
+    $url = Url::fromRoute('conil_totem.print_pdf_event', ['id' => $entity->id()]);
+    if ($url->access()) {
+      $operations['pdfEvent'] = [
+        'title' => t('Generar Plantilla'),
+        'url' => $url,
+        'weight' => 25,
+      ];
+    }
+  }
+
+  if ($entity->bundle() == 'poi') {
+    // PDF.
+    $url = Url::fromRoute('conil_totem.print_pdf_poi', ['id' => $entity->id()]);
+    if ($url->access()) {
+      $operations['pdfPoi'] = [
+        'title' => t('Generar Plantilla'),
+        'url' => $url,
+        'weight' => 25,
+      ];
+    }
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function conil_totem_theme() {
+  $theme = [];
+  $theme['template_totem_pdf_events'] = [
+    'variables' => [
+      'code' => NULL,
+      'css' => NULL,
+      'name' => NULL,
+      'data' => NULL,
+      'conil_logo' => NULL,
+      'qr' => NULL,
+      'stars' => NULL,
+      'votes' => NULL,
+    ],
+  ];
+
+    $theme['template_totem_pdf_poi'] = [
+    'variables' => [
+      'code' => NULL,
+      'css_cover' => NULL,
+      'css' => NULL,
+      'data' => NULL,
+      'conil_logo' => NULL,
+      'qr' => NULL,
+    ],
+  ];
+  return $theme;
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function conil_totem_page_attachments_alter(array &$attachments) {
+  //$attachments['#attached']['library'][] = 'conil_totem/sincronization';
+}
+
+/**
+ * Implements hook_cron().
+ */
+function conil_totem_cron() {
+  $json = \Drupal::service('conil_totem_sync.conil_ws')->createJson();
+  if ($json != NULL) {
+    $result = \Drupal::service('conil_totem_sync.conil_ws')->post($json);
+    if ($result) {
+      $md5 = md5(json_encode($json));
+      $config = \Drupal::service('config.factory')->getEditable('conil_totem_sync.settings');
+      $config->set('last_update', $md5)->save();
+    }
+  }
+}
+
+/**
+ * Implements hook_token_info().
+ */
+function conil_totem_token_info() {
+  $info['tokens']['view']['title_raw'] = [
+    'name' => t('Title RAW'),
+    'description' => t('The title of current display of the view in raw.'),
+  ];
+  return $info;
+}
+
+/**
+ * Implements hook_tokens().
+ */
+function conil_totem_tokens($type, $tokens, array $data, array $options, BubbleableMetadata $bubbleable_metadata) {
+  $url_options = ['absolute' => TRUE];
+  if (isset($options['language'])) {
+    $url_options['language'] = $options['language'];
+  }
+  $replacements = [];
+
+  if ($type == 'view' && !empty($data['view'])) {
+    /** @var \Drupal\views\ViewExecutable $view */
+    $view = $data['view'];
+
+    $bubbleable_metadata->addCacheableDependency($view->storage);
+
+    foreach ($tokens as $name => $original) {
+      switch ($name) {
+        case 'title_raw':
+          $title = $view->getTitle();
+          $replacements[$original] = Markup::create($title);
+          break;
+      }
+    }
+  }
+
+  return $replacements;
+}
+
+function conil_totem_html_head_alter(&$head_elements) {
+  // Unset all.
+  $remove_array = [
+    'system_meta_content_type',
+    'system_meta_generator',
+    'system_shortcut_icon',
+    'metatag_canonical',
+  ];
+  foreach ($remove_array as $key) {
+    if ($head_elements[$key]) {
+      unset($head_elements[$key]);
+    }
+  }
+  // Optimize the mobile viewport.
+  $head_elements['meta_bing'] = [
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#weight' => -10,
+    '#attributes' => [
+      'name' => 'msvalidate.01',
+      'content' => '4725CE2176AD281227EAC6682286A5B7',
+    ],
+  ];
+
+}
+
+function conil_totem_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'comment_comment_user_content_form') {
+    unset($form['actions']['preview']);
+  }
+}

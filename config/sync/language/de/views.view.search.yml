@@ -1,0 +1,19 @@
+label: Suche
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<h2>Ergebnisse der Suche</h2>'
+            format: basic_html
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 'Was müssen Sie wissen?'
+  page_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 'Was müssen Sie wissen?'

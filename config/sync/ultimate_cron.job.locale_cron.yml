@@ -1,0 +1,17 @@
+uuid: 569d7ab6-cc23-4799-a37b-438e80425ed5
+langcode: es
+status: true
+dependencies:
+  module:
+    - locale
+title: 'Manejador de cron por defecto'
+id: locale_cron
+weight: 0
+module: locale
+callback: locale_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

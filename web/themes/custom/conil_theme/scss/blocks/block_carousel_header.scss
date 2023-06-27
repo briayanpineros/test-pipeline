@@ -1,0 +1,56 @@
+.region-header-background {
+  div.block-views {
+    position: relative;
+    z-index: 1;
+  }
+
+  display: none;
+
+  @include md {
+
+    nav.slick__arrow {
+      top: initial;
+      bottom: 5em;
+    }
+
+    display: block;
+
+    .slick-prev {
+      left: 10%;
+      width: auto;
+      height: auto;
+
+      &:before {
+        content: '\e5e0';
+        font-family: "Google-Icon";
+        font-size: 3rem;
+        color: white;
+      }
+    }
+
+    .slick-next {
+      right: 10%;
+      width: auto;
+      height: auto;
+
+      &:before {
+        content: '\e5e1';
+        font-family: "Google-Icon";
+        font-size: 3rem;
+        color: white;
+      }
+    }
+
+    .slick-track{
+      height: 100vh;
+
+      .slide .media--image img{
+        height: 100vh;
+      }
+
+    }
+
+  }
+
+}
+  

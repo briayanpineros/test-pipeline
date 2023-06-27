@@ -1,0 +1,7 @@
+conil_weather.settings:
+  path: '/admin/config/services/conil_weather/settings'
+  defaults:
+    _form: '\Drupal\conil_weather\Form\ConilWeatherSettingsForm'
+    _title: 'Configuration to Weather API Totems'
+  requirements:
+    _permission: 'administer site configuration'

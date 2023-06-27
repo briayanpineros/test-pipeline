@@ -1,0 +1,8 @@
+uuid: 814a6446-5ec8-4c36-b89b-f9b768560257
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tipo de Turismo'
+vid: tipo_viaje
+description: ''
+weight: 0

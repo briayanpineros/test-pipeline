@@ -1,0 +1,59 @@
+form:
+  filter_category: 'Filtrar categoría'
+settings:
+  default_form_open_message: 'Este formulario a&uacute;n no se ha abierto a nuevos env&iacute;os.'
+  default_form_close_message: 'Lo sentimos... Este formulario est&aacute; cerrado a nuevos env&iacute;os.'
+  default_form_exception_message: 'No se puede mostrar este formulario web. P&oacute;ngase en contacto con el administrador del sitio.'
+  default_submit_button_label: Enviar
+  default_reset_button_label: Restablecer
+  default_delete_button_label: Borrar
+  default_form_confidential_message: 'Este formulario es confidencial. Debe&nbsp;<a href="[site:login-url]/logout?destination=[current-page:url:relative]">desconectarse</a> para enviarlo.'
+  default_form_access_denied_message: 'Inicie sesi&oacute;n para acceder a este formulario.'
+  default_form_required_label: 'Indica campo obligatorio'
+  default_wizard_prev_button_label: '< Anterior'
+  default_wizard_next_button_label: 'Siguiente >'
+  default_wizard_start_label: Inicio
+  default_wizard_confirmation_label: Completo
+  default_wizard_toggle_show_label: 'Mostra tutti'
+  default_wizard_toggle_hide_label: 'Ocultar todo'
+  default_preview_next_button_label: 'Vista previa'
+  default_preview_prev_button_label: '< Anterior'
+  default_preview_label: 'Vista previa'
+  default_preview_title: '[webform:title]: Vista previa'
+  default_preview_message: 'Por favor, revise su env&iacute;o. Su env&iacute;o no estar&aacute; completo hasta que pulse el bot&oacute;n &quot;Enviar&quot;.'
+  default_draft_button_label: 'Salva bozza'
+  default_draft_saved_message: 'Env&iacute;o guardado. Puede volver a este formulario m&aacute;s tarde y se restaurar&aacute;n los valores actuales.'
+  default_draft_loaded_message: 'Se ha encontrado un formulario parcialmente cumplimentado. Por favor, complete las partes restantes.'
+  default_draft_pending_single_message: 'Tiene un borrador pendiente para este formulario web.&nbsp;<a href="#">Cargue su borrador pendiente</a>.'
+  default_draft_pending_multiple_message: 'Tiene borradores pendientes para este formulario web.&nbsp;<a href="#">Ver los borradores pendientes</a>.'
+  default_confirmation_message: 'Nuevo env&iacute;o a&ntilde;adido a [webform:title].'
+  default_confirmation_back_label: 'Volver al formulario'
+  default_submission_label: '[Formulario_web:enviado-a]: Envío #[webform_submission:serial]'
+  default_submission_access_denied_message: 'Inicie sesi&oacute;n para acceder a este env&iacute;o.'
+  default_submission_exception_message: 'No se ha podido procesar este env&iacute;o. P&oacute;ngase en contacto con el administrador del sitio.'
+  default_submission_locked_message: 'Este env&iacute;o ha sido bloqueado.'
+  default_previous_submission_message: 'Ya has enviado este formulario web.&nbsp;<a href="#">Ver su env&iacute;o anterior</a>.'
+  default_previous_submissions_message: 'Ya ha enviado este formulario.&nbsp;<a href="#">Ver sus env&iacute;os anteriores</a>.'
+  default_autofill_message: 'Este env&iacute;o se ha rellenado autom&aacute;ticamente con su env&iacute;o anterior.'
+  default_limit_total_message: 'No se permiten m&aacute;s env&iacute;os.'
+  default_limit_user_message: 'No se permiten m&aacute;s env&iacute;os.'
+  dialog_options:
+    narrow:
+      title: Narrow
+    normal:
+      title: Normal
+    wide:
+      title: Wide
+element:
+  default_more_title: Más
+  default_section_title_tag: h2
+file:
+  file_private_redirect_message: 'Inicie sesi&oacute;n para acceder al archivo cargado.'
+mail:
+  default_from_name: '[site:name]'
+  default_subject: 'Envío de formulario web de: [webform_submission:source-title]'
+  default_body_text: "Submitted on [webform_submission:created]\r\nSubmitted by: [webform_submission:user]\r\n\r\nSubmitted values are:\r\n[webform_submission:values]\r\n"
+  default_body_html: "<p>Submitted on [webform_submission:created]</p>\r\n\r\n<p>Submitted by: [webform_submission:user]</p>\r\n\r\n<p>Submitted values are:</p>\r\n[webform_submission:values]"
+test:
+  types: "checkbox:\r\n  - true\r\ncolor:\r\n  - '#ffffcc'\r\n  - '#ffffcc'\r\n  - '#ccffff'\r\nemail:\r\n  - example@example.com\r\n  - test@test.com\r\n  - random@random.com\r\nlanguage_select:\r\n  - en\r\nmachine_name:\r\n  - loremipsum\r\n  - oratione\r\n  - dixisset\r\ntel:\r\n  - 123-456-7890\r\n  - 098-765-4321\r\ntextarea:\r\n  - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negat esse eam, inquit, propter se expetendam. Primum Theophrasti, Strato, physicum se voluit; Id mihi magnum videtur. Itaque mihi non satis videmini considerare quod iter sit naturae quaeque progressio. Quare hoc videndum est, possitne nobis hoc ratio philosophorum dare. Est enim tanti philosophi tamque nobilis audacter sua decreta defendere.'\r\n  - 'Huius, Lyco, oratione locuples, rebus ipsis ielunior. Duo Reges: constructio interrete. Sed haec in pueris; Sed utrum hortandus es nobis, Luci, inquit, an etiam tua sponte propensus es? Sapiens autem semper beatus est et est aliquando in dolore; Immo videri fortasse. Paulum, cum regem Persem captum adduceret, eodem flumine invectio? Et ille ridens: Video, inquit, quid agas;'\r\n  - 'Quae cum dixisset, finem ille. Quamquam non negatis nos intellegere quid sit voluptas, sed quid ille dicat. Progredientibus autem aetatibus sensim tardeve potius quasi nosmet ipsos cognoscimus. Gloriosa ostentatio in constituendo summo bono. Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse; Duarum enim vitarum nobis erunt instituta capienda. Comprehensum, quod cognitum non habet? Qui enim existimabit posse se miserum esse beatus non erit. Causa autem fuit huc veniendi ut quosdam hinc libros promerem. Nunc omni virtuti vitium contrario nomine opponitur.'\r\ntext_format:\r\n  - value: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negat esse eam, inquit, propter se expetendam. Primum Theophrasti, Strato, physicum se voluit; Id mihi magnum videtur. Itaque mihi non satis videmini considerare quod iter sit naturae quaeque progressio. Quare hoc videndum est, possitne nobis hoc ratio philosophorum dare. Est enim tanti philosophi tamque nobilis audacter sua decreta defendere.</p>'\r\n  - value: '<p>Huius, Lyco, oratione locuples, rebus ipsis ielunior. Duo Reges: constructio interrete. Sed haec in pueris; Sed utrum hortandus es nobis, Luci, inquit, an etiam tua sponte propensus es? Sapiens autem semper beatus est et est aliquando in dolore; Immo videri fortasse. Paulum, cum regem Persem captum adduceret, eodem flumine invectio? Et ille ridens: Video, inquit, quid agas;</p>'\r\n  - value: '<p>Quae cum dixisset, finem ille. Quamquam non negatis nos intellegere quid sit voluptas, sed quid ille dicat. Progredientibus autem aetatibus sensim tardeve potius quasi nosmet ipsos cognoscimus. Gloriosa ostentatio in constituendo summo bono. Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse; Duarum enim vitarum nobis erunt instituta capienda. Comprehensum, quod cognitum non habet? Qui enim existimabit posse se miserum esse beatus non erit. Causa autem fuit huc veniendi ut quosdam hinc libros promerem. Nunc omni virtuti vitium contrario nomine opponitur.</p>'\r\nurl:\r\n  - 'http://example.com'\r\n  - 'http://test.com'\r\nwebform_email_confirm:\r\n  - example@example.com\r\n  - test@test.com\r\n  - random@random.com\r\nwebform_email_multiple:\r\n  - 'example@example.com, test@test.com, random@random.com'\r\nwebform_time:\r\n  - '09:00'\r\n  - '17:00'"
+  names: "first_name:\r\n  - John\r\n  - Paul\r\n  - Ringo\r\n  - George\r\nlast_name:\r\n  - Lennon\r\n  - McCartney\r\n  - Starr\r\n  - Harrison\r\naddress:\r\n  - '10 Main Street'\r\n  - '11 Brook Alley Road. APT 1'\r\nzip:\r\n  - '11111'\r\n  - '12345'\r\n  - 12345-6789\r\npostal_code:\r\n  - '11111'\r\n  - '12345'\r\n  - 12345-6789\r\nphone:\r\n  - 123-456-7890\r\n  - 098-765-4321\r\nfax:\r\n  - 123-456-7890\r\n  - 098-765-4321\r\ncity:\r\n  - Springfield\r\n  - Pleasantville\r\n  - 'Hill Valley'\r\nurl:\r\n  - 'http://example.com'\r\n  - 'http://test.com'\r\ndefault:\r\n  - Loremipsum\r\n  - Oratione\r\n  - Dixisset"

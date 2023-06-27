@@ -1,0 +1,18 @@
+uuid: d3e856f6-1e82-4180-8308-939cdd94d1d3
+langcode: es
+status: true
+dependencies:
+  module:
+    - conil_visitors_api
+    - serialization
+    - user
+id: conil_visitors_api
+plugin_id: conil_visitors_api
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

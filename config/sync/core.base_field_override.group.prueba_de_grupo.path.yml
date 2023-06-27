@@ -1,0 +1,20 @@
+uuid: 8b73a050-363d-4a71-8c2f-b27e9be438a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.prueba_de_grupo
+  module:
+    - path
+id: group.prueba_de_grupo.path
+field_name: path
+entity_type: group
+bundle: prueba_de_grupo
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,27 @@
+uuid: 5fbfde55-341a-4adb-aef4-40bc755820ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.blockgroup_poi_frontpage
+  module:
+    - blockgroup
+    - system
+  theme:
+    - conil_theme
+id: poifrontpageblockgroup
+theme: conil_theme
+region: layout_suffix
+weight: -22
+provider: null
+plugin: 'block_group:blockgroup_poi_frontpage'
+settings:
+  id: 'block_group:blockgroup_poi_frontpage'
+  label: 'Plan Your Family Trip'
+  label_display: visible
+  provider: blockgroup
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

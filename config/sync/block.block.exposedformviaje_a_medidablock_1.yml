@@ -1,0 +1,28 @@
+uuid: b277e6c5-76fc-463c-80cd-878243a57309
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.viaje_a_medida
+  module:
+    - system
+    - views
+  theme:
+    - conil_theme
+id: exposedformviaje_a_medidablock_1
+theme: conil_theme
+region: layout_suffix
+weight: -21
+provider: null
+plugin: 'views_exposed_filter_block:viaje_a_medida-block_1'
+settings:
+  id: 'views_exposed_filter_block:viaje_a_medida-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: 'Tailor-made trip'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

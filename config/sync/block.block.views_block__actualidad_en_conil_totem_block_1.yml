@@ -1,0 +1,37 @@
+uuid: 4b4f36d2-9df1-4130-a2fe-d1522504dae5
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.actualidad_en_conil_totem
+  module:
+    - domain
+    - system
+    - views
+  theme:
+    - totem_theme
+id: views_block__actualidad_en_conil_totem_block_1
+theme: totem_theme
+region: content_bottom
+weight: -8
+provider: null
+plugin: 'views_block:actualidad_en_conil_totem-block_1'
+settings:
+  id: 'views_block:actualidad_en_conil_totem-block_1'
+  label: 'Actualidad en Conil'
+  label_display: '0'
+  provider: views
+  views_label: 'Actualidad en Conil'
+  items_per_page: none
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      https_totem001_conil_ddev_site_: https_totem001_conil_ddev_site_
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

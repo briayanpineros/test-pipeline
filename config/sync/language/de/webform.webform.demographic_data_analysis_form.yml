@@ -1,0 +1,121 @@
+title: 'Formular zur Analyse demografischer Daten'
+elements: |
+  cabecera:
+    '#description': "<h4>Vielen Dank f&uuml;r Ihre Teilnahme</h4>\r\n\r\n<p>Von Conil de la Frontera aus m&ouml;chten wir Ihre Teilnahme an unserer &quot;Zufriedenheitsumfrage&quot; erg&auml;nzen, die uns eine kontinuierliche Verbesserung erm&ouml;glicht, damit Ihre R&uuml;ckkehr in unsere Stadt noch zufriedenstellender wird. Wir erwarten Sie sehr bald.</p>\r\n\r\n<h4>Ich danke Ihnen sehr!</h4>"
+  nationality_set:
+    '#title': 'Nationalität auswählen'
+  nacionality:
+    '#title': Nationalität
+    '#description': 'Geben Sie Ihre Staatsangeh&ouml;rigkeit an'
+    '#help_title': 'Geben Sie Ihre Staatsangehörigkeit an'
+    '#options':
+      Resident: Wohnsitz
+      Spain: Spanien
+      'Other country': 'Anderes Land'
+    '#required_error': 'Erforderliche Staatsangehörigkeit'
+  country:
+    '#title': Land
+    '#required_error': 'Erforderliches Land'
+  province:
+    '#title': Provinz
+    '#required_error': 'Benötigte Provinz'
+  gender:
+    '#title': Geschlecht
+    '#description': 'Bitte geben Sie Ihr Geschlecht an'
+    '#help_title': 'Bitte geben Sie Ihr Geschlecht an'
+    '#options':
+      Male: Männlich
+      Female: Weiblich
+    '#required_error': 'Gewünschtes Geschlecht'
+  age:
+    '#title': Altersgruppe
+    '#description': 'Bitte geben Sie Ihre Altersgruppe an'
+    '#help_title': 'Bitte geben Sie Ihre Altersgruppe an'
+    '#options':
+      'Less than 18': 'Weniger als 18 '
+      'Beetween 18 and 29': "Zwischen 18 und 29 \t"
+      'Beetween 30 and 44': 'Zwischen 30 und 44 '
+      'Beetween 45 and 65': 'Zwischen 45 und 65 '
+      'More than 65': 'Mehr als 65 Jahre '
+    '#required_error': 'Erforderliches Alter'
+  area_set:
+    '#title': 'Eingesetzter Bereich'
+  destination_area:
+    '#title': 'Bleibender Bereich'
+    '#description': 'Geben Sie das Gebiet Ihres Aufenthalts an'
+    '#help_title': 'Geben Sie das Gebiet Ihres Aufenthalts an'
+    '#options':
+      'Beach area': Strandbereich
+      'Old town area': Altstadt-Bereich
+      'Outdoor area': Außenbereich
+      'Other area': 'Anderes Gebiet'
+    '#required_error': 'Auswahl des Gebiets erforderlich'
+  other_area:
+    '#title': 'Anderes Gebiet'
+    '#required_error': 'Muss spezifiziert werden'
+  repeat_visitor:
+    '#title': 'Wiederholter Besucher'
+    '#description': 'Bitte geben Sie an, ob Sie ein wiederholter Besucher sind'
+    '#help_title': 'Bitte geben Sie an, ob Sie ein wiederholter Besucher sind'
+    '#options':
+      'Yes': Ja
+      'No': Nein
+    '#required_error': 'Geschlecht erforderlich'
+  days_at_destination:
+    '#title': 'Days at Tage am Zielort'
+    '#description': 'Geben Sie die Anzahl der Tage am Zielort an'
+    '#help_title': 'Geben Sie die Anzahl der Tage am Zielort an'
+  days_of_tourism:
+    '#description': 'Bitte geben Sie die spezifischen Tage Ihres Aufenthalts an'
+    '#help_title': 'Bitte geben Sie die spezifischen Tage Ihres Aufenthalts an'
+    '#options':
+      Weekdays: Wochentage
+      Weekends: Wochenenden
+      Holidays: Feiertage
+      'Whole weeks': 'Ganze Wochen'
+      Others: Andere
+    '#required_error': 'Spezifische Tage Ihres Aufenthalts erforderlich'
+  other_days:
+    '#title': 'Andere Tage'
+    '#required_error': 'Bitte angeben'
+  overnights:
+    '#title': Übernachtungen
+    '#description': 'Geben Sie die Anzahl der &Uuml;bernachtungen an'
+    '#help_title': 'Geben Sie die Anzahl der Übernachtungen an'
+    '#required_error': 'Anzahl der benötigten Übernachtungen'
+  transport_set:
+    '#title': Transport-Set
+  transport_used_to_arrive:
+    '#title': 'Art des Transports'
+    '#description': 'Geben Sie das Verkehrsmittel an, mit dem Sie Ihr Ziel erreichen'
+    '#help_title': 'Geben Sie das Verkehrsmittel an, mit dem Sie Ihr Ziel erreichen'
+    '#options':
+      'Own car': 'Eigenes Auto'
+      'Rental car': Mietauto
+      Plane: Flugzeug
+      Train: Zug
+      Other: Andere
+    '#required_error': 'Gewünschte Transportmethode'
+  other_transport:
+    '#title': 'Anderer Transport'
+    '#required_error': 'Bitte angeben'
+  season_set:
+    '#title': 'Festgelegte Saison'
+  season:
+    '#title': 'Bleibende Saison'
+    '#description': 'Geben Sie die Saison f&uuml;r Ihren Aufenthalt an'
+    '#help_title': 'Geben Sie die Saison für Ihren Aufenthalt an'
+    '#options':
+      Summer: Sommer
+      Christmas: Weihnachten
+      Easter: Ostern
+      Other: Andere
+    '#required_error': 'Gewünschte Saison'
+  other_season:
+    '#title': 'Andere Jahreszeit'
+    '#required_error': 'Bitte angeben'
+  thanks_image:
+    '#text': '<img src="/sites/default/files/inline-images/gracias_0.png" data-entity-uuid="32ef4074-9b2d-4ab1-8489-3059dbd05249" data-entity-type="file">'
+  actions:
+    '#title': 'Schaltfläche Senden'
+    '#submit__label': 'Senden Sie'

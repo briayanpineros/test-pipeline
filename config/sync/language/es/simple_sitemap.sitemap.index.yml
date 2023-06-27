@@ -1,0 +1,2 @@
+label: 'Índice del mapa del sitio'
+description: 'El índice del mapa del sitio que enumera todos los demás mapas del sitio - útil si hay al menos otros dos mapas del sitio. En la mayoría de los casos, este mapa del sitio debería ser el último en la cola de generación y establecerse como el mapa del sitio por defecto.'

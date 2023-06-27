@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Contains conil_webpush.module.
+ */
+function conil_webpush_page_attachments_alter(array &$attachments) {
+  $attachments['#attached']['library'][] = 'conil_webpush/conil_webpush';
+  $config = \Drupal::config('conil_webpush.settings');
+  $attachments['#attached']['drupalSettings']['webpush_config']['apiKey'] = $config->get('apiKey');
+  $attachments['#attached']['drupalSettings']['webpush_config']['authDomain'] = $config->get('authDomain');
+  $attachments['#attached']['drupalSettings']['webpush_config']['projectId'] = $config->get('projectId');
+  $attachments['#attached']['drupalSettings']['webpush_config']['storageBucket'] = $config->get('storageBucket');
+  $attachments['#attached']['drupalSettings']['webpush_config']['messagingSenderId'] = $config->get('messagingSenderId');
+  $attachments['#attached']['drupalSettings']['webpush_config']['appId'] = $config->get('appId');
+  $attachments['#attached']['drupalSettings']['webpush_config']['measurementId'] = $config->get('measurementId');
+}
+
+function conil_webpush_node_presave(\Drupal\Core\Entity\EntityInterface $entity){
+  if ($entity->getType() == 'news' && (($entity->isNew() && $entity->status->value == 1) || ($entity->status->value == 1 && $entity->original->status->value == 0))){
+    $connection = Drupal::database();
+    $query = $connection->select('web_push_token', 'wpt')
+      ->fields('wpt', ['token']);
+    $result = $query->execute();
+    $tokens = $result->fetchCol();
+
+    if (!empty($tokens)) {
+      $options = ['absolute' => TRUE];
+      $url_object = \Drupal\Core\Url::fromRoute('view.news_list.page_1', [], $options);
+
+      $messageService = Drupal::service('firebase.message');
+      $messageService->setRecipients($tokens);
+      $messageService->setNotification([
+        'title' => 'Conil de la Frontera',
+        'body' => t('Se ha publicado un nuevo contenido'), //'Se ha publicado un nuevo contenido'
+        'badge' => 1,
+        'icon' => 'conil-icon.png',
+      ]);
+      $messageService->setData([
+        'score' => '3x1',
+        'date' => date("Y-m-d"),
+        'optional' => 'Data is used to send silent pushes. Otherwise, optional.',
+      ]);
+      $messageService->setOptions(['priority' => 'normal']);
+      $messageService->send();
+    }
+  }
+}

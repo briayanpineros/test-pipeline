@@ -1,0 +1,221 @@
+uuid: 2f639593-e6f6-460e-ae8e-aa306394b04e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_history_subtitle
+    - field.storage.node.field_news_subtitle
+    - field.storage.node.field_poi_subcategoy
+    - field.storage.node.field_poi_subtitle
+    - field.storage.node.field_subtitulo
+    - field.storage.node.field_poi_category
+    - search_api.server.database_search
+  module:
+    - search_api_solr
+    - taxonomy
+    - node
+    - search_api
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    debug_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    term_modifiers:
+      slop: 3
+      fuzzy: 1
+    advanced:
+      index_prefix: ''
+      collection: ''
+      timezone: ''
+    multilingual:
+      limit_to_content_language: true
+      include_language_independent: true
+      use_language_undefined_as_fallback_language: false
+      specific_languages:
+        en: '0'
+        es: '0'
+        fr: '0'
+        it: '0'
+        de: '0'
+      use_universal_collation: false
+id: content
+name: Content
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_history_subtitle:
+    label: Subtítulo
+    datasource_id: 'entity:node'
+    property_path: field_history_subtitle
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_history_subtitle
+  field_news_subtitle:
+    label: Subtitle
+    datasource_id: 'entity:node'
+    property_path: field_news_subtitle
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_news_subtitle
+  field_poi_subcategoy:
+    label: Subcategoría
+    datasource_id: 'entity:node'
+    property_path: field_poi_subcategoy
+    type: text
+    boost: 1.5
+    dependencies:
+      config:
+        - field.storage.node.field_poi_subcategoy
+  field_poi_subtitle:
+    label: Subtítulo
+    datasource_id: 'entity:node'
+    property_path: field_poi_subtitle
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_poi_subtitle
+  field_subtitulo:
+    label: Subtítulo
+    datasource_id: 'entity:node'
+    property_path: field_subtitulo
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_subtitulo
+  name:
+    label: 'Category » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_poi_category:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.node.field_poi_category
+      module:
+        - taxonomy
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 21
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected:
+        - news_bulletin
+        - webform
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  entity_type: {  }
+  ignore_character:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    all_fields: true
+    fields:
+      - body
+      - field_history_subtitle
+      - field_news_subtitle
+      - field_poi_subcategoy
+      - field_poi_subtitle
+      - field_subtitulo
+      - name
+      - title
+    ignorable: '[''¿¡!?,.:;]'
+    ignorable_classes:
+      - Pc
+      - Pd
+      - Pe
+      - Pf
+      - Pi
+      - Po
+      - Ps
+  ignorecase:
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+    all_fields: true
+    fields:
+      - body
+      - field_history_subtitle
+      - field_news_subtitle
+      - field_poi_subcategoy
+      - field_poi_subtitle
+      - field_subtitulo
+      - name
+      - title
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+  transliteration:
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+    all_fields: true
+    fields:
+      - body
+      - field_history_subtitle
+      - field_news_subtitle
+      - field_poi_subcategoy
+      - field_poi_subtitle
+      - field_subtitulo
+      - name
+      - title
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: database_search

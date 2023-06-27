@@ -1,0 +1,13 @@
+uuid: 85f14e49-7fe4-4e2b-a5c3-9b8180f6836e
+langcode: es
+status: true
+dependencies: {  }
+id: content_grids_images
+label: 'Content grids images'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

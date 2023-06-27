@@ -1,0 +1,17 @@
+uuid: 9d566606-a066-4747-8c2c-56481c788ef9
+langcode: en
+status: true
+dependencies:
+  module:
+    - conil_totem
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: totem.totem
+target_entity_type_id: totem
+target_bundle: totem
+default_langcode: site_default
+language_alterable: false

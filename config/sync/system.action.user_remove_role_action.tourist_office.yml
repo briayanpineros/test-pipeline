@@ -1,0 +1,14 @@
+uuid: 71814fd7-84d9-409a-9d04-a497c37843dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tourist_office
+  module:
+    - user
+id: user_remove_role_action.tourist_office
+label: 'Remove the Tourist office role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: tourist_office

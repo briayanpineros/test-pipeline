@@ -1,0 +1,61 @@
+uuid: 23e975ca-17ef-46a8-8dab-aec352c851d9
+langcode: en
+status: true
+dependencies: {  }
+id: poi_slide_map
+label: 'POI Slide and Map'
+renderer: quick_tabs
+hide_empty_tabs: false
+default_tab: 1
+options:
+  quick_tabs:
+    ajax: false
+    class: ''
+    style: ''
+configuration_data:
+  -
+    title: List
+    weight: -10
+    type: block_content
+    content:
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: agenda_channel
+          display: default
+          args: ''
+      block_content:
+        options:
+          bid: 'views_block:poi_list_gallery-block_1'
+          block_title: ''
+          display_title: false
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: Map
+    weight: -9
+    type: block_content
+    content:
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: agenda_channel
+          display: default
+          args: ''
+      block_content:
+        options:
+          bid: 'views_block:poi_full_map-poi_full_map_block'
+          block_title: 'POI Mapa'
+          display_title: false
+      qtabs_content:
+        options:
+          machine_name: ''

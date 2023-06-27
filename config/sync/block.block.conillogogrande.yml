@@ -1,0 +1,22 @@
+uuid: 2e929ecb-5d19-48fd-8cd0-fabf53878f9b
+langcode: es
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.conil_logo_grande
+  module:
+    - simple_block
+  theme:
+    - conil_theme
+id: conillogogrande
+theme: conil_theme
+region: footer_top
+weight: -23
+provider: null
+plugin: 'simple_block:conil_logo_grande'
+settings:
+  id: 'simple_block:conil_logo_grande'
+  label: conil-logo-grande
+  label_display: '0'
+  provider: simple_block
+visibility: {  }

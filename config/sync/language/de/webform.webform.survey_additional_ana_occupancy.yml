@@ -1,0 +1,84 @@
+title: 'Zusätzliche Analyse der Belegungsraten und der Touristenunterkünfte'
+elements: |
+  nationality_set:
+    '#title': Staatsangehörigkeit
+  nacionality:
+    '#title': Staatsangehörigkeit
+    '#description': 'Geben Sie Ihre Staatsangeh&ouml;rigkeit an'
+    '#help_title': 'Geben Sie Ihre Staatsangehörigkeit an'
+    '#options':
+      Resident: Inländer
+      Spain: Spanien
+      'Other country': 'Anderes Land'
+    '#required_error': 'Erforderliche Staatsangehörigkeit'
+  province:
+    '#title': Bundesland
+    '#required_error': 'Benötigte Provinz'
+  country:
+    '#title': Land
+    '#required_error': 'Erforderliches Land'
+  gender:
+    '#title': Geschlecht
+    '#description': 'Bitte geben Sie Ihr Geschlecht an'
+    '#help_title': 'Bitte geben Sie Ihr Geschlecht an'
+    '#options':
+      Male: Männlich
+      Female: Weiblich
+    '#required_error': 'Gewünschtes Geschlecht'
+  age:
+    '#title': Altersgruppe
+    '#description': 'Bitte geben Sie Ihre Altersgruppe an'
+    '#help_title': 'Bitte geben Sie Ihre Altersgruppe an'
+    '#options':
+      'Less than 18': 'Weniger als 18'
+      'Beetween 18 and 29': 'Zwischen 18 und 29'
+      'Beetween 30 and 44': 'Zwischen 30 und 44'
+      'Beetween 45 and 65': 'Zwischen 45 und 65'
+      'More than 65': 'Mehr als 65'
+    '#required_error': 'Gewünschtes Alter'
+  would_you_stay_in_the_same_accommodation_again:
+    '#title': 'Würden Sie noch einmal in der gleichen Unterkunft wohnen?'
+    '#description': 'W&uuml;rden Sie noch einmal in der gleichen Unterkunft wohnen?'
+    '#help_title': 'Würden Sie noch einmal in der gleichen Unterkunft wohnen?'
+    '#options':
+      'Yes': Ja
+      'No': Nein
+    '#required_error': Erforderlich
+  would_you_recommend_the_accommodation:
+    '#title': 'Würden Sie die Unterkunft weiterempfehlen?'
+    '#description': 'W&uuml;rden Sie die Unterkunft weiterempfehlen?'
+    '#help_title': 'Würden Sie die Unterkunft weiterempfehlen?'
+    '#options':
+      'Yes': Ja
+      'No': Nein
+    '#required_error': Erforderlich
+  please_indicate_the_satisfaction_rate_of_the_accommodation_staff:
+    '#title': 'Grad der Zufriedenheit mit dem Personal der Unterkunft'
+    '#header':
+      -
+        title: 'Grad der Zufriedenheit mit dem Personal der Unterkunft'
+  indicate_the_satisfaction_rate_of_the_accommodation_staff_01:
+    '#title': Reinigungspersonal
+  cleaning_staff_rate:
+    '#title': Reinigungspersonal
+    '#required_error': Erforderlich
+  indicate_the_satisfaction_rate_of_the_accommodation_staff_02:
+    '#title': Servicepersonal
+  service_staff_rate:
+    '#title': Servicepersonal
+    '#required_error': Erforderlich
+  indicate_the_satisfaction_rate_of_the_accommodation_staff_03:
+    '#title': Sicherheitspersonal
+  security_staff_rate:
+    '#title': Sicherheitspersonal
+    '#required_error': Erforderlich
+  indicate_the_satisfaction_rate_of_the_accommodation_staff_04:
+    '#title': 'Verantwortliches Personal'
+  responsibility_staff_rate:
+    '#title': 'Verantwortliches Personal'
+    '#required_error': Erforderlich
+  actions:
+    '#title': 'Schaltfläche Senden'
+    '#submit__label': 'Senden Sie'
+settings:
+  submission_label: Senden

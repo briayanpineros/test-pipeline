@@ -1,0 +1,26 @@
+# Totem routing definition
+totem.settings_tab:
+  route_name: totem.settings
+  title: 'Settings'
+  base_route: totem.settings
+
+entity.totem.canonical:
+  route_name: entity.totem.canonical
+  base_route: entity.totem.canonical
+  title: 'View'
+
+entity.totem.edit_form:
+  route_name: entity.totem.edit_form
+  base_route: entity.totem.canonical
+  title: 'Edit'
+
+entity.totem.version_history:
+  route_name: entity.totem.version_history
+  base_route: entity.totem.canonical
+  title: 'Revisions'
+
+entity.totem.delete_form:
+  route_name:  entity.totem.delete_form
+  base_route:  entity.totem.canonical
+  title: Delete
+  weight: 10

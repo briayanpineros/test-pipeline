@@ -1,0 +1,16 @@
+label: 'Opinioni in evidenza'
+display:
+  default:
+    display_options:
+      title: OPINIONI
+      fields:
+        nothing:
+          admin_label: 'Utente e POI'
+  block_1:
+    display_title: 'Opinioni in evidenza'
+  highlighted_poi_opinions:
+    display_title: "Opinioni dei POI in evidenza\r\n"
+    display_options:
+      fields:
+        nothing:
+          admin_label: 'Utente e POI'

@@ -1,0 +1,21 @@
+uuid: 646a58dc-b669-4615-916b-a4bed36bb56e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poi_telephone2
+    - node.type.poi
+  module:
+    - telephone
+id: node.poi.field_poi_telephone2
+field_name: field_poi_telephone2
+entity_type: node
+bundle: poi
+label: Teléfono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,14 @@
+uuid: 1def1812-78f2-40b9-bf9c-5a14bc7caa88
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.manager_conil
+  module:
+    - user
+id: user_remove_role_action.manager_conil
+label: 'Remove the Manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: manager_conil

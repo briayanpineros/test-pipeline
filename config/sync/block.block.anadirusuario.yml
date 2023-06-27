@@ -1,0 +1,27 @@
+uuid: 33d1c676-f166-479b-9c9b-563102b05f83
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+id: anadirusuario
+theme: bartik
+region: secondary_menu
+weight: -6
+provider: null
+plugin: 'block_content:351b6679-f84e-4f79-9a84-1cf24e49e07c'
+settings:
+  id: 'block_content:351b6679-f84e-4f79-9a84-1cf24e49e07c'
+  label: 'Añadir usuario'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /admin/people/create

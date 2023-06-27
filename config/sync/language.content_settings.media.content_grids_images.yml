@@ -1,0 +1,18 @@
+uuid: ee89cccc-f078-44b5-a7f2-d6ce99db46ce
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.content_grids_images
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.content_grids_images
+target_entity_type_id: media
+target_bundle: content_grids_images
+default_langcode: site_default
+language_alterable: false

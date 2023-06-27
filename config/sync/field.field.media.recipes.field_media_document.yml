@@ -1,0 +1,27 @@
+uuid: 778a9ebe-d65b-4c1c-a865-9096451950b7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_document
+    - media.type.recipes
+  module:
+    - file
+id: media.recipes.field_media_document
+field_name: field_media_document
+entity_type: media
+bundle: recipes
+label: Archivo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx pdf jpeg png jpg'
+  max_filesize: ''
+  description_field: false
+field_type: file

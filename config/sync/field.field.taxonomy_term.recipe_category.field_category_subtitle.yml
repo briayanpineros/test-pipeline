@@ -1,0 +1,21 @@
+uuid: 309bf857-7e19-4197-ab34-400e9f6a5fda
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_category_subtitle
+    - taxonomy.vocabulary.recipe_category
+  module:
+    - text
+id: taxonomy_term.recipe_category.field_category_subtitle
+field_name: field_category_subtitle
+entity_type: taxonomy_term
+bundle: recipe_category
+label: Subtitulo
+description: 'Recortado a 200 carácteres.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

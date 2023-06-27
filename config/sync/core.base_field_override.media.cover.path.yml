@@ -1,0 +1,20 @@
+uuid: c2fb6808-9f88-4697-82b9-2b01fa53a594
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.cover
+  module:
+    - path
+id: media.cover.path
+field_name: path
+entity_type: media
+bundle: cover
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

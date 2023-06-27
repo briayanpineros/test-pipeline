@@ -1,0 +1,18 @@
+uuid: b9ee3ff8-8ece-4f6b-8499-a0ea94087c77
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_agenda
+id: taxonomy_term.categoria_agenda.name
+field_name: name
+entity_type: taxonomy_term
+bundle: categoria_agenda
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

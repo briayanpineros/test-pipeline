@@ -1,0 +1,6 @@
+conil_weather.settings:
+  title: 'Conil API Weather Settings'
+  description: 'Configure API Weather to Totem'
+  route_name: conil_weather.settings
+  parent: conil_totem.main
+  weight: 6

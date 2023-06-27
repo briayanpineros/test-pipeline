@@ -1,0 +1,18 @@
+uuid: 4a01cb48-f9ed-4b5a-929c-3c8bad91b955
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.gastronomic_r
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.gastronomic_r
+target_entity_type_id: node
+target_bundle: gastronomic_r
+default_langcode: current_interface
+language_alterable: true

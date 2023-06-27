@@ -1,0 +1,320 @@
+footer {
+  background-color: white;
+
+  .footer-top.container-inline .region-footer-top.region {
+    padding: 2rem 0;
+    max-width: 1200px !important;
+    margin: auto !important;
+
+    #block-socialmedialinks-2 {
+      display: block;
+      width: 220px;
+      margin: auto;
+      margin-top: 2rem;
+      position: relative;
+
+      ul {
+        margin-right: 0;
+
+        &::before {
+          content: "#conilciudadinteligente";
+          position: absolute;
+          top: -3rem;
+          font-size: 1.4rem;
+          width: 220px;
+          text-align: center;
+          @include xs {
+            position: relative;
+            top: 0;
+          }
+          @include sm {
+            position: relative;
+            top: 0;
+          }
+          @include md {
+            position: relative;
+            top: 0;
+          }
+          @include lg {
+            position: relative;
+            top: 0;
+          }
+        }
+      }
+    }
+
+    @include md {
+      padding: 2rem 5%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap !important;
+      margin: 0;
+      max-width: none;
+      justify-content: space-between;
+
+      #block-piedepagina-2,
+      #block-socialmedialinks-2 {
+        display: none;
+      }
+    }
+
+    @include lg {
+      padding: 2rem 1rem;
+    }
+
+    align-items: center;
+
+    &::after {
+      display: none;
+    }
+
+    #block-piedepagina-2 {
+      width: 100%;
+
+      ul.menu {
+        margin-left: 0;
+        text-align: center;
+
+        li {
+          display: inline-block;
+
+          &:not(:first-child):before {
+            content: "|";
+            font-size: 1.2rem;
+            color: $conil-color-blue;
+
+          }
+        }
+      }
+
+    }
+
+    #block-ayuntamientologo {
+      display: none;
+
+      @include md {
+        display: block;
+        margin-left: 0;
+        max-width: 20%;
+
+      }
+    }
+
+    #block-conillogogrande {
+      .acceso_mapa_sitio {
+        float: right;
+      }
+    }
+
+    #block-conillogogrande .conil-logo-grande {
+      width: 384px;
+      max-width: 100%;
+      margin: auto;
+      display: block;
+
+      img {
+        @include xs {
+          padding-top: 4rem;
+          padding-bottom: 0;
+        }
+        @include sm {
+          padding-top: 4rem;
+          padding-bottom: 0;
+        }
+        @include md {
+          padding: 4rem 0;
+        }
+        @include lg {
+          padding: 4rem 0;
+        }
+        @include xl {
+          padding: 4rem 0;
+        }
+
+
+      }
+
+      @include md {
+        margin-right: 0;
+
+        img {
+          padding: 0;
+        }
+      }
+
+      @include lg {
+        display: block;
+      }
+    }
+
+  }
+
+  .footer-bottom {
+    padding: .3rem 0;
+
+    background-color: $conil-color-gray;
+
+    .region-footer-bottom {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: row-reverse;
+      align-items: center;
+      min-height: 100px;
+      flex-wrap: wrap;
+
+      @include md {
+        display: flex;
+        justify-content: space-between !important;
+
+      }
+
+      @include lg {
+        justify-content: space-between !important;
+      }
+
+      #block-piedepagina {
+        display: none;
+
+        li:not(:first-child):before {
+          content: "|";
+          font-size: 1.2rem;
+          color: $conil-color-blue;
+        }
+
+        @include md {
+          display: flex;
+          flex: 0 0 55%;
+          max-width: 55%;
+          padding-left: 5%;
+
+          ul.menu {
+            margin-left: 1rem;
+            @include lg{
+              margin-left: 0;
+            }
+          }
+
+          li {
+            display: inline-block;
+          }
+        }
+
+        @include lg {
+          display: flex;
+          flex: 0 0 30%;
+          max-width: 30%;
+          justify-content: center;
+          padding-left: 0;
+        }
+      }
+
+      #block-redeslogo {
+        padding: 1rem;
+        justify-content: center;
+        display: flex;
+
+        .redes-logo {
+          width: auto;
+          margin: auto;
+          display: flex;
+        }
+
+        img {
+          padding: 0;
+        }
+
+        @include md {
+          flex: 0 0 100%;
+          max-width: 100%;
+
+          padding: 3rem;
+        }
+
+        @include lg {
+          flex: 0 0 45%;
+          max-width: 600px;
+          padding: 2rem 1rem;
+
+          img {
+            padding: 0;
+          }
+        }
+
+        p {
+          text-align: center;
+          line-height: .5rem;
+        }
+
+        .ministerio {
+          width: 46%;
+          height: auto;
+
+        }
+
+        .redes {
+          width: 24%;
+          height: auto;
+
+        }
+
+        .ayuntamiento {
+          width: 11%;
+          height: auto;
+
+        }
+
+        .feder {
+          width: 18%;
+          height: auto;
+
+        }
+      }
+
+
+      #block-socialmedialinks {
+        display: none;
+
+        @include md {
+          display: flex;
+          min-height: 100px;
+          justify-content: end;
+          position: relative;
+          flex: 0 0 45%;
+          max-width: 45%;
+          align-items: end;
+          padding-right: 5%;
+
+          ul {
+            margin-right: 0;
+
+            &::before {
+              content: "#conilciudadinteligente";
+              position: absolute;
+              top: 0;
+              font-size: 1.1rem;
+              width: 220px;
+              text-align: center;
+            }
+          }
+
+          a {
+            display: block;
+          }
+        }
+
+        @include lg {
+          flex: 0 0 25%;
+          padding-right: 0;
+
+          ul {
+            padding-right: 1rem;
+          }
+        }
+
+      }
+    }
+  }
+
+}

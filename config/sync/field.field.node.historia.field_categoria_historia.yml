@@ -1,0 +1,29 @@
+uuid: 6cfb97e0-fd42-4e00-9bbb-def3807f54da
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria_historia
+    - node.type.historia
+    - taxonomy.vocabulary.categoria_historia
+id: node.historia.field_categoria_historia
+field_name: field_categoria_historia
+entity_type: node
+bundle: historia
+label: 'Categoría Historia'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria_historia: categoria_historia
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,4 @@
+label: 'Ajouter aux favoris'
+flag_short: 'Ajouter ce message à vos favoris'
+flag_long: 'Ajoutez ce message à vos favoris'
+unflag_short: 'Supprimer le signet'

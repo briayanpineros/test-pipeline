@@ -1,0 +1,14 @@
+uuid: c318fa68-bc7e-4d2e-bcc7-8e89bf39ba3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.moderator_conil
+  module:
+    - user
+id: user_remove_role_action.moderator_conil
+label: 'Remove the Moderator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: moderator_conil

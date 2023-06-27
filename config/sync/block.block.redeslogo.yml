@@ -1,0 +1,22 @@
+uuid: 34477dec-5672-4a3f-81f5-b1ade655e686
+langcode: es
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.redes_logo
+  module:
+    - simple_block
+  theme:
+    - conil_theme
+id: redeslogo
+theme: conil_theme
+region: footer_bottom
+weight: -22
+provider: null
+plugin: 'simple_block:redes_logo'
+settings:
+  id: 'simple_block:redes_logo'
+  label: redes-logo
+  label_display: '0'
+  provider: simple_block
+visibility: {  }

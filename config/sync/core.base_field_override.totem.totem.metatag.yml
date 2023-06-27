@@ -1,0 +1,18 @@
+uuid: 2732a635-3207-4a45-a643-3997585c1295
+langcode: en
+status: true
+dependencies:
+  module:
+    - conil_totem
+id: totem.totem.metatag
+field_name: metatag
+entity_type: totem
+bundle: totem
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

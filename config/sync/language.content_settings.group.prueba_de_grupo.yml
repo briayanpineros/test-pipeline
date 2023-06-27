@@ -1,0 +1,18 @@
+uuid: ad140eb9-6c3c-49a5-a52a-ca802092c603
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.prueba_de_grupo
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: group.prueba_de_grupo
+target_entity_type_id: group
+target_bundle: prueba_de_grupo
+default_langcode: site_default
+language_alterable: true

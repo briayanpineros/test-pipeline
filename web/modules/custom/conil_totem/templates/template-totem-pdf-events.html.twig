@@ -1,0 +1,68 @@
+{#
+/**
+ * @file
+ * Default theme implementation for 'template-totem-events'
+ *
+ * Available variables:
+ * - code: ID.
+ * - css: CSS.
+ * - conil_logo: Ruta del logo de conil, base64 imagen.
+ * - data: Datos, con imagen en base64.
+ * - qr: Imagen qr, base64.
+ * - stars: Estrellas votación.
+ * - votes: datos de votos.
+ *
+ * https://storybook.paas.junta-andalucia.es/?path=/docs/mol%C3%A9culas-matter-header--header
+ */
+#}
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
+		<style type="text/css">{{css}}</style>
+		<title>Totem</title>
+	</head>
+	<body class="pdf">
+		<div class="logo"><img src="{{ conil_logo }}"/></div>
+		<div class="contents">
+      <div class="image">
+        <img src="{{ data.imagen }}">
+      </div>
+      <div class="description">
+        <div class="title">
+          {{ data.title }}
+        </div>
+        <div class="details">
+          <div class="body">
+            <div class="dates end">
+              <div class="datetime">{{ data.field_agenda_fin_fecha|date('d') }}</div>
+              <div class="datetime">{{ data.field_agenda_fin_fecha|date('M Y') }}</div>
+            End
+            </div>
+            <div class="dates start">
+              <div class="datetime">{{ data.field_agenda_inicio_fecha|date('d') }}</div>
+              <div class="datetime">{{ data.field_agenda_inicio_fecha|date('M Y') }}</div>
+              Start
+            </div>
+            {{ data.body }}
+          </div>
+        </div>
+        <div class="fivestar-average-stars">
+          {% include '@fivestar/fivestar-static.html.twig' with { rating: stars.rating, stars: stars.vote, voted_tye: stars.vote_type, numeric_rating: stars.numeric_rating, stars_data: stars.stars_data } %}
+          <span class="textVote">({{ votes.stars.vote_count }}) {{ 'votes'|t }}</span>
+        </div>
+      </div>
+		</div>
+    <div class="bottom">
+      <div class="qr"><img src="{{ qr }}"></div>
+      <div class="text">
+        <div class="more-information">{{ 'Más Información'|t }}</div>
+        <div class="web">turismoconil<strong>.es</strong></div>
+      </div>
+    </div>
+    <div class="barra"></div>
+	</body>
+</html>
+

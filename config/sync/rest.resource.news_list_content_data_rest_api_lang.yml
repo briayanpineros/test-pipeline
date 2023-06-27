@@ -1,0 +1,18 @@
+uuid: 24974dc2-fdf2-4893-a961-a9806c0b8f7b
+langcode: es
+status: true
+dependencies:
+  module:
+    - content_api
+    - serialization
+    - user
+id: news_list_content_data_rest_api_lang
+plugin_id: news_list_content_data_rest_api_lang
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

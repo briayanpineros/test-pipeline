@@ -1,0 +1,22 @@
+uuid: a1c3ee2a-4059-4f8e-851e-0d4149218d27
+langcode: es
+status: true
+dependencies:
+  theme:
+    - ayesa_base_theme
+_core:
+  default_config_hash: OMurVF5EsdIs1UBFVGdOKnyHoDgdl95VySebffVVd3Q
+id: ayesa_base_theme_local_tasks
+theme: ayesa_base_theme
+region: content_top
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

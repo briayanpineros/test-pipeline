@@ -1,0 +1,17 @@
+uuid: cd7fcaff-3f79-48c0-9dc5-23ad8144a5c9
+langcode: es
+status: true
+dependencies:
+  module:
+    - conil_polls
+title: 'Manejador de cron por defecto'
+id: conil_polls_cron
+weight: 0
+module: conil_polls
+callback: conil_polls_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

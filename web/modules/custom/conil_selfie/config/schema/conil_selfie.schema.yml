@@ -1,0 +1,16 @@
+conil_selfie.background:
+  type: config_object
+  label: 'Import selfies background images'
+  mapping:
+    api_key:
+      type: string
+      label: 'API Key'
+    url_api:
+      type: string
+      label: 'URL API'
+    backgrounds:
+      type: array
+      label: 'Images of backgrounds'
+    timeout:
+      type: number
+      label: 'Timeout API'

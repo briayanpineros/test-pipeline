@@ -1,0 +1,18 @@
+uuid: 6d0b6b55-ca06-4629-a7ae-2ef92ba23587
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_noticias
+id: taxonomy_term.categoria_noticias.name
+field_name: name
+entity_type: taxonomy_term
+bundle: categoria_noticias
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

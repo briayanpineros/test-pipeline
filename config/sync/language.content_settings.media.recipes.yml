@@ -1,0 +1,18 @@
+uuid: ecf07b5d-df82-4eae-8f0c-c4aa95418924
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.recipes
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.recipes
+target_entity_type_id: media
+target_bundle: recipes
+default_langcode: current_interface
+language_alterable: true

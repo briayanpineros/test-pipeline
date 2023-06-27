@@ -1,0 +1,18 @@
+uuid: f8d09184-ab12-4651-8ef6-d15a88cf0526
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.group_content_type_bc5d153f9b180
+id: group_content.group_content_type_bc5d153f9b180.label
+field_name: label
+entity_type: group_content
+bundle: group_content_type_bc5d153f9b180
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

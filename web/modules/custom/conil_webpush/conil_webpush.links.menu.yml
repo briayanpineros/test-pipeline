@@ -1,0 +1,5 @@
+conil_webpush.settings:
+  title: "Web Push Firebase configuration"
+  route_name: conil_webpush.settings
+  parent: system.admin_config_services
+  weight: 99

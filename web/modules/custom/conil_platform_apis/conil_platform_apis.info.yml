@@ -1,0 +1,6 @@
+name: Conil settings Platform
+description: Conil settings Platform
+package: custom
+version: 1.0
+type: module
+core_version_requirement: ^8 || ^9

@@ -1,0 +1,14 @@
+uuid: cfa639af-9d21-46f8-b36a-2f2c8dc8d4ac
+langcode: es
+status: true
+dependencies: {  }
+id: node__general_information
+label: 'Contenido: Información General'
+tags:
+  abstract: '[node:summary]'
+  content_language: '[node:language]'
+  description: '[node:body]'
+  geo_position: '[node:field_poi_geofield]'
+  image_src: '[node:field_imagen_portada]'
+  robots: nofollow
+  title: '[node:title]'

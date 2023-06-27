@@ -1,0 +1,352 @@
+body.view-points-of-interest-page-1 {
+  #block-titulodelapagina {
+    display: none;
+  }
+
+  div.dialog-off-canvas-main-canvas > div > div.header-group {
+    //border-bottom: 0.5rem solid rgba(225, 225, 225, 0.5);
+    border: none;
+  }
+
+  .view-points-of-interest {
+    background-color: $conil-color-gray;
+    padding: 0 2rem;
+    .view-header {
+      max-width: 1200px;
+      margin: auto;
+      padding-top: 2rem;
+
+      .header {
+        display: flex;
+        color: #007cc2;
+        font-size: 2rem;
+
+        div,
+        p {
+          margin-right: 0.4%;
+        }
+
+        div.subcategory {
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .view-filters {
+      .exposed-form-wrapper {
+        max-width: 1200px;
+        margin: auto;
+
+        details.form-item {
+          color: $conil-color-blue;
+          background-color: white;
+          display: block;
+          padding: 1rem;
+          border: none;
+          list-style: none;
+          text-align: right;
+          line-height: 2rem;
+
+          fieldset {
+            width: 100%;
+            margin: 0;
+            @include md {
+              width: 50%;
+            }
+          }
+
+          .form-item-field-poi-geofield-proximity-value {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            input {
+              margin: 5px 10px 15px;
+              border-radius: 20px;
+              padding-left: 15px;
+              color: $conil-color-blue;
+            }
+          }
+
+          .form-actions {
+            text-align: left;
+            margin: 0;
+            width: 100%;
+            display: block;
+            padding: 1.4rem 0rem;
+            @include md {
+              width: 50%;
+              display: inline-block;
+              padding: 1.4rem 0rem;
+            }
+          }
+
+          .details-wrapper {
+            padding: 0;
+          }
+
+          #edit-submit-points-of-interest {
+            border: 2px solid $conil-color-blue;
+            color: $conil-color-blue;
+            border-radius: 1.5em;
+            display: inline-block;
+            margin: auto;
+            background-color: white;
+            font-weight: bold;
+            padding: 0.5em 1.5em;
+          }
+        }
+
+        &:hover {
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        .fieldset-wrapper {
+          font-weight: normal;
+          cursor: auto;
+        }
+      }
+    }
+
+    .view-empty {
+      max-width: 1200px;
+      margin: auto;
+      padding-top: 2rem;
+      color: $conil-color-blue;
+      font-size: 2rem;
+    }
+
+    .view-content {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      min-height: 500px;
+      grid-template-columns: repeat(1, 1fr);
+
+      @include sm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include md {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include lg {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .views-row {
+        width: 90%;
+        margin-right: 20px;
+        margin-bottom: 1.5rem;
+        max-width: 239px;
+        // margin: 0 auto;
+        &:last-child {
+          margin-right: 0;
+        }
+
+        color: $conil-color-blue;
+        background: white;
+
+        .views-field {
+          padding: 0 10px;
+
+          &.views-field-field-poi-media {
+            padding: 0;
+            .field-content img {
+              border-top: solid 5px $conil-color-aqua;
+              max-width: 100%;
+              height: auto;
+            }
+          }
+
+          &.views-field-nothing {
+            margin-top: 10%;
+          }
+
+          &.views-field-title {
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+
+          &.views-field-body {
+            font-size: 0.7rem;
+
+            div.field-content {
+              margin-top: 0.5rem;
+
+              p {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+              }
+
+              h2,
+              h3,
+              h4,
+              h5,
+              h6 {
+                font-size: 0.7rem;
+                text-transform: none;
+                font-family: "SourceSans-Regular";
+                line-height: 1.5;
+              }
+            }
+          }
+
+          &.views-field-average-stars-counter {
+            margin-bottom: 0.5rem;
+
+            .field-content {
+              .fivestar-static-form-item,
+              .average-stars-field-counter {
+                display: inline-block;
+              }
+            }
+          }
+        }
+
+        .title-flag {
+          display: flex;
+        }
+
+        .title {
+          display: inline-block;
+          font-family: "SourceSans-Bold";
+          line-height: 1rem;
+          min-height: 2rem;
+        }
+
+        .flag-bookmark a {
+          width: 2rem;
+          padding-left: 0.3rem;
+        }
+      }
+    }
+
+    .view-empty {
+      min-height: 1000px;
+
+      .empty {
+        padding: 5%;
+      }
+    }
+
+    .pager {
+      height: 100px;
+
+      ul {
+        margin-top: 20px;
+
+        li {
+          display: inline-block;
+
+          a {
+            display: inline-block;
+            padding: 3px 10px;
+            color: $conil-color-blue;
+          }
+
+          &.is-active {
+            background-color: $conil-color-aqua;
+            color: white;
+          }
+
+          &:hover:not(.is-active) {
+            background-color: darkgrey;
+            transition: background-color 0.3s;
+          }
+
+          &.pager__item--next,
+          &.pager__item--previous {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  #block-views-block-poi-subcategory-menu-block-1-2 {
+    max-width: 1200px;
+    margin: auto;
+    /* overflow-y: hidden;
+    overflow-x: auto; */
+
+    div {
+      .view-poi-subcategory-menu {
+        .view-content {
+          /*  display: inline-flex; */
+          margin-left: 2rem;
+          display: flex;
+          //scrollbar-color: $conil-color-aqua;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-top: 10px;
+          margin-bottom: 10px;
+
+          .btn {
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            a {
+              &:hover {
+                text-decoration: underline !important;
+              }
+            }
+          }
+
+          .selected-option {
+            font-family: "SourceSans-Bold";
+            background-color: #01587d !important;
+            .material-icons {
+              color: #6cca98;
+            }
+            a {
+              color: white;
+            }
+          }
+
+          .views-row {
+            display: grid;
+            margin-right: 0.3rem;
+            margin-top: 0.1rem;
+            margin-bottom: 0.1rem;
+            height: 40px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+
+            &.active {
+              border-bottom: 8px solid $conil-color-gray;
+            }
+
+            .views-field {
+              align-self: center;
+              color: #6cca98;
+              display: inline;
+              align-self: center;
+              grid-row: none;
+
+              &.views-field-field-categoria-interes-icon {
+              }
+
+              span.field-content {
+                a {
+                  /*  text-transform: capitalize;
+                  font-weight: bold !important;
+                  white-space: nowrap; */
+                  white-space: nowrap;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+uuid: 111bc3ec-3752-41b3-9fa0-e6b6c12529d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.prueba_de_grupo
+  module:
+    - user
+id: prueba_de_grupo-group_membership
+label: 'Prueba de grupo: Suscripción'
+description: 'Agrega usuarios a grupos como miembros.'
+group_type: prueba_de_grupo
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

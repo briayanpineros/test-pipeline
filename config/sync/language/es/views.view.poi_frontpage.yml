@@ -1,0 +1,18 @@
+label: 'Portada de POI'
+display:
+  attachment_1:
+    display_title: 'Dónde dormir enlaces'
+  attachment_2:
+    display_title: 'Cómo llegar enlaces'
+  attachment_3:
+    display_title: 'Dónde comer enlaces'
+  attachment_4:
+    display_title: 'Qué hacer enlaces'
+  poi_como_llegar_block:
+    display_title: 'Cómo llegar'
+  poi_donde_comer_block:
+    display_title: 'Dónde comer'
+  poi_donde_dormir_block:
+    display_title: 'Dónde dormir'
+  poi_que_hacer_block:
+    display_title: 'Qué hacer'

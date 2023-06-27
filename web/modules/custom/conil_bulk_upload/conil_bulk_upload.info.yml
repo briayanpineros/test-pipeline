@@ -1,0 +1,5 @@
+name: Conil Bulk Upload
+description: Upload multiple media files of the same type in a process
+package: Conil
+type: module
+core_version_requirement: ^8 || ^9

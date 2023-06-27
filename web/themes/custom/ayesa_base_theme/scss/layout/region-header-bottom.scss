@@ -1,0 +1,4 @@
+.bottom {
+  @include clearfix();
+  @include wrapper();
+}

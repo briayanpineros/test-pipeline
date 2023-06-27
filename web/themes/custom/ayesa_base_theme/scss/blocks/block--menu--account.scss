@@ -1,0 +1,6 @@
+.block.menu--account {
+  @include inline-menu();
+  ul.menu {
+    margin: 0 auto;
+  }
+}

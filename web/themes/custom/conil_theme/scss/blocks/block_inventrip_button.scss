@@ -1,0 +1,17 @@
+#block-planificadorinventrip {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+  .more-link a {
+    border: 2px solid #01587D !important;
+    border-radius: 1.5em;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0.5em 1.5em;
+    color: $conil-color-blue;
+  }
+
+}

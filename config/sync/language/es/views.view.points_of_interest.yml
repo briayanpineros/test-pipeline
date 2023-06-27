@@ -1,0 +1,18 @@
+display:
+  page_1:
+    display_options:
+      header:
+        area_text_custom:
+          content: "<div class=\"header\"><h2 class=\"subcategory\">{{ name }}</h2><p class=\"counter\"><b>[view:total-rows]</b> resultados encontrados</p> </div>\r\n"
+      title: 'Puntos de interés'
+      fields:
+        nothing_1:
+          admin_label: 'Subcategoría e icono'
+    display_title: 'Listado de POI dos parámetros'
+  default:
+    display_options:
+      arguments:
+        name_1:
+          admin_label: 'Nombre de categoría de POI'
+  page_2:
+    display_title: 'Listado de POI parámetro único'

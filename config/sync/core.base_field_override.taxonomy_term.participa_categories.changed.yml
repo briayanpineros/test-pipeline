@@ -1,0 +1,18 @@
+uuid: bc2c1e4c-7140-4345-8402-81ca0462a77f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.participa_categories
+id: taxonomy_term.participa_categories.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: participa_categories
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

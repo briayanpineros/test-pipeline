@@ -1,0 +1,18 @@
+uuid: cd2f04d2-3aea-42a0-b2a3-231765e75e80
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.poi_media
+id: media.poi_media.metatag
+field_name: metatag
+entity_type: media
+bundle: poi_media
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

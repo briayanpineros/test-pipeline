@@ -1,0 +1,18 @@
+uuid: 279fb73a-49a9-42f4-a703-8c5b69fa5e5f
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.carrousel_images
+id: media.carrousel_images.metatag
+field_name: metatag
+entity_type: media
+bundle: carrousel_images
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

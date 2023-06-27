@@ -1,0 +1,42 @@
+uuid: 63cbca32-b1b1-4204-984b-f2fa5a924367
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.background_selfie.field_description
+    - field.field.media.background_selfie.field_media_image
+    - image.style.large
+    - media.type.background_selfie
+  module:
+    - image
+    - text
+id: media.background_selfie.default
+targetEntityType: media
+bundle: background_selfie
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

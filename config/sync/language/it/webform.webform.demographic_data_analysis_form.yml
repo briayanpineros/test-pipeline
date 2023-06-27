@@ -1,0 +1,121 @@
+title: 'Modulo di analisi dei dati demografici'
+elements: |
+  cabecera:
+    '#description': "<h4>Vi ringraziamo per la vostra partecipazione</h4>\r\n\r\n<p>Da Conil de la Frontera ti ringraziamo per la tua partecipazione al nostro &quot;Sondaggio di soddisfazione&quot;, che ci permetter&agrave; un miglioramento continuo per rendere ancora pi&ugrave; soddisfacente il tuo ritorno nella nostra citt&agrave;. Vi aspettiamo molto presto.</p>\r\n\r\n<h4>Grazie mille a tutti!</h4>"
+  nationality_set:
+    '#title': 'Seleziona la nazionalità'
+  nacionality:
+    '#title': Nazionalità
+    '#description': 'Indicare la nazionalit&agrave;'
+    '#help_title': 'Indicare la nazionalità'
+    '#options':
+      Resident: Residente
+      Spain: Spagna
+      'Other country': 'Altro paese'
+    '#required_error': 'Nazionalità necessaria'
+  country:
+    '#title': Paese
+    '#required_error': 'Paese richiesto'
+  province:
+    '#title': Provincia
+    '#required_error': 'Provincia necessaria'
+  gender:
+    '#title': Genere
+    '#description': 'Indicare il proprio sesso'
+    '#help_title': 'Indicare il proprio sesso'
+    '#options':
+      Male: maschile
+      Female: femminile
+    '#required_error': 'Genere richiesto'
+  age:
+    '#title': 'Fascia d''età'
+    '#description': 'Indicare la fascia d&#39;et&agrave;'
+    '#help_title': 'Indicare la fascia d''età'
+    '#options':
+      'Less than 18': 'Meno di 18 anni '
+      'Beetween 18 and 29': "Tra i 18 e i 29 anni \t"
+      'Beetween 30 and 44': 'Tra i 30 e i 44 anni '
+      'Beetween 45 and 65': 'Tra i 45 e i 65 anni '
+      'More than 65': 'Più di 65 anni '
+    '#required_error': 'Età necessaria'
+  area_set:
+    '#title': 'Area stabilita'
+  destination_area:
+    '#title': 'Area di soggiorno'
+    '#description': 'Indicare la zona del soggiorno'
+    '#help_title': 'Indicare la zona del soggiorno'
+    '#options':
+      'Beach area': 'Zona della spiaggia'
+      'Old town area': 'Zona del centro storico'
+      'Outdoor area': 'Area esterna'
+      'Other area': 'Altra zona'
+    '#required_error': 'Selezione area necessaria'
+  other_area:
+    '#title': 'Altra area'
+    '#required_error': 'Necessità di specificare'
+  repeat_visitor:
+    '#title': 'Visitatore ripetuto'
+    '#description': 'Indicare se si tratta di un visitatore abituale'
+    '#help_title': 'Indicare se si tratta di un visitatore abituale'
+    '#options':
+      'Yes': Si
+  days_at_destination:
+    '#title': 'Giorni a destinazione'
+    '#description': 'Indicare il numero di giorni di permanenza nella destinazione'
+    '#help_title': 'Indicare il numero di giorni di permanenza nella destinazione'
+  days_of_tourism:
+    '#title': 'Giorni specifici'
+    '#description': 'Indicare i giorni specifici del soggiorno'
+    '#help_title': 'Indicare i giorni specifici del soggiorno'
+    '#options':
+      Weekdays: 'Giorni feriali'
+      Weekends: 'Fine settimana'
+      Holidays: 'Giorni festivi'
+      'Whole weeks': 'Settimane intere'
+      Others: 'Altri giorni'
+    '#required_error': 'Giorni specifici del soggiorno necessari'
+  other_days:
+    '#title': 'Altri giorni'
+    '#required_error': 'Da specificare'
+  overnights:
+    '#title': Pernottamenti
+    '#description': 'Indicare il numero di pernottamenti'
+    '#help_title': 'Indicare il numero di pernottamenti'
+    '#required_error': 'Numero di pernottamenti necessari'
+  transport_set:
+    '#title': 'Trasporto impostato'
+  transport_used_to_arrive:
+    '#title': 'Metodo di trasporto'
+    '#description': 'Indicare il mezzo di trasporto utilizzato per raggiungere la destinazione'
+    '#help_title': 'Indicare il mezzo di trasporto utilizzato per raggiungere la destinazione'
+    '#options':
+      'Own car': 'Auto propria'
+      'Rental car': 'Auto a noleggio'
+      Plane: Aereo
+      Train: Treno
+      Bus: Autobus
+      Other: Altro
+    '#required_error': 'Metodo di trasporto necessario'
+  other_transport:
+    '#title': 'Altro trasporto'
+    '#required_error': 'Necessità di specificare'
+  season_set:
+    '#title': 'Stagione stabilita'
+  season:
+    '#title': 'Stagione del soggiorno'
+    '#description': 'Indicare la stagione del soggiorno'
+    '#help_title': 'Indicare la stagione del soggiorno'
+    '#options':
+      Summer: Estate
+      Christmas: Natale
+      Easter: Pasqua
+      Other: Altro
+    '#required_error': 'Stagione necessaria'
+  other_season:
+    '#title': 'Altra stagione'
+    '#required_error': 'Necessità di specificare'
+  thanks_image:
+    '#text': '<img src="/sites/default/files/inline-images/gracias_0.png" data-entity-uuid="32ef4074-9b2d-4ab1-8489-3059dbd05249" data-entity-type="file">'
+  actions:
+    '#title': 'Pulsante di invio'
+    '#submit__label': Inviare

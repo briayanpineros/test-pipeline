@@ -1,0 +1,8 @@
+uuid: e19394b3-855c-46d0-ae6b-da3357b35052
+langcode: es
+status: true
+dependencies: {  }
+name: 'Otros servicios'
+vid: otros_servicios
+description: 'Vocabulario que almacena todos los tipos de servicios que los diferentes puntos de interés ofrecen'
+weight: 0

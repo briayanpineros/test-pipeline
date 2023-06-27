@@ -1,0 +1,25 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        name:
+          separator: ', '
+        created:
+          label: Created
+          separator: ', '
+        edit_user:
+          text: edit
+      title: 'Cuentas de usuario recientes'
+  pane_tc_new_users:
+    display_title: 'Cuentas de usuario recientes'
+    display_options:
+      block_description: 'Cuentas de usuario recientes'
+      block_category: 'Tableau de bord'

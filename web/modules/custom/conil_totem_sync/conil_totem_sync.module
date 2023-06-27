@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains conil_totem_sync.module.
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function conil_totem_sync_cron (){
+  $json = \Drupal::service('conil_totem_sync.conil_ws')->createJson();
+  if($json != NULL) {
+    $confirm = \Drupal::service('conil_totem_sync.conil_ws')->verifiedJson($json);
+    if ($confirm) {
+      $result = \Drupal::service('conil_totem_sync.conil_ws')->post($json);
+      if ($result) {
+        $md5 = md5(json_encode($json));
+        $config = \Drupal::service('config.factory')->getEditable('conil_totem_sync.settings');
+        $config->set('last_update', $md5)->save();
+      }
+    }
+  }
+}

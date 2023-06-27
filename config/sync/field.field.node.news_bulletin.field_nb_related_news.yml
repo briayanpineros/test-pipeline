@@ -1,0 +1,29 @@
+uuid: 6c67adbb-192a-4eaa-8864-f74b5eebde6c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nb_related_news
+    - node.type.news
+    - node.type.news_bulletin
+id: node.news_bulletin.field_nb_related_news
+field_name: field_nb_related_news
+entity_type: node
+bundle: news_bulletin
+label: 'Noticias a enviar'
+description: 'Este campo se puede rellenar manualmente y los enlaces que aquí se pongan se añadirán a los enlaces que se calculen automáticamente a través del intervalo de fechas.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

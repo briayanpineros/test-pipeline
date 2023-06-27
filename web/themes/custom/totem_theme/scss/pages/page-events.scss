@@ -1,0 +1,222 @@
+body.view-events-front-page-totem-page-1 {
+  div.view-events-front-page-totem {
+    position: relative;
+    background-color: white;
+    color: white;
+    padding: 0 5%;
+
+    &::before {
+      @include md {
+        content: url("../imagenes/flecha_eventos.png");
+        position: absolute;
+        right: 50px;
+        top: -1px;
+      }
+    }
+
+    // .view-header {
+    //   h1 {
+    //     margin: 2rem 0 1rem;
+    //     color: $conil-color-blue;
+    //     &::after {
+    //       content: url("../imagenes/subline-headline.png");
+    //       position: relative;
+    //       display: block;
+    //       top: -0.8rem;
+    //     }
+    //   }
+    // }
+    .view-content {
+      margin: 2rem 0 1rem;
+      /*border-top: 8px solid $conil-color-lightblue;*/
+
+      .views-row {
+        -webkit-box-shadow: 1px 1px 10px -1px #000000;
+        box-shadow: 1px 1px 10px -1px #000000;
+        -moz-box-shadow: 1px 1px 10px -1px #000000;
+        margin: 0px 0 2rem 0;
+        border-top: 8px solid $conil-color-lightblue;
+
+        .views-field .field-content {
+          @include md {
+            display: flex;
+            // // border-bottom: 8px solid $azul-sombra;
+          }
+
+          img.image-style-event {
+            border: 0;
+            width: 300px;
+            height: auto;
+          }
+
+          .description {
+            width: 672px;
+            height: 424px;
+            position: relative;
+
+            @include md {
+              border-top: 8px solid $conil-color-lightgray;
+            }
+
+            background-color: white;
+            color: $conil-color-blue;
+            width: 100%;
+            padding: 3em 5%;
+
+            .title {
+              text-transform: uppercase;
+              font-size: 1.5rem;
+              line-height: 1.5rem;
+              margin-bottom: 1rem;
+
+              @include md {
+                font-weight: bold;
+                font-size: 2rem;
+                line-height: 2rem;
+              }
+            }
+
+            .location,
+            .highlighted {
+              p {
+                border-bottom: #63b7ee 0.4rem solid;
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                font-weight: bold;
+              }
+
+              span {
+                font-weight: bold;
+              }
+
+              @include md {
+                width: 48%;
+              }
+            }
+
+            .location {
+              @include md {
+                display: inline-block;
+              }
+            }
+
+            .highlighted {
+              @include md {
+                float: right;
+              }
+
+              a {
+                background-color: #63b7ee;
+                border-radius: 5.5rem;
+                padding: 3%;
+                color: #007cc2;
+                text-transform: uppercase;
+                margin-right: 3%;
+                font-weight: bold;
+                font-size: 0.8rem;
+                line-height: 2.5;
+                white-space: nowrap;
+              }
+            }
+
+            .date {
+              display: flex;
+              justify-content: space-around;
+
+              @include md {
+                position: absolute;
+                bottom: 40px;
+                justify-content: flex-start;
+              }
+            }
+
+            .dates {
+              display: inline-block;
+              height: auto;
+              background-color: $conil-color-blue;
+              color: white;
+              padding: 0.5rem 2.5rem;
+              text-align: center;
+              border-bottom: 8px solid $conil-color-lightblue;
+              font-size: 1.2rem;
+
+              @include md {
+                margin-right: 2rem;
+              }
+
+              time {
+                display: block;
+
+                &:first-child {
+                  font-size: 3rem;
+                  font-weight: bold;
+                }
+              }
+            }
+
+            .fivestar-average-stars {
+              display: none;
+
+              @include md {
+                display: flex;
+                margin-top: 1rem;
+                position: absolute;
+                left: 3em;
+                bottom: 0.5rem;
+              }
+            }
+
+            .button {
+              @include md {
+                position: absolute;
+                right: 1.5rem;
+                bottom: 1rem;
+              }
+
+              padding: 0.5em 1.5em;
+
+              a {
+                display: block;
+                border: 0px;
+                border-radius: 1.5em;
+                width: 150px;
+                height: 45px;
+                text-align: center;
+                line-height: 45px;
+                margin-top: 20px;
+                font-weight: bold;
+                background: $conil-color-yellow;
+                color: $conil-color-blue;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.events-agenda-link-text {
+  margin-top: 2em;
+  color: white;
+  text-align: right;
+  padding: 0 5%;
+  a {
+  &:hover {
+    text-decoration: underline;
+  }
+  font-size: 24px;
+}
+
+  span {
+    font-weight: 600;
+    &:after {
+      content: "\e935";
+      font-family: "Google-Icon";
+      color: #01587d;
+      padding-left: 1rem;
+      float: right;
+    }
+  }
+}
+

@@ -1,0 +1,22 @@
+uuid: 481c6658-2ac8-4f70-915d-780eb6114bbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.logo_ayuntamiento
+  module:
+    - simple_block
+  theme:
+    - conil_theme
+id: logoayuntamiento
+theme: conil_theme
+region: header
+weight: -20
+provider: null
+plugin: 'simple_block:logo_ayuntamiento'
+settings:
+  id: 'simple_block:logo_ayuntamiento'
+  label: 'Logo ayuntamiento'
+  label_display: '0'
+  provider: simple_block
+visibility: {  }

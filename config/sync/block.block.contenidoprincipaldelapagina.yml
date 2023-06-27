@@ -1,0 +1,28 @@
+uuid: 41918021-5b45-403b-9309-91c781244c04
+langcode: es
+status: true
+dependencies:
+  module:
+    - domain
+    - system
+  theme:
+    - totem_theme
+id: contenidoprincipaldelapagina
+theme: totem_theme
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      https_totem001_conil_ddev_site_: https_totem001_conil_ddev_site_

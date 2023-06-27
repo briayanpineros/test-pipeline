@@ -1,0 +1,7 @@
+entity_type_groups:
+  node:
+    noticia:
+      basic: basic
+      advanced: advanced
+tag_trim_method: afterValue
+tag_trim_maxlength: null

@@ -1,0 +1,55 @@
+uuid: 8b2a5608-1bf2-4197-8367-0ad7cfbda366
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.list
+    - field.field.node.historia.body
+    - field.field.node.historia.field_categoria_historia
+    - field.field.node.historia.field_historia_cover
+    - field.field.node.historia.field_historia_tipo_de_contenido
+    - field.field.node.historia.field_history_gallery
+    - field.field.node.historia.field_history_subtitle
+    - image.style.max_650x650
+    - node.type.historia
+  module:
+    - layout_builder
+    - media
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.historia.list
+targetEntityType: node
+bundle: historia
+mode: list
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_historia_cover:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: max_650x650
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_categoria_historia: true
+  field_historia_tipo_de_contenido: true
+  field_history_gallery: true
+  field_history_subtitle: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,27 @@
+.form-item {
+  .SumoSelect {
+    display: block;
+    margin: 0 0 15px;
+    width: auto;
+    .CaptionCont {
+      border: 1px solid $branding-grey-light;
+      padding: 5px 3px 5px;
+      label {
+        i {
+          top: 9px;
+        }
+      }
+    }
+    &:focus,
+    &:hover,
+    &.open {
+      .CaptionCont {
+        @include box-shadow(0, 0, 0, $branding-grey-light);
+        border: 1px solid $branding-grey-light;
+      }
+    }
+    .optWrapper {
+      width: auto;
+    }
+  }
+}

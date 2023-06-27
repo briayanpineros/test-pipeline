@@ -1,0 +1,29 @@
+uuid: 3869408e-ca5d-4bcf-952f-7f516de7239c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_historia_tipo_de_contenido
+    - node.type.historia
+    - taxonomy.vocabulary.tipo_de_contenido
+id: node.historia.field_historia_tipo_de_contenido
+field_name: field_historia_tipo_de_contenido
+entity_type: node
+bundle: historia
+label: 'Tipo de contenido'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_contenido: tipo_de_contenido
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

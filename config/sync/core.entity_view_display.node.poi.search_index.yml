@@ -1,0 +1,173 @@
+uuid: 71751444-e0ff-40dc-a8b0-c8c49f5627e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.poi.body
+    - field.field.node.poi.feeds_item
+    - field.field.node.poi.field_poi_address
+    - field.field.node.poi.field_poi_address_country
+    - field.field.node.poi.field_poi_address_cp
+    - field.field.node.poi.field_poi_address_extra
+    - field.field.node.poi.field_poi_address_locality
+    - field.field.node.poi.field_poi_address_province
+    - field.field.node.poi.field_poi_address_region
+    - field.field.node.poi.field_poi_category
+    - field.field.node.poi.field_poi_comments
+    - field.field.node.poi.field_poi_email
+    - field.field.node.poi.field_poi_extratags
+    - field.field.node.poi.field_poi_gallery
+    - field.field.node.poi.field_poi_geofield
+    - field.field.node.poi.field_poi_inventrip_identifier
+    - field.field.node.poi.field_poi_media
+    - field.field.node.poi.field_poi_metatags
+    - field.field.node.poi.field_poi_social_media_share
+    - field.field.node.poi.field_poi_socialmedia
+    - field.field.node.poi.field_poi_subcategoy
+    - field.field.node.poi.field_poi_subtitle
+    - field.field.node.poi.field_poi_telephone
+    - field.field.node.poi.field_poi_telephone2
+    - field.field.node.poi.field_poi_webpage
+    - field.field.node.poi.field_tipo_viaje
+    - node.type.poi
+  module:
+    - field_group
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_col_1:
+      children:
+        - field_poi_media
+        - field_poi_telephone
+      label: 'Col 1'
+      parent_name: ''
+      region: hidden
+      weight: 13
+      format_type: html_element
+      format_settings:
+        classes: left
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_col_2:
+      children:
+        - field_poi_geofield
+        - group_our_data
+      label: 'Col 2'
+      parent_name: ''
+      region: hidden
+      weight: 14
+      format_type: html_element
+      format_settings:
+        classes: right
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_our_data:
+      children:
+        - field_poi_address
+        - field_poi_email
+        - field_poi_schedule
+        - field_poi_socialmedia
+        - field_poi_webpage
+        - group_mail
+      label: 'Our data'
+      parent_name: group_col_2
+      region: hidden
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: our-data
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_mail:
+      children: {  }
+      label: mail
+      parent_name: group_our_data
+      region: hidden
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: mail
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.poi.search_index
+targetEntityType: node
+bundle: poi
+mode: search_index
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+hidden:
+  feeds_item: true
+  field_poi_address: true
+  field_poi_address_country: true
+  field_poi_address_cp: true
+  field_poi_address_extra: true
+  field_poi_address_locality: true
+  field_poi_address_province: true
+  field_poi_address_region: true
+  field_poi_category: true
+  field_poi_comments: true
+  field_poi_email: true
+  field_poi_extratags: true
+  field_poi_gallery: true
+  field_poi_geofield: true
+  field_poi_inventrip_identifier: true
+  field_poi_media: true
+  field_poi_metatags: true
+  field_poi_social_media_share: true
+  field_poi_socialmedia: true
+  field_poi_subcategoy: true
+  field_poi_subtitle: true
+  field_poi_telephone: true
+  field_poi_telephone2: true
+  field_poi_webpage: true
+  field_tipo_viaje: true
+  flag_bookmark: true
+  how_to_get: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

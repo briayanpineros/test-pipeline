@@ -1,0 +1,15 @@
+uuid: ed8e3d5c-5310-403a-b530-4f616b87b303
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pYORFuFzL0b2FKevz6fSag1wOUNTthFPPLxZ18JB1t0
+id: default_hreflang
+label: 'Default hreflang'
+description: 'The default hreflang sitemap type. A sitemap of this type is understood by most modern search engines.'
+sitemap_generator: default
+url_generators:
+  entity: entity
+  custom: custom
+  entity_menu_link_content: entity_menu_link_content
+  arbitrary: arbitrary

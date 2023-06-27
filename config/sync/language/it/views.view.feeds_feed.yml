@@ -1,0 +1,56 @@
+label: Feeds
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Azzeramento
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ precedente'
+            next: 'seguente ›'
+            first: '« prima'
+            last: 'ultima »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        feeds_feed_bulk_form:
+          label: 'Aggiornamento di massa'
+          action_title: 'Con la selezione'
+        title:
+          label: Titolo
+          separator: ', '
+        type:
+          label: Tipo
+          separator: ', '
+        name:
+          label: Autore
+          separator: ', '
+        changed:
+          label: Aggiornato
+          separator: ', '
+        imported:
+          separator: ', '
+        operations:
+          label: Operations
+      filters:
+        title:
+          expose:
+            label: Titolo
+        type:
+          expose:
+            label: Tipo
+      title: Feeds
+  page_1:
+    display_title: Pagina
+    display_options:
+      menu:
+        title: Feeds

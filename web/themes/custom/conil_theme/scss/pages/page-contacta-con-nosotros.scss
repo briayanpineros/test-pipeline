@@ -1,0 +1,130 @@
+body.contact-site-page {
+  #block-conil-theme-page-title {
+    max-width: 1200px;
+    margin: auto 2rem;
+
+    @include xl {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-family: SourceSans-Bold;
+      color: $conil-color-blue;
+      //padding: 1rem 2rem;
+      padding-bottom: 0;
+      padding-top: 1rem;
+
+      @include xl {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+      }
+    }
+
+    .breadcrumb {
+      margin-bottom: 0;
+    }
+  }
+
+  #block-mainpagecontent {
+
+    #contact-message-feedback-form {
+      display: flex;
+      flex-wrap: wrap;
+      color: $conil-color-blue;
+      @include xs {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      @include sm {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      @include md {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      @include lg {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      @include xl {
+        padding: 0;
+      }
+
+      label {
+        font-family: SourceSans-Bold;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+      .js-form-type-textfield, .js-form-type-email,
+      #edit-subject-0-value {
+        width: 100%;
+      }
+
+      #edit-name,
+      #edit-mail {
+        width: 100%;
+        font-family: SourceSans-Regular;
+        font-size: 1.2rem;
+        color: $conil-color-blue;
+        border-radius: 1rem;
+      }
+
+
+      #edit-subject-wrapper,
+      #edit-message-wrapper {
+        width: 100%;
+
+        .form-item {
+
+          input,
+          .form-textarea-wrapper #edit-message-0-value {
+            border-radius: 1rem;
+            color: $conil-color-darkgray;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 1.2rem !important;
+          }
+        }
+      }
+
+      .js-form-type-checkbox {
+        width: 100%;
+
+        input {
+          border-radius: 1rem;
+        }
+        label {
+          text-transform: none;
+          font-family: 'SourceSans-regular';
+        }
+      }
+
+      #edit-actions {
+        width: 100%;
+        margin-right: 0%;
+        text-align: right;
+
+        @include sm {
+          input {
+            width: fit-content;
+          }
+        }
+
+        input#edit-preview {
+          display: none;
+        }
+
+        input#edit-submit {
+          border-radius: 1.5rem;
+          background-color: $conil-color-blue;
+          color: white;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+      }
+    }
+  }
+}

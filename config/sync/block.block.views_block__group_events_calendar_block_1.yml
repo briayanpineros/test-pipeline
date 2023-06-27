@@ -1,0 +1,30 @@
+uuid: f6844c0d-8bf8-436d-8f78-227063c18da5
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.group_events_calendar
+  module:
+    - system
+    - views
+  theme:
+    - conil_theme
+id: views_block__group_events_calendar_block_1
+theme: conil_theme
+region: content
+weight: -13
+provider: null
+plugin: 'views_block:group_events_calendar-block_1'
+settings:
+  id: 'views_block:group_events_calendar-block_1'
+  label: 'Events Calendar'
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: 'Events Calendar'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/group/*\r\n!/group/*/*"

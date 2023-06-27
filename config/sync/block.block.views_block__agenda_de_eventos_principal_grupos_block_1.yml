@@ -1,0 +1,30 @@
+uuid: fb65766b-f93a-4184-9382-779776e3eae9
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.agenda_de_eventos_principal_grupos
+  module:
+    - system
+    - views
+  theme:
+    - conil_theme
+id: views_block__agenda_de_eventos_principal_grupos_block_1
+theme: conil_theme
+region: content
+weight: -17
+provider: null
+plugin: 'views_block:agenda_de_eventos_principal_grupos-block_1'
+settings:
+  id: 'views_block:agenda_de_eventos_principal_grupos-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/group/*\r\n!/group/*/*"

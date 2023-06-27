@@ -1,0 +1,23 @@
+body.user-login {
+  .layout-content {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  form.user-login-form {
+    padding: 10px;
+    border: 1px solid $branding-grey-light;
+    @include border-radius(5px);
+  }
+}
+
+body.user-pass {
+  .layout-content {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  form.user-pass {
+    padding: 10px;
+    border: 1px solid $branding-grey-light;
+    @include border-radius(5px);
+  }
+}

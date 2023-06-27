@@ -1,0 +1,30 @@
+uuid: 894323da-421a-4583-96fb-81daa4761403
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.carrusel_portada_grande
+    - image.style.carrusel_portada_medio
+    - image.style.carrusel_portada_pequeno
+  theme:
+    - bartik
+id: carrusel_portada
+label: 'Carrusel portada'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: carrusel_portada_grande
+    breakpoint_id: bartik.wide
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: carrusel_portada_medio
+    breakpoint_id: bartik.narrow
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: carrusel_portada_pequeno
+    breakpoint_id: bartik.mobile
+    multiplier: 1x
+breakpoint_group: bartik
+fallback_image_style: carrusel_portada_grande

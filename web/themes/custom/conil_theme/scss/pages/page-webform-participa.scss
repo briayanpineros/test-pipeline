@@ -1,0 +1,205 @@
+body.entity-webform-canonical {
+  h1.page-title {
+    position: relative;
+    font-size: 2rem;
+
+    &::after {
+      content: url("/themes/custom/conil_theme/imagenes/subline-headline.png");
+      position: relative;
+      display: block;
+      top: -.8rem;
+
+    }
+  }
+
+  form.webform-submission-form#webform-submission-participa-add-form {
+    color: $conil-color-blue;
+    display: block;
+
+    fieldset {
+      width: 100%;
+    }
+
+    &::before {
+      content: none;
+    }
+
+    input {
+      border: none;
+      color: $conil-color-darkgray;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-radius: 1rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    fieldset.datos-participacion {
+      .fieldset-wrapper {
+        padding: 1rem;
+        display: block;
+
+        @include md {
+          padding: 4rem;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap !important;
+          justify-content: space-between;
+        }
+
+        .form-item-title,
+        .form-item-categories {
+          width: 100%;
+
+          @include md {
+            width: 45%;
+          }
+
+          select {
+            border: none;
+          }
+
+        }
+
+        .form-item-description {
+          flex-wrap: wrap !important;
+
+          textarea {
+            border: none;
+            color: $conil-color-darkgray;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 1rem;
+          }
+        }
+      }
+
+      &::before {
+        content: url("/themes/custom/conil_theme/imagenes/subline-headline.png");
+        position: relative;
+        display: block;
+        top: -2rem;
+        right: 0rem;
+        position: absolute;
+
+      }
+    }
+
+    fieldset.datos-personales {
+      .fieldset-wrapper {
+        padding: 1rem;
+        display: block;
+
+        @include md {
+          padding: 4rem;
+        }
+
+        input {
+          width: 100%;
+          color: $conil-color-darkgray;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    }
+
+    legend span {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .container-captcha {
+
+      align-content: center;
+
+      @include md {
+        display: flex;
+      }
+
+      details#captcha {
+
+        border: 1px solid $conil-color-lightblue;
+
+        display: inline-block;
+
+        @include md {
+          width: 60%;
+          padding: 2rem;
+        }
+      }
+
+      .gracias {
+        content: url("/themes/custom/conil_theme/imagenes/gracias.png");
+        width: 100%;
+        display: block;
+
+        padding-top: 1rem;
+
+        @include md {
+          margin-left: 6rem;
+          display: inline-block;
+          height: 250px;
+          width: auto;
+        }
+      }
+    }
+
+    .js-form-item-aceptacion-de-los-terminos-y-condiciones-del-tratamiento-de-los- {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      background-color: $conil-color-blue;
+      color: white;
+      height: 120px;
+
+      input.aceptacion {
+
+        width: 5%;
+      }
+    }
+
+    #edit-actions {
+      margin-top: -5rem;
+
+      @include md {
+        margin-top: -6rem;
+      }
+
+      input#edit-submit {
+        background-color: white;
+        color: $conil-color-blue;
+        margin-right: 1rem;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      input#edit-continue-later {
+        display: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        //background-color: $conil-color-aqua;
+        //color: $conil-color-blue;
+        //margin-right: 1rem;
+        //padding-left:  .8rem;
+        //padding-right: .8rem;
+      }
+    }
+
+  }
+
+  #block-participa {
+    color: $conil-color-blue;
+    border: 1px solid $conil-color-lightblue;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+
+    .participa-gracias {
+      text-align: right;
+    }
+
+  }
+}

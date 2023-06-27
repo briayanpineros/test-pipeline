@@ -1,0 +1,29 @@
+uuid: ac419885-1a5a-4d28-a4fe-f5d95ced0be5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.conil_current_news
+  module:
+    - system
+    - views
+  theme:
+    - conil_theme
+id: views_block__conil_current_news_block_1
+theme: conil_theme
+region: layout_suffix
+weight: -25
+provider: null
+plugin: 'views_block:conil_current_news-block_1'
+settings:
+  id: 'views_block:conil_current_news-block_1'
+  label: 'News in Conil'
+  label_display: visible
+  provider: views
+  views_label: 'News in Conil'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

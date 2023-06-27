@@ -1,0 +1,7 @@
+# Conil Totem Syncronization Settings
+conil_totem_sync.settings:
+  title: 'Totems Syncronization'
+  route_name: conil_totem_sync.settings
+  description: 'Conil Totems Syncronization settings'
+  parent: conil_totem.main
+  weight: 4

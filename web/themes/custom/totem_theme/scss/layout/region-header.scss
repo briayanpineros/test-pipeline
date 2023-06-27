@@ -1,0 +1,94 @@
+.header-group {
+  border-bottom: none;
+  position: sticky;
+  top: 0;
+  z-index: 120;
+
+
+  > ::after {
+    height: 15px;
+    @include conil-gradient();
+  }
+
+
+  .header-wrapper {
+    @include md {
+      /*position: absolute !important;*/
+    }
+
+    .header-logo {
+      background-color: $conil-color-blue;
+      display: flex;
+      height: 140px;
+
+      .conil-main-logo {
+        height: 100%;
+        flex: 1 1 30%;
+        display: grid;
+
+        a {
+          display: inline-block;
+          width: fit-content;
+          height: fit-content;
+          align-self: center;
+          margin: auto;
+
+          img {
+            width: 200px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          }
+        }
+
+      }
+
+      .region-header-wrapper {
+        height: 100%;
+        flex: 1 1 70%;
+
+        .region-header {
+          display: grid;
+          grid-auto-rows: 100%;
+          grid-template-columns: repeat(3, 1fr);
+          height: 100%;
+          max-width: unset;
+          margin: auto;
+          padding: 0;
+
+          //Bloque del tiempo
+          .block-conil-weather {
+            grid-column: 2;
+            grid-row: 1/2;
+          }
+
+          //Bloque con el logo del ayuntamiento
+          .block-simple-blocklogo-ayuntamiento {
+            grid-column: 3;
+            grid-row: 1;
+            align-self: start;
+          }
+
+          //Bloque con el buscador
+          .search-api-page-block-form-search-block {
+            grid-column: 1;
+            grid-row: 1;
+            align-self: center;
+            width: 545px;
+            margin-right: 20px;
+          }
+
+          .block-lang-dropdown {
+            grid-column: 3;
+            grid-row: 1;
+            align-self: end;
+          }
+
+
+        }
+
+      }
+
+    }
+  }
+
+}
+

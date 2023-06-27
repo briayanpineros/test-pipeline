@@ -1,0 +1,70 @@
+title: 'Análisis adicional del origen y la percepción de los turistas'
+elements: |
+  nationality_set:
+    '#title': 'Seleccionar nacionalidad'
+  nacionality:
+    '#title': Nacionalidad
+    '#description': 'Indique su nacionalidad'
+    '#help_title': 'Indique su nacionalidad'
+    '#options':
+      Resident: Residente
+      Spain: España
+      'Other country': 'Otro país'
+    '#required_error': 'Nacionalidad necesaria'
+  province:
+    '#title': Provincia
+    '#required_error': 'Provincia necesaria'
+  country:
+    '#title': País
+    '#required_error': 'País necesario'
+  gender:
+    '#title': Sexo
+    '#description': 'Por favor, indique su sexo'
+    '#help_title': 'Por favor, indique su sexo'
+    '#options':
+      Male: Hombre
+      Female: Femenino
+    '#required_error': 'Sexo requerido'
+  age:
+    '#title': 'Grupo de edad'
+    '#description': 'Indique su grupo de edad'
+    '#help_title': 'Indique su grupo de edad'
+    '#options':
+      'Less than 18': 'Menos de 18 años '
+      'Beetween 18 and 29': 'Entre 18 y 29 años '
+      'Beetween 30 and 44': 'Entre 30 y 44 años '
+      'Beetween 45 and 65': 'Entre 45 y 65 años '
+      'More than 65': 'Más de 65 años '
+    '#required_error': 'Edad necesaria'
+  what_do_you_want_to_experience_on_your_next_travel_experience:
+    '#title': 'Quiere vivir una experiencia...'
+    '#description': '&iquest;Qu&eacute; quiere experimentar en su pr&oacute;ximo viaje?'
+    '#help_title': '¿Qué quiere experimentar en su próximo viaje?'
+    '#options':
+      'I want to relax': 'Quiero relajarme'
+      'I want to discover': 'Quiero descubrir'
+      'I want to have fun': 'Quiero divertirme'
+      'I want to learn': 'Quiero aprender'
+      'I want to socialise': 'Quiero socializar'
+      'I want to taste': 'Quiero saborear'
+    '#required_error': Requerido
+  how_many_cars_do_you_have_at_home:
+    '#title': Coches
+    '#description': '&iquest;Cu&aacute;ntos coches tiene en casa?'
+    '#help_title': '¿Cuántos coches tiene en casa?'
+    '#options':
+      None: Ninguno
+      '3 or more': '3 o más'
+    '#required_error': Requerido
+  how_many_people_are_in_your_household_parents_and_children_still:
+    '#title': 'Personas en su hogar'
+    '#description': '&iquest;Cu&aacute;ntas personas viven en su casa (padres e hijos)?'
+    '#help_title': '¿Cuántas personas viven en su casa (padres e hijos)?'
+    '#options':
+      '6 or more': '6 o más personas'
+    '#required_error': Obligatorio
+  actions:
+    '#title': 'Botón de envío'
+    '#submit__label': Enviar
+settings:
+  submission_label: Enviar

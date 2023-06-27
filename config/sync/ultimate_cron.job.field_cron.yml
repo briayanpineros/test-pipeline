@@ -1,0 +1,17 @@
+uuid: 159d4cf6-a118-4b2e-94ed-a1a495f34414
+langcode: es
+status: true
+dependencies:
+  module:
+    - field
+title: 'Purga de los datos de la API de campo eliminados'
+id: field_cron
+weight: 0
+module: field
+callback: field_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database
