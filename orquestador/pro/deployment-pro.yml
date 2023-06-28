@@ -1,38 +1,36 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apache
+  name: apache-test
   namespace: portales
   labels:
-    app: apache
+    app: apache-test
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: apache
+      app: apache-test
   template:
     metadata:
       labels:
-        app: apache
+        app: apache-test
     spec:
       containers:
-      - name: apache
+      - name: apache-test
         image: public.ecr.aws/h1y1q1x5/drupal-php:1.3.4
         resources:
           requests:
-            memory: "4Gi"
-            cpu: "1"
+            memory: "0"
+            cpu: "0"
           limits:
-            memory: "4Gi"
-            cpu: "1"        
+            memory: "0"
+            cpu: "0"        
         ports:
         - containerPort: 80
         envFrom:
             - configMapRef:
                 name: apache-configmap
         volumeMounts:
-        - mountPath: "/mnt/files"
-          name: mnt
         - mountPath: "/var/www/html/web/sites/default/services.yml"
           subPath: services
           name: services
@@ -44,6 +42,3 @@ spec:
         - name: services
           configMap:
             name: php-services
-        - name: mnt
-          persistentVolumeClaim:
-            claimName: mnt-pvc
