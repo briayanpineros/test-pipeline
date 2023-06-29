@@ -4,6 +4,7 @@ pipeline {
 
     environment {
             VERSION = ''
+            IMAGE = ''
     }
 
     stages {
@@ -18,20 +19,21 @@ pipeline {
                 script {
                     propiedades = readYaml(file: 'propiedades.yml')
                     VERSION = propiedades.version
+                    IMAGE = propiedades.image
                 }
             }
         }
 
         stage('Docker Image Build') {
             steps {
-                sh 'docker build -t public.ecr.aws/h1y1q1x5/drupal-php:' + VERSION + ' .'
+                sh 'docker build -t '+ IMAGE +':' + VERSION + ' .'
             }
         }
         stage('Push Docker Image to ECR') {
             steps {
                 withAWS(credentials: 'conil-preproduccion-credential', region: 'eu-west-3') {
                     sh 'aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/h1y1q1x5'
-                    sh 'docker push public.ecr.aws/h1y1q1x5/drupal-php:' + VERSION
+                    sh 'docker push '+ IMAGE +':' + VERSION
                 }
             }
         }
@@ -49,7 +51,7 @@ pipeline {
                 script {
                     deployment = readYaml(file: 'orquestador/pre/deployment-pre.yml')
                     echo deployment.toString()
-                    deployment.spec.template.spec.containers[0].image = 'public.ecr.aws/h1y1q1x5/drupal-php:' + VERSION
+                    deployment.spec.template.spec.containers[0].image =  IMAGE +':' + VERSION
                     writeYaml file: 'orquestador/pre/deployment-pre-modificada.yml', data: deployment
                 }
 
@@ -76,7 +78,7 @@ pipeline {
                 script {
                     deployment = readYaml(file: 'orquestador/pro/deployment-pro.yml')
                     echo deployment.toString()
-                    deployment.spec.template.spec.containers[0].image = 'public.ecr.aws/h1y1q1x5/drupal-php:' + VERSION
+                    deployment.spec.template.spec.containers[0].image =  IMAGE +':' + VERSION
                     writeYaml file: 'orquestador/pro/deployment-pro-modificada.yml', data: deployment
                 }
 
